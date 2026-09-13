@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wdth,wght,XOPQ,XTRA,YOPQ,YTDE,YTFI,YTLC,YTUC@8..144,25..151,100..1000,96,468,79,-203,738,514,712&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Anton&family=Mochiy+Pop+One&display=swap');
+
+@font-face {
+  font-family: 'Panchang';
+  src: url('https://framerusercontent.com/third-party-assets/fontshare/wf/47WQXPVBB5FZSBSKG7EM3GTGOVFM5BBT/ODED7M7ROA7KYKTD3MYSN4KKO6JVXBQE/EE3DYKUPHF3W5SWXFO53CRP5KMNTTNTH.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@import "tailwindcss";
+
+@theme {
+  --color-canvas: #f4f4f0;
+  --color-paper: #ecebe4;
+  --color-paper-dark: #e2e1d7;
+  --color-ink: #141414;
+  --color-ink-muted: #5c5b5b;
+  --color-ink-light: #8a8a90;
+  
+  --color-yellow-200: #d7dd44;
+  --color-pink-200: #eaa0cd;
+  --color-green-200: #00966e;
+  --color-orange-200: #f09341;
+  --color-blue-200: #7ca8d2;
+  --color-deep-surface: #121215;
+
+  --font-sans: var(--font-sans), "Inter", system-ui, sans-serif;
+  --font-serif: var(--font-serif), "Instrument Serif", Georgia, serif;
+  --font-mono: var(--font-mono), "JetBrains Mono", monospace;
+  --font-grotesk: var(--font-grotesk), "Space Grotesk", sans-serif;
+  --font-display: var(--font-display), "Syne", sans-serif;
+  --font-compressed: "Roboto Flex", "Arial Narrow", sans-serif;
+}
+
+:root {
+  --nav-offset: 88px;
+  --color-canvas: #f4f4f0;
+  --color-ink: #141414;
+  --color-yellow-200: #d7dd44;
+  --color-pink-200: #eaa0cd;
+  --color-green-200: #00966e;
+  --color-orange-200: #f09341;
+  --color-blue-200: #7ca8d2;
+}
+
+html {
+  scroll-behavior: auto;
+  background-color: var(--color-canvas);
+  color: var(--color-ink);
+}
+
+body {
+  background-color: var(--color-canvas);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: clip;
+}
+
+/* Base selection */
+::selection {
+  background-color: var(--color-yellow-200);
+  color: #000;
+}
+
+/* Global scroll margin for anchors */
+* {
+  scroll-margin-top: var(--nav-offset);
+}
+
+/* Ultra-Compressed Decathlon-Tier Headlines */
+.u-title-100 {
+  font-family: "Roboto Flex", "Arial Narrow", sans-serif;
+  font-variation-settings: "wdth" 33;
+  font-stretch: 33%;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: clamp(3.5rem, 13vw, 15rem);
+  line-height: 0.82;
+  letter-spacing: -0.02em;
+}
+
+.u-title-200 {
+  font-family: "Roboto Flex", "Arial Narrow", sans-serif;
+  font-variation-settings: "wdth" 33;
+  font-stretch: 33%;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: clamp(2.25rem, 6.5vw, 6.5rem);
+  line-height: 0.86;
+  letter-spacing: -0.015em;
+}
+
+.u-title-300 {
+  font-family: "Roboto Flex", "Arial Narrow", sans-serif;
+  font-variation-settings: "wdth" 33;
+  font-stretch: 33%;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: clamp(1.4rem, 3.2vw, 3.2rem);
+  line-height: 0.92;
+}
+
+.u-label {
+  font-family: "Roboto Flex", "Arial Narrow", sans-serif;
+  font-variation-settings: "wdth" 151;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+}
+
+/* Tactile Brutalist Buttons from Decathlon Yestalgia */
+.c-button {
+  font-family: "Roboto Flex", "Arial Narrow", sans-serif;
+  font-variation-settings: "wdth" 33;
+  font-stretch: 33%;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+  padding: 13px 26px;
+  border: 2px solid #000;
+  border-radius: 12px;
+  background-color: var(--color-yellow-200);
+  color: #000;
+  box-shadow: -4px 6px #000;
+  transition: transform 0.15s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.15s cubic-bezier(0.16, 1, 0.3, 1);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  line-height: 1;
+}
+
+.c-button:hover {
+  transform: translate(-3px, 4px);
+  box-shadow: -1px 2px #000;
+}
+
+.c-button-pink {
+  background-color: var(--color-pink-200);
+}
+
+.c-button-emerald {
+  background-color: var(--color-green-200);
+  color: #fff;
+}
+
+.c-button-white {
+  background-color: #fff;
+}
+
+.c-button-orange {
+  background-color: var(--color-orange-200);
+}
+
+.c-button-blue {
+  background-color: var(--color-blue-200);
+}
+
+.c-button-ink {
+  background-color: var(--color-ink);
+  color: #fff;
+}
+
+/* Tactile Sticker Badges */
+.sticker-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  border: 2px solid #000;
+  border-radius: 9999px;
+  font-family: var(--font-grotesk), monospace;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  box-shadow: -3px 4px #000;
+  background-color: #fff;
+  color: #000;
+}
+
+/* Tactile Card Frame */
+.tactile-card {
+  border: 2px solid #000;
+  border-radius: 18px;
+  box-shadow: -6px 8px #000;
+  background-color: #fff;
+  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.tactile-card:hover {
+  transform: translate(-3px, 4px);
+  box-shadow: -3px 4px #000;
+}
+
+/* Vintage Paper Dotted Canvas Background */
+.paper-canvas {
+  background-color: var(--color-canvas);
+  background-image: radial-gradient(#141414 0.75px, transparent 0.75px);
+  background-size: 20px 20px;
+}
+
+/* Lenis smooth scrolling rules */
+html.lenis, html.lenis body {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+/* Custom minimal scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-canvas);
+}
+::-webkit-scrollbar-thumb {
+  background: #000;
+  border-radius: 4px;
+}
