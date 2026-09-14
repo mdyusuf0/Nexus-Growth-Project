@@ -143,14 +143,6 @@ export default function Navbar() {
   const [isServicesOpen, setIsServicesOpen] = useState(false);
   const timeoutRef = useRef<NodeJS.Timeout | null>(null);
 
-  if (
-    pathname?.startsWith('/services/branding-design') || 
-    pathname?.startsWith('/services/ai-automation') || 
-    pathname?.startsWith('/services/video-production-editing')
-  ) {
-    return null;
-  }
-
   const handleMouseEnter = () => {
     if (timeoutRef.current) {
       clearTimeout(timeoutRef.current);
@@ -210,6 +202,16 @@ export default function Navbar() {
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, [isNavOpen, isServicesOpen]);
+
+  const isSuppressed = Boolean(
+    pathname?.startsWith('/services/branding-design') || 
+    pathname?.startsWith('/services/ai-automation') || 
+    pathname?.startsWith('/services/video-production-editing')
+  );
+
+  if (isSuppressed) {
+    return null;
+  }
 
   return (
     <>

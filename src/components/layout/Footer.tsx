@@ -12,14 +12,6 @@ export default function Footer() {
   const wordmarkRef = useRef<HTMLHeadingElement>(null);
   const [time, setTime] = useState("");
 
-  if (
-    pathname?.startsWith('/services/branding-design') || 
-    pathname?.startsWith('/services/ai-automation') || 
-    pathname?.startsWith('/services/video-production-editing')
-  ) {
-    return null;
-  }
-
   useEffect(() => {
     const updateTime = () => {
       const now = new Date();
@@ -56,6 +48,16 @@ export default function Footer() {
       }
     );
   }, []);
+
+  const isSuppressed = Boolean(
+    pathname?.startsWith('/services/branding-design') || 
+    pathname?.startsWith('/services/ai-automation') || 
+    pathname?.startsWith('/services/video-production-editing')
+  );
+
+  if (isSuppressed) {
+    return null;
+  }
 
   return (
     <footer
