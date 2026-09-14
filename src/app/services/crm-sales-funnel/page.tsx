@@ -3,16 +3,16 @@ import type { Metadata } from 'next';
 import { VartalaapCrmExperience } from '@/components/services/crm-sales-funnel/VartalaapCrmExperience';
 
 export const metadata: Metadata = {
-  title: '📈 Automated Sales Funnels & CRM Architecture // NEXUS Growth',
+  title: '📈 Automated Sales Funnels & CRM Architecture // APERTURE STUDIOS',
   description: 'Connect your commercial films, brand video campaigns, and ad traffic directly into automated sales funnels, HubSpot/Klaviyo lifecycle ops, and 1-click WhatsApp checkouts.',
   keywords: [
-    'NEXUS Pipeline',
+    'APERTURE Pipeline',
     'production company sales funnel',
     'commercial video conversion funnel',
     'WhatsApp Business checkout',
     'HubSpot sales CRM setup',
     'Klaviyo lifecycle automation',
-    'NEXUS Growth'
+    'APERTURE STUDIOS'
   ],
 };
 

@@ -77,7 +77,7 @@ const CHANNELS: ChannelTab[] = [
       avatar: '/vartalaap/avatar_camille.webp',
       text: 'Just watched your Horizon commercial reel! Is the Limited Obsidian Edition available in 750ml? Need it delivered before Friday.',
       time: '10:42 AM',
-      aiReply: 'Bonjour Camille! Yes, 4 units are reserved at our Paris production hub. I have applied your 15% film launch code NEXUS15. Tap below to checkout via Apple Pay.',
+      aiReply: 'Bonjour Camille! Yes, 4 units are reserved at our Paris production hub. I have applied your 15% film launch code APERTURE15. Tap below to checkout via Apple Pay.',
       outcome: '✓ 1-Click Apple Pay Link Dispatched ($89.00 Closed in 22s)',
       revenue: '+$89.00 Closed',
     },
@@ -96,7 +96,7 @@ const CHANNELS: ChannelTab[] = [
       avatar: '/vartalaap/avatar_carla.webp',
       text: 'Watched your 3D product render reel! Where can our marketing team download your commercial production rate card?',
       time: '11:15 AM',
-      aiReply: 'Hey Elena! Here is your direct VIP access link to NEXUS Growth’s 2026 Production & Funnel Deck + our interactive budget calculator: nexusgrowth.co/production-rates',
+      aiReply: 'Hey Elena! Here is your direct VIP access link to APERTURE STUDIOS’ 2026 Production & Funnel Deck + our interactive budget calculator: aperturestudios.co/production-rates',
       outcome: '✓ Qualified Brand Tag Added to HubSpot + Attribution Logged to Campaign #REEL-42',
       revenue: 'Deal Est: $24,500',
     },
@@ -187,11 +187,11 @@ const VIDEO_SHOWCASES: VideoReel[] = [
       { stat: '4.2X', label: 'Verified ROAS' },
       { stat: '14s', label: 'Avg Checkout Time' },
     ],
-    description: 'Most production agencies produce a gorgeous commercial, hand you an .MP4 file, and walk away. NEXUS Growth bridges the gap: our commercial films are directly tied to click-to-WhatsApp funnels and 1-click checkout flows that turn viewers into paying customers in seconds.',
+    description: 'Most production agencies produce a gorgeous commercial, hand you an .MP4 file, and walk away. APERTURE STUDIOS bridges the gap: our commercial films are directly tied to click-to-WhatsApp funnels and 1-click checkout flows that turn viewers into paying customers in seconds.',
   },
   {
     id: 'ai-core',
-    title: 'NEXUS Neural Core // 3D Product & Data Sync',
+    title: 'APERTURE Neural Core // 3D Product & Data Sync',
     subtitle: 'Real-time classification, inventory verification, and CRM webhook routing across 100k+ concurrent buyer threads',
     category: '3D KINETIC AI DEMO',
     src: '/videos/vartalaap/ai-core-motion.mp4',
@@ -201,7 +201,7 @@ const VIDEO_SHOWCASES: VideoReel[] = [
       { stat: '94.8%', label: 'Intent Accuracy' },
       { stat: '100%', label: 'CRM Vector Sync' },
     ],
-    description: 'Watch how NEXUS Pipeline AI parses high-volume customer inquiries generated from paid social video campaigns — verifying real-time warehouse inventory, calculating shipping, and triggering automated Stripe and HubSpot database events.',
+    description: 'Watch how APERTURE Pipeline AI parses high-volume customer inquiries generated from paid social video campaigns — verifying real-time warehouse inventory, calculating shipping, and triggering automated Stripe and HubSpot database events.',
   },
   {
     id: 'voice-agent',
@@ -310,11 +310,11 @@ const USE_CASES: UseCaseItem[] = [
 const FAQS = [
   {
     q: 'Why does a creative production company need a CRM & Sales Funnel service?',
-    a: 'Most creative production agencies deliver a beautiful 4K video file or brand deck and abandon you with no mechanism to convert viewers into paying customers. At NEXUS Growth, code, creative, and cash collected are inseparable. We build the high-conversion sales funnels, automated CRM routing, and WhatsApp checkout mechanisms that ensure your commercial films, paid ads, and web experiences generate measurable, closed revenue 24/7.',
+    a: 'Most creative production agencies deliver a beautiful 4K video file or brand deck and abandon you with no mechanism to convert viewers into paying customers. At APERTURE STUDIOS, code, creative, and cash collected are inseparable. We build the high-conversion sales funnels, automated CRM routing, and WhatsApp checkout mechanisms that ensure your commercial films, paid ads, and web experiences generate measurable, closed revenue 24/7.',
   },
   {
     q: 'How does the video ad to WhatsApp checkout funnel work?',
-    a: 'When a prospective customer watches your commercial reel or product video on Instagram, TikTok, or YouTube, they click the primary call to action (Click-to-WhatsApp). Instead of landing on a slow, generic 5-second mobile webpage that causes 70% drop-off, a native WhatsApp chat opens instantly. NEXUS Pipeline AI answers their sizing, color, or shipping questions, applies a dynamic discount code, and sends a 1-click Apple Pay link. Average checkout time is under 20 seconds.',
+    a: 'When a prospective customer watches your commercial reel or product video on Instagram, TikTok, or YouTube, they click the primary call to action (Click-to-WhatsApp). Instead of landing on a slow, generic 5-second mobile webpage that causes 70% drop-off, a native WhatsApp chat opens instantly. APERTURE Pipeline AI answers their sizing, color, or shipping questions, applies a dynamic discount code, and sends a 1-click Apple Pay link. Average checkout time is under 20 seconds.',
   },
   {
     q: 'Which CRM platforms do you integrate with?',
@@ -415,7 +415,7 @@ export function VartalaapCrmExperience() {
               </div>
               <div className="flex items-baseline gap-1.5">
                 <span className="font-['Syne'] font-extrabold tracking-tight text-base text-white">
-                  NEXUS
+                  APERTURE
                 </span>
                 <span className="font-serif italic text-lg text-cyan-300 font-normal">
                   Pipeline
@@ -469,7 +469,7 @@ export function VartalaapCrmExperience() {
                     className="absolute right-0 top-full mt-3 w-80 md:w-96 rounded-2xl bg-[#090e1a]/95 backdrop-blur-2xl border border-cyan-500/30 shadow-[0_20px_60px_rgba(0,0,0,0.85),0_0_35px_rgba(0,242,254,0.25)] p-4 z-50"
                   >
                     <div className="flex items-center justify-between pb-3 mb-3 border-b border-white/10 text-xs font-mono">
-                      <span className="text-gray-400">NEXUS CAPABILITIES</span>
+                      <span className="text-gray-400">APERTURE CAPABILITIES</span>
                       <Link href="/services" className="text-cyan-400 hover:underline">
                         Master Index ➔
                       </Link>
@@ -575,7 +575,7 @@ export function VartalaapCrmExperience() {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-cyan-500"></span>
             </span>
-            <span className="tracking-widest uppercase">NEXUS PIPELINE OS // SERVICE 11: AUTOMATED CONVERSION ARCHITECTURE</span>
+            <span className="tracking-widest uppercase">APERTURE PIPELINE OS // SERVICE 11: AUTOMATED CONVERSION ARCHITECTURE</span>
           </motion.div>
 
           {/* Central Interactive Holographic Orb with Floating Dialogue Avatars */}
@@ -618,7 +618,7 @@ export function VartalaapCrmExperience() {
               transition={{ duration: 0.7, delay: 0.1 }}
               onClick={cycleOrbState}
               className="relative cursor-pointer group my-2 z-10"
-              title="Click to interact with NEXUS Pipeline Core"
+              title="Click to interact with APERTURE Pipeline Core"
             >
               {/* Outer Glow Halo */}
               <div className="absolute -inset-10 rounded-full bg-gradient-to-r from-cyan-500/25 via-blue-600/35 to-purple-600/25 blur-3xl group-hover:blur-[70px] transition-all duration-500 animate-pulse" />
@@ -638,7 +638,7 @@ export function VartalaapCrmExperience() {
                   
                   {/* Voice Status Pill */}
                   <span className="font-mono text-[11px] font-bold tracking-widest text-cyan-300 uppercase">
-                    {orbState === 'idle' && 'NEXUS Pipeline Core'}
+                    {orbState === 'idle' && 'APERTURE Pipeline Core'}
                     {orbState === 'listening' && 'Listening...'}
                     {orbState === 'synthesizing' && 'Synthesizing...'}
                   </span>
@@ -715,7 +715,7 @@ export function VartalaapCrmExperience() {
           >
             Most creative production companies hand you an .MP4 file and walk away.{' '}
             <span className="font-serif italic text-cyan-300 text-2xl sm:text-3xl font-normal">
-              NEXUS Growth builds the sales machine
+              APERTURE STUDIOS builds the sales machine
             </span>{' '}
             connecting your commercial films, ad creatives, and website visitors directly into automated{' '}
             <span className="font-mono text-xs uppercase px-2.5 py-1 rounded-md bg-blue-500/20 text-blue-300 border border-blue-500/40 inline-block align-middle font-bold">
@@ -835,7 +835,7 @@ export function VartalaapCrmExperience() {
 
                   <div className="p-3.5 rounded-xl bg-cyan-500/15 border border-cyan-500/30 text-cyan-100">
                     <div className="text-[10px] font-mono text-cyan-400 mb-1 flex items-center gap-1 font-bold">
-                      <TrendingUp className="w-3.5 h-3.5" /> NEXUS FUNNEL BOT
+                      <TrendingUp className="w-3.5 h-3.5" /> APERTURE FUNNEL BOT
                     </div>
                     &quot;Yes! 6 boxes reserved at our local warehouse. Applied 15% launch code NITRO15. Tap below to checkout via Apple Pay.&quot;
                   </div>
@@ -888,7 +888,7 @@ export function VartalaapCrmExperience() {
 
                   <div className="p-3.5 rounded-xl bg-blue-500/15 border border-blue-500/30 text-blue-100">
                     <div className="text-[10px] font-mono text-blue-400 mb-1 flex items-center gap-1 font-bold">
-                      <Bot className="w-3.5 h-3.5" /> NEXUS QUALIFIER
+                      <Bot className="w-3.5 h-3.5" /> APERTURE QUALIFIER
                     </div>
                     &quot;Qualified Flagship Tier ($24.5k scope). Synced brief, verified domain, and reserved an executive strategy session on Yusuf’s calendar for Tuesday.&quot;
                   </div>
@@ -941,7 +941,7 @@ export function VartalaapCrmExperience() {
 
                   <div className="p-3.5 rounded-xl bg-purple-500/15 border border-purple-500/30 text-purple-100">
                     <div className="text-[10px] font-mono text-purple-400 mb-1 flex items-center gap-1 font-bold">
-                      <Sparkles className="w-3.5 h-3.5" /> NEXUS CLIENT OPS
+                      <Sparkles className="w-3.5 h-3.5" /> APERTURE CLIENT OPS
                     </div>
                     &quot;Your color-graded DaVinci masters and 12 vertical cuts have cleared QA! Generated secure 10Gbps download tokens and synced with your Drive.&quot;
                   </div>
@@ -1091,7 +1091,7 @@ export function VartalaapCrmExperience() {
                         <div className="w-3 h-3 rounded-full bg-red-500/80" />
                         <div className="w-3 h-3 rounded-full bg-yellow-500/80" />
                         <div className="w-3 h-3 rounded-full bg-green-500/80" />
-                        <span className="text-gray-400 ml-2">NEXUS CONVERSATIONAL RUNTIME</span>
+                        <span className="text-gray-400 ml-2">APERTURE CONVERSATIONAL RUNTIME</span>
                       </div>
                       <span className="text-green-400 flex items-center gap-1 font-bold">
                         <span className="w-1.5 h-1.5 rounded-full bg-green-400 animate-pulse" />
@@ -1125,7 +1125,7 @@ export function VartalaapCrmExperience() {
                         <div className="max-w-md rounded-2xl rounded-tr-none bg-gradient-to-r from-blue-900/60 to-cyan-900/60 border border-cyan-500/40 p-4 text-xs text-cyan-100 shadow-[0_0_25px_rgba(0,242,254,0.15)]">
                           <div className="flex items-center justify-between text-[10px] text-cyan-400 mb-1">
                             <span className="flex items-center gap-1 font-mono font-bold">
-                              <TrendingUp className="w-3 h-3" /> NEXUS CONVERSION ENGINE
+                              <TrendingUp className="w-3 h-3" /> APERTURE CONVERSION ENGINE
                             </span>
                             <span className="font-mono">Just now (0.32s)</span>
                           </div>
@@ -1385,7 +1385,7 @@ export function VartalaapCrmExperience() {
               <h2 className="font-['Syne'] text-3xl sm:text-5xl font-extrabold text-white mt-3 leading-tight">
                 Real outcomes from brands{' '}
                 <span className="font-serif italic font-normal text-transparent bg-clip-text bg-gradient-to-r from-[#00c6ff] to-[#0072ff]">
-                  powered by NEXUS Pipeline.
+                  powered by APERTURE Pipeline.
                 </span>
               </h2>
             </div>
@@ -1536,7 +1536,7 @@ export function VartalaapCrmExperience() {
                   </div>
                   <div className="flex items-center gap-2">
                     <CheckCircle2 className="w-4 h-4 text-cyan-400 shrink-0" />
-                    <span>NEXUS Telephony Voice AI Call Intake</span>
+                    <span>APERTURE Telephony Voice AI Call Intake</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <CheckCircle2 className="w-4 h-4 text-cyan-400 shrink-0" />
@@ -1710,7 +1710,7 @@ export function VartalaapCrmExperience() {
         <div className="max-w-7xl mx-auto relative z-10 flex flex-col sm:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-3">
             <span className="w-2.5 h-2.5 rounded-full bg-cyan-400 animate-pulse" />
-            <span className="text-white font-bold">NEXUS GROWTH // PIPELINE CONVERSION SUITE</span>
+            <span className="text-white font-bold">APERTURE STUDIOS // PIPELINE CONVERSION SUITE</span>
             <span className="text-gray-500 hidden md:inline">| Service 11 Platform</span>
           </div>
 

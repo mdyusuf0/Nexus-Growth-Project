@@ -15,7 +15,7 @@ import {
 } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: '🎨 Graphic Design // NEXUS Growth',
+  title: '🎨 Graphic Design // APERTURE STUDIOS',
   description: 'Brutalist, tactile, and editorial graphic design systems. Packaging, bespoke merchandise, 3D typography, and high-impact digital collateral.',
   keywords: ['graphic design agency', 'brand collateral design', 'packaging design', 'editorial typography', 'tactile branding'],
 };

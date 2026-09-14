@@ -17,8 +17,8 @@ import {
 import { ContactForm } from '@/components/contact/ContactForm';
 
 export const metadata: Metadata = {
-  title: 'Initiate Transmission // Contact NEXUS Growth',
-  description: 'Initiate a sprint inquiry with NEXUS Growth. No 3-week discovery delays or junior account reps. Direct senior practitioner access with a guaranteed 24-hour strategic review.',
+  title: 'Initiate Transmission // Contact APERTURE STUDIOS',
+  description: 'Initiate a sprint inquiry with APERTURE STUDIOS. No 3-week discovery delays or junior account reps. Direct senior practitioner access with a guaranteed 24-hour strategic review.',
   keywords: ['hire digital agency', 'Next.js agency inquiry', 'branding sprint contact', 'creative engineering sprint', 'growth agency contact'],
 };
 
@@ -39,7 +39,7 @@ const FAQS = [
     a: 'Yes. For proprietary architectures, unreleased hardware DTC, or confidential SaaS roadmaps, we issue and sign our bilateral standard NDA within 4 hours.'
   },
   {
-    q: 'Can we hire NEXUS for a single high-impact discipline (e.g. Next.js rebuild only)?',
+    q: 'Can we hire APERTURE STUDIOS for a single high-impact discipline (e.g. Next.js rebuild only)?',
     a: 'Absolutely. Over 60% of our enterprise clients start with a targeted 2-4 week sprint (such as headless storefront rebuild, ROAS creative overhaul, or multi-agent automation) before expanding to an all-in-one growth retainer.'
   },
   {
@@ -113,26 +113,26 @@ export default function ContactPage() {
 
               <div className="space-y-3 pt-2 border-t border-white/15">
                 <a 
-                  href="mailto:inquiries@nexusgrowth.agency" 
+                  href="mailto:inquiries@aperturestudios.co" 
                   className="flex items-center justify-between p-3 rounded-xl bg-white/5 hover:bg-white/10 border border-white/20 transition-colors group"
                 >
                   <div className="flex items-center gap-2.5">
                     <Mail className="h-4 w-4 text-[#d7dd44]" />
                     <span className="font-mono text-xs text-white group-hover:text-[#d7dd44] transition-colors">
-                      inquiries@nexusgrowth.agency
+                      inquiries@aperturestudios.co
                     </span>
                   </div>
                   <ArrowUpRight className="h-4 w-4 text-[#8a8a90] group-hover:text-white transition-colors" />
                 </a>
 
                 <a 
-                  href="mailto:founders@nexusgrowth.agency" 
+                  href="mailto:founders@aperturestudios.co" 
                   className="flex items-center justify-between p-3 rounded-xl bg-white/5 hover:bg-white/10 border border-white/20 transition-colors group"
                 >
                   <div className="flex items-center gap-2.5">
                     <MessageSquareCode className="h-4 w-4 text-[#eaa0cd]" />
                     <span className="font-mono text-xs text-white group-hover:text-[#eaa0cd] transition-colors">
-                      founders@nexusgrowth.agency
+                      founders@aperturestudios.co
                     </span>
                   </div>
                   <ArrowUpRight className="h-4 w-4 text-[#8a8a90] group-hover:text-white transition-colors" />
@@ -145,7 +145,7 @@ export default function ContactPage() {
               <div className="flex items-center gap-2 mb-4">
                 <ShieldCheck className="h-5 w-5 text-[#00966e]" />
                 <h3 className="font-['Roboto_Flex'] text-xl font-bold uppercase [font-variation-settings:'wdth'_33] [font-stretch:33%] tracking-tight">
-                  The NEXUS Guarantee
+                  The APERTURE Guarantee
                 </h3>
               </div>
 
@@ -278,12 +278,12 @@ export default function ContactPage() {
               Email Our Leadership Directly
             </h3>
             <p className="font-serif italic text-sm sm:text-base text-black mt-1">
-              Send links or attachments directly to <strong className="font-mono not-italic font-bold">founders@nexusgrowth.agency</strong> for rapid technical triage.
+              Send links or attachments directly to <strong className="font-mono not-italic font-bold">founders@aperturestudios.co</strong> for rapid technical triage.
             </p>
           </div>
 
           <a 
-            href="mailto:founders@nexusgrowth.agency?subject=Urgent%20Sprint%20Inquiry%20//%20NEXUS%20Growth"
+            href="mailto:founders@aperturestudios.co?subject=Urgent%20Sprint%20Inquiry%20//%20APERTURE%20STUDIOS"
             className="c-button c-button-ink text-sm sm:text-base whitespace-nowrap"
           >
             Open Mail Client <ArrowUpRight className="h-4 w-4 text-[#d7dd44]" />

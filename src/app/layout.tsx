@@ -6,7 +6,7 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 
 export const metadata: Metadata = {
-  title: "NEXUS Growth | Full-Service Digital Agency",
+  title: "APERTURE STUDIOS | Full-Service Creative Production Agency",
   description: "We build brands that convert. An award-winning full-service growth agency specializing in digital products, branding, high-velocity engineering, and acquisition.",
 };
 

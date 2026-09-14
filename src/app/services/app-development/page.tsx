@@ -17,7 +17,7 @@ import {
 } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: '📱 App Development // NEXUS Growth',
+  title: '📱 App Development // APERTURE STUDIOS',
   description: 'Native iOS & Android mobile applications engineered on React Native & Expo. Fluid 120Hz gesture physics, offline-first caching, and high-retention onboarding funnels.',
   keywords: ['mobile app development', 'React Native agency', 'iOS development', 'Android development', 'mobile UI UX design'],
 };
@@ -210,7 +210,7 @@ export default function AppDevelopmentPage() {
               <div className="relative my-4 rounded-[32px] overflow-hidden bg-[#f4f4f0] p-4 h-full flex flex-col justify-between border-2 border-black">
                 <div>
                   <div className="flex items-center justify-between pb-2 border-b border-black">
-                    <span className="font-mono text-[10px] font-bold text-black">NEXUS NATIVE CORE</span>
+                    <span className="font-mono text-[10px] font-bold text-black">APERTURE NATIVE CORE</span>
                     <span className="sticker-badge text-[8px] py-0.5 px-1.5 bg-[#d7dd44] text-black">120HZ</span>
                   </div>
                   <h4 className="font-['Roboto_Flex'] [font-variation-settings:'wdth'_33] [font-stretch:33%] text-2xl font-black uppercase text-black mt-4 leading-none">

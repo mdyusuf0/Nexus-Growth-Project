@@ -67,7 +67,7 @@ export default function KineticNavigation({ isOpen, onClose }: KineticNavigation
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-3">
                 <span className="h-4 w-4 rounded-full bg-[#d7dd44] border-2 border-black" />
-                <span className="font-mono text-xs uppercase tracking-widest font-bold">NEXUS NAVIGATION GATE</span>
+                <span className="font-mono text-xs uppercase tracking-widest font-bold">APERTURE NAVIGATION GATE</span>
               </div>
               <button
                 onClick={onClose}
@@ -136,7 +136,7 @@ export default function KineticNavigation({ isOpen, onClose }: KineticNavigation
 
             {/* Bottom Info Tape */}
             <div className="pt-6 border-t-2 border-black flex flex-wrap items-center justify-between text-xs font-mono gap-4">
-              <span>NEXUS GROWTH AGENCY © 2026</span>
+              <span>APERTURE STUDIOS © 2026</span>
               <span className="inline-flex items-center gap-2">
                 <Sparkles className="h-3.5 w-3.5 text-[#00966e]" /> HIGH-VELOCITY DIGITAL LABS
               </span>

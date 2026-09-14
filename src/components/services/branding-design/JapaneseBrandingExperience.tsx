@@ -296,11 +296,11 @@ export function JapaneseBrandingExperience() {
           {/* Menu / Home Icon */}
           <Link 
             href="/"
-            aria-label="Nexus Growth Home"
+            aria-label="Aperture Studios Home"
             className="flex items-center gap-1.5 font-mono text-xs font-bold text-[#201408] hover:text-[#e40038] transition-colors"
           >
             <span className="w-2.5 h-2.5 rounded-full bg-[#e40038]" />
-            <span className="hidden sm:inline">nexus</span>
+            <span className="hidden sm:inline">aperture</span>
           </Link>
 
           <Link 
@@ -429,7 +429,7 @@ export function JapaneseBrandingExperience() {
             href="/contact" 
             className="font-mono text-xs text-[#e40038] font-bold hover:underline ml-1 hidden md:inline-block"
           >
-            nexus growth ➔
+            aperture studios ➔
           </Link>
         </div>
       </header>
@@ -463,7 +463,7 @@ export function JapaneseBrandingExperience() {
             />
             <text className="text-[7.2px] fill-white tracking-[0.24em] uppercase font-bold" style={{ fontFamily: 'Panchang, sans-serif' }}>
               <textPath href="#badge-curve-circle" startOffset="0%">
-                UNIFIERS OF JAPAN ✦ NEXUS ✦
+                UNIFIERS OF JAPAN ✦ APERTURE ✦
               </textPath>
             </text>
           </svg>
@@ -578,7 +578,7 @@ export function JapaneseBrandingExperience() {
         {/* Bottom Rail Details */}
         <div className="w-full border-t border-[#fffdde]/25 px-6 sm:px-12 py-4 flex items-center justify-between text-[#fffdde]/80 font-mono text-xs z-20">
           <span>CHAPTER 01 // OVERVIEW</span>
-          <span className="tracking-widest uppercase">NEXUS GROWTH // BRAND IDENTITY SHOWCASE</span>
+          <span className="tracking-widest uppercase">APERTURE STUDIOS // BRAND IDENTITY SHOWCASE</span>
         </div>
       </section>
 
@@ -905,7 +905,7 @@ export function JapaneseBrandingExperience() {
           
           <div className="space-y-2 text-center md:text-left">
             <span className="font-mono text-xs uppercase tracking-[0.3em] text-[#e40038] font-bold block">
-              NEXUS GROWTH ✦ BRAND IDENTITY & UNIFICATION
+              APERTURE STUDIOS ✦ BRAND IDENTITY & UNIFICATION
             </span>
             <p className="text-sm text-[#201408]/70 max-w-md">
               Bringing centuries of Yamato architectural discipline and visual authority to modern high-growth brands.
@@ -924,7 +924,7 @@ export function JapaneseBrandingExperience() {
         </div>
 
         <div className="max-w-7xl mx-auto mt-12 pt-6 border-t border-[#201408]/10 flex flex-col sm:flex-row items-center justify-between text-[#201408]/50 font-mono text-[11px] gap-4">
-          <span>&copy; {new Date().getFullYear()} NEXUS GROWTH. ALL RIGHTS RESERVED.</span>
+          <span>&copy; {new Date().getFullYear()} APERTURE STUDIOS. ALL RIGHTS RESERVED.</span>
           <span>INSPIRATION: UNIFIERS OF JAPAN ✦ TOFU DESIGN</span>
         </div>
       </footer>

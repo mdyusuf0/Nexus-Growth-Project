@@ -4,8 +4,8 @@ import Link from 'next/link';
 import { ArrowUpRight, ArrowRight, Sparkles, Filter } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'All Capabilities & Services // NEXUS Growth',
-  description: 'Explore the 11 integrated growth capabilities of NEXUS Growth. Web development, mobile apps, AI automation, branding, paid media, and conversion funnels.',
+  title: 'All Capabilities & Services // APERTURE STUDIOS',
+  description: 'Explore the 11 integrated creative production capabilities of APERTURE STUDIOS. Web development, mobile apps, AI automation, branding, paid media, and conversion funnels.',
   keywords: ['agency services', 'digital growth capabilities', 'full service agency', 'web development', 'paid ads', 'branding'],
 };
 

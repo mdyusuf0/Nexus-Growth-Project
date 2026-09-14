@@ -20,7 +20,7 @@ import {
 import CodeEditorTerminal from '@/components/services/CodeEditorTerminal';
 
 export const metadata: Metadata = {
-  title: '🌐 Website Development | NEXUS Growth',
+  title: '🌐 Website Development | APERTURE STUDIOS',
   description: 'Custom Next.js App Router & GSAP website engineering for high-growth brands. Sub-second performance, award-tier creative direction, and conversion architectures.',
   keywords: ['Next.js development', 'GSAP web animations', 'headless commerce', 'Awwwards portfolio', 'conversion rate optimization'],
 };

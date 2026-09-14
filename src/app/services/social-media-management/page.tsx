@@ -16,7 +16,7 @@ import {
 } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: '📲 Social Media Management // NEXUS Growth',
+  title: '📲 Social Media Management // APERTURE STUDIOS',
   description: 'Algorithmic short-form video production, TikTok & Instagram growth systems, viral hook engineering, and active community building for consumer & B2B brands.',
   keywords: ['social media management', 'TikTok growth agency', 'Instagram reels agency', 'short form video production', 'viral content strategy'],
 };

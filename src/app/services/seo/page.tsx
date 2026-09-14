@@ -15,7 +15,7 @@ import {
 } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: '🔍 Search Engine Optimization (SEO) // NEXUS Growth',
+  title: '🔍 Search Engine Optimization (SEO) // APERTURE STUDIOS',
   description: 'Technical Core Web Vitals optimization, programmatic search clusters, and high-authority link acquisition architectures for organic market dominance.',
   keywords: ['SEO agency', 'technical SEO', 'programmatic SEO', 'Core Web Vitals agency', 'organic search growth'],
 };
@@ -162,7 +162,7 @@ export default function SEOPage() {
             <div className="space-y-1">
               <div className="flex items-center gap-2 font-mono text-xs text-[#5c5b5b]">
                 <span className="h-4 w-4 rounded-full bg-[#00966e] text-white flex items-center justify-center text-[10px] font-bold">G</span>
-                <span>https://nexusgrowth.agency/services/web-development</span>
+                <span>https://aperturestudios.co/services/web-development</span>
               </div>
               <h3 className="font-sans text-xl font-bold text-[#1a0dab] hover:underline cursor-pointer">
                 Web Development Agency // Sub-Second Next.js &amp; GSAP Flagships

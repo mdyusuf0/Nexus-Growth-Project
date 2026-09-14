@@ -15,7 +15,7 @@ import {
 } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: '✍️ Copywriting & Content Strategy // NEXUS Growth',
+  title: '✍️ Copywriting & Content Strategy // APERTURE STUDIOS',
   description: 'High-converting sales pages, brand positioning manifestos, and email lifecycle sequences that turn readers into loyal buyers.',
   keywords: ['conversion copywriting', 'direct response copywriting', 'content strategy agency', 'sales landing page copy', 'brand manifesto writer'],
 };
@@ -146,7 +146,7 @@ export default function CopywritingPage() {
           <div className="text-center max-w-2xl mx-auto mb-12">
             <span className="sticker-badge bg-[#7ca8d2] text-black mb-2">COPYWRITING MOTIF</span>
             <h2 className="u-title-200 tracking-tight text-black">
-              Generic Corporate vs. NEXUS Conversion Copy
+              Generic Corporate vs. APERTURE Conversion Copy
             </h2>
             <p className="mt-2 font-sans text-xs md:text-sm text-[#5c5b5b]">
               Notice the contrast between passive buzzwords and high-stakes direct-response clarity.
@@ -165,7 +165,7 @@ export default function CopywritingPage() {
             </div>
 
             <div className="tactile-card p-6 md:p-8 bg-[#d7dd44]">
-              <span className="sticker-badge bg-black text-white text-[10px] mb-3">NEXUS CONVERSION SPEC</span>
+              <span className="sticker-badge bg-black text-white text-[10px] mb-3">APERTURE CONVERSION SPEC</span>
               <h4 className="font-['Roboto_Flex'] [font-variation-settings:'wdth'_33] [font-stretch:33%] text-3xl font-extrabold uppercase text-black mb-3 leading-none">
                 "Stop burning \$40k/month on ads that crawl. We build sub-second web applications that triple your checkout conversions."
               </h4>

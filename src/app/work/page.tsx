@@ -12,8 +12,8 @@ import {
 } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Selected Work & Concept Showcases // NEXUS Growth',
-  description: 'Explore verified concept capability showcases built by NEXUS Growth across web development, native mobile apps, AI automation, and paid growth engines.',
+  title: 'Selected Work & Concept Showcases // APERTURE STUDIOS',
+  description: 'Explore verified concept capability showcases built by APERTURE STUDIOS across web development, native mobile apps, AI automation, and paid growth engines.',
   keywords: ['agency portfolio', 'case studies', 'creative engineering projects', 'Next.js portfolio', 'high-growth client work'],
 };
 
@@ -186,7 +186,7 @@ export default function WorkPage() {
                     <strong className="text-black uppercase font-mono">Challenge:</strong> {project.challenge}
                   </p>
                   <p>
-                    <strong className="text-black uppercase font-mono">NEXUS Solution:</strong> {project.solution}
+                    <strong className="text-black uppercase font-mono">APERTURE Solution:</strong> {project.solution}
                   </p>
                 </div>
 

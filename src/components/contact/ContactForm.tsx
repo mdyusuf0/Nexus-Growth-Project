@@ -95,7 +95,7 @@ export function ContactForm() {
     const payload = {
       access_key: accessKey,
       subject: `[NEW BRIEF] ${formData.company || formData.fullName} — ${budget}`,
-      from_name: formData.fullName || 'NEXUS Growth Prospect',
+      from_name: formData.fullName || 'APERTURE STUDIOS Prospect',
       email: formData.email,
       name: formData.fullName,
       company: formData.company,
@@ -137,7 +137,7 @@ export function ContactForm() {
     } catch (err) {
       console.error('Submission error:', err);
       setStatus('error');
-      setResponseMsg('Network connection error. Please email us directly at hello@nexusgrowth.agency');
+      setResponseMsg('Network connection error. Please email us directly at hello@aperturestudios.co');
     }
   };
 
@@ -261,7 +261,7 @@ export function ContactForm() {
               <RefreshCw className="h-3.5 w-3.5" /> Submit Another Brief
             </button>
             <a
-              href="mailto:hello@nexusgrowth.agency"
+              href="mailto:hello@aperturestudios.co"
               className="c-button c-button-emerald text-sm"
             >
               Direct Executive Channel <ArrowRight className="h-4 w-4" />

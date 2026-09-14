@@ -306,7 +306,7 @@ export function EnchantedVideoExperience() {
             </div>
             <div className="flex flex-col">
               <div className="flex items-center gap-1.5">
-                <span className="font-bold text-sm tracking-tight text-white leading-none">NEXUS</span>
+                <span className="font-bold text-sm tracking-tight text-white leading-none">APERTURE</span>
                 <span className="text-[10px] font-mono font-black uppercase px-1.5 py-0.2 rounded bg-indigo-500/20 text-indigo-300 border border-indigo-500/30">CINEMA</span>
               </div>
               <span className="text-[9px] font-mono text-gray-400 tracking-widest uppercase">Video Production</span>
@@ -365,7 +365,7 @@ export function EnchantedVideoExperience() {
                 <div className="absolute top-full right-0 mt-3 w-80 max-h-[75vh] overflow-y-auto bg-[#0a0a10]/95 backdrop-blur-2xl border border-indigo-500/30 rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.8),0_0_30px_rgba(99,102,241,0.2)] p-2.5 z-50 flex flex-col gap-1.5">
                   <div className="px-3 py-2 border-b border-white/10 flex items-center justify-between">
                     <span className="text-[10px] font-mono uppercase tracking-widest text-indigo-400 font-bold">
-                      NEXUS DISCIPLINES (11)
+                      APERTURE DISCIPLINES (11)
                     </span>
                     <Link
                       href="/services"
@@ -533,7 +533,7 @@ export function EnchantedVideoExperience() {
           <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-white/[0.06] border border-white/15 backdrop-blur-xl shadow-[0_0_20px_rgba(99,102,241,0.25)] mb-6">
             <span className="w-2 h-2 rounded-full bg-indigo-400 animate-pulse" />
             <span className="font-mono text-xs uppercase tracking-widest text-indigo-200 font-semibold">
-              ✦ NEXUS CINEMATIC LABS // 4K PRODUCTION & POST
+              ✦ APERTURE CINEMATIC LABS // 4K PRODUCTION & POST
             </span>
           </div>
 
@@ -858,7 +858,7 @@ export function EnchantedVideoExperience() {
             ✦ HIGH-VELOCITY PRODUCTION SYSTEMS
           </div>
           <h2 className="text-3xl sm:text-5xl font-black uppercase tracking-tight text-white">
-            The 4 Retention Engines of NEXUS Cinema
+            The 4 Retention Engines of APERTURE Cinema
           </h2>
           <p className="mt-4 text-sm text-gray-400 font-normal leading-relaxed">
             Every frame is deliberately engineered for subconscious engagement. We fuse raw Hollywood optical craft with algorithmic digital distribution.
@@ -1351,7 +1351,7 @@ export function EnchantedVideoExperience() {
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-3">
             <span className="w-2.5 h-2.5 rounded-full bg-indigo-500 animate-pulse" />
-            <span className="text-white font-bold">NEXUS GROWTH // ENCHANTED VIDEO LABS</span>
+            <span className="text-white font-bold">APERTURE STUDIOS // ENCHANTED VIDEO LABS</span>
             <span className="text-gray-500 hidden md:inline">| 4K Cinema Production Suite</span>
           </div>
 

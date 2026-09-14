@@ -70,7 +70,7 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6 pb-16 border-b-2 border-white/20">
           <div>
             <span className="font-mono text-xs uppercase tracking-widest text-[#d7dd44]">
-              NEXUS GROWTH STUDIO // EST. 2026
+              APERTURE STUDIOS // EST. 2026
             </span>
             <h3 className="font-['Roboto_Flex'] [font-variation-settings:'wdth'_33] [font-stretch:33%] text-4xl md:text-6xl font-extrabold uppercase leading-none mt-2">
               Ready to break typical industry metrics?
@@ -155,13 +155,13 @@ export default function Footer() {
             ref={wordmarkRef}
             className="u-title-100 text-center tracking-tighter text-[#2a2a30] hover:text-[#d7dd44] transition-colors duration-500 select-none"
           >
-            NEXUS GROWTH
+            APERTURE STUDIOS
           </h2>
         </div>
 
         {/* Bottom Bar */}
         <div className="flex flex-col md:flex-row justify-between items-center gap-4 pt-6 border-t border-white/10 font-mono text-xs text-[#8a8a90]">
-          <p>© {new Date().getFullYear()} NEXUS Growth Full-Service Agency. Engineered for performance.</p>
+          <p>© {new Date().getFullYear()} APERTURE STUDIOS Creative Production Agency. Engineered for performance.</p>
           <div className="flex gap-6">
             <Link href="/privacy" className="hover:text-white transition-colors">Privacy</Link>
             <Link href="/terms" className="hover:text-white transition-colors">Terms</Link>

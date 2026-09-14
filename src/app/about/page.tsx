@@ -15,9 +15,9 @@ import {
 } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'About & Manifesto // NEXUS Growth',
+  title: 'About & Manifesto // APERTURE STUDIOS',
   description: 'The anti-agency built for founders who refuse slow corporate bureaucracy. Learn our operating philosophy, sprint methodology, and high-velocity ethos.',
-  keywords: ['about NEXUS Growth', 'anti-agency manifesto', 'creative engineering team', 'digital growth agency team'],
+  keywords: ['about APERTURE STUDIOS', 'anti-agency manifesto', 'creative engineering team', 'digital growth agency team'],
 };
 
 const OPERATING_LAWS = [
@@ -97,7 +97,7 @@ export default function AboutPage() {
 
           <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8 w-full my-6">
             <p className="max-w-2xl font-['Space_Grotesk'] text-lg md:text-2xl font-bold uppercase text-black leading-tight">
-              Traditional agencies are bloated holding company relics designed to bill for hours and protect retainers. We built NEXUS Growth for founders who want senior practitioners, 1-week deployment sprints, and ruthless market dominance.
+              Traditional agencies are bloated holding company relics designed to bill for hours and protect retainers. We built APERTURE STUDIOS for founders who want senior practitioners, 1-week deployment sprints, and ruthless market dominance.
             </p>
 
             <div className="flex flex-wrap items-center gap-3 shrink-0">
@@ -148,7 +148,7 @@ export default function AboutPage() {
               NON-NEGOTIABLE STANDARDS
             </span>
             <h2 className="u-title-200 tracking-tight text-black">
-              The 4 Operating Laws of NEXUS
+              The 4 Operating Laws of APERTURE
             </h2>
             <p className="mt-2 font-sans text-sm text-[#5c5b5b]">
               These are the foundational commitments we make to every founder, brand, and enterprise we partner with.

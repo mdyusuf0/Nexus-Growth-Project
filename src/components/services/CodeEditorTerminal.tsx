@@ -51,7 +51,7 @@ const CODE_SNIPPETS: Record<FileTab, { language: string; lines: { num: number; c
       { num: 1, code: "import { gsap } from 'gsap';" },
       { num: 2, code: "import { ScrollTrigger } from 'gsap/ScrollTrigger';" },
       { num: 3, code: "" },
-      { num: 4, code: "export const NEXUS_MOTION_PRESETS = {" },
+      { num: 4, code: "export const APERTURE_MOTION_PRESETS = {" },
       { num: 5, code: "  // Custom cubic bezier designed for zero visual vibration", highlight: true },
       { num: 6, code: "  cinematicEase: 'cubic-bezier(0.16, 1, 0.3, 1)'," },
       { num: 7, code: "  staggerRate: 0.045," },
@@ -77,7 +77,7 @@ const CODE_SNIPPETS: Record<FileTab, { language: string; lines: { num: number; c
     language: 'json',
     lines: [
       { num: 1, code: "{" },
-      { num: 2, code: "  \"auditTarget\": \"NEXUS-Production-Edge\"," },
+      { num: 2, code: "  \"auditTarget\": \"APERTURE-Production-Edge\"," },
       { num: 3, code: "  \"timestamp\": \"2026-09-13T12:00:00Z\"," },
       { num: 4, code: "  \"scores\": {", highlight: true },
       { num: 5, code: "    \"performance\": 100,", highlight: true },
@@ -126,7 +126,7 @@ export default function CodeEditorTerminal() {
             <span className="h-3.5 w-3.5 rounded-full bg-[#27c93f] border-2 border-black" />
           </div>
           <span className="ml-3 font-mono text-xs font-bold text-black hidden sm:inline-flex items-center gap-1.5">
-            <Terminal className="h-3.5 w-3.5 text-black" /> NEXUS-RUNTIME // V4.2.EDGE
+            <Terminal className="h-3.5 w-3.5 text-black" /> APERTURE-RUNTIME // V4.2.EDGE
           </span>
         </div>
 

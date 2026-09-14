@@ -15,7 +15,7 @@ import {
 } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: '📢 Google & Meta Ads // NEXUS Growth',
+  title: '📢 Google & Meta Ads // APERTURE STUDIOS',
   description: 'Data-driven paid media acquisition campaigns on Meta, Google Performance Max, and YouTube with creative fatigue protection and verified 4.2x average ROAS.',
   keywords: ['paid ads agency', 'Meta ads management', 'Google Performance Max agency', 'ROAS optimization', 'DTC performance marketing'],
 };
@@ -155,7 +155,7 @@ export default function GoogleMetaAdsPage() {
 
           <div className="tactile-card p-6 md:p-8 bg-white max-w-4xl mx-auto">
             <div className="flex items-center justify-between pb-4 border-b-2 border-black">
-              <span className="font-mono text-xs font-bold text-black">NEXUS MEDIA OS // CLIENT PORTAL</span>
+              <span className="font-mono text-xs font-bold text-black">APERTURE MEDIA OS // CLIENT PORTAL</span>
               <span className="sticker-badge text-[9px] bg-[#d7dd44] text-black shadow-none font-mono">LIVE SPEND ACTIVE</span>
             </div>
 

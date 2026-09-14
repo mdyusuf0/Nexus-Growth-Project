@@ -258,7 +258,7 @@ export function EyepuneAiExperience() {
             </div>
             <div className="flex flex-col">
               <span className="text-xl font-black tracking-tight text-white leading-none">
-                NEXUS<span className="text-[#DC143C]">AI</span>
+                APERTURE<span className="text-[#DC143C]">AI</span>
               </span>
               <span className="text-[9px] tracking-[0.25em] uppercase text-red-500 font-bold mt-1">
                 CONNECT · ENGAGE · SCALE
@@ -294,7 +294,7 @@ export function EyepuneAiExperience() {
                 <div className="absolute top-full left-1/2 -translate-x-1/2 mt-3 w-80 max-h-[75vh] overflow-y-auto bg-[#070102]/95 backdrop-blur-xl border border-red-500/40 rounded-2xl shadow-[0_10px_40px_rgba(0,0,0,0.9),0_0_30px_rgba(220,20,60,0.25)] p-2.5 z-50 flex flex-col gap-1.5">
                   <div className="px-3 py-2 border-b border-white/[0.08] flex items-center justify-between">
                     <span className="text-[10px] font-mono uppercase tracking-widest text-red-400 font-bold">
-                      NEXUS DISCIPLINES (11)
+                      APERTURE DISCIPLINES (11)
                     </span>
                     <Link
                       href="/services"
@@ -628,7 +628,7 @@ export function EyepuneAiExperience() {
             {/* Left Column: Manifesto */}
             <div className="space-y-8">
               <span className="text-red-500 text-xs font-bold tracking-[0.4em] uppercase block">
-                Why NEXUS Growth
+                Why APERTURE STUDIOS
               </span>
               
               <h2 className="text-4xl sm:text-6xl font-black text-white leading-tight">
@@ -1048,7 +1048,7 @@ export function EyepuneAiExperience() {
           <div className="space-y-4">
             {[
               {
-                q: 'What services does the NEXUS Global AI Growth Engine provide?',
+                q: 'What services does the APERTURE Global AI Growth Engine provide?',
                 a: 'We engineer end-to-end autonomous business systems: Multi-Model AI Sales Pipelines, Multi-Agent LangGraph Orchestration, Private Enterprise RAG with pgvector, Sub-second Voice Agents (OpenAI Realtime & Cartesia), and Generative Engine Optimization (GEO).'
               },
               {
@@ -1155,7 +1155,7 @@ export function EyepuneAiExperience() {
             </div>
             <div className="flex flex-col">
               <span className="text-lg font-black tracking-tight text-white leading-none">
-                NEXUS<span className="text-[#DC143C]">AI</span>
+                APERTURE<span className="text-[#DC143C]">AI</span>
               </span>
               <span className="text-[8px] tracking-[0.2em] uppercase text-red-500 font-bold mt-0.5">
                 Global Growth Engine
@@ -1173,7 +1173,7 @@ export function EyepuneAiExperience() {
           </div>
 
           <div className="text-xs font-mono text-gray-600">
-            &copy; {new Date().getFullYear()} NEXUS GROWTH. ALL RIGHTS RESERVED.
+            &copy; {new Date().getFullYear()} APERTURE STUDIOS. ALL RIGHTS RESERVED.
           </div>
 
         </div>

@@ -152,7 +152,7 @@ export default function Home() {
 
         {/* Massive Ultra-Compressed Decathlon-Tier Headline */}
         <h1 className="u-title-100 text-center tracking-tighter text-black my-2">
-          NEXUS GROWTH
+          APERTURE STUDIOS
         </h1>
 
         <div className="max-w-3xl mx-auto my-6">
@@ -214,7 +214,7 @@ export default function Home() {
         >
           <Image
             src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1600&q=85"
-            alt="Nexus Creative Engineering Studio"
+            alt="Aperture Studios Creative Production & Engineering"
             fill
             className="object-cover"
             priority
@@ -234,7 +234,7 @@ export default function Home() {
 
             <div className="max-w-3xl">
               <span className="font-mono text-xs uppercase tracking-widest text-[#d7dd44] mb-2 block">
-                THE NEXUS DIFFERENCE
+                THE APERTURE DIFFERENCE
               </span>
               <h2 className="u-title-200 text-white tracking-tight uppercase">
                 Zero bloated templates. High-impact creative science.
@@ -300,7 +300,7 @@ export default function Home() {
             <div className="mt-8 rounded-2xl border-2 border-white/30 bg-[#1e1e24] p-6 space-y-4 font-mono text-xs">
               <div className="flex items-center justify-between pb-3 border-b border-white/20 text-[#eaa0cd] font-bold">
                 <span>TRADITIONAL AGENCY</span>
-                <span>NEXUS GROWTH LABS</span>
+                <span>APERTURE STUDIOS LABS</span>
               </div>
               <div className="flex items-center justify-between text-[#8a8a90]">
                 <span>3-Month Strategy Decks</span>

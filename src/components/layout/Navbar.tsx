@@ -232,14 +232,14 @@ export default function Navbar() {
           {/* Logo Mark */}
           <Link href="/" className="flex items-center gap-3 group shrink-0">
             <div className="h-10 w-10 rounded-xl border-2 border-black bg-[#d7dd44] flex items-center justify-center font-black text-xl shadow-[-2px_3px_0px_#000] group-hover:rotate-6 transition-transform">
-              N
+              A
             </div>
             <div className="flex flex-col">
               <span className="font-['Roboto_Flex'] uppercase font-extrabold text-xl tracking-tight leading-none [font-variation-settings:'wdth'_33] [font-stretch:33%]">
-                NEXUS GROWTH
+                APERTURE STUDIOS
               </span>
               <span className="font-mono text-[9px] uppercase tracking-widest text-[#5c5b5b]">
-                Full-Service Agency
+                Creative Production Agency
               </span>
             </div>
           </Link>
