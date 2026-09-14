@@ -18,6 +18,7 @@ import {
   ChevronRight
 } from 'lucide-react';
 import CodeEditorTerminal from '@/components/services/CodeEditorTerminal';
+import WebDevelopmentTerminalCursor from '@/components/services/web-development/WebDevelopmentTerminalCursor';
 
 export const metadata: Metadata = {
   title: '🌐 Website Development | APERTURE STUDIOS',
@@ -135,6 +136,9 @@ const TECH_STACK = [
 export default function WebDevelopmentPage() {
   return (
     <div className="relative min-h-screen bg-[#f4f4f0] text-[#141414] paper-canvas selection:bg-[#d7dd44] selection:text-black">
+      {/* Terminal Block Custom Cursor */}
+      <WebDevelopmentTerminalCursor />
+
       {/* SECTION 1: EDITORIAL HERO */}
       <section className="relative px-4 pt-14 pb-20 md:px-8 md:pt-20 md:pb-28 max-w-7xl mx-auto">
         <div className="flex flex-col items-start">
