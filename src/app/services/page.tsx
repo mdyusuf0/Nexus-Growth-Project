@@ -80,6 +80,7 @@ const SERVICES = [
     id: '08',
     title: 'Video Production & Editing',
     category: 'PRODUCTION & FILM',
+    flag: '✦ ENCHANTED CINEMA UI',
     desc: 'Cinematic brand films, high-energy product trailers, sound design, and vertical viral reels engineered for retention.',
     specs: ['4K Cinema Production', 'Vertical Social Cuts', 'Custom Sound Engineering', 'Motion Graphics 3D'],
     color: '#f09341',

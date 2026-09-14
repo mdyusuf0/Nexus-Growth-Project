@@ -84,6 +84,7 @@ export const NAV_SERVICE_CATEGORIES: {
         tag: "FILM",
         color: "#f09341",
         desc: "4K cinematic brand films & vertical retention reels engineered for scale.",
+        flag: "✦ ENCHANTED CINEMA",
       },
       {
         id: "09",
@@ -142,7 +143,11 @@ export default function Navbar() {
   const [isServicesOpen, setIsServicesOpen] = useState(false);
   const timeoutRef = useRef<NodeJS.Timeout | null>(null);
 
-  if (pathname?.startsWith('/services/branding-design') || pathname?.startsWith('/services/ai-automation')) {
+  if (
+    pathname?.startsWith('/services/branding-design') || 
+    pathname?.startsWith('/services/ai-automation') || 
+    pathname?.startsWith('/services/video-production-editing')
+  ) {
     return null;
   }
 

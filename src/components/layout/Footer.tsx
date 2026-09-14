@@ -12,7 +12,11 @@ export default function Footer() {
   const wordmarkRef = useRef<HTMLHeadingElement>(null);
   const [time, setTime] = useState("");
 
-  if (pathname?.startsWith('/services/branding-design') || pathname?.startsWith('/services/ai-automation')) {
+  if (
+    pathname?.startsWith('/services/branding-design') || 
+    pathname?.startsWith('/services/ai-automation') || 
+    pathname?.startsWith('/services/video-production-editing')
+  ) {
     return null;
   }
 
