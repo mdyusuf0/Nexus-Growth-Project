@@ -244,14 +244,6 @@ export default function Navbar() {
             </div>
           </Link>
 
-          {/* Center: Live Availability Badge */}
-          <div className="hidden lg:flex items-center gap-2 rounded-full border-2 border-black bg-[#fff] px-3.5 py-1 text-xs font-mono shadow-[-2px_2px_0px_#000]">
-            <span className="h-2 w-2 rounded-full bg-[#00966e] animate-pulse" />
-            <span className="font-semibold text-black uppercase tracking-wider text-[11px]">
-              Available for Q3/Q4 Projects
-            </span>
-          </div>
-
           {/* Right Action Buttons & Nav */}
           <div className="flex items-center gap-3">
             {/* Desktop Nav Links */}
