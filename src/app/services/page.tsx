@@ -108,6 +108,7 @@ const SERVICES = [
     id: '11',
     title: 'CRM & Sales Funnel Setup',
     category: 'CONVERSION OPS',
+    flag: '✦ VARTALAAP CRM UI',
     desc: 'Multi-step automated checkout funnels, HubSpot/Klaviyo lifecycle integration, and end-to-end attribution pipelines.',
     specs: ['HubSpot & Klaviyo Ops', 'Multi-Step Funnel UI', 'Churn Reduction Flows', 'Attribution Tracking'],
     color: '#d7dd44',

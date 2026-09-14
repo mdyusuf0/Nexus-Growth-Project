@@ -52,7 +52,8 @@ export default function Footer() {
   const isSuppressed = Boolean(
     pathname?.startsWith('/services/branding-design') || 
     pathname?.startsWith('/services/ai-automation') || 
-    pathname?.startsWith('/services/video-production-editing')
+    pathname?.startsWith('/services/video-production-editing') ||
+    pathname?.startsWith('/services/crm-sales-funnel')
   );
 
   if (isSuppressed) {

@@ -131,6 +131,7 @@ export const NAV_SERVICE_CATEGORIES: {
         tag: "CONVERT",
         color: "#d7dd44",
         desc: "Multi-step automated checkout pipelines & Klaviyo/HubSpot ops.",
+        flag: "✦ VARTALAAP CRM UI",
       },
     ],
   },
@@ -206,7 +207,8 @@ export default function Navbar() {
   const isSuppressed = Boolean(
     pathname?.startsWith('/services/branding-design') || 
     pathname?.startsWith('/services/ai-automation') || 
-    pathname?.startsWith('/services/video-production-editing')
+    pathname?.startsWith('/services/video-production-editing') ||
+    pathname?.startsWith('/services/crm-sales-funnel')
   );
 
   if (isSuppressed) {
