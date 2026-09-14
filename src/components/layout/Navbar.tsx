@@ -131,7 +131,7 @@ export const NAV_SERVICE_CATEGORIES: {
         tag: "CONVERT",
         color: "#d7dd44",
         desc: "Multi-step automated checkout pipelines & Klaviyo/HubSpot ops.",
-        flag: "✦ VARTALAAP CRM UI",
+        flag: "✦ PIPELINE FUNNEL UI",
       },
     ],
   },

@@ -3,15 +3,15 @@ import type { Metadata } from 'next';
 import { VartalaapCrmExperience } from '@/components/services/crm-sales-funnel/VartalaapCrmExperience';
 
 export const metadata: Metadata = {
-  title: '📈 CRM & Conversational Sales Funnels // NEXUS Vartalaap',
-  description: 'Turn every WhatsApp message, Instagram DM, SMS, and webchat into a high-ticket sale, qualified lead, or auto-resolved ticket in under 400ms.',
+  title: '📈 Automated Sales Funnels & CRM Architecture // NEXUS Growth',
+  description: 'Connect your commercial films, brand video campaigns, and ad traffic directly into automated sales funnels, HubSpot/Klaviyo lifecycle ops, and 1-click WhatsApp checkouts.',
   keywords: [
-    'Vartalaap',
-    'AI customer engagement platform',
-    'conversational sales funnel',
-    'WhatsApp Business automation',
+    'NEXUS Pipeline',
+    'production company sales funnel',
+    'commercial video conversion funnel',
+    'WhatsApp Business checkout',
     'HubSpot sales CRM setup',
-    'omnichannel messaging AI',
+    'Klaviyo lifecycle automation',
     'NEXUS Growth'
   ],
 };
