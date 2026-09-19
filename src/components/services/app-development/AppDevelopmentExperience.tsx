@@ -93,8 +93,8 @@ const APPS: AppScreen[] = [
     name: 'Atelier Luxe',
     category: 'COMMERCE // AR PREVIEW',
     icon: ShoppingBag,
-    color: '#34C759',
-    accentBg: 'from-emerald-600/30 via-teal-900/40 to-black',
+    color: '#FF4444',
+    accentBg: 'from-red-600/30 via-red-900/40 to-black',
     headerTitle: 'Spatial Luxury Store',
     metrics: [
       { label: 'AR LOAD SPEED', val: '0.42s' },
@@ -103,6 +103,38 @@ const APPS: AppScreen[] = [
     ],
     highlight: 'Interactive 3D Product Viewers & Haptic Feedback',
     details: 'Tactile micro-interactions and high-resolution spatial rendering optimized for modern flagship mobile chips.'
+  },
+  {
+    id: 'camera',
+    name: 'RAW Studio',
+    category: 'VISION // COMPUTE',
+    icon: Sparkles,
+    color: '#FF1F1F',
+    accentBg: 'from-red-600/30 via-red-900/40 to-black',
+    headerTitle: 'Spatial Vision Engine',
+    metrics: [
+      { label: 'COMPUTE LATENCY', val: '12ms' },
+      { label: 'COLOR PROFILE', val: 'Apple ProRAW' },
+      { label: 'HDR PIPELINE', val: '10-Bit DCI' },
+    ],
+    highlight: 'Hardware Direct Sensor Capture & HDR Shaders',
+    details: 'Zero pipeline latency for camera buffer processing directly into Metal & Vulkan textures.'
+  },
+  {
+    id: 'sync',
+    name: 'SyncMesh',
+    category: 'REALTIME // CLOUD',
+    icon: Zap,
+    color: '#C9CCD1',
+    accentBg: 'from-zinc-600/30 via-neutral-900/40 to-black',
+    headerTitle: 'Decentralized State',
+    metrics: [
+      { label: 'PEER LATENCY', val: '< 24ms' },
+      { label: 'REPLICAS', val: 'Global Edge' },
+      { label: 'UPTIME SLA', val: '99.99%' },
+    ],
+    highlight: 'CRDT Conflict-Free Real-time Collaborative State',
+    details: 'Peer-to-peer optimistic replication with instantaneous sub-second global consistency.'
   }
 ];
 
@@ -311,23 +343,23 @@ export default function AppDevelopmentExperience() {
           </div>
 
           <h1 className="font-['Roboto_Flex'] [font-variation-settings:'wdth'_33] [font-stretch:33%] text-5xl md:text-7xl xl:text-8xl font-black uppercase tracking-tight leading-[0.88] text-white">
-            Native iOS &amp; Android Apps.
-            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-red-400 via-red-300 to-stone-400 mt-2">
-              Fluid 120Hz Motion.
+            Native iOS &amp; <br />
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF1F1F] via-[#C9CCD1] to-white mt-1 block">
+              Android Architecture.
             </span>
           </h1>
 
-          <p className="font-mono text-sm md:text-base text-gray-300 max-w-xl leading-relaxed">
-            We engineer high-retention mobile architectures on React Native &amp; Expo. Fluid 120Hz gesture physics, offline-first SQLite sync, and biometric auth that turn occasional downloaders into daily power users.
+          <p className="font-mono text-xs sm:text-sm text-[#C9CCD1] max-w-lg leading-relaxed">
+            Fluid 120Hz gesture physics engineered on Expo SDK 52.
           </p>
 
-          {/* Interactive Screen Selector Dock */}
+          {/* Interactive Screen Selector Dock (6 App Tiles) */}
           <div className="pt-2">
-            <p className="font-mono text-xs uppercase tracking-wider text-gray-400 mb-3 flex items-center gap-2">
-              <Sliders className="w-3.5 h-3.5 text-red-400" />
+            <p className="font-mono text-[11px] uppercase tracking-wider text-[#6E7177] mb-3 flex items-center gap-2">
+              <Sliders className="w-3.5 h-3.5 text-[#FF1F1F]" />
               <span>Tap to Preview Screen Architectures:</span>
             </p>
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5">
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-2.5">
               {APPS.map((app, idx) => {
                 const Icon = app.icon;
                 const isActive = idx === activeAppIndex;
@@ -358,14 +390,20 @@ export default function AppDevelopmentExperience() {
             </div>
           </div>
 
-          {/* Metric Telemetry Badges */}
+          {/* Hardware Telemetry Dials */}
           <div className="grid grid-cols-3 gap-3 pt-4 border-t border-white/10">
-            {activeApp.metrics.map((m) => (
-              <div key={m.label} className="p-3 rounded-xl bg-white/5 border border-white/10 backdrop-blur-sm">
-                <span className="block font-mono text-[9px] uppercase tracking-wider text-gray-400">{m.label}</span>
-                <span className="block font-mono text-sm md:text-base font-bold text-white mt-0.5">{m.val}</span>
-              </div>
-            ))}
+            <div className="p-3 rounded-xl bg-[#121214] border border-white/10 text-center">
+              <span className="block font-mono text-[9px] uppercase tracking-wider text-[#6E7177]">PROMOTION DISPLAY</span>
+              <span className="block font-mono text-sm sm:text-base font-bold text-white mt-0.5">120 FPS Locked</span>
+            </div>
+            <div className="p-3 rounded-xl bg-[#121214] border border-white/10 text-center">
+              <span className="block font-mono text-[9px] uppercase tracking-wider text-[#6E7177]">BATTERY OVERHEAD</span>
+              <span className="block font-mono text-sm sm:text-base font-bold text-emerald-400 mt-0.5">&lt; 1.4%/hr</span>
+            </div>
+            <div className="p-3 rounded-xl bg-[#121214] border border-white/10 text-center">
+              <span className="block font-mono text-[9px] uppercase tracking-wider text-[#6E7177]">BIOMETRIC AUTH</span>
+              <span className="block font-mono text-sm sm:text-base font-bold text-[#FF1F1F] mt-0.5">180ms FaceID</span>
+            </div>
           </div>
 
           {/* Primary Action Button */}

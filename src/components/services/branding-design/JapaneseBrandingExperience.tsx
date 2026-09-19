@@ -8,6 +8,7 @@ import {
   MapPin, 
   ArrowRight
 } from 'lucide-react';
+import { SvgLogoConstructionCanvas } from './SvgLogoConstructionCanvas';
 
 interface UnifierData {
   id: string;
@@ -347,6 +348,19 @@ export function JapaneseBrandingExperience() {
         {/* Central Stage: Typography + Warrior SVG */}
         <div className="relative z-20 flex-1 flex flex-col items-center justify-center px-4 max-w-7xl mx-auto w-full">
           
+          {/* Service Hero Headline & Subline */}
+          <div className="mb-6 text-center max-w-2xl mx-auto">
+            <span className="font-mono text-xs text-[#FF1F1F] tracking-[0.3em] uppercase block mb-2 font-bold">
+              SERVICE 06 // BRAND ARCHITECTURE
+            </span>
+            <h1 className="text-3xl sm:text-5xl md:text-6xl font-black text-white uppercase tracking-tight font-['Roboto_Flex'] [font-variation-settings:'wdth'_33] [font-stretch:33%] leading-none">
+              Enduring Identity &amp; Spatial Monograms.
+            </h1>
+            <p className="mt-3 font-mono text-xs sm:text-sm text-[#C9CCD1] uppercase tracking-wider">
+              Timeless brand architecture rooted in Japanese editorial craftsmanship.
+            </p>
+          </div>
+
           {/* Top Kanji Calligraphy */}
           <div className="mb-2 sm:mb-4 text-center">
             <h2 
@@ -446,7 +460,10 @@ export function JapaneseBrandingExperience() {
           </span>
         </div>
 
-        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        {/* Interactive SVG Monogram Construction Canvas */}
+        <SvgLogoConstructionCanvas />
+
+        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center mt-12">
           
           {/* Left Column: Clan Crest Box */}
           <div className="lg:col-span-5 flex flex-col items-center justify-center p-10 border border-white/20 bg-[#121212] rounded-none relative">

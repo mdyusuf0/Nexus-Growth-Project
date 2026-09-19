@@ -19,6 +19,7 @@ import {
 } from 'lucide-react';
 import CodeEditorTerminal from '@/components/services/CodeEditorTerminal';
 import WebDevelopmentTerminalCursor from '@/components/services/web-development/WebDevelopmentTerminalCursor';
+import { WireframeLiveToggle, HorizontalSprintPipeline } from '@/components/services/web-development/WebDevVisualShowcase';
 
 export const metadata: Metadata = {
   title: '🌐 Website Development | NEXUS Growth',
@@ -31,7 +32,7 @@ const DELIVERABLES = [
     icon: Code2,
     tag: 'ARCHITECTURE',
     title: 'Custom Next.js App Router Core',
-    desc: 'Zero generic templates or bloated page builders. We engineer custom React 19 server component architectures that eliminate client-side JavaScript overhead and achieve sub-second Time to First Byte (TTFB).',
+    desc: 'React 19 server components. Zero layout shifts. Sub-second TTFB.',
     specs: ['React Server Components', 'Vercel Edge Network', 'Zero Layout Shift', 'Automated Image Optimization'],
     color: '#FF1F1F',
   },
@@ -39,7 +40,7 @@ const DELIVERABLES = [
     icon: Sparkles,
     tag: 'MOTION & FEEL',
     title: 'Hardware-Accelerated GSAP & WebGL',
-    desc: 'Scroll-driven storytelling with custom GSAP timelines, Lenis inertia scrolling, and interactive canvas elements that render at a locked 60FPS across desktop and mobile devices.',
+    desc: '60FPS inertia scrolling with pinned timelines and interactive canvas stages.',
     specs: ['ScrollTrigger Pinning', 'Lenis Smooth Scroll', '3D Model Viewers', 'Micro-Interactions'],
     color: '#CC1919',
   },
@@ -47,7 +48,7 @@ const DELIVERABLES = [
     icon: Layers,
     tag: 'CONTENT & SCALE',
     title: 'Headless CMS & Commerce Pipelines',
-    desc: 'Complete editorial independence through modern headless platforms like Sanity, Strapi, or Shopify Storefront API. Lightning-fast visual editing without touching source code.',
+    desc: 'Instant visual publishing and checkout pipelines without touching source code.',
     specs: ['Sanity / Strapi CMS', 'Shopify Storefront API', 'Stripe Payments', 'Incremental Static Regeneration'],
     color: '#8B0000',
   },
@@ -55,7 +56,7 @@ const DELIVERABLES = [
     icon: Gauge,
     tag: 'PERFORMANCE',
     title: 'Core Web Vitals 99+ Hardening',
-    desc: 'We treat page speed as a primary conversion lever. Every millisecond saved directly lifts checkout rates. We guarantee top-tier mobile Lighthouse metrics before going live.',
+    desc: 'Guaranteed top-tier mobile Lighthouse metrics engineered for maximum conversion lift.',
     specs: ['FCP < 0.5s', 'LCP < 0.8s', 'CLS = 0.000', 'Perfect Mobile Score'],
     color: '#FF4444',
   },
@@ -63,7 +64,7 @@ const DELIVERABLES = [
     icon: Zap,
     tag: 'DATA & GROWTH',
     title: 'Conversion Tracking & Event Telemetry',
-    desc: 'Custom server-side event tracking across GA4, Meta Conversions API (CAPI), and PostHog. Full visibility into user engagement, drop-offs, and micro-conversions.',
+    desc: 'Sub-second server-side CAPI telemetry with full funnel visibility.',
     specs: ['Server-Side CAPI', 'Custom DataLayer Events', 'PostHog / Mixpanel', 'Heatmap Ready'],
     color: '#E60000',
   },
@@ -71,55 +72,11 @@ const DELIVERABLES = [
     icon: ShieldCheck,
     tag: 'RELIABILITY',
     title: 'Enterprise Security & CI/CD Pipelines',
-    desc: 'Automated GitHub pull request preview deployments, static analysis, DDoS mitigation, and enterprise SSL on globally distributed edge networks.',
+    desc: 'Automated GitHub pull preview edge deployments with DDoS defense.',
     specs: ['Automated CI/CD', 'Edge Middleware', 'DDoS Protection', 'SOC2 Compliant Hosting'],
     color: '#FF1F1F',
   },
 ];
-
-const SPRINTS = [
-  {
-    num: '01',
-    phase: 'SPRINT 1',
-    title: 'Architecture & Technical Wireframing',
-    duration: 'Week 1',
-    deliverable: 'Technical architecture document, route hierarchy, conversion funnel wireframes, and Core Web Vitals benchmark targets.',
-    color: '#CC1919',
-  },
-  {
-    num: '02',
-    phase: 'SPRINT 2',
-    title: 'Interactive Design & Motion Choreography',
-    duration: 'Week 2–3',
-    deliverable: 'Complete Figma design system, kinetic component prototypes, typography scale, and responsive layout blueprints.',
-    color: '#8B0000',
-  },
-  {
-    num: '03',
-    phase: 'SPRINT 3',
-    title: 'Full-Stack Next.js Engineering',
-    duration: 'Week 4–5',
-    deliverable: 'Production codebase setup, custom GSAP ScrollTrigger timelines, responsive layouts, and Lenis inertia scroll integration.',
-    color: '#FF4444',
-  },
-  {
-    num: '04',
-    phase: 'SPRINT 4',
-    title: 'Headless CMS & Telemetry Integration',
-    duration: 'Week 6',
-    deliverable: 'Content model schema in Sanity/Shopify, webhooks, server-side event telemetry, and multi-step inquiry form logic.',
-    color: '#E60000',
-  },
-  {
-    num: '05',
-    phase: 'SPRINT 5',
-    title: 'Vitals Hardening, QA & Global Edge Launch',
-    duration: 'Week 7',
-    deliverable: 'Cross-browser verification, mobile Safari scroll audits, 99+ Lighthouse performance gate, and zero-downtime DNS deployment.',
-    color: '#FF1F1F',
-  },
-];
-
 const TECH_STACK = [
   { name: 'Next.js 16', role: 'Full-Stack Framework', color: '#FF1F1F' },
   { name: 'React 19', role: 'Server Components', color: '#C9CCD1' },
@@ -161,9 +118,9 @@ export default function WebDevelopmentPage() {
             </h1>
           </div>
 
-          <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8 w-full my-6">
-            <p className="max-w-2xl font-['Space_Grotesk'] text-lg md:text-2xl font-bold uppercase text-white leading-tight">
-              Most agency websites are heavy templates that look pretty but crawl on mobile. We build custom Next.js web applications with hardware-accelerated GSAP animation, sub-second TTFB, and conversion architectures designed for aggressive revenue growth.
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-6 w-full my-4">
+            <p className="font-['Space_Grotesk'] text-lg md:text-xl font-bold uppercase text-[#C9CCD1] leading-tight">
+              Sub-second Next.js 16 architectures locked at 60FPS.
             </p>
 
             <div className="flex flex-wrap items-center gap-3 shrink-0">
@@ -175,6 +132,9 @@ export default function WebDevelopmentPage() {
               </Link>
             </div>
           </div>
+
+          {/* Interactive Wireframe vs Live Morph Simulation */}
+          <WireframeLiveToggle />
 
           {/* Performance Benchmark Tape */}
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 w-full pt-8 border-t-2 border-white/10 mt-6">
@@ -288,51 +248,19 @@ export default function WebDevelopmentPage() {
       {/* SECTION 4: 5-SPRINT METHODOLOGY */}
       <section className="relative px-4 py-24 md:px-8 md:py-36 bg-[#121212] border-t border-white/10">
         <div className="max-w-7xl mx-auto">
-          <div className="max-w-2xl mb-16">
+          <div className="max-w-2xl mb-12">
             <span className="sticker-badge bg-[#C9CCD1] text-white mb-3">
               PRODUCTION TIMELINE
             </span>
             <h2 className="u-title-200 tracking-tight text-white">
               5 Sprints to Global Deployment
             </h2>
-            <p className="mt-2 font-sans text-sm text-[#C9CCD1]">
-              Clear weekly milestones, real-time preview staging URLs, and rigorous Core Web Vitals gates from day one.
+            <p className="mt-2 font-sans text-xs md:text-sm text-[#C9CCD1]">
+              Weekly milestones locked to sub-second Core Web Vitals gates.
             </p>
           </div>
 
-          <div className="space-y-4">
-            {SPRINTS.map((sprint) => (
-              <div
-                key={sprint.num}
-                className="tactile-card p-6 md:p-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-6"
-              >
-                <div className="flex items-center gap-6">
-                  <span className="font-['Roboto_Flex'] [font-variation-settings:'wdth'_33] [font-stretch:33%] text-5xl font-black text-white">
-                    {sprint.num}.
-                  </span>
-                  <div>
-                    <div className="flex items-center gap-2">
-                      <span
-                        className="sticker-badge text-[10px] py-0.5 px-2"
-                        style={{ backgroundColor: sprint.color, color: '#fff' }}
-                      >
-                        {sprint.phase}
-                      </span>
-                      <span className="font-mono text-xs font-bold text-[#C9CCD1]">{sprint.duration}</span>
-                    </div>
-                    <h3 className="font-['Roboto_Flex'] [font-variation-settings:'wdth'_33] [font-stretch:33%] text-3xl font-extrabold uppercase text-white mt-2">
-                      {sprint.title}
-                    </h3>
-                  </div>
-                </div>
-
-                <div className="md:max-w-md text-xs font-sans text-[#C9CCD1] font-medium border-l-2 border-white/10 pl-4 md:pl-6">
-                  <span className="font-mono text-[10px] text-white font-bold uppercase block mb-1">Key Deliverable</span>
-                  {sprint.deliverable}
-                </div>
-              </div>
-            ))}
-          </div>
+          <HorizontalSprintPipeline />
         </div>
       </section>
 
@@ -371,10 +299,10 @@ export default function WebDevelopmentPage() {
               Challenge &amp; Execution
             </span>
             <h3 className="font-['Roboto_Flex'] [font-variation-settings:'wdth'_33] [font-stretch:33%] text-4xl font-extrabold uppercase text-white leading-none">
-              Turning a 4.2-second Shopify store into a 0.38-second sales engine.
+              Turning a 4.2s storefront into a 0.38s sales engine.
             </h3>
             <p className="font-sans text-xs text-[#C9CCD1] font-medium leading-relaxed">
-              AURA needed an experience that showcased spatial audio hardware with interactive 3D exploded views without degrading mobile checkout speed. We architected a headless Next.js storefront backed by Shopify Storefront GraphQL, reducing cart abandonment by 42%.
+              Headless Next.js storefront backed by Shopify GraphQL, slashing cart abandonment by 42%.
             </p>
 
             <div className="grid grid-cols-2 gap-4 pt-4 border-t-2 border-white/10">

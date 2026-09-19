@@ -31,6 +31,7 @@ import {
   FileSpreadsheet,
   Network
 } from 'lucide-react';
+import { LangGraphWorkflowVisual } from './LangGraphWorkflowVisual';
 
 export function EyepuneAiExperience() {
   // Cursor tracking state
@@ -239,21 +240,20 @@ export function EyepuneAiExperience() {
             </div>
 
             {/* Colossal Animated Headline */}
-            <h1 className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-black text-white leading-[0.92] mb-8 tracking-tight drop-shadow-2xl">
+            <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black text-white leading-[1.0] mb-4 tracking-tight drop-shadow-2xl">
+              Autonomous Multi-Agent <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF1F1F] to-[#8B0000]">
-                Growth
+                Neural Workflows.
               </span>
-              <br />
-              for Global Visionaries
             </h1>
 
             {/* High-Conviction Lead Copy */}
-            <p className="text-lg sm:text-xl text-gray-300 mb-12 max-w-2xl leading-relaxed drop-shadow-md">
-              We empower Founders, Creators, and Global Enterprise Teams with Multi-Model AI automation and autonomous growth engines. Orchestrating LangGraph, NVIDIA NIM, DeepSeek R1, and Claude 3.7 into compounding revenue pipelines.
+            <p className="text-base sm:text-lg text-[#C9CCD1] mb-8 max-w-xl font-mono leading-relaxed">
+              Self-correcting LangGraph pipelines replacing repetitive enterprise workflows.
             </p>
 
             {/* Interactive Global AI Audit Bar */}
-            <div className="w-full max-w-2xl mb-14">
+            <div className="w-full max-w-2xl mb-8">
               <div className="relative group">
                 {/* Glowing Aura */}
                 <div className="absolute -inset-1 bg-gradient-to-r from-[#8B0000] to-[#FF1F1F] rounded-2xl sm:rounded-full blur opacity-40 group-hover:opacity-75 transition duration-1000 group-hover:duration-200" />
@@ -289,6 +289,9 @@ export function EyepuneAiExperience() {
                 <span>SOC2 Type II Isolation</span>
               </div>
             </div>
+
+            {/* Interactive LangGraph Node Stream Visual */}
+            <LangGraphWorkflowVisual />
 
             {/* Live Metrics Ticker Bar */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-10 border-t border-white/10 pt-10 mt-4 w-full max-w-4xl">
@@ -353,42 +356,42 @@ export function EyepuneAiExperience() {
               {
                 num: '01',
                 title: 'Autonomous Sales Pipelines & Lead Scoring',
-                desc: 'End-to-end 24/7 B2B lead discovery, LinkedIn enrichment, cold outreach sequencing, and automated calendar booking.',
+                desc: '24/7 autonomous B2B lead discovery, LinkedIn enrichment, and calendar booking.',
                 tags: ['Apollo / Instantly', 'Smartlead Multi-Inbox', 'HubSpot / Salesforce Sync', 'Auto-Calendar Booking'],
                 icon: <Workflow className="w-6 h-6 text-red-500" />
               },
               {
                 num: '02',
                 title: 'Multi-Agent Workflow Orchestration',
-                desc: 'LangGraph & CrewAI multi-agent clusters that research, synthesize, draft proposals, and route work across internal teams with continuous verification.',
+                desc: 'LangGraph & CrewAI multi-agent clusters with real-time verification and zero hallucination.',
                 tags: ['LangGraph', 'CrewAI', 'pgvector Memory', 'Human-in-the-Loop Safeguards'],
                 icon: <Bot className="w-6 h-6 text-red-500" />
               },
               {
                 num: '03',
                 title: 'Realtime Voice Agents & Custom Knowledge Chatbots',
-                desc: 'Sub-second inbound voice reception and intelligent chatbots with zero hallucination guardrails trained on your private knowledge graph.',
+                desc: 'Sub-second conversational voice reception and custom vector knowledge agents.',
                 tags: ['OpenAI Realtime', 'Deepgram Nova-2', 'Cartesia Sonic', 'Live Calendar Booking'],
                 icon: <PhoneCall className="w-6 h-6 text-red-500" />
               },
               {
                 num: '04',
                 title: 'Enterprise Document Intelligence & RPA',
-                desc: 'Automating complex PDF parsing, multi-page invoice reconciliations, and ERP data entries, eliminating 85% of manual operational friction.',
+                desc: 'Automated invoice reconciliation, multi-page PDF parsing, and ERP sync.',
                 tags: ['Gemini 2.5 Vision', 'FastAPI Microservices', 'Webhook Automation', 'SAP / QuickBooks'],
                 icon: <FileSpreadsheet className="w-6 h-6 text-red-500" />
               },
               {
                 num: '05',
                 title: 'Generative Engine Optimization (GEO & AEO)',
-                desc: 'Ensuring your enterprise brand ranks as the #1 cited authority across ChatGPT Search, Perplexity Pro, and Google Gemini AI Overviews.',
+                desc: 'Dominating AI search citations across ChatGPT, Perplexity, and Gemini Overviews.',
                 tags: ['Answer Engine SEO', 'Perplexity Citations', 'Schema Graph 2.0', 'Entity Authority'],
                 icon: <Sparkles className="w-6 h-6 text-red-500" />
               },
               {
                 num: '06',
                 title: 'Private Enterprise RAG & Vector Knowledge Bases',
-                desc: 'Secure internal vector intelligence connecting Slack, Notion, Jira, and Google Drive without sending data to public training pools.',
+                desc: 'Isolated SOC2 vector memory connecting Slack, Jira, and Notion securely.',
                 tags: ['pgvector', 'Pinecone Serverless', 'SOC2 Isolation', 'Zero Data Leakage'],
                 icon: <Database className="w-6 h-6 text-red-500" />
               }

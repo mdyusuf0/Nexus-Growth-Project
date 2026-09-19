@@ -20,6 +20,7 @@ import {
   SlidersHorizontal,
   Compass
 } from 'lucide-react';
+import { PrintFinishSplitSlider } from './PrintFinishSplitSlider';
 import { cn } from '@/lib/utils';
 
 // Design Projects Showcase
@@ -281,16 +282,19 @@ export default function GraphicDesignExperience() {
           </div>
 
           <h1 className="font-['Roboto_Flex'] [font-variation-settings:'wdth'_33] [font-stretch:33%] text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-black uppercase tracking-tight leading-[0.86] text-white">
-            Brutalist. Tactile.
-            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-[#FF1F1F] via-[#FF1F1F] to-[#FF1F1F]">
-              Editorial Graphic Systems.
+            Tactile Spatial &amp; <br />
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF1F1F] via-[#C9CCD1] to-white">
+              Visual Identity.
             </span>
           </h1>
 
-          <p className="font-mono text-base md:text-lg text-gray-300 max-w-2xl leading-relaxed">
-            We reject templated minimalism. NEXUS Growth designs bespoke packaging, high-contrast large format campaigns, and tactile merchandise that hold tangible cultural weight.
+          <p className="font-mono text-xs sm:text-sm text-[#C9CCD1] max-w-xl leading-relaxed">
+            Physical print packaging, typography systems, and luxury brand manuals.
           </p>
         </div>
+
+        {/* Interactive Before & After Print Specimen Slider */}
+        <PrintFinishSplitSlider />
 
         {/* Live Interactive Color Palette Bar */}
         <div className="mt-12 p-6 rounded-2xl border border-white/10 bg-white/[0.03] backdrop-blur-md">

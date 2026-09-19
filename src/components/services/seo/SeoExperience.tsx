@@ -196,14 +196,14 @@ export default function SeoExperience() {
           </div>
 
           <h1 className="font-['Roboto_Flex'] [font-variation-settings:'wdth'_33] [font-stretch:33%] text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-black uppercase tracking-tight leading-[0.86] text-white">
-            Page 1 Rank #1.
-            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-[#FF1F1F] via-[#FF1F1F] to-[#C9CCD1]">
-              Own High-Intent Search.
+            Topical Authority &amp; <br />
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF1F1F] via-[#C9CCD1] to-white">
+              Rank Supremacy.
             </span>
           </h1>
 
-          <p className="font-mono text-base md:text-lg text-[#C9CCD1] max-w-2xl leading-relaxed">
-            Forget vanity search terms. NEXUS Growth engineers technical Core Web Vitals hardening, automated programmatic page clusters, and high-authority editorial link acquisition that capture buyers at the exact moment of purchase.
+          <p className="font-mono text-xs sm:text-sm text-[#C9CCD1] max-w-xl leading-relaxed">
+            Dominating high-intent search queries with programmatic architecture.
           </p>
         </div>
       </section>

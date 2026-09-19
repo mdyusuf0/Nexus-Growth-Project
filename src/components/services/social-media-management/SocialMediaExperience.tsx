@@ -216,14 +216,14 @@ export default function SocialMediaExperience() {
           </div>
 
           <h1 className="font-['Roboto_Flex'] [font-variation-settings:'wdth'_33] [font-stretch:33%] text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-black uppercase tracking-tight leading-[0.86] text-white">
-            Stop The Scroll.
-            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-[#00f2fe] via-[#FF1F1F] to-[#fcb045]">
-              Dominate Short-Form Feeds.
+            Algorithmic Retention &amp; <br />
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF1F1F] via-[#C9CCD1] to-white">
+              Viral Velocity.
             </span>
           </h1>
 
-          <p className="font-mono text-base md:text-lg text-[#C9CCD1] max-w-2xl leading-relaxed">
-            We produce high-volume batches of 4K vertical video assets engineered with psychological pattern interrupts, dynamic captions, and sound design triggers that turn casual swipers into loyal community advocates.
+          <p className="font-mono text-xs sm:text-sm text-[#C9CCD1] max-w-xl leading-relaxed">
+            High-volume short-form reels engineered to capture feed attention.
           </p>
         </div>
 
@@ -376,6 +376,50 @@ export default function SocialMediaExperience() {
               </motion.div>
             );
           })}
+        </div>
+      </section>
+
+      {/* Weekly Content Cadence Matrix */}
+      <section className="relative z-10 max-w-7xl mx-auto px-4 md:px-8 py-16 border-t border-white/10">
+        <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-8">
+          <div>
+            <span className="font-mono text-xs uppercase tracking-widest text-[#FF1F1F] font-bold">
+              WEEKLY VELOCITY MATRIX
+            </span>
+            <h3 className="font-['Roboto_Flex'] [font-variation-settings:'wdth'_33] [font-stretch:33%] text-3xl sm:text-5xl font-black uppercase text-white mt-1">
+              7-Day Production Cadence
+            </h3>
+          </div>
+          <span className="font-mono text-xs text-[#C9CCD1]">
+            14–20 vertical cuts mastered per week
+          </span>
+        </div>
+
+        <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-7 gap-3">
+          {[
+            { day: 'MON', hook: 'Pattern Interrupt', metric: '2.4M Avg Reach', tag: 'TIKTOK' },
+            { day: 'TUE', hook: 'Tech Teardown', metric: '94% Retention', tag: 'REELS' },
+            { day: 'WED', hook: 'Client Proof', metric: '4.8x ROAS', tag: 'OMNI' },
+            { day: 'THU', hook: 'Micro-Sound Cut', metric: '+48K Shares', tag: 'SHORTS' },
+            { day: 'FRI', hook: 'Founder Dialogue', metric: '18m Watch Time', tag: 'YOUTUBE' },
+            { day: 'SAT', hook: 'Behind The Scenes', metric: 'High Affinity', tag: 'STORIES' },
+            { day: 'SUN', hook: 'Weekly Rollup', metric: 'Lead Capture', tag: 'WHATSAPP' },
+          ].map((c) => (
+            <div key={c.day} className="p-3.5 rounded-2xl border border-white/10 bg-[#121214] flex flex-col justify-between space-y-3">
+              <div className="flex items-center justify-between font-mono text-[10px]">
+                <span className="text-white font-bold">{c.day}</span>
+                <span className="text-[#FF1F1F] font-semibold">{c.tag}</span>
+              </div>
+              <div>
+                <span className="block font-['Space_Grotesk'] text-xs font-bold text-white leading-tight">
+                  {c.hook}
+                </span>
+                <span className="block font-mono text-[10px] text-[#C9CCD1] mt-1">
+                  {c.metric}
+                </span>
+              </div>
+            </div>
+          ))}
         </div>
       </section>
 

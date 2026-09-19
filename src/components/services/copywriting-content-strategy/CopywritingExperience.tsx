@@ -204,14 +204,14 @@ export default function CopywritingExperience() {
           </div>
 
           <h1 className="font-['Roboto_Flex'] [font-variation-settings:'wdth'_33] [font-stretch:33%] text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-black uppercase tracking-tight leading-[0.86] text-white">
-            Kill The Fluff.
-            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-[#FF1F1F] via-[#FF1F1F] to-[#C9CCD1]">
-              Write For Conversions.
+            Direct Response Words <br />
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF1F1F] via-[#C9CCD1] to-white">
+              That Convert.
             </span>
           </h1>
 
-          <p className="font-mono text-base md:text-lg text-[#C9CCD1] max-w-2xl leading-relaxed">
-            Most agency copy reads like an apology for having a product to sell. NEXUS Growth crafts ruthless, high-contrast sales arguments that neutralize objections, build undeniable authority, and collect revenue.
+          <p className="font-mono text-xs sm:text-sm text-[#C9CCD1] max-w-xl leading-relaxed">
+            High-intent messaging engineered to eliminate buyer hesitation.
           </p>
         </div>
       </section>

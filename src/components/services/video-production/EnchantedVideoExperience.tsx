@@ -21,6 +21,7 @@ import {
   Clock, 
   Sliders
 } from 'lucide-react';
+import { VideoTimelineLutSuite } from './VideoTimelineLutSuite';
 
 interface ReelItem {
   id: string;
@@ -381,39 +382,39 @@ export function EnchantedVideoExperience() {
           </div>
 
           {/* Majestic Hero Headline */}
-          <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold uppercase tracking-tight text-white leading-[1.02]">
-            NOT JUST VIDEO EDITING.
-            <br />
-            <span className="font-serif normal-case italic font-normal tracking-normal bg-gradient-to-r from-gray-300 via-gray-200 to-gray-300 bg-clip-text text-transparent drop-shadow-[0_0_35px_rgba(201,204,209,0.4)]">
-              Cinematic Velocity
+          <h1 className="text-4xl sm:text-6xl md:text-7xl font-extrabold uppercase tracking-tight text-white leading-tight">
+            Cinematic Film &amp; <br />
+            <span className="font-serif normal-case italic font-normal tracking-normal bg-gradient-to-r from-[#FF1F1F] via-[#C9CCD1] to-white bg-clip-text text-transparent drop-shadow-[0_0_35px_rgba(255,31,31,0.4)]">
+              High-Retention Reels.
             </span>
-            <br />
-            FOR BRANDS.
           </h1>
 
           {/* Subtitle */}
-          <p className="mt-6 max-w-2xl text-base sm:text-lg md:text-xl text-gray-300 font-normal leading-relaxed">
-            We engineer high-retention brand films, high-conversion commercial reels, 3D motion graphics, and narrative documentaries that command attention in the first 3 seconds.
+          <p className="mt-4 max-w-xl text-sm sm:text-base text-[#C9CCD1] font-mono leading-relaxed">
+            4K DCI cinematography engineered for algorithmic audience grip.
           </p>
 
           {/* Hero CTAs */}
-          <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
+          <div className="mt-6 flex flex-wrap items-center justify-center gap-4">
             <a
               href="#showcase"
-              className="relative overflow-hidden group bg-[#1A1A1A] text-white font-extrabold text-sm uppercase tracking-wider px-7 py-3.5 rounded-full shadow-[0_10px_35px_rgba(255,255,255,0.3)] hover:bg-gray-100 hover:scale-105 transition-all flex items-center gap-2 cursor-pointer"
+              className="relative overflow-hidden group bg-[#FF1F1F] text-white font-extrabold text-xs uppercase tracking-wider px-6 py-3 rounded-full shadow-[0_0_24px_rgba(255,31,31,0.4)] hover:scale-105 transition-all flex items-center gap-2 cursor-pointer"
             >
               <span>Explore Reel Showcase</span>
-              <Play className="w-4 h-4 fill-black text-white group-hover:translate-x-0.5 transition-transform" />
+              <Play className="w-3.5 h-3.5 fill-white text-white group-hover:translate-x-0.5 transition-transform" />
             </a>
 
             <Link
               href="/contact"
-              className="px-7 py-3.5 rounded-full bg-[#1A1A1A]/[0.08] hover:bg-[#1A1A1A]/[0.15] border border-white/20 text-white font-bold text-sm uppercase tracking-wider backdrop-blur-xl transition-all flex items-center gap-2 hover:scale-105"
+              className="px-6 py-3 rounded-full bg-[#1A1A1A] hover:bg-[#222] border border-white/20 text-white font-bold text-xs uppercase tracking-wider transition-all flex items-center gap-2 hover:scale-105"
             >
               <span>Book 30-Min Sprint Call</span>
-              <ArrowRight className="w-4 h-4 text-gray-300" />
+              <ArrowRight className="w-3.5 h-3.5 text-[#C9CCD1]" />
             </Link>
           </div>
+
+          {/* 4K Timeline Scrubber & Kodak 2383 LUT Suite */}
+          <VideoTimelineLutSuite />
 
           {/* Quick Metrics Ticker */}
           <div className="mt-14 grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-8 border-t border-white/10 pt-8 w-full max-w-4xl text-left">

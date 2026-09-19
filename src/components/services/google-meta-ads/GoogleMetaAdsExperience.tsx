@@ -19,6 +19,7 @@ import {
   Crosshair,
   Wifi
 } from 'lucide-react';
+import { AdFunnelWaterfall } from './AdFunnelWaterfall';
 import { cn } from '@/lib/utils';
 
 // Simulated Campaigns in Media OS
@@ -201,16 +202,19 @@ export default function GoogleMetaAdsExperience() {
           </div>
 
           <h1 className="font-['Roboto_Flex'] [font-variation-settings:'wdth'_33] [font-stretch:33%] text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-black uppercase tracking-tight leading-[0.86] text-white">
-            High-ROAS Paid Ads.
-            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-[#FF1F1F] via-[#FF1F1F] to-[#C9CCD1]">
-              Zero Spend Bleed.
+            Performance Media at <br />
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF1F1F] via-[#C9CCD1] to-white">
+              Aggressive Scale.
             </span>
           </h1>
 
-          <p className="font-mono text-base md:text-lg text-[#C9CCD1] max-w-2xl leading-relaxed">
-            Most paid media agencies burn cash on fatigued creatives and flawed attribution. NEXUS Growth deploys server-side Meta CAPI tracking, dynamic creative testing matrices, and algorithmic budget scaling that lock in profit.
+          <p className="font-mono text-xs sm:text-sm text-[#C9CCD1] max-w-xl leading-relaxed">
+            Direct response creative tied to sub-second server-side telemetry.
           </p>
         </div>
+
+        {/* Interactive Conversion Funnel Waterfall */}
+        <AdFunnelWaterfall />
       </section>
 
       {/* Interactive NEXUS MEDIA OS Dashboard Simulator */}

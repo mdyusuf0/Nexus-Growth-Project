@@ -41,6 +41,7 @@ import {
   Send,
   MessageSquare
 } from 'lucide-react';
+import { KanbanPipelineBoard } from './KanbanPipelineBoard';
 
 interface ChannelTab {
   id: string;
@@ -545,37 +546,29 @@ export function VartalaapCrmExperience() {
 
           </div>
 
-          {/* Mixed Typography Master Title (Syne + Instrument Serif Italic) */}
+          {/* Mixed Typography Master Title */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
             className="mt-6 max-w-5xl"
           >
-            <h1 className="font-['Syne'] font-extrabold text-4xl sm:text-6xl md:text-7xl lg:text-[5.5rem] tracking-tight text-white leading-[1.05]">
-              Don&apos;t just produce video,
-              <span className="block mt-1 font-serif italic font-normal text-transparent bg-clip-text bg-gradient-to-r from-[#FF1F1F] via-[#C9CCD1] to-[#8B0000] tracking-normal drop-shadow-[0_0_35px_rgba(255,31,31,0.4)]">
-                engineer closed revenue.
+            <h1 className="font-['Syne'] font-extrabold text-4xl sm:text-6xl md:text-7xl tracking-tight text-white leading-tight">
+              Conversational Pipelines &amp; <br />
+              <span className="font-serif italic font-normal text-transparent bg-clip-text bg-gradient-to-r from-[#FF1F1F] via-[#C9CCD1] to-[#8B0000] tracking-normal drop-shadow-[0_0_35px_rgba(255,31,31,0.4)]">
+                Instant Checkout.
               </span>
             </h1>
           </motion.div>
 
-          {/* Subtitle with Large-Small Text Mixup */}
+          {/* Subtitle */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="mt-6 max-w-3xl text-gray-300 leading-relaxed text-base sm:text-xl font-sans"
+            className="mt-4 max-w-2xl text-[#C9CCD1] leading-relaxed text-sm sm:text-base font-mono"
           >
-            Most creative production companies hand you an .MP4 file and walk away.{' '}
-            <span className="font-serif italic text-red-300 text-2xl sm:text-3xl font-normal">
-              NEXUS Growth builds the sales machine
-            </span>{' '}
-            connecting your commercial films, ad creatives, and website visitors directly into automated{' '}
-            <span className="font-mono text-xs uppercase px-2.5 py-1 rounded-md bg-red-500/20 text-red-300 border border-red-500/40 inline-block align-middle font-bold">
-              HubSpot &amp; WhatsApp Pipelines
-            </span>{' '}
-            that close deals 24/7.
+            Turning commercial video traffic into WhatsApp revenue in seconds.
           </motion.div>
 
           {/* Dual Action Buttons */}
@@ -583,11 +576,11 @@ export function VartalaapCrmExperience() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
-            className="mt-10 flex flex-col sm:flex-row items-center gap-4"
+            className="mt-8 flex flex-col sm:flex-row items-center gap-4"
           >
             <Link
               href="/contact?service=crm-sales-funnel"
-              className="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-[#FF1F1F] via-[#8B0000] to-[#C9CCD1] text-white font-bold text-sm tracking-wide shadow-[0_0_35px_rgba(255,31,31,0.5)] hover:shadow-[0_0_55px_rgba(255,31,31,0.8)] transition-all flex items-center justify-center gap-2 group hover:scale-105"
+              className="w-full sm:w-auto px-8 py-3.5 rounded-xl bg-gradient-to-r from-[#FF1F1F] via-[#8B0000] to-[#C9CCD1] text-white font-bold text-sm tracking-wide shadow-[0_0_35px_rgba(255,31,31,0.5)] hover:shadow-[0_0_55px_rgba(255,31,31,0.8)] transition-all flex items-center justify-center gap-2 group hover:scale-105"
             >
               <span>Build My Conversion Funnel</span>
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
@@ -595,12 +588,15 @@ export function VartalaapCrmExperience() {
 
             <a
               href="#video-showcase"
-              className="w-full sm:w-auto px-7 py-4 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 text-white font-medium text-sm transition-all flex items-center justify-center gap-2"
+              className="w-full sm:w-auto px-7 py-3.5 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 text-white font-medium text-sm transition-all flex items-center justify-center gap-2"
             >
               <Play className="w-4 h-4 text-red-400" />
               <span>Watch Funnel Commercial Reel</span>
             </a>
           </motion.div>
+
+          {/* Interactive Kanban Pipeline Board */}
+          <KanbanPipelineBoard />
 
           {/* Trust Telemetry Bar with Large Numeric Counters */}
           <motion.div
