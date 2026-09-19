@@ -48,6 +48,14 @@
   --color-accent-dark: #8B0000;
   --color-silver: #C9CCD1;
   --color-silver-dark: #6E7177;
+
+  /* 21st.dev & shadcn compatibility */
+  --color-foreground: #FFFFFF;
+  --color-background: #0A0A0A;
+  --color-border: rgba(255, 255, 255, 0.1);
+  --foreground: #FFFFFF;
+  --background: #0A0A0A;
+  --border: rgba(255, 255, 255, 0.1);
 }
 
 html {

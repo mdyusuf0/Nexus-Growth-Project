@@ -9,6 +9,7 @@ import { ArrowUpRight, ArrowRight, Sparkles, Zap, ShieldCheck, Cpu, Check, Barco
 import { gsap, ScrollTrigger } from '@/lib/gsap';
 import VelocityMarquee from '@/components/ui/VelocityMarquee';
 import StackSpread from '@/components/ui/StackSpread';
+import { GridPulse, GridPulseDemo } from '@/components/ui/grid-pulse';
 
 const SERVICES = [
   { id: '01', title: 'Website Development', desc: 'Custom Next.js App Router & GSAP hardware-accelerated flagships.', color: '#FF1F1F', tag: 'ENGINEERING', href: '/services/web-development' },
@@ -136,6 +137,7 @@ export default function Home() {
     <div className="relative w-full bg-[#0A0A0A] text-white overflow-hidden paper-canvas">
       {/* SECTION 1: EDITORIAL HERO */}
       <section className="relative px-4 pt-12 pb-20 md:px-8 md:pt-16 md:pb-28 max-w-7xl mx-auto flex flex-col items-center text-center">
+        <GridPulse cell={28} reach={2.4} ambient={2} className="opacity-35" />
         {/* Angled Retro Sticker Badges */}
         <div className="flex flex-wrap items-center justify-center gap-3 mb-8">
           <span className="sticker-badge bg-[#FF1F1F] rotate-[-2deg] text-white">
@@ -262,6 +264,11 @@ export default function Home() {
             },
           ]}
         />
+      </section>
+
+      {/* SECTION: 21ST.DEV GRID PULSE (carolinaraulino/grid-pulse) */}
+      <section className="relative px-4 py-12 md:px-8 max-w-7xl mx-auto">
+        <GridPulseDemo />
       </section>
 
       {/* SECTION 4: INTERACTIVE CAPABILITIES STACK (StackSpread) */}
