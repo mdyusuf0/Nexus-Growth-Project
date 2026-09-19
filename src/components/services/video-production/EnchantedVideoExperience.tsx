@@ -243,7 +243,6 @@ export function EnchantedVideoExperience() {
   const [activeModalReel, setActiveModalReel] = useState<ReelItem | null>(null);
   const [hoveredReelId, setHoveredReelId] = useState<string | null>(null);
   const [mutedReels, setMutedReels] = useState<{ [key: string]: boolean }>({});
-  const [isNavServicesOpen, setIsNavServicesOpen] = useState(false);
   const [openFaq, setOpenFaq] = useState<number | null>(0);
   const [colorGradeSplit, setColorGradeSplit] = useState<number>(55);
 
@@ -267,7 +266,6 @@ export function EnchantedVideoExperience() {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (e.key === 'Escape') {
         setActiveModalReel(null);
-        setIsNavServicesOpen(false);
       }
     };
     window.addEventListener('keydown', handleKeyDown);
@@ -290,161 +288,6 @@ export function EnchantedVideoExperience() {
   return (
     <div className="relative w-full bg-[#050508] text-white selection:bg-[#C9CCD1] selection:text-white font-sans overflow-x-hidden min-h-screen">
       
-      {/* ========================================================================= */}
-      {/* 1. FLOATING ENCHANTED CAPSULE NAVBAR */}
-      {/* ========================================================================= */}
-      <header className="fixed top-5 left-0 right-0 z-50 px-4 md:px-8 pointer-events-none transition-all duration-300">
-        <div className="max-w-7xl mx-auto flex items-center justify-between pointer-events-auto">
-          
-          {/* Brand Mark */}
-          <Link 
-            href="/"
-            className="flex items-center gap-3 group bg-black/70 hover:bg-black/90 backdrop-blur-xl border border-white/15 hover:border-[#C9CCD1]/50 px-4 py-2 rounded-full transition-all duration-300 shadow-[0_8px_30px_rgba(0,0,0,0.6)]"
-          >
-            <div className="w-8 h-8 rounded-full bg-gradient-to-tr from-[#C9CCD1] to-[#C9CCD1] flex items-center justify-center font-black text-sm text-white shadow-[0_0_15px_rgba(201,204,209,0.5)] group-hover:scale-105 transition-transform">
-              <Film className="w-4 h-4 text-white" />
-            </div>
-            <div className="flex flex-col">
-              <div className="flex items-center gap-1.5">
-                <span className="font-bold text-sm tracking-tight text-white leading-none">NEXUS</span>
-                <span className="text-[10px] font-mono font-black uppercase px-1.5 py-0.2 rounded bg-[#C9CCD1]/20 text-gray-300 border border-[#C9CCD1]/30">CINEMA</span>
-              </div>
-              <span className="text-[9px] font-mono text-gray-400 tracking-widest uppercase">Video Production</span>
-            </div>
-          </Link>
-
-          {/* Center Links & All 11 Services Dropdown */}
-          <div className="hidden lg:flex items-center gap-1 bg-black/70 backdrop-blur-xl border border-white/15 px-3 py-1.5 rounded-full shadow-[0_8px_30px_rgba(0,0,0,0.6)]">
-            <a 
-              href="#showcase" 
-              className="px-3.5 py-1.5 text-xs font-medium text-gray-300 hover:text-white rounded-full hover:bg-[#1A1A1A]/[0.08] transition-colors"
-            >
-              Reel Showcase
-            </a>
-            <a 
-              href="#capabilities" 
-              className="px-3.5 py-1.5 text-xs font-medium text-gray-300 hover:text-white rounded-full hover:bg-[#1A1A1A]/[0.08] transition-colors"
-            >
-              Retention Engines
-            </a>
-            <a 
-              href="#pipeline" 
-              className="px-3.5 py-1.5 text-xs font-medium text-gray-300 hover:text-white rounded-full hover:bg-[#1A1A1A]/[0.08] transition-colors"
-            >
-              4-Step Pipeline
-            </a>
-            <a 
-              href="#pricing" 
-              className="px-3.5 py-1.5 text-xs font-medium text-gray-300 hover:text-white rounded-full hover:bg-[#1A1A1A]/[0.08] transition-colors"
-            >
-              Sprints & Pricing
-            </a>
-            <a 
-              href="#faq" 
-              className="px-3.5 py-1.5 text-xs font-medium text-gray-300 hover:text-white rounded-full hover:bg-[#1A1A1A]/[0.08] transition-colors"
-            >
-              FAQ
-            </a>
-
-            {/* All 11 Services Dropdown */}
-            <div className="relative" onClick={(e) => e.stopPropagation()}>
-              <button
-                type="button"
-                onClick={() => setIsNavServicesOpen(!isNavServicesOpen)}
-                className={`flex items-center gap-1.5 px-3 py-1.5 text-xs font-medium rounded-full transition-all cursor-pointer ${
-                  isNavServicesOpen
-                    ? 'text-white bg-[#C9CCD1]/40 border border-[#C9CCD1] shadow-[0_0_15px_rgba(201,204,209,0.5)]'
-                    : 'text-gray-300 hover:text-white hover:bg-[#C9CCD1]/15'
-                }`}
-              >
-                <span>All 11 Services</span>
-                <ChevronDown className={`w-3 h-3 transition-transform duration-200 ${isNavServicesOpen ? 'rotate-180' : ''}`} />
-              </button>
-
-              {isNavServicesOpen && (
-                <div className="absolute top-full right-0 mt-3 w-80 max-h-[75vh] overflow-y-auto bg-[#0a0a10]/95 backdrop-blur-2xl border border-[#C9CCD1]/30 rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.8),0_0_30px_rgba(201,204,209,0.2)] p-2.5 z-50 flex flex-col gap-1.5">
-                  <div className="px-3 py-2 border-b border-white/10 flex items-center justify-between">
-                    <span className="text-[10px] font-mono uppercase tracking-widest text-[#C9CCD1] font-bold">
-                      NEXUS DISCIPLINES (11)
-                    </span>
-                    <Link
-                      href="/services"
-                      onClick={() => setIsNavServicesOpen(false)}
-                      className="text-[10px] font-mono text-white/70 hover:text-gray-300 underline transition-colors"
-                    >
-                      Master Hub ➔
-                    </Link>
-                  </div>
-
-                  {[
-                    { id: '01', name: 'Website Development', href: '/services/web-development', tag: 'CODE', note: 'Spec Proof' },
-                    { id: '02', name: 'App Development', href: '/services/app-development', tag: 'MOBILE' },
-                    { id: '03', name: 'Social Media Management', href: '/services/social-media-management', tag: 'ORGANIC' },
-                    { id: '04', name: 'Graphic Design', href: '/services/graphic-design', tag: 'VISUAL' },
-                    { id: '05', name: 'AI Automation', href: '/services/ai-automation', tag: 'AGENTS', note: '⚡ EYEPUNE UI' },
-                    { id: '06', name: 'Branding & Design', href: '/services/branding-design', tag: 'IDENTITY', note: '✦ UNIFIERS UI' },
-                    { id: '07', name: 'Google & Meta Ads', href: '/services/google-meta-ads', tag: 'PAID' },
-                    { id: '08', name: 'Video Production & Editing', href: '/services/video-production-editing', tag: 'FILM', note: '★ ACTIVE UI' },
-                    { id: '09', name: 'Copywriting & Content Strategy', href: '/services/copywriting-content-strategy', tag: 'WORDS' },
-                    { id: '10', name: 'SEO', href: '/services/seo', tag: 'SEARCH' },
-                    { id: '11', name: 'CRM & Sales Funnel Setup', href: '/services/crm-sales-funnel', tag: 'CONVERT' },
-                  ].map((s) => (
-                    <Link
-                      key={s.id}
-                      href={s.href}
-                      onClick={() => setIsNavServicesOpen(false)}
-                      className={`flex items-center justify-between px-3 py-2 rounded-xl text-xs font-mono transition-all ${
-                        s.id === '08'
-                          ? 'bg-gray-800/60 border border-[#C9CCD1]/60 text-gray-200 font-bold shadow-[0_0_12px_rgba(201,204,209,0.3)]'
-                          : 'text-gray-300 hover:text-white hover:bg-[#1A1A1A]/[0.06] hover:border hover:border-white/10'
-                      }`}
-                    >
-                      <div className="flex items-center gap-2.5 truncate">
-                        <span className="text-[10px] text-[#C9CCD1] font-bold">#{s.id}</span>
-                        <span className="truncate">{s.name}</span>
-                      </div>
-                      {s.note ? (
-                        <span className={`text-[9px] px-2 py-0.5 rounded-full font-bold shrink-0 ${
-                          s.id === '08' ? 'bg-[#C9CCD1] text-white' : 'bg-[#1A1A1A]/10 text-gray-300 border border-[#C9CCD1]/30'
-                        }`}>
-                          {s.note}
-                        </span>
-                      ) : (
-                        <span className="text-[9px] px-1.5 py-0.5 rounded border border-white/10 text-gray-400 shrink-0">
-                          {s.tag}
-                        </span>
-                      )}
-                    </Link>
-                  ))}
-
-                  <div className="pt-2 mt-1 border-t border-white/10 px-2 flex items-center justify-between text-[11px] font-mono text-gray-400">
-                    <Link href="/" className="hover:text-white transition-colors">
-                      ← Agency Home
-                    </Link>
-                    <Link href="/contact" className="text-[#C9CCD1] hover:underline">
-                      Book Sprint ➔
-                    </Link>
-                  </div>
-                </div>
-              )}
-            </div>
-          </div>
-
-          {/* Right Action Button */}
-          <div className="flex items-center gap-3">
-            <Link
-              href="/contact"
-              className="relative overflow-hidden group bg-gradient-to-r from-[#C9CCD1] via-[#C9CCD1] to-[#C9CCD1] text-white font-bold text-xs uppercase tracking-wider px-5 py-2.5 rounded-full shadow-[0_0_25px_rgba(201,204,209,0.4)] hover:shadow-[0_0_35px_rgba(201,204,209,0.7)] transition-all border border-[#C9CCD1]/30"
-            >
-              <span className="relative z-10 flex items-center gap-2">
-                Book Video Sprint <ArrowUpRight className="w-3.5 h-3.5" />
-              </span>
-              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent skew-x-12 translate-x-[-150%] group-hover:translate-x-[150%] transition-transform duration-700" />
-            </Link>
-          </div>
-
-        </div>
-      </header>
 
       {/* ========================================================================= */}
       {/* 2. ATMOSPHERIC PARALLAX MOUNTAIN HERO */}

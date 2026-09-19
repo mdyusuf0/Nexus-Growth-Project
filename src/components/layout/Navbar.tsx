@@ -205,16 +205,6 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [isNavOpen, isServicesOpen]);
 
-  const isSuppressed = Boolean(
-    pathname?.startsWith('/services/branding-design') || 
-    pathname?.startsWith('/services/ai-automation') || 
-    pathname?.startsWith('/services/video-production-editing') ||
-    pathname?.startsWith('/services/crm-sales-funnel')
-  );
-
-  if (isSuppressed) {
-    return null;
-  }
 
   return (
     <>
