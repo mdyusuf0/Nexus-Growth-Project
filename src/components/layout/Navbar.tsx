@@ -223,7 +223,7 @@ export default function Navbar() {
           {/* Logo Mark */}
           <Link href="/" className="flex items-center gap-3 group shrink-0">
             <Image
-              src="/logo-horizontal.png"
+              src="/logo-nexus-growth.png"
               alt="NEXUS Growth"
               width={180}
               height={48}
