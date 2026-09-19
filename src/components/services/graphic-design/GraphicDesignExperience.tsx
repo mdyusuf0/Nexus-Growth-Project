@@ -42,7 +42,7 @@ const PROJECTS: DesignProject[] = [
     title: 'Kurogane Botanical Packaging',
     category: 'PHYSICAL PRODUCT // LUXURY PACKAGING',
     year: '2026',
-    color: '#d7dd44',
+    color: '#FF1F1F',
     aspect: 'aspect-[4/5]',
     desc: 'Soft-touch matte black paperboard with micro-embossed gold foil typography, custom magnetic closure die-line, and 100% biodegradable seaweed fiber tray.',
     materials: ['G.F Smith 380gsm Colorplan', 'Matte Gold Hot Foil', 'Custom Die-Line #882'],
@@ -54,7 +54,7 @@ const PROJECTS: DesignProject[] = [
     title: 'Tokyo Cyberpunk OOH Takeover',
     category: 'LARGE FORMAT // BILLBOARD CAMPAIGN',
     year: '2026',
-    color: '#ff5e62',
+    color: '#FF1F1F',
     aspect: 'aspect-[16/9]',
     desc: 'High-contrast typography billboard series deployed across Shibuya Crossing and Shinjuku station screens with ultra-bold grotesque lettering readable at 120 meters.',
     materials: ['Vector CMYK / 300DPI', 'Pantone 805 C Neon', 'Subway Lightbox Transparency'],
@@ -66,7 +66,7 @@ const PROJECTS: DesignProject[] = [
     title: 'Venture Keynote & Editorial Deck',
     category: 'DIGITAL ASSETS // PITCH ARCHITECTURE',
     year: '2026',
-    color: '#1040e0',
+    color: '#C9CCD1',
     aspect: 'aspect-[16/10]',
     desc: '48-page executive investor pitch deck and brand bible. Minimalist grid layout turning complex distributed systems into digestible visual hierarchies.',
     materials: ['Figma Token System', 'Vector SVG Charts', 'Interactive Keynote Build'],
@@ -78,7 +78,7 @@ const PROJECTS: DesignProject[] = [
     title: 'Bespoke Variable Type Specimen',
     category: 'TYPOGRAPHY // CUSTOM LETTERING',
     year: '2026',
-    color: '#eaa0cd',
+    color: '#FF1F1F',
     aspect: 'aspect-square',
     desc: 'Custom geometric display typeface engineered with dual optical width and weight axes. Developed specifically for architectural and luxury studio collateral.',
     materials: ['OpenType .WOFF2 / .TTF', 'Variable Axis wdth: 20-100', 'Kerning Pair Optimization'],
@@ -90,7 +90,7 @@ const PROJECTS: DesignProject[] = [
     title: 'Heavyweight Studio Capsule Merch',
     category: 'MERCHANDISE // APPAREL CURATION',
     year: '2026',
-    color: '#f09341',
+    color: '#FF1F1F',
     aspect: 'aspect-[3/4]',
     desc: '480gsm custom-milled organic French terry cotton hoodie with high-density puff print graphics, custom silicone aglets, and woven studio hangtags.',
     materials: ['480gsm Organic Cotton', 'Plastisol Puff Screenprint', 'Custom Woven Neck Labels'],
@@ -99,10 +99,10 @@ const PROJECTS: DesignProject[] = [
   },
   {
     id: '06',
-    title: 'Aperture Spatial Identity Manual',
+    title: 'NEXUS Spatial Identity Manual',
     category: 'BRAND IDENTITY // SYSTEM RULES',
     year: '2026',
-    color: '#00966e',
+    color: '#FF1F1F',
     aspect: 'aspect-[4/3]',
     desc: '120-page clothbound hardback brand manual outlining grid systems, optical alignment principles, CMYK color profiles, and spatial packaging layouts.',
     materials: ['Clothbound Buckram Spine', 'Fedrigoni Arcoprint 150gsm', 'Debossed Foil Monogram'],
@@ -112,16 +112,16 @@ const PROJECTS: DesignProject[] = [
 ];
 
 const SWATCH_PALETTE = [
-  { name: 'APERTURE INK', hex: '#121214', cmyk: 'C70 M60 Y50 K90' },
-  { name: 'ACID CITRON', hex: '#d7dd44', cmyk: 'C10 M0 Y80 K0' },
-  { name: 'HYPER CORAL', hex: '#ff5e62', cmyk: 'C0 M80 Y60 K0' },
-  { name: 'COBALT OVERDRIVE', hex: '#1040e0', cmyk: 'C95 M75 Y0 K0' },
-  { name: 'ORCHID HAZE', hex: '#eaa0cd', cmyk: 'C10 M45 Y0 K0' },
+  { name: 'NEXUS INK', hex: '#121214', cmyk: 'C70 M60 Y50 K90' },
+  { name: 'ACID CITRON', hex: '#FF1F1F', cmyk: 'C10 M0 Y80 K0' },
+  { name: 'HYPER CORAL', hex: '#FF1F1F', cmyk: 'C0 M80 Y60 K0' },
+  { name: 'COBALT OVERDRIVE', hex: '#C9CCD1', cmyk: 'C95 M75 Y0 K0' },
+  { name: 'ORCHID HAZE', hex: '#FF1F1F', cmyk: 'C10 M45 Y0 K0' },
   { name: 'WARM PARCHMENT', hex: '#f4f4f0', cmyk: 'C2 M2 Y4 K0' },
 ];
 
 export default function GraphicDesignExperience() {
-  const [activeColor, setActiveColor] = useState('#d7dd44');
+  const [activeColor, setActiveColor] = useState('#FF1F1F');
   const [hoveredProject, setHoveredProject] = useState<DesignProject | null>(null);
   const [copiedHex, setCopiedHex] = useState<string | null>(null);
   const [isTouch, setIsTouch] = useState(false);
@@ -176,7 +176,7 @@ export default function GraphicDesignExperience() {
     <motion.div 
       ref={containerRef}
       style={{ backgroundColor: bgHue }}
-      className="relative min-h-screen text-white selection:bg-[#d7dd44] selection:text-black overflow-hidden transition-colors duration-700"
+      className="relative min-h-screen text-white selection:bg-[#FF1F1F] selection:text-white overflow-hidden transition-colors duration-700"
     >
       {/* 1. Paint Swatch / Brush Dot Custom Cursor */}
       {!isTouch && (
@@ -240,7 +240,7 @@ export default function GraphicDesignExperience() {
             scale: [1, 1.15, 0.95, 1],
           }}
           transition={{ duration: 24, repeat: Infinity, ease: 'linear' }}
-          className="absolute -top-40 right-10 w-[700px] h-[700px] rounded-full bg-gradient-to-br from-[#d7dd44]/15 via-[#ff5e62]/10 to-transparent blur-[140px] will-change-transform"
+          className="absolute -top-40 right-10 w-[700px] h-[700px] rounded-full bg-gradient-to-br from-[#FF1F1F]/15 via-[#FF1F1F]/10 to-transparent blur-[140px] will-change-transform"
         />
         <motion.div 
           animate={{
@@ -249,7 +249,7 @@ export default function GraphicDesignExperience() {
             scale: [1, 0.9, 1.2, 1],
           }}
           transition={{ duration: 28, repeat: Infinity, ease: 'linear' }}
-          className="absolute top-1/2 -left-40 w-[650px] h-[650px] rounded-full bg-gradient-to-tr from-[#1040e0]/15 via-[#eaa0cd]/10 to-transparent blur-[150px] will-change-transform"
+          className="absolute top-1/2 -left-40 w-[650px] h-[650px] rounded-full bg-gradient-to-tr from-[#C9CCD1]/15 via-[#FF1F1F]/10 to-transparent blur-[150px] will-change-transform"
         />
       </div>
 
@@ -257,8 +257,8 @@ export default function GraphicDesignExperience() {
       <div className="relative z-10 max-w-7xl mx-auto px-4 md:px-8 pt-10 pb-4">
         <div className="flex flex-wrap items-center justify-between gap-4 border-b border-white/10 pb-4">
           <div className="flex items-center gap-3">
-            <span className="w-2.5 h-2.5 rounded-full bg-[#ff5e62] animate-pulse" />
-            <span className="font-mono text-xs uppercase tracking-widest text-amber-400 font-bold">
+            <span className="w-2.5 h-2.5 rounded-full bg-[#FF1F1F] animate-pulse" />
+            <span className="font-mono text-xs uppercase tracking-widest text-red-400 font-bold">
               DISCIPLINE 05 // TACTILE EDITORIAL GRAPHICS
             </span>
           </div>
@@ -275,20 +275,20 @@ export default function GraphicDesignExperience() {
       {/* Hero Section */}
       <section className="relative z-10 max-w-7xl mx-auto px-4 md:px-8 pt-14 pb-20">
         <div className="max-w-4xl space-y-6">
-          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-amber-500/30 bg-amber-500/10 text-amber-300 font-mono text-xs">
+          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-red-500/30 bg-red-500/10 text-red-300 font-mono text-xs">
             <Palette className="w-3.5 h-3.5" />
             <span>Uncompromising Physical &amp; Digital Craft</span>
           </div>
 
           <h1 className="font-['Roboto_Flex'] [font-variation-settings:'wdth'_33] [font-stretch:33%] text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-black uppercase tracking-tight leading-[0.86] text-white">
             Brutalist. Tactile.
-            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-[#d7dd44] via-[#ff5e62] to-[#eaa0cd]">
+            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-[#FF1F1F] via-[#FF1F1F] to-[#FF1F1F]">
               Editorial Graphic Systems.
             </span>
           </h1>
 
           <p className="font-mono text-base md:text-lg text-gray-300 max-w-2xl leading-relaxed">
-            We reject templated minimalism. APERTURE STUDIOS designs bespoke packaging, high-contrast large format campaigns, and tactile merchandise that hold tangible cultural weight.
+            We reject templated minimalism. NEXUS Growth designs bespoke packaging, high-contrast large format campaigns, and tactile merchandise that hold tangible cultural weight.
           </p>
         </div>
 
@@ -296,7 +296,7 @@ export default function GraphicDesignExperience() {
         <div className="mt-12 p-6 rounded-2xl border border-white/10 bg-white/[0.03] backdrop-blur-md">
           <div className="flex flex-wrap items-center justify-between gap-4 mb-4">
             <div className="flex items-center gap-2">
-              <SlidersHorizontal className="w-4 h-4 text-amber-400" />
+              <SlidersHorizontal className="w-4 h-4 text-red-400" />
               <span className="font-mono text-xs uppercase tracking-wider text-white font-bold">
                 Studio Ink Library // Click Swatch to Sample
               </span>
@@ -341,7 +341,7 @@ export default function GraphicDesignExperience() {
       <section className="relative z-10 max-w-7xl mx-auto px-4 md:px-8 py-16 border-t border-white/10">
         <div className="flex flex-wrap items-end justify-between gap-6 mb-12">
           <div>
-            <span className="font-mono text-xs uppercase tracking-widest text-[#d7dd44] font-bold">
+            <span className="font-mono text-xs uppercase tracking-widest text-[#FF1F1F] font-bold">
               CURATED SHOWCASE
             </span>
             <h2 className="font-['Roboto_Flex'] [font-variation-settings:'wdth'_33] [font-stretch:33%] text-4xl md:text-6xl font-black uppercase text-white tracking-tight mt-2">
@@ -399,7 +399,7 @@ export default function GraphicDesignExperience() {
                   {proj.category}
                 </span>
 
-                <h3 className="text-xl font-bold text-white tracking-tight group-hover:text-[#d7dd44] transition-colors">
+                <h3 className="text-xl font-bold text-white tracking-tight group-hover:text-[#FF1F1F] transition-colors">
                   {proj.title}
                 </h3>
 
@@ -424,21 +424,21 @@ export default function GraphicDesignExperience() {
 
       {/* CTA Footer Section */}
       <section className="relative z-10 max-w-7xl mx-auto px-4 md:px-8 py-24">
-        <div className="rounded-3xl border border-amber-500/30 bg-gradient-to-r from-amber-950/40 via-red-950/30 to-black p-8 md:p-14 relative overflow-hidden shadow-[0_0_60px_rgba(215,221,68,0.15)]">
+        <div className="rounded-3xl border border-red-500/30 bg-gradient-to-r from-red-950/40 via-red-950/30 to-black p-8 md:p-14 relative overflow-hidden shadow-[0_0_60px_rgba(255,31,31,0.15)]">
           <div className="relative z-10 max-w-2xl space-y-4">
-            <span className="font-mono text-xs uppercase tracking-widest text-[#d7dd44] font-bold">
+            <span className="font-mono text-xs uppercase tracking-widest text-[#FF1F1F] font-bold">
               PHYSICAL &amp; DIGITAL COLLATERAL SPRINTS
             </span>
             <h3 className="font-['Roboto_Flex'] [font-variation-settings:'wdth'_33] [font-stretch:33%] text-4xl md:text-5xl font-black uppercase text-white leading-none">
               Commission Your Studio Design System.
             </h3>
             <p className="font-mono text-sm text-gray-300 leading-relaxed">
-              From unboxing packaging die-lines to global billboard takes and custom typography, APERTURE STUDIOS delivers publication-grade creative assets with guaranteed print readiness.
+              From unboxing packaging die-lines to global billboard takes and custom typography, NEXUS Growth delivers publication-grade creative assets with guaranteed print readiness.
             </p>
             <div className="pt-4 flex flex-wrap items-center gap-4">
               <Link
                 href="/contact"
-                className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-[#d7dd44] hover:bg-[#e4eb4d] text-black font-mono text-xs uppercase tracking-wider font-bold shadow-[0_0_30px_rgba(215,221,68,0.5)] transition-all"
+                className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-[#FF1F1F] hover:bg-[#e4eb4d] text-white font-mono text-xs uppercase tracking-wider font-bold shadow-[0_0_30px_rgba(255,31,31,0.5)] transition-all"
               >
                 <span>Initiate Graphic Sprint</span>
                 <ArrowUpRight className="w-4 h-4" />

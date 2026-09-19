@@ -16,17 +16,17 @@ import {
 } from 'lucide-react';
 
 const DISCIPLINES = [
-  { id: 'web-dev', label: 'Web Development (Next.js / Headless)', color: '#d7dd44' },
-  { id: 'app-dev', label: 'Mobile App Development (React Native / iOS)', color: '#7ca8d2' },
-  { id: 'ai-automation', label: 'AI Automation & Custom Agents', color: '#00966e' },
-  { id: 'branding', label: 'Branding & Visual Identity System', color: '#eaa0cd' },
-  { id: 'paid-ads', label: 'Paid Acquisition (Google & Meta Ads)', color: '#f09341' },
-  { id: 'video-prod', label: 'High-Impact Video & Motion Design', color: '#d7dd44' },
-  { id: 'social-growth', label: 'Social Media Management & Virality', color: '#eaa0cd' },
-  { id: 'graphic-design', label: 'Graphic Design & Packaging', color: '#7ca8d2' },
-  { id: 'seo-dominance', label: 'Technical SEO & Search Dominance', color: '#00966e' },
-  { id: 'crm-funnels', label: 'CRM & High-Conversion Sales Funnels', color: '#f09341' },
-  { id: 'full-growth', label: 'Full-Service Growth Partner (All-in-One)', color: '#d7dd44' },
+  { id: 'web-dev', label: 'Web Development (Next.js / Headless)', color: '#FF1F1F' },
+  { id: 'app-dev', label: 'Mobile App Development (React Native / iOS)', color: '#C9CCD1' },
+  { id: 'ai-automation', label: 'AI Automation & Custom Agents', color: '#FF1F1F' },
+  { id: 'branding', label: 'Branding & Visual Identity System', color: '#FF1F1F' },
+  { id: 'paid-ads', label: 'Paid Acquisition (Google & Meta Ads)', color: '#FF1F1F' },
+  { id: 'video-prod', label: 'High-Impact Video & Motion Design', color: '#FF1F1F' },
+  { id: 'social-growth', label: 'Social Media Management & Virality', color: '#FF1F1F' },
+  { id: 'graphic-design', label: 'Graphic Design & Packaging', color: '#C9CCD1' },
+  { id: 'seo-dominance', label: 'Technical SEO & Search Dominance', color: '#FF1F1F' },
+  { id: 'crm-funnels', label: 'CRM & High-Conversion Sales Funnels', color: '#FF1F1F' },
+  { id: 'full-growth', label: 'Full-Service Growth Partner (All-in-One)', color: '#FF1F1F' },
 ];
 
 const BUDGET_TIERS = [
@@ -95,7 +95,7 @@ export function ContactForm() {
     const payload = {
       access_key: accessKey,
       subject: `[NEW BRIEF] ${formData.company || formData.fullName} — ${budget}`,
-      from_name: formData.fullName || 'APERTURE STUDIOS Prospect',
+      from_name: formData.fullName || 'NEXUS Growth Prospect',
       email: formData.email,
       name: formData.fullName,
       company: formData.company,
@@ -137,7 +137,7 @@ export function ContactForm() {
     } catch (err) {
       console.error('Submission error:', err);
       setStatus('error');
-      setResponseMsg('Network connection error. Please email us directly at hello@aperturestudios.co');
+      setResponseMsg('Network connection error. Please email us directly at hello@nexusgrowth.co');
     }
   };
 
@@ -161,15 +161,15 @@ export function ContactForm() {
 
   if (status === 'success') {
     return (
-      <div className="tactile-card p-8 md:p-12 bg-white relative overflow-hidden border-3 border-black shadow-[-8px_12px_0px_#000]">
+      <div className="tactile-card p-8 md:p-12 bg-[#121212] relative overflow-hidden border-3 border-white/10 shadow-[0_0_20px_rgba(255,31,31,0.15)]">
         {/* Top Perforated Ticket Style Header */}
-        <div className="flex flex-wrap items-center justify-between gap-4 border-b-2 border-dashed border-black pb-6 mb-8">
+        <div className="flex flex-wrap items-center justify-between gap-4 border-b-2 border-dashed border-white/10 pb-6 mb-8">
           <div className="flex items-center gap-3">
-            <div className="h-10 w-10 rounded-xl bg-[#00966e] text-white border-2 border-black flex items-center justify-center font-bold text-xl shadow-[-2px_2px_0px_#000]">
+            <div className="h-10 w-10 rounded-xl bg-[#FF1F1F] text-white border-2 border-white/10 flex items-center justify-center font-bold text-xl shadow-[0_0_20px_rgba(255,31,31,0.15)]">
               ✓
             </div>
             <div>
-              <span className="font-mono text-xs uppercase tracking-widest text-[#5c5b5b]">
+              <span className="font-mono text-xs uppercase tracking-widest text-[#C9CCD1]">
                 Transmission Acknowledged
               </span>
               <h3 className="font-['Roboto_Flex'] text-2xl font-black uppercase [font-variation-settings:'wdth'_33] [font-stretch:33%] tracking-tight">
@@ -178,18 +178,18 @@ export function ContactForm() {
             </div>
           </div>
           <div className="flex items-center gap-2">
-            <div className="font-mono text-xs font-bold px-3 py-1.5 rounded-lg border-2 border-black bg-[#d7dd44] shadow-[-2px_2px_0px_#000]">
+            <div className="font-mono text-xs font-bold px-3 py-1.5 rounded-lg border-2 border-white/10 bg-[#FF1F1F] shadow-[0_0_20px_rgba(255,31,31,0.15)]">
               {ticketId}
             </div>
             <button
               onClick={copyTicket}
-              className="p-1.5 border-2 border-black rounded-lg bg-white hover:bg-black hover:text-white transition-colors"
+              className="p-1.5 border-2 border-white/10 rounded-lg bg-[#121212] hover:bg-black hover:text-white transition-colors"
               title="Copy Ticket ID"
             >
               <Copy className="h-4 w-4" />
             </button>
             {copied && (
-              <span className="font-mono text-[10px] uppercase font-bold text-[#00966e]">
+              <span className="font-mono text-[10px] uppercase font-bold text-[#FF1F1F]">
                 Copied!
               </span>
             )}
@@ -197,39 +197,39 @@ export function ContactForm() {
         </div>
 
         {isTestMode && (
-          <div className="mb-6 p-4 rounded-xl border-2 border-black bg-[#d7dd44]/30 flex items-start gap-3">
+          <div className="mb-6 p-4 rounded-xl border-2 border-white/10 bg-[#FF1F1F]/30 flex items-start gap-3">
             <Sparkles className="h-5 w-5 text-[#141414] shrink-0 mt-0.5" />
-            <div className="font-mono text-xs text-black">
-              <strong className="uppercase font-bold">Preview / Dev Mode Active:</strong> Form submission simulation passed. Once you drop your production Web3Forms key into <code className="bg-white px-1.5 py-0.5 border border-black rounded">.env.local</code>, submissions will ping your client inbox directly.
+            <div className="font-mono text-xs text-white">
+              <strong className="uppercase font-bold">Preview / Dev Mode Active:</strong> Form submission simulation passed. Once you drop your production Web3Forms key into <code className="bg-[#121212] px-1.5 py-0.5 border border-white/10 rounded">.env.local</code>, submissions will ping your client inbox directly.
             </div>
           </div>
         )}
 
         <div className="space-y-6">
-          <div className="p-6 rounded-2xl border-2 border-black bg-[#ecebe4] space-y-4">
-            <div className="flex items-center justify-between border-b border-black/20 pb-3">
-              <span className="font-mono text-xs uppercase text-[#5c5b5b]">Client / Representative</span>
-              <span className="font-bold text-sm text-black">{formData.fullName} ({formData.company || 'Direct Founder'})</span>
+          <div className="p-6 rounded-2xl border-2 border-white/10 bg-[#1A1A1A] space-y-4">
+            <div className="flex items-center justify-between border-b border-white/10/20 pb-3">
+              <span className="font-mono text-xs uppercase text-[#C9CCD1]">Client / Representative</span>
+              <span className="font-bold text-sm text-white">{formData.fullName} ({formData.company || 'Direct Founder'})</span>
             </div>
-            <div className="flex items-center justify-between border-b border-black/20 pb-3">
-              <span className="font-mono text-xs uppercase text-[#5c5b5b]">Priority Email</span>
-              <span className="font-mono text-sm font-bold text-black">{formData.email}</span>
+            <div className="flex items-center justify-between border-b border-white/10/20 pb-3">
+              <span className="font-mono text-xs uppercase text-[#C9CCD1]">Priority Email</span>
+              <span className="font-mono text-sm font-bold text-white">{formData.email}</span>
             </div>
-            <div className="flex items-center justify-between border-b border-black/20 pb-3">
-              <span className="font-mono text-xs uppercase text-[#5c5b5b]">Allocated Scope</span>
-              <span className="font-mono text-xs font-bold text-black text-right max-w-xs truncate">
+            <div className="flex items-center justify-between border-b border-white/10/20 pb-3">
+              <span className="font-mono text-xs uppercase text-[#C9CCD1]">Allocated Scope</span>
+              <span className="font-mono text-xs font-bold text-white text-right max-w-xs truncate">
                 {selectedDisciplines.join(', ')}
               </span>
             </div>
-            <div className="flex items-center justify-between border-b border-black/20 pb-3">
-              <span className="font-mono text-xs uppercase text-[#5c5b5b]">Target Investment</span>
-              <span className="font-mono text-xs font-bold px-2 py-0.5 bg-[#d7dd44] border border-black rounded">
+            <div className="flex items-center justify-between border-b border-white/10/20 pb-3">
+              <span className="font-mono text-xs uppercase text-[#C9CCD1]">Target Investment</span>
+              <span className="font-mono text-xs font-bold px-2 py-0.5 bg-[#FF1F1F] border border-white/10 rounded">
                 {budget}
               </span>
             </div>
             <div className="flex items-center justify-between">
-              <span className="font-mono text-xs uppercase text-[#5c5b5b]">Deployment Window</span>
-              <span className="font-mono text-xs font-bold px-2 py-0.5 bg-[#eaa0cd] border border-black rounded">
+              <span className="font-mono text-xs uppercase text-[#C9CCD1]">Deployment Window</span>
+              <span className="font-mono text-xs font-bold px-2 py-0.5 bg-[#FF1F1F] border border-white/10 rounded">
                 {timeline}
               </span>
             </div>
@@ -237,18 +237,18 @@ export function ContactForm() {
 
           {/* SLA Guarantee Box */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <div className="p-4 rounded-xl border-2 border-black bg-white shadow-[-3px_4px_0px_#000] flex items-center gap-3">
-              <Clock className="h-6 w-6 text-[#00966e]" />
+            <div className="p-4 rounded-xl border-2 border-white/10 bg-[#121212] shadow-[0_0_20px_rgba(255,31,31,0.15)] flex items-center gap-3">
+              <Clock className="h-6 w-6 text-[#FF1F1F]" />
               <div>
                 <div className="font-bold text-xs uppercase">24-Hour SLA Guarantee</div>
-                <div className="text-[11px] text-[#5c5b5b]">First strategic diagnostic sent within 1 business day.</div>
+                <div className="text-[11px] text-[#C9CCD1]">First strategic diagnostic sent within 1 business day.</div>
               </div>
             </div>
-            <div className="p-4 rounded-xl border-2 border-black bg-white shadow-[-3px_4px_0px_#000] flex items-center gap-3">
-              <ShieldCheck className="h-6 w-6 text-[#7ca8d2]" />
+            <div className="p-4 rounded-xl border-2 border-white/10 bg-[#121212] shadow-[0_0_20px_rgba(255,31,31,0.15)] flex items-center gap-3">
+              <ShieldCheck className="h-6 w-6 text-[#C9CCD1]" />
               <div>
                 <div className="font-bold text-xs uppercase">Mutual IP Protection</div>
-                <div className="text-[11px] text-[#5c5b5b]">All disclosures protected under bilateral NDA terms.</div>
+                <div className="text-[11px] text-[#C9CCD1]">All disclosures protected under bilateral NDA terms.</div>
               </div>
             </div>
           </div>
@@ -256,13 +256,13 @@ export function ContactForm() {
           <div className="pt-4 flex flex-wrap items-center justify-between gap-4">
             <button
               onClick={resetForm}
-              className="inline-flex items-center gap-2 font-mono text-xs font-bold uppercase underline underline-offset-4 hover:text-[#00966e] transition-colors"
+              className="inline-flex items-center gap-2 font-mono text-xs font-bold uppercase underline underline-offset-4 hover:text-[#FF1F1F] transition-colors"
             >
               <RefreshCw className="h-3.5 w-3.5" /> Submit Another Brief
             </button>
             <a
-              href="mailto:hello@aperturestudios.co"
-              className="c-button c-button-emerald text-sm"
+              href="mailto:hello@nexusgrowth.co"
+              className="c-button bg-gradient-to-r from-[#FF1F1F] to-[#8B0000] text-white hover:opacity-90 border-none text-sm"
             >
               Direct Executive Channel <ArrowRight className="h-4 w-4" />
             </a>
@@ -273,19 +273,19 @@ export function ContactForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="tactile-card p-6 md:p-10 bg-white border-3 border-black shadow-[-8px_12px_0px_#000] space-y-10">
+    <form onSubmit={handleSubmit} className="tactile-card p-6 md:p-10 bg-[#121212] border-3 border-white/10 shadow-[0_0_20px_rgba(255,31,31,0.15)] space-y-10">
       {/* SECTION 1: REQUIRED DISCIPLINES */}
       <div className="space-y-4">
         <div className="flex items-center justify-between flex-wrap gap-2">
           <div className="flex items-center gap-2">
-            <span className="h-6 w-6 rounded-full border-2 border-black bg-[#d7dd44] text-black font-black text-xs flex items-center justify-center">
+            <span className="h-6 w-6 rounded-full border-2 border-white/10 bg-[#FF1F1F] text-white font-black text-xs flex items-center justify-center">
               1
             </span>
             <h3 className="font-['Roboto_Flex'] text-xl font-bold uppercase [font-variation-settings:'wdth'_33] [font-stretch:33%] tracking-tight">
               Select Required Capabilities
             </h3>
           </div>
-          <span className="font-mono text-[11px] uppercase text-[#5c5b5b]">
+          <span className="font-mono text-[11px] uppercase text-[#C9CCD1]">
             Multi-select enabled ({selectedDisciplines.length} selected)
           </span>
         </div>
@@ -298,15 +298,15 @@ export function ContactForm() {
                 key={item.id}
                 type="button"
                 onClick={() => toggleDiscipline(item.label)}
-                className={`text-xs font-mono font-bold px-3.5 py-2.5 rounded-xl border-2 border-black transition-all flex items-center gap-2 text-left ${
+                className={`text-xs font-mono font-bold px-3.5 py-2.5 rounded-xl border-2 border-white/10 transition-all flex items-center gap-2 text-left ${
                   isSelected
-                    ? 'bg-[#141414] text-white shadow-[-3px_4px_0px_#d7dd44] -translate-y-0.5'
-                    : 'bg-[#f4f4f0] text-black hover:bg-[#ecebe4] shadow-[-2px_2px_0px_#000]'
+                    ? 'bg-[#0A0A0A] text-white shadow-[-3px_4px_0px_#FF1F1F] -translate-y-0.5'
+                    : 'bg-[#121212] text-white hover:bg-[#1A1A1A] shadow-[0_0_20px_rgba(255,31,31,0.15)]'
                 }`}
               >
                 <span
-                  className={`h-3.5 w-3.5 rounded border border-black flex items-center justify-center transition-colors ${
-                    isSelected ? 'bg-[#d7dd44] text-black' : 'bg-white'
+                  className={`h-3.5 w-3.5 rounded border border-white/10 flex items-center justify-center transition-colors ${
+                    isSelected ? 'bg-[#FF1F1F] text-white' : 'bg-[#121212]'
                   }`}
                 >
                   {isSelected && <Check className="h-2.5 w-2.5 stroke-[3]" />}
@@ -319,9 +319,9 @@ export function ContactForm() {
       </div>
 
       {/* SECTION 2: BUDGET BRACKET */}
-      <div className="space-y-4 border-t-2 border-black/10 pt-8">
+      <div className="space-y-4 border-t-2 border-white/10/10 pt-8">
         <div className="flex items-center gap-2">
-          <span className="h-6 w-6 rounded-full border-2 border-black bg-[#eaa0cd] text-black font-black text-xs flex items-center justify-center">
+          <span className="h-6 w-6 rounded-full border-2 border-white/10 bg-[#FF1F1F] text-white font-black text-xs flex items-center justify-center">
             2
           </span>
           <h3 className="font-['Roboto_Flex'] text-xl font-bold uppercase [font-variation-settings:'wdth'_33] [font-stretch:33%] tracking-tight">
@@ -337,16 +337,16 @@ export function ContactForm() {
                 key={tier.id}
                 type="button"
                 onClick={() => setBudget(tier.label)}
-                className={`p-4 rounded-xl border-2 border-black text-left transition-all ${
+                className={`p-4 rounded-xl border-2 border-white/10 text-left transition-all ${
                   isSelected
-                    ? 'bg-[#d7dd44] text-black shadow-[-4px_5px_0px_#000] -translate-y-1'
-                    : 'bg-[#f4f4f0] text-black hover:bg-white shadow-[-2px_3px_0px_#000]'
+                    ? 'bg-[#FF1F1F] text-white shadow-[0_0_20px_rgba(255,31,31,0.15)] -translate-y-1'
+                    : 'bg-[#121212] text-white hover:bg-[#121212] shadow-[0_0_20px_rgba(255,31,31,0.15)]'
                 }`}
               >
                 <div className="font-['Roboto_Flex'] text-xl font-black [font-variation-settings:'wdth'_33] [font-stretch:33%] uppercase">
                   {tier.label}
                 </div>
-                <div className="font-mono text-[10px] uppercase text-[#5c5b5b] mt-0.5">
+                <div className="font-mono text-[10px] uppercase text-[#C9CCD1] mt-0.5">
                   {tier.sub}
                 </div>
               </button>
@@ -356,9 +356,9 @@ export function ContactForm() {
       </div>
 
       {/* SECTION 3: TIMELINE & URGENCY */}
-      <div className="space-y-4 border-t-2 border-black/10 pt-8">
+      <div className="space-y-4 border-t-2 border-white/10/10 pt-8">
         <div className="flex items-center gap-2">
-          <span className="h-6 w-6 rounded-full border-2 border-black bg-[#7ca8d2] text-black font-black text-xs flex items-center justify-center">
+          <span className="h-6 w-6 rounded-full border-2 border-white/10 bg-[#C9CCD1] text-white font-black text-xs flex items-center justify-center">
             3
           </span>
           <h3 className="font-['Roboto_Flex'] text-xl font-bold uppercase [font-variation-settings:'wdth'_33] [font-stretch:33%] tracking-tight">
@@ -374,16 +374,16 @@ export function ContactForm() {
                 key={opt.id}
                 type="button"
                 onClick={() => setTimeline(opt.label)}
-                className={`p-3.5 rounded-xl border-2 border-black text-left transition-all flex items-center justify-between ${
+                className={`p-3.5 rounded-xl border-2 border-white/10 text-left transition-all flex items-center justify-between ${
                   isSelected
-                    ? 'bg-[#141414] text-white shadow-[-3px_4px_0px_#7ca8d2] -translate-y-0.5'
-                    : 'bg-[#f4f4f0] text-black hover:bg-white shadow-[-2px_2px_0px_#000]'
+                    ? 'bg-[#0A0A0A] text-white shadow-[-3px_4px_0px_#C9CCD1] -translate-y-0.5'
+                    : 'bg-[#121212] text-white hover:bg-[#121212] shadow-[0_0_20px_rgba(255,31,31,0.15)]'
                 }`}
               >
                 <span className="font-mono text-xs font-bold">{opt.label}</span>
                 <span
-                  className={`text-[9px] font-mono uppercase px-2 py-0.5 rounded border border-black ${
-                    isSelected ? 'bg-[#7ca8d2] text-black' : 'bg-white text-black'
+                  className={`text-[9px] font-mono uppercase px-2 py-0.5 rounded border border-white/10 ${
+                    isSelected ? 'bg-[#C9CCD1] text-white' : 'bg-[#121212] text-white'
                   }`}
                 >
                   {opt.badge}
@@ -395,9 +395,9 @@ export function ContactForm() {
       </div>
 
       {/* SECTION 4: CONTACT & DETAILS */}
-      <div className="space-y-5 border-t-2 border-black/10 pt-8">
+      <div className="space-y-5 border-t-2 border-white/10/10 pt-8">
         <div className="flex items-center gap-2">
-          <span className="h-6 w-6 rounded-full border-2 border-black bg-[#00966e] text-white font-black text-xs flex items-center justify-center">
+          <span className="h-6 w-6 rounded-full border-2 border-white/10 bg-[#FF1F1F] text-white font-black text-xs flex items-center justify-center">
             4
           </span>
           <h3 className="font-['Roboto_Flex'] text-xl font-bold uppercase [font-variation-settings:'wdth'_33] [font-stretch:33%] tracking-tight">
@@ -407,7 +407,7 @@ export function ContactForm() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div className="space-y-1.5">
-            <label className="block font-mono text-xs uppercase font-bold text-black">
+            <label className="block font-mono text-xs uppercase font-bold text-white">
               Full Name <span className="text-red-500">*</span>
             </label>
             <input
@@ -417,12 +417,12 @@ export function ContactForm() {
               value={formData.fullName}
               onChange={handleInputChange}
               placeholder="e.g. Alexander Vance"
-              className="w-full px-4 py-3 rounded-xl border-2 border-black bg-[#f4f4f0] text-sm font-sans placeholder:text-[#8a8a90] focus:bg-white focus:outline-none focus:ring-2 focus:ring-black shadow-[-2px_2px_0px_#000]"
+              className="w-full px-4 py-3 rounded-xl border-2 border-white/10 bg-[#121212] text-sm font-sans placeholder:text-[#6E7177] focus:bg-[#121212] focus:outline-none focus:ring-2 focus:ring-[#FF1F1F]/20 focus:border-[#FF1F1F] shadow-[0_0_20px_rgba(255,31,31,0.15)]"
             />
           </div>
 
           <div className="space-y-1.5">
-            <label className="block font-mono text-xs uppercase font-bold text-black">
+            <label className="block font-mono text-xs uppercase font-bold text-white">
               Corporate / Work Email <span className="text-red-500">*</span>
             </label>
             <input
@@ -432,12 +432,12 @@ export function ContactForm() {
               value={formData.email}
               onChange={handleInputChange}
               placeholder="alexander@company.com"
-              className="w-full px-4 py-3 rounded-xl border-2 border-black bg-[#f4f4f0] text-sm font-sans placeholder:text-[#8a8a90] focus:bg-white focus:outline-none focus:ring-2 focus:ring-black shadow-[-2px_2px_0px_#000]"
+              className="w-full px-4 py-3 rounded-xl border-2 border-white/10 bg-[#121212] text-sm font-sans placeholder:text-[#6E7177] focus:bg-[#121212] focus:outline-none focus:ring-2 focus:ring-[#FF1F1F]/20 focus:border-[#FF1F1F] shadow-[0_0_20px_rgba(255,31,31,0.15)]"
             />
           </div>
 
           <div className="space-y-1.5">
-            <label className="block font-mono text-xs uppercase font-bold text-black">
+            <label className="block font-mono text-xs uppercase font-bold text-white">
               Company / Brand Name
             </label>
             <input
@@ -446,12 +446,12 @@ export function ContactForm() {
               value={formData.company}
               onChange={handleInputChange}
               placeholder="e.g. Apex Spatial Labs"
-              className="w-full px-4 py-3 rounded-xl border-2 border-black bg-[#f4f4f0] text-sm font-sans placeholder:text-[#8a8a90] focus:bg-white focus:outline-none focus:ring-2 focus:ring-black shadow-[-2px_2px_0px_#000]"
+              className="w-full px-4 py-3 rounded-xl border-2 border-white/10 bg-[#121212] text-sm font-sans placeholder:text-[#6E7177] focus:bg-[#121212] focus:outline-none focus:ring-2 focus:ring-[#FF1F1F]/20 focus:border-[#FF1F1F] shadow-[0_0_20px_rgba(255,31,31,0.15)]"
             />
           </div>
 
           <div className="space-y-1.5">
-            <label className="block font-mono text-xs uppercase font-bold text-black">
+            <label className="block font-mono text-xs uppercase font-bold text-white">
               Current Website / URL
             </label>
             <input
@@ -460,13 +460,13 @@ export function ContactForm() {
               value={formData.website}
               onChange={handleInputChange}
               placeholder="https://apexlabs.com"
-              className="w-full px-4 py-3 rounded-xl border-2 border-black bg-[#f4f4f0] text-sm font-sans placeholder:text-[#8a8a90] focus:bg-white focus:outline-none focus:ring-2 focus:ring-black shadow-[-2px_2px_0px_#000]"
+              className="w-full px-4 py-3 rounded-xl border-2 border-white/10 bg-[#121212] text-sm font-sans placeholder:text-[#6E7177] focus:bg-[#121212] focus:outline-none focus:ring-2 focus:ring-[#FF1F1F]/20 focus:border-[#FF1F1F] shadow-[0_0_20px_rgba(255,31,31,0.15)]"
             />
           </div>
         </div>
 
         <div className="space-y-1.5">
-          <label className="block font-mono text-xs uppercase font-bold text-black">
+          <label className="block font-mono text-xs uppercase font-bold text-white">
             Phone / WhatsApp (Optional for urgent sprint dispatch)
           </label>
           <input
@@ -475,16 +475,16 @@ export function ContactForm() {
             value={formData.phone}
             onChange={handleInputChange}
             placeholder="+1 (555) 019-2834"
-            className="w-full px-4 py-3 rounded-xl border-2 border-black bg-[#f4f4f0] text-sm font-sans placeholder:text-[#8a8a90] focus:bg-white focus:outline-none focus:ring-2 focus:ring-black shadow-[-2px_2px_0px_#000]"
+            className="w-full px-4 py-3 rounded-xl border-2 border-white/10 bg-[#121212] text-sm font-sans placeholder:text-[#6E7177] focus:bg-[#121212] focus:outline-none focus:ring-2 focus:ring-[#FF1F1F]/20 focus:border-[#FF1F1F] shadow-[0_0_20px_rgba(255,31,31,0.15)]"
           />
         </div>
 
         <div className="space-y-1.5">
           <div className="flex items-center justify-between">
-            <label className="block font-mono text-xs uppercase font-bold text-black">
+            <label className="block font-mono text-xs uppercase font-bold text-white">
               Project Objective & Bottleneck <span className="text-red-500">*</span>
             </label>
-            <span className="font-mono text-[10px] text-[#5c5b5b]">
+            <span className="font-mono text-[10px] text-[#C9CCD1]">
               What is the #1 metric you need to 3x?
             </span>
           </div>
@@ -495,31 +495,31 @@ export function ContactForm() {
             value={formData.message}
             onChange={handleInputChange}
             placeholder="Tell us what you are building, your current conversion or scaling roadblocks, and what success looks like in 90 days..."
-            className="w-full px-4 py-3 rounded-xl border-2 border-black bg-[#f4f4f0] text-sm font-sans placeholder:text-[#8a8a90] focus:bg-white focus:outline-none focus:ring-2 focus:ring-black shadow-[-2px_2px_0px_#000]"
+            className="w-full px-4 py-3 rounded-xl border-2 border-white/10 bg-[#121212] text-sm font-sans placeholder:text-[#6E7177] focus:bg-[#121212] focus:outline-none focus:ring-2 focus:ring-[#FF1F1F]/20 focus:border-[#FF1F1F] shadow-[0_0_20px_rgba(255,31,31,0.15)]"
           />
         </div>
       </div>
 
       {status === 'error' && (
-        <div className="p-4 rounded-xl border-2 border-black bg-red-100 flex items-start gap-3">
+        <div className="p-4 rounded-xl border-2 border-white/10 bg-red-100 flex items-start gap-3">
           <AlertCircle className="h-5 w-5 text-red-600 shrink-0 mt-0.5" />
-          <div className="font-mono text-xs text-black">
+          <div className="font-mono text-xs text-white">
             <strong>Submission Notice:</strong> {responseMsg}
           </div>
         </div>
       )}
 
       {/* SUBMISSION BAR */}
-      <div className="border-t-2 border-black pt-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-        <div className="flex items-center gap-2 font-mono text-xs text-[#5c5b5b]">
-          <span className="h-2 w-2 rounded-full bg-[#00966e] animate-pulse" />
+      <div className="border-t-2 border-white/10 pt-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div className="flex items-center gap-2 font-mono text-xs text-[#C9CCD1]">
+          <span className="h-2 w-2 rounded-full bg-[#FF1F1F] animate-pulse" />
           <span>Average Strategic Turnaround: &lt; 24h</span>
         </div>
 
         <button
           type="submit"
           disabled={status === 'submitting'}
-          className="c-button c-button-ink text-base px-8 py-4 disabled:opacity-60"
+          className="c-button bg-gradient-to-r from-[#FF1F1F] to-[#8B0000] text-white hover:opacity-90 border-none text-base px-8 py-4 disabled:opacity-60"
         >
           {status === 'submitting' ? (
             <span className="inline-flex items-center gap-2">
@@ -527,7 +527,7 @@ export function ContactForm() {
             </span>
           ) : (
             <span className="inline-flex items-center gap-2">
-              Transmit Project Brief <Send className="h-4 w-4 text-[#d7dd44]" />
+              Transmit Project Brief <Send className="h-4 w-4 text-[#FF1F1F]" />
             </span>
           )}
         </button>

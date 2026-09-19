@@ -67,10 +67,11 @@ export function VelocityMarquee({ rows, className, tilt = false }: VelocityMarqu
       {rows.map((row, i) => (
         <div
           key={i}
-          className="relative w-full overflow-hidden border-y-3 border-black my-1 py-2.5 shadow-[-3px_4px_0px_#000]"
+          className="relative w-full overflow-hidden border-y border-white/10 my-1 py-2.5"
           style={{
-            backgroundColor: row.bg || (i % 2 === 0 ? "#d7dd44" : "#eaa0cd"),
-            color: row.textColor || "#000",
+            backgroundColor: row.bg || (i % 2 === 0 ? "#FF1F1F" : "#1A1A1A"),
+            color: row.textColor || (i % 2 === 0 ? "#fff" : "#C9CCD1"),
+            boxShadow: i % 2 === 0 ? "0 0 30px rgba(255, 31, 31, 0.2)" : "none",
           }}
         >
           <div
@@ -86,7 +87,7 @@ export function VelocityMarquee({ rows, className, tilt = false }: VelocityMarqu
                     <span className="font-['Roboto_Flex'] [font-variation-settings:'wdth'_33] [font-stretch:33%] text-5xl sm:text-7xl md:text-8xl font-black uppercase tracking-tight leading-none">
                       {item}
                     </span>
-                    <span className="text-3xl sm:text-5xl opacity-80">✦</span>
+                    <span className="text-3xl sm:text-5xl opacity-60">✦</span>
                   </div>
                 ))}
               </div>

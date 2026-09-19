@@ -77,7 +77,7 @@ const CHANNELS: ChannelTab[] = [
       avatar: '/vartalaap/avatar_camille.webp',
       text: 'Just watched your Horizon commercial reel! Is the Limited Obsidian Edition available in 750ml? Need it delivered before Friday.',
       time: '10:42 AM',
-      aiReply: 'Bonjour Camille! Yes, 4 units are reserved at our Paris production hub. I have applied your 15% film launch code APERTURE15. Tap below to checkout via Apple Pay.',
+      aiReply: 'Bonjour Camille! Yes, 4 units are reserved at our Paris production hub. I have applied your 15% film launch code NEXUS15. Tap below to checkout via Apple Pay.',
       outcome: '✓ 1-Click Apple Pay Link Dispatched ($89.00 Closed in 22s)',
       revenue: '+$89.00 Closed',
     },
@@ -96,7 +96,7 @@ const CHANNELS: ChannelTab[] = [
       avatar: '/vartalaap/avatar_carla.webp',
       text: 'Watched your 3D product render reel! Where can our marketing team download your commercial production rate card?',
       time: '11:15 AM',
-      aiReply: 'Hey Elena! Here is your direct VIP access link to APERTURE STUDIOS’ 2026 Production & Funnel Deck + our interactive budget calculator: aperturestudios.co/production-rates',
+      aiReply: 'Hey Elena! Here is your direct VIP access link to NEXUS Growth’ 2026 Production & Funnel Deck + our interactive budget calculator: nexusgrowth.co/production-rates',
       outcome: '✓ Qualified Brand Tag Added to HubSpot + Attribution Logged to Campaign #REEL-42',
       revenue: 'Deal Est: $24,500',
     },
@@ -106,7 +106,7 @@ const CHANNELS: ChannelTab[] = [
     name: 'Carrier-Grade Priority SMS',
     iconSrc: '/vartalaap/hover-icons-3.svg',
     badge: '< 90S RESPONSE',
-    color: '#38bdf8',
+    color: '#C9CCD1',
     tagline: 'Automated Post-Purchase & Shoot Approvals',
     description: 'Automate post-production client signoffs, video review links, VIP drop countdown alerts, and abandoned cart recovery with 99.4% carrier delivery SLAs.',
     stats: '99.4% Delivery SLA',
@@ -125,7 +125,7 @@ const CHANNELS: ChannelTab[] = [
     name: 'High-Intent Webchat Radar',
     iconSrc: '/vartalaap/hover-icons-4.svg',
     badge: '0-LATENCY STREAM',
-    color: '#6366f1',
+    color: '#8B0000',
     tagline: 'Cart Value & Dwell-Time Intent Trigger',
     description: 'Context-aware conversational widget that dynamically reads the user’s current service page, video watch completion percentage, and estimated project scope before initiating dialogue.',
     stats: '4.2x Higher CRO',
@@ -144,7 +144,7 @@ const CHANNELS: ChannelTab[] = [
     name: 'Voice Telephony AI Booking',
     iconSrc: '/vartalaap/hover-icons-5.svg',
     badge: '400MS SPEECH LATENCY',
-    color: '#00f2fe',
+    color: '#FF1F1F',
     tagline: 'Studio-Grade Phone Intake & Inbound Qualification',
     description: 'Sub-second inbound telephony agents with natural human breath pauses and studio audio cadence, booking qualified discovery calls and answering project inquiries 24/7.',
     stats: '15,000 Call Hours / Mo',
@@ -187,11 +187,11 @@ const VIDEO_SHOWCASES: VideoReel[] = [
       { stat: '4.2X', label: 'Verified ROAS' },
       { stat: '14s', label: 'Avg Checkout Time' },
     ],
-    description: 'Most production agencies produce a gorgeous commercial, hand you an .MP4 file, and walk away. APERTURE STUDIOS bridges the gap: our commercial films are directly tied to click-to-WhatsApp funnels and 1-click checkout flows that turn viewers into paying customers in seconds.',
+    description: 'Most production agencies produce a gorgeous commercial, hand you an .MP4 file, and walk away. NEXUS Growth bridges the gap: our commercial films are directly tied to click-to-WhatsApp funnels and 1-click checkout flows that turn viewers into paying customers in seconds.',
   },
   {
     id: 'ai-core',
-    title: 'APERTURE Neural Core // 3D Product & Data Sync',
+    title: 'NEXUS Neural Core // 3D Product & Data Sync',
     subtitle: 'Real-time classification, inventory verification, and CRM webhook routing across 100k+ concurrent buyer threads',
     category: '3D KINETIC AI DEMO',
     src: '/videos/vartalaap/ai-core-motion.mp4',
@@ -201,7 +201,7 @@ const VIDEO_SHOWCASES: VideoReel[] = [
       { stat: '94.8%', label: 'Intent Accuracy' },
       { stat: '100%', label: 'CRM Vector Sync' },
     ],
-    description: 'Watch how APERTURE Pipeline AI parses high-volume customer inquiries generated from paid social video campaigns — verifying real-time warehouse inventory, calculating shipping, and triggering automated Stripe and HubSpot database events.',
+    description: 'Watch how NEXUS Pipeline AI parses high-volume customer inquiries generated from paid social video campaigns — verifying real-time warehouse inventory, calculating shipping, and triggering automated Stripe and HubSpot database events.',
   },
   {
     id: 'voice-agent',
@@ -310,11 +310,11 @@ const USE_CASES: UseCaseItem[] = [
 const FAQS = [
   {
     q: 'Why does a creative production company need a CRM & Sales Funnel service?',
-    a: 'Most creative production agencies deliver a beautiful 4K video file or brand deck and abandon you with no mechanism to convert viewers into paying customers. At APERTURE STUDIOS, code, creative, and cash collected are inseparable. We build the high-conversion sales funnels, automated CRM routing, and WhatsApp checkout mechanisms that ensure your commercial films, paid ads, and web experiences generate measurable, closed revenue 24/7.',
+    a: 'Most creative production agencies deliver a beautiful 4K video file or brand deck and abandon you with no mechanism to convert viewers into paying customers. At NEXUS Growth, code, creative, and cash collected are inseparable. We build the high-conversion sales funnels, automated CRM routing, and WhatsApp checkout mechanisms that ensure your commercial films, paid ads, and web experiences generate measurable, closed revenue 24/7.',
   },
   {
     q: 'How does the video ad to WhatsApp checkout funnel work?',
-    a: 'When a prospective customer watches your commercial reel or product video on Instagram, TikTok, or YouTube, they click the primary call to action (Click-to-WhatsApp). Instead of landing on a slow, generic 5-second mobile webpage that causes 70% drop-off, a native WhatsApp chat opens instantly. APERTURE Pipeline AI answers their sizing, color, or shipping questions, applies a dynamic discount code, and sends a 1-click Apple Pay link. Average checkout time is under 20 seconds.',
+    a: 'When a prospective customer watches your commercial reel or product video on Instagram, TikTok, or YouTube, they click the primary call to action (Click-to-WhatsApp). Instead of landing on a slow, generic 5-second mobile webpage that causes 70% drop-off, a native WhatsApp chat opens instantly. NEXUS Pipeline AI answers their sizing, color, or shipping questions, applies a dynamic discount code, and sends a 1-click Apple Pay link. Average checkout time is under 20 seconds.',
   },
   {
     q: 'Which CRM platforms do you integrate with?',
@@ -379,21 +379,21 @@ export function VartalaapCrmExperience() {
   const currentVideo = VIDEO_SHOWCASES.find(v => v.id === activeVideo) || VIDEO_SHOWCASES[0];
 
   return (
-    <div className="relative min-h-screen bg-[#080c14] text-[#f8fafc] selection:bg-[#00f2fe] selection:text-black overflow-x-hidden">
+    <div className="relative min-h-screen bg-[#080c14] text-[#f8fafc] selection:bg-[#FF1F1F] selection:text-white overflow-x-hidden">
       
       {/* ========================================================================= */}
       {/* 1. ATMOSPHERIC NEON EDGE GLOW & AMBIENT RADIAL LIGHTING */}
       {/* ========================================================================= */}
       <div className="fixed inset-0 pointer-events-none z-0">
-        <div className="absolute top-[-10%] left-[-15%] w-[65vw] h-[65vw] rounded-full bg-gradient-to-br from-[#00c6ff]/15 via-[#0072ff]/10 to-transparent blur-[140px]" />
-        <div className="absolute top-[25%] right-[-10%] w-[60vw] h-[60vw] rounded-full bg-gradient-to-bl from-[#3b82f6]/15 via-[#6366f1]/10 to-transparent blur-[160px]" />
-        <div className="absolute bottom-[10%] left-[20%] w-[55vw] h-[55vw] rounded-full bg-gradient-to-tr from-[#00f2fe]/10 via-[#3b82f6]/10 to-transparent blur-[180px]" />
+        <div className="absolute top-[-10%] left-[-15%] w-[65vw] h-[65vw] rounded-full bg-gradient-to-br from-[#FF1F1F]/15 via-[#8B0000]/10 to-transparent blur-[140px]" />
+        <div className="absolute top-[25%] right-[-10%] w-[60vw] h-[60vw] rounded-full bg-gradient-to-bl from-[#FF1F1F]/15 via-[#8B0000]/10 to-transparent blur-[160px]" />
+        <div className="absolute bottom-[10%] left-[20%] w-[55vw] h-[55vw] rounded-full bg-gradient-to-tr from-[#FF1F1F]/10 via-[#FF1F1F]/10 to-transparent blur-[180px]" />
         
         {/* Subtle decorative grid dots */}
         <div 
           className="absolute inset-0 opacity-[0.03] mix-blend-overlay"
           style={{
-            backgroundImage: `radial-gradient(#00f2fe 1px, transparent 1px)`,
+            backgroundImage: `radial-gradient(#FF1F1F 1px, transparent 1px)`,
             backgroundSize: '36px 36px',
           }}
         />
@@ -403,21 +403,21 @@ export function VartalaapCrmExperience() {
       {/* 2. ASYMMETRIC FUTURISTIC CYBER-CAPSULE NAVBAR */}
       {/* ========================================================================= */}
       <header className="fixed top-4 left-0 right-0 z-50 px-4 md:px-8">
-        <div className="max-w-7xl mx-auto flex items-center justify-between px-5 py-3 rounded-full bg-[#080c14]/85 backdrop-blur-2xl border border-cyan-500/30 shadow-[0_4px_35px_rgba(0,0,0,0.6),0_0_30px_rgba(0,242,254,0.2)]">
+        <div className="max-w-7xl mx-auto flex items-center justify-between px-5 py-3 rounded-full bg-[#080c14]/85 backdrop-blur-2xl border border-red-500/30 shadow-[0_4px_35px_rgba(0,0,0,0.6),0_0_30px_rgba(255,31,31,0.2)]">
           
           {/* Logo with Mixed Typography */}
           <div className="flex items-center gap-3">
             <Link href="/" className="flex items-center gap-2.5 group">
-              <div className="w-9 h-9 rounded-xl bg-gradient-to-tr from-[#00c6ff] via-[#0072ff] to-[#38bdf8] flex items-center justify-center p-0.5 shadow-[0_0_20px_rgba(0,242,254,0.6)] group-hover:scale-105 transition-transform">
+              <div className="w-9 h-9 rounded-xl bg-gradient-to-tr from-[#FF1F1F] via-[#8B0000] to-[#C9CCD1] flex items-center justify-center p-0.5 shadow-[0_0_20px_rgba(255,31,31,0.6)] group-hover:scale-105 transition-transform">
                 <div className="w-full h-full bg-[#080c14] rounded-[10px] flex items-center justify-center">
-                  <TrendingUp className="w-4 h-4 text-[#00f2fe]" />
+                  <TrendingUp className="w-4 h-4 text-[#FF1F1F]" />
                 </div>
               </div>
               <div className="flex items-baseline gap-1.5">
                 <span className="font-['Syne'] font-extrabold tracking-tight text-base text-white">
-                  APERTURE
+                  NEXUS
                 </span>
-                <span className="font-serif italic text-lg text-cyan-300 font-normal">
+                <span className="font-serif italic text-lg text-red-300 font-normal">
                   Pipeline
                 </span>
               </div>
@@ -428,10 +428,10 @@ export function VartalaapCrmExperience() {
               <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
               <span className="text-green-400 font-bold">PIPELINE LIVE</span>
               <div className="flex items-center gap-0.5 ml-1">
-                <span className="w-0.5 h-2.5 bg-cyan-400 rounded-full animate-bounce [animation-delay:0.1s]" />
-                <span className="w-0.5 h-4 bg-cyan-300 rounded-full animate-bounce [animation-delay:0.25s]" />
-                <span className="w-0.5 h-5 bg-[#00f2fe] rounded-full animate-bounce [animation-delay:0.15s]" />
-                <span className="w-0.5 h-3 bg-blue-400 rounded-full animate-bounce [animation-delay:0.3s]" />
+                <span className="w-0.5 h-2.5 bg-red-400 rounded-full animate-bounce [animation-delay:0.1s]" />
+                <span className="w-0.5 h-4 bg-red-300 rounded-full animate-bounce [animation-delay:0.25s]" />
+                <span className="w-0.5 h-5 bg-[#FF1F1F] rounded-full animate-bounce [animation-delay:0.15s]" />
+                <span className="w-0.5 h-3 bg-red-400 rounded-full animate-bounce [animation-delay:0.3s]" />
               </div>
               <span className="text-gray-500">400ms Checkout SLA</span>
             </div>
@@ -439,12 +439,12 @@ export function VartalaapCrmExperience() {
 
           {/* Quick Nav Links */}
           <nav className="hidden lg:flex items-center gap-6 text-xs font-medium text-gray-300">
-            <a href="#hero" className="hover:text-cyan-400 transition-colors">Conversion Engine</a>
-            <a href="#conversions" className="hover:text-cyan-400 transition-colors">Live Funnels</a>
-            <a href="#omnichannel" className="hover:text-cyan-400 transition-colors">Omnichannel</a>
-            <a href="#video-showcase" className="hover:text-cyan-400 transition-colors">Production Reels</a>
-            <a href="#verticals" className="hover:text-cyan-400 transition-colors">Client Sectors</a>
-            <a href="#pricing" className="hover:text-cyan-400 transition-colors">Sprint Plans</a>
+            <a href="#hero" className="hover:text-red-400 transition-colors">Conversion Engine</a>
+            <a href="#conversions" className="hover:text-red-400 transition-colors">Live Funnels</a>
+            <a href="#omnichannel" className="hover:text-red-400 transition-colors">Omnichannel</a>
+            <a href="#video-showcase" className="hover:text-red-400 transition-colors">Production Reels</a>
+            <a href="#verticals" className="hover:text-red-400 transition-colors">Client Sectors</a>
+            <a href="#pricing" className="hover:text-red-400 transition-colors">Sprint Plans</a>
           </nav>
 
           {/* Right Actions & All 11 Services Flyout */}
@@ -466,11 +466,11 @@ export function VartalaapCrmExperience() {
                     animate={{ opacity: 1, y: 0, scale: 1 }}
                     exit={{ opacity: 0, y: 8, scale: 0.96 }}
                     transition={{ duration: 0.18 }}
-                    className="absolute right-0 top-full mt-3 w-80 md:w-96 rounded-2xl bg-[#090e1a]/95 backdrop-blur-2xl border border-cyan-500/30 shadow-[0_20px_60px_rgba(0,0,0,0.85),0_0_35px_rgba(0,242,254,0.25)] p-4 z-50"
+                    className="absolute right-0 top-full mt-3 w-80 md:w-96 rounded-2xl bg-[#090e1a]/95 backdrop-blur-2xl border border-red-500/30 shadow-[0_20px_60px_rgba(0,0,0,0.85),0_0_35px_rgba(255,31,31,0.25)] p-4 z-50"
                   >
                     <div className="flex items-center justify-between pb-3 mb-3 border-b border-white/10 text-xs font-mono">
-                      <span className="text-gray-400">APERTURE CAPABILITIES</span>
-                      <Link href="/services" className="text-cyan-400 hover:underline">
+                      <span className="text-gray-400">NEXUS CAPABILITIES</span>
+                      <Link href="/services" className="text-red-400 hover:underline">
                         Master Index ➔
                       </Link>
                     </div>
@@ -478,13 +478,13 @@ export function VartalaapCrmExperience() {
                     <div className="space-y-1.5 text-xs">
                       <Link
                         href="/services/crm-sales-funnel"
-                        className="flex items-center justify-between p-2 rounded-lg bg-cyan-500/15 border border-cyan-500/40 text-cyan-200 font-medium shadow-[0_0_15px_rgba(0,242,254,0.2)]"
+                        className="flex items-center justify-between p-2 rounded-lg bg-red-500/15 border border-red-500/40 text-red-200 font-medium shadow-[0_0_15px_rgba(255,31,31,0.2)]"
                       >
                         <span className="flex items-center gap-2">
-                          <TrendingUp className="w-3.5 h-3.5 text-cyan-400" />
+                          <TrendingUp className="w-3.5 h-3.5 text-red-400" />
                           11 CRM &amp; Sales Funnels
                         </span>
-                        <span className="text-[10px] font-mono px-1.5 py-0.5 rounded bg-cyan-400 text-black font-bold">
+                        <span className="text-[10px] font-mono px-1.5 py-0.5 rounded bg-red-400 text-white font-bold">
                           ✦ ACTIVE PIPELINE
                         </span>
                       </Link>
@@ -494,7 +494,7 @@ export function VartalaapCrmExperience() {
                         className="flex items-center justify-between p-2 rounded-lg hover:bg-white/5 text-gray-300 transition-colors"
                       >
                         <span>08 Video Production &amp; Editing</span>
-                        <span className="text-[10px] font-mono text-indigo-400">✦ ENCHANTED CINEMA</span>
+                        <span className="text-[10px] font-mono text-red-400">✦ ENCHANTED CINEMA</span>
                       </Link>
 
                       <Link
@@ -524,7 +524,7 @@ export function VartalaapCrmExperience() {
 
                     <div className="mt-3 pt-3 border-t border-white/10 flex items-center justify-between text-[11px] text-gray-400">
                       <span>Want to connect your video campaigns to CRM?</span>
-                      <Link href="/contact?service=crm-sales-funnel" className="text-cyan-400 font-bold hover:underline">
+                      <Link href="/contact?service=crm-sales-funnel" className="text-red-400 font-bold hover:underline">
                         Book Sprint ➔
                       </Link>
                     </div>
@@ -535,7 +535,7 @@ export function VartalaapCrmExperience() {
 
             <Link
               href="/contact?service=crm-sales-funnel"
-              className="px-5 py-2 rounded-full bg-gradient-to-r from-[#00c6ff] via-[#0072ff] to-[#38bdf8] text-black font-bold text-xs tracking-wide shadow-[0_0_25px_rgba(0,242,254,0.5)] hover:shadow-[0_0_35px_rgba(0,242,254,0.8)] transition-all hover:scale-105 flex items-center gap-1.5"
+              className="px-5 py-2 rounded-full bg-gradient-to-r from-[#FF1F1F] via-[#8B0000] to-[#C9CCD1] text-white font-bold text-xs tracking-wide shadow-[0_0_25px_rgba(255,31,31,0.5)] hover:shadow-[0_0_35px_rgba(255,31,31,0.8)] transition-all hover:scale-105 flex items-center gap-1.5"
             >
               <span>Launch Funnel</span>
               <ArrowUpRight className="w-3.5 h-3.5" />
@@ -569,13 +569,13 @@ export function VartalaapCrmExperience() {
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-[#00f2fe]/10 border border-[#00f2fe]/30 text-cyan-300 text-xs font-mono mb-8 shadow-[0_0_25px_rgba(0,242,254,0.25)] rotate-[-1deg]"
+            className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-[#FF1F1F]/10 border border-[#FF1F1F]/30 text-red-300 text-xs font-mono mb-8 shadow-[0_0_25px_rgba(255,31,31,0.25)] rotate-[-1deg]"
           >
             <span className="relative flex h-2 w-2">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-2 w-2 bg-cyan-500"></span>
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-red-500"></span>
             </span>
-            <span className="tracking-widest uppercase">APERTURE PIPELINE OS // SERVICE 11: AUTOMATED CONVERSION ARCHITECTURE</span>
+            <span className="tracking-widest uppercase">NEXUS PIPELINE OS // SERVICE 11: AUTOMATED CONVERSION ARCHITECTURE</span>
           </motion.div>
 
           {/* Central Interactive Holographic Orb with Floating Dialogue Avatars */}
@@ -586,9 +586,9 @@ export function VartalaapCrmExperience() {
               initial={{ opacity: 0, x: -30, y: 20 }}
               animate={{ opacity: 1, x: 0, y: 0 }}
               transition={{ duration: 0.7, delay: 0.3 }}
-              className="absolute -left-4 lg:left-8 top-4 md:top-8 z-20 hidden sm:flex items-center gap-3 p-3.5 rounded-2xl bg-[#090e1a]/90 backdrop-blur-xl border border-cyan-500/40 shadow-[0_15px_40px_rgba(0,0,0,0.6),0_0_25px_rgba(0,242,254,0.2)] rotate-[-3deg] hover:rotate-0 transition-transform max-w-[280px] text-left"
+              className="absolute -left-4 lg:left-8 top-4 md:top-8 z-20 hidden sm:flex items-center gap-3 p-3.5 rounded-2xl bg-[#090e1a]/90 backdrop-blur-xl border border-red-500/40 shadow-[0_15px_40px_rgba(0,0,0,0.6),0_0_25px_rgba(255,31,31,0.2)] rotate-[-3deg] hover:rotate-0 transition-transform max-w-[280px] text-left"
             >
-              <div className="relative w-11 h-11 rounded-full overflow-hidden shrink-0 border border-cyan-400 shadow-[0_0_12px_rgba(0,242,254,0.5)]">
+              <div className="relative w-11 h-11 rounded-full overflow-hidden shrink-0 border border-red-400 shadow-[0_0_12px_rgba(255,31,31,0.5)]">
                 <Image
                   src="/vartalaap/avatar_camille.webp"
                   alt="Camille VIP Buyer"
@@ -597,14 +597,14 @@ export function VartalaapCrmExperience() {
                 />
               </div>
               <div className="text-xs">
-                <div className="flex items-center justify-between text-[10px] font-mono text-cyan-300 mb-0.5">
+                <div className="flex items-center justify-between text-[10px] font-mono text-red-300 mb-0.5">
                   <span>Camille D.</span>
                   <span className="text-green-400 font-bold">+$89.00</span>
                 </div>
                 <p className="text-gray-200 text-[11px] leading-tight">
                   &quot;Watched your commercial reel! Is the Obsidian Flask available?&quot;
                 </p>
-                <div className="text-[9px] font-mono text-cyan-400/90 mt-1 flex items-center gap-1">
+                <div className="text-[9px] font-mono text-red-400/90 mt-1 flex items-center gap-1">
                   <Check className="w-2.5 h-2.5 text-green-400" />
                   <span>Paid in 18s via Apple Pay</span>
                 </div>
@@ -618,38 +618,38 @@ export function VartalaapCrmExperience() {
               transition={{ duration: 0.7, delay: 0.1 }}
               onClick={cycleOrbState}
               className="relative cursor-pointer group my-2 z-10"
-              title="Click to interact with APERTURE Pipeline Core"
+              title="Click to interact with NEXUS Pipeline Core"
             >
               {/* Outer Glow Halo */}
-              <div className="absolute -inset-10 rounded-full bg-gradient-to-r from-cyan-500/25 via-blue-600/35 to-purple-600/25 blur-3xl group-hover:blur-[70px] transition-all duration-500 animate-pulse" />
+              <div className="absolute -inset-10 rounded-full bg-gradient-to-r from-red-500/25 via-red-600/35 to-stone-600/25 blur-3xl group-hover:blur-[70px] transition-all duration-500 animate-pulse" />
               
               {/* Rotating Orbital Rings */}
-              <div className="absolute -inset-5 rounded-full border border-cyan-500/30 border-dashed animate-spin [animation-duration:35s]" />
-              <div className="absolute -inset-3 rounded-full border border-blue-400/35 border-dotted animate-spin [animation-duration:20s] [animation-direction:reverse]" />
+              <div className="absolute -inset-5 rounded-full border border-red-500/30 border-dashed animate-spin [animation-duration:35s]" />
+              <div className="absolute -inset-3 rounded-full border border-red-400/35 border-dotted animate-spin [animation-duration:20s] [animation-direction:reverse]" />
 
               {/* Central Holographic Orb Box */}
-              <div className="relative w-48 h-48 sm:w-56 sm:h-56 rounded-full bg-gradient-to-tr from-[#003b73] via-[#0072ff] to-[#00f2fe] p-1 shadow-[0_0_60px_rgba(0,242,254,0.6),inset_0_0_35px_rgba(255,255,255,0.4)] flex items-center justify-center">
+              <div className="relative w-48 h-48 sm:w-56 sm:h-56 rounded-full bg-gradient-to-tr from-[#8B0000] via-[#8B0000] to-[#FF1F1F] p-1 shadow-[0_0_60px_rgba(255,31,31,0.6),inset_0_0_35px_rgba(255,255,255,0.4)] flex items-center justify-center">
                 <div className="w-full h-full rounded-full bg-[#080c14] flex flex-col items-center justify-center p-4 relative overflow-hidden">
                   
                   {/* Internal dynamic wave graphic */}
-                  <div className="absolute inset-0 bg-gradient-to-b from-cyan-500/15 via-transparent to-blue-950/60" />
+                  <div className="absolute inset-0 bg-gradient-to-b from-red-500/15 via-transparent to-red-950/60" />
                   
-                  <TrendingUp className="w-12 h-12 text-[#00f2fe] mb-2 drop-shadow-[0_0_15px_rgba(0,242,254,0.9)] group-hover:scale-110 transition-transform" />
+                  <TrendingUp className="w-12 h-12 text-[#FF1F1F] mb-2 drop-shadow-[0_0_15px_rgba(255,31,31,0.9)] group-hover:scale-110 transition-transform" />
                   
                   {/* Voice Status Pill */}
-                  <span className="font-mono text-[11px] font-bold tracking-widest text-cyan-300 uppercase">
-                    {orbState === 'idle' && 'APERTURE Pipeline Core'}
+                  <span className="font-mono text-[11px] font-bold tracking-widest text-red-300 uppercase">
+                    {orbState === 'idle' && 'NEXUS Pipeline Core'}
                     {orbState === 'listening' && 'Listening...'}
                     {orbState === 'synthesizing' && 'Synthesizing...'}
                   </span>
 
                   {/* Animated sound wave bars */}
                   <div className="flex items-center gap-1 mt-2">
-                    <span className="w-1 h-3 bg-cyan-400 rounded-full animate-bounce [animation-delay:0.1s]" />
-                    <span className="w-1 h-5 bg-cyan-300 rounded-full animate-bounce [animation-delay:0.3s]" />
-                    <span className="w-1 h-7 bg-[#00f2fe] rounded-full animate-bounce [animation-delay:0.2s]" />
-                    <span className="w-1 h-4 bg-blue-400 rounded-full animate-bounce [animation-delay:0.4s]" />
-                    <span className="w-1 h-2 bg-cyan-500 rounded-full animate-bounce [animation-delay:0.15s]" />
+                    <span className="w-1 h-3 bg-red-400 rounded-full animate-bounce [animation-delay:0.1s]" />
+                    <span className="w-1 h-5 bg-red-300 rounded-full animate-bounce [animation-delay:0.3s]" />
+                    <span className="w-1 h-7 bg-[#FF1F1F] rounded-full animate-bounce [animation-delay:0.2s]" />
+                    <span className="w-1 h-4 bg-red-400 rounded-full animate-bounce [animation-delay:0.4s]" />
+                    <span className="w-1 h-2 bg-red-500 rounded-full animate-bounce [animation-delay:0.15s]" />
                   </div>
 
                   <span className="text-[9px] font-mono text-gray-400 mt-2">
@@ -664,9 +664,9 @@ export function VartalaapCrmExperience() {
               initial={{ opacity: 0, x: 30, y: 20 }}
               animate={{ opacity: 1, x: 0, y: 0 }}
               transition={{ duration: 0.7, delay: 0.35 }}
-              className="absolute -right-4 lg:right-8 bottom-4 md:bottom-8 z-20 hidden sm:flex items-center gap-3 p-3.5 rounded-2xl bg-[#090e1a]/90 backdrop-blur-xl border border-blue-500/40 shadow-[0_15px_40px_rgba(0,0,0,0.6),0_0_25px_rgba(59,130,246,0.2)] rotate-[2.5deg] hover:rotate-0 transition-transform max-w-[290px] text-left"
+              className="absolute -right-4 lg:right-8 bottom-4 md:bottom-8 z-20 hidden sm:flex items-center gap-3 p-3.5 rounded-2xl bg-[#090e1a]/90 backdrop-blur-xl border border-red-500/40 shadow-[0_15px_40px_rgba(0,0,0,0.6),0_0_25px_rgba(255,31,31,0.2)] rotate-[2.5deg] hover:rotate-0 transition-transform max-w-[290px] text-left"
             >
-              <div className="relative w-11 h-11 rounded-full overflow-hidden shrink-0 border border-blue-400 shadow-[0_0_12px_rgba(59,130,246,0.5)]">
+              <div className="relative w-11 h-11 rounded-full overflow-hidden shrink-0 border border-red-400 shadow-[0_0_12px_rgba(255,31,31,0.5)]">
                 <Image
                   src="/vartalaap/avatar_carla.webp"
                   alt="Carla Enterprise VP"
@@ -675,15 +675,15 @@ export function VartalaapCrmExperience() {
                 />
               </div>
               <div className="text-xs">
-                <div className="flex items-center justify-between text-[10px] font-mono text-blue-300 mb-0.5">
+                <div className="flex items-center justify-between text-[10px] font-mono text-red-300 mb-0.5">
                   <span>Carla M. (Marketing VP)</span>
-                  <span className="text-cyan-400 font-bold">$24.5k Deal</span>
+                  <span className="text-red-400 font-bold">$24.5k Deal</span>
                 </div>
                 <p className="text-gray-200 text-[11px] leading-tight">
                   &quot;Watched your 3D trailer. Need video production + Shopify funnel.&quot;
                 </p>
-                <div className="text-[9px] font-mono text-blue-400/90 mt-1 flex items-center gap-1">
-                  <Check className="w-2.5 h-2.5 text-blue-400" />
+                <div className="text-[9px] font-mono text-red-400/90 mt-1 flex items-center gap-1">
+                  <Check className="w-2.5 h-2.5 text-red-400" />
                   <span>Discovery Call Booked on Calendar</span>
                 </div>
               </div>
@@ -700,7 +700,7 @@ export function VartalaapCrmExperience() {
           >
             <h1 className="font-['Syne'] font-extrabold text-4xl sm:text-6xl md:text-7xl lg:text-[5.5rem] tracking-tight text-white leading-[1.05]">
               Don&apos;t just produce video,
-              <span className="block mt-1 font-serif italic font-normal text-transparent bg-clip-text bg-gradient-to-r from-[#00c6ff] via-[#38bdf8] to-[#0072ff] tracking-normal drop-shadow-[0_0_35px_rgba(0,242,254,0.4)]">
+              <span className="block mt-1 font-serif italic font-normal text-transparent bg-clip-text bg-gradient-to-r from-[#FF1F1F] via-[#C9CCD1] to-[#8B0000] tracking-normal drop-shadow-[0_0_35px_rgba(255,31,31,0.4)]">
                 engineer closed revenue.
               </span>
             </h1>
@@ -714,11 +714,11 @@ export function VartalaapCrmExperience() {
             className="mt-6 max-w-3xl text-gray-300 leading-relaxed text-base sm:text-xl font-sans"
           >
             Most creative production companies hand you an .MP4 file and walk away.{' '}
-            <span className="font-serif italic text-cyan-300 text-2xl sm:text-3xl font-normal">
-              APERTURE STUDIOS builds the sales machine
+            <span className="font-serif italic text-red-300 text-2xl sm:text-3xl font-normal">
+              NEXUS Growth builds the sales machine
             </span>{' '}
             connecting your commercial films, ad creatives, and website visitors directly into automated{' '}
-            <span className="font-mono text-xs uppercase px-2.5 py-1 rounded-md bg-blue-500/20 text-blue-300 border border-blue-500/40 inline-block align-middle font-bold">
+            <span className="font-mono text-xs uppercase px-2.5 py-1 rounded-md bg-red-500/20 text-red-300 border border-red-500/40 inline-block align-middle font-bold">
               HubSpot &amp; WhatsApp Pipelines
             </span>{' '}
             that close deals 24/7.
@@ -733,7 +733,7 @@ export function VartalaapCrmExperience() {
           >
             <Link
               href="/contact?service=crm-sales-funnel"
-              className="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-[#00c6ff] via-[#0072ff] to-[#38bdf8] text-black font-bold text-sm tracking-wide shadow-[0_0_35px_rgba(0,242,254,0.5)] hover:shadow-[0_0_55px_rgba(0,242,254,0.8)] transition-all flex items-center justify-center gap-2 group hover:scale-105"
+              className="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-[#FF1F1F] via-[#8B0000] to-[#C9CCD1] text-white font-bold text-sm tracking-wide shadow-[0_0_35px_rgba(255,31,31,0.5)] hover:shadow-[0_0_55px_rgba(255,31,31,0.8)] transition-all flex items-center justify-center gap-2 group hover:scale-105"
             >
               <span>Build My Conversion Funnel</span>
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
@@ -743,7 +743,7 @@ export function VartalaapCrmExperience() {
               href="#video-showcase"
               className="w-full sm:w-auto px-7 py-4 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 text-white font-medium text-sm transition-all flex items-center justify-center gap-2"
             >
-              <Play className="w-4 h-4 text-cyan-400" />
+              <Play className="w-4 h-4 text-red-400" />
               <span>Watch Funnel Commercial Reel</span>
             </a>
           </motion.div>
@@ -760,15 +760,15 @@ export function VartalaapCrmExperience() {
               <div className="text-xs text-gray-400 mt-1">Automated Buyer Interactions</div>
             </div>
             <div className="p-4 rounded-2xl bg-white/[0.02] border border-white/5">
-              <div className="font-['Syne'] text-3xl font-extrabold text-cyan-400 font-mono">+34%</div>
+              <div className="font-['Syne'] text-3xl font-extrabold text-red-400 font-mono">+34%</div>
               <div className="text-xs text-gray-400 mt-1">Verified Video Ad CRO Lift</div>
             </div>
             <div className="p-4 rounded-2xl bg-white/[0.02] border border-white/5">
-              <div className="font-['Syne'] text-3xl font-extrabold text-blue-400 font-mono">4.2X</div>
+              <div className="font-['Syne'] text-3xl font-extrabold text-red-400 font-mono">4.2X</div>
               <div className="text-xs text-gray-400 mt-1">Average ROAS Across Funnels</div>
             </div>
             <div className="p-4 rounded-2xl bg-white/[0.02] border border-white/5">
-              <div className="font-['Syne'] text-3xl font-extrabold text-purple-400 font-mono">&lt; 400ms</div>
+              <div className="font-['Syne'] text-3xl font-extrabold text-stone-400 font-mono">&lt; 400ms</div>
               <div className="text-xs text-gray-400 mt-1">Inference &amp; Database Sync</div>
             </div>
           </motion.div>
@@ -783,12 +783,12 @@ export function VartalaapCrmExperience() {
         <div className="max-w-7xl mx-auto">
           
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <span className="text-xs font-mono tracking-widest text-cyan-400 uppercase bg-cyan-500/10 px-3 py-1 rounded-full border border-cyan-500/20">
+            <span className="text-xs font-mono tracking-widest text-red-400 uppercase bg-red-500/10 px-3 py-1 rounded-full border border-red-500/20">
               CONVERSION ARCHITECTURE
             </span>
             <h2 className="font-['Syne'] text-3xl sm:text-5xl font-extrabold text-white mt-4 leading-tight">
               From creative video impression to{' '}
-              <span className="font-serif italic font-normal text-transparent bg-clip-text bg-gradient-to-r from-[#00c6ff] to-[#0072ff]">
+              <span className="font-serif italic font-normal text-transparent bg-clip-text bg-gradient-to-r from-[#FF1F1F] to-[#8B0000]">
                 cash collected.
               </span>
             </h2>
@@ -801,13 +801,13 @@ export function VartalaapCrmExperience() {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             
             {/* Track 1: D2C E-Commerce 1-Click Purchase */}
-            <div className="rounded-3xl bg-[#0a101f] border border-cyan-500/30 p-6 sm:p-8 flex flex-col justify-between relative overflow-hidden shadow-[0_0_40px_rgba(0,242,254,0.15)] group hover:border-cyan-400 transition-all">
-              <div className="absolute top-0 right-0 w-40 h-40 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none" />
+            <div className="rounded-3xl bg-[#0a101f] border border-red-500/30 p-6 sm:p-8 flex flex-col justify-between relative overflow-hidden shadow-[0_0_40px_rgba(255,31,31,0.15)] group hover:border-red-400 transition-all">
+              <div className="absolute top-0 right-0 w-40 h-40 bg-red-500/10 rounded-full blur-3xl pointer-events-none" />
               
               <div>
                 <div className="flex items-center justify-between text-xs font-mono mb-4 text-gray-400">
-                  <span className="flex items-center gap-1.5 text-cyan-400 font-bold">
-                    <span className="w-2 h-2 rounded-full bg-cyan-400 animate-pulse" />
+                  <span className="flex items-center gap-1.5 text-red-400 font-bold">
+                    <span className="w-2 h-2 rounded-full bg-red-400 animate-pulse" />
                     TRACK 01 // D2C VIDEO DROP
                   </span>
                   <span>Click-to-WhatsApp Ad</span>
@@ -833,9 +833,9 @@ export function VartalaapCrmExperience() {
                     &quot;Watched the nitro coffee commercial on Instagram! Can I order a 12-pack with the weekend launch discount?&quot;
                   </div>
 
-                  <div className="p-3.5 rounded-xl bg-cyan-500/15 border border-cyan-500/30 text-cyan-100">
-                    <div className="text-[10px] font-mono text-cyan-400 mb-1 flex items-center gap-1 font-bold">
-                      <TrendingUp className="w-3.5 h-3.5" /> APERTURE FUNNEL BOT
+                  <div className="p-3.5 rounded-xl bg-red-500/15 border border-red-500/30 text-red-100">
+                    <div className="text-[10px] font-mono text-red-400 mb-1 flex items-center gap-1 font-bold">
+                      <TrendingUp className="w-3.5 h-3.5" /> NEXUS FUNNEL BOT
                     </div>
                     &quot;Yes! 6 boxes reserved at our local warehouse. Applied 15% launch code NITRO15. Tap below to checkout via Apple Pay.&quot;
                   </div>
@@ -854,13 +854,13 @@ export function VartalaapCrmExperience() {
             </div>
 
             {/* Track 2: B2B High-Ticket Production Client Qualification */}
-            <div className="rounded-3xl bg-[#0a101f] border border-blue-500/30 p-6 sm:p-8 flex flex-col justify-between relative overflow-hidden shadow-[0_0_40px_rgba(59,130,246,0.15)] group hover:border-blue-400 transition-all">
-              <div className="absolute top-0 right-0 w-40 h-40 bg-blue-500/10 rounded-full blur-3xl pointer-events-none" />
+            <div className="rounded-3xl bg-[#0a101f] border border-red-500/30 p-6 sm:p-8 flex flex-col justify-between relative overflow-hidden shadow-[0_0_40px_rgba(255,31,31,0.15)] group hover:border-red-400 transition-all">
+              <div className="absolute top-0 right-0 w-40 h-40 bg-red-500/10 rounded-full blur-3xl pointer-events-none" />
               
               <div>
                 <div className="flex items-center justify-between text-xs font-mono mb-4 text-gray-400">
-                  <span className="flex items-center gap-1.5 text-blue-400 font-bold">
-                    <span className="w-2 h-2 rounded-full bg-blue-400 animate-pulse" />
+                  <span className="flex items-center gap-1.5 text-red-400 font-bold">
+                    <span className="w-2 h-2 rounded-full bg-red-400 animate-pulse" />
                     TRACK 02 // AGENCY PIPELINE
                   </span>
                   <span>HubSpot / Close Sync</span>
@@ -876,7 +876,7 @@ export function VartalaapCrmExperience() {
                   <div className="absolute inset-0 bg-gradient-to-t from-[#0a101f] via-transparent to-transparent" />
                   <div className="absolute bottom-3 left-3 right-3 flex items-center justify-between text-[11px] font-mono bg-black/70 backdrop-blur-md px-3 py-1.5 rounded-xl border border-white/10">
                     <span className="text-gray-300">Salesforce Pipeline Router</span>
-                    <span className="text-blue-400 font-bold">$24,500 DEAL</span>
+                    <span className="text-red-400 font-bold">$24,500 DEAL</span>
                   </div>
                 </div>
 
@@ -886,9 +886,9 @@ export function VartalaapCrmExperience() {
                     &quot;We loved your AURA Wearables brand film. We need full-bleed video production + an automated Klaviyo lifecycle funnel for our launch.&quot;
                   </div>
 
-                  <div className="p-3.5 rounded-xl bg-blue-500/15 border border-blue-500/30 text-blue-100">
-                    <div className="text-[10px] font-mono text-blue-400 mb-1 flex items-center gap-1 font-bold">
-                      <Bot className="w-3.5 h-3.5" /> APERTURE QUALIFIER
+                  <div className="p-3.5 rounded-xl bg-red-500/15 border border-red-500/30 text-red-100">
+                    <div className="text-[10px] font-mono text-red-400 mb-1 flex items-center gap-1 font-bold">
+                      <Bot className="w-3.5 h-3.5" /> NEXUS QUALIFIER
                     </div>
                     &quot;Qualified Flagship Tier ($24.5k scope). Synced brief, verified domain, and reserved an executive strategy session on Yusuf’s calendar for Tuesday.&quot;
                   </div>
@@ -897,23 +897,23 @@ export function VartalaapCrmExperience() {
 
               <div className="mt-8 pt-4 border-t border-white/10 flex items-center justify-between">
                 <div>
-                  <div className="font-['Syne'] text-2xl font-bold text-blue-400 font-mono">$24,500</div>
+                  <div className="font-['Syne'] text-2xl font-bold text-red-400 font-mono">$24,500</div>
                   <div className="text-[10px] text-gray-400">Production Contract Value</div>
                 </div>
-                <div className="px-3 py-1.5 rounded-full bg-blue-500/15 border border-blue-500/40 text-blue-400 text-xs font-mono font-bold">
+                <div className="px-3 py-1.5 rounded-full bg-red-500/15 border border-red-500/40 text-red-400 text-xs font-mono font-bold">
                   ✓ STRATEGY BOOKED
                 </div>
               </div>
             </div>
 
             {/* Track 3: Tier-1 & Tier-2 Support Auto-Triage */}
-            <div className="rounded-3xl bg-[#0a101f] border border-purple-500/30 p-6 sm:p-8 flex flex-col justify-between relative overflow-hidden shadow-[0_0_40px_rgba(168,85,247,0.15)] group hover:border-purple-400 transition-all">
-              <div className="absolute top-0 right-0 w-40 h-40 bg-purple-500/10 rounded-full blur-3xl pointer-events-none" />
+            <div className="rounded-3xl bg-[#0a101f] border border-stone-500/30 p-6 sm:p-8 flex flex-col justify-between relative overflow-hidden shadow-[0_0_40px_rgba(201,204,209,0.15)] group hover:border-stone-400 transition-all">
+              <div className="absolute top-0 right-0 w-40 h-40 bg-stone-500/10 rounded-full blur-3xl pointer-events-none" />
               
               <div>
                 <div className="flex items-center justify-between text-xs font-mono mb-4 text-gray-400">
-                  <span className="flex items-center gap-1.5 text-purple-400 font-bold">
-                    <span className="w-2 h-2 rounded-full bg-purple-400 animate-pulse" />
+                  <span className="flex items-center gap-1.5 text-stone-400 font-bold">
+                    <span className="w-2 h-2 rounded-full bg-stone-400 animate-pulse" />
                     TRACK 03 // 24/7 CLIENT OPS
                   </span>
                   <span>Automated Asset Delivery</span>
@@ -929,7 +929,7 @@ export function VartalaapCrmExperience() {
                   <div className="absolute inset-0 bg-gradient-to-t from-[#0a101f] via-transparent to-transparent" />
                   <div className="absolute bottom-3 left-3 right-3 flex items-center justify-between text-[11px] font-mono bg-black/70 backdrop-blur-md px-3 py-1.5 rounded-xl border border-white/10">
                     <span className="text-gray-300">Deliverable Asset Portal</span>
-                    <span className="text-purple-400 font-bold">0.38S DISPATCH</span>
+                    <span className="text-stone-400 font-bold">0.38S DISPATCH</span>
                   </div>
                 </div>
 
@@ -939,9 +939,9 @@ export function VartalaapCrmExperience() {
                     &quot;Where can our media team grab the final 4K ProRes master and vertical 9:16 cuts for our TikTok ads launch?&quot;
                   </div>
 
-                  <div className="p-3.5 rounded-xl bg-purple-500/15 border border-purple-500/30 text-purple-100">
-                    <div className="text-[10px] font-mono text-purple-400 mb-1 flex items-center gap-1 font-bold">
-                      <Sparkles className="w-3.5 h-3.5" /> APERTURE CLIENT OPS
+                  <div className="p-3.5 rounded-xl bg-stone-500/15 border border-stone-500/30 text-stone-100">
+                    <div className="text-[10px] font-mono text-stone-400 mb-1 flex items-center gap-1 font-bold">
+                      <Sparkles className="w-3.5 h-3.5" /> NEXUS CLIENT OPS
                     </div>
                     &quot;Your color-graded DaVinci masters and 12 vertical cuts have cleared QA! Generated secure 10Gbps download tokens and synced with your Drive.&quot;
                   </div>
@@ -950,10 +950,10 @@ export function VartalaapCrmExperience() {
 
               <div className="mt-8 pt-4 border-t border-white/10 flex items-center justify-between">
                 <div>
-                  <div className="font-['Syne'] text-2xl font-bold text-purple-400 font-mono">0.38s Latency</div>
+                  <div className="font-['Syne'] text-2xl font-bold text-stone-400 font-mono">0.38s Latency</div>
                   <div className="text-[10px] text-gray-400">Average Asset Retrieval Speed</div>
                 </div>
-                <div className="px-3 py-1.5 rounded-full bg-purple-500/15 border border-purple-500/40 text-purple-400 text-xs font-mono font-bold">
+                <div className="px-3 py-1.5 rounded-full bg-stone-500/15 border border-stone-500/40 text-stone-400 text-xs font-mono font-bold">
                   ✓ 100% DISPATCHED
                 </div>
               </div>
@@ -972,12 +972,12 @@ export function VartalaapCrmExperience() {
           
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
             <div>
-              <span className="text-xs font-mono tracking-widest text-cyan-400 uppercase bg-cyan-500/10 px-3 py-1 rounded-full border border-cyan-500/20">
+              <span className="text-xs font-mono tracking-widest text-red-400 uppercase bg-red-500/10 px-3 py-1 rounded-full border border-red-500/20">
                 UNIFIED MESSAGING LAYER
               </span>
               <h2 className="font-['Syne'] text-3xl sm:text-5xl font-extrabold text-white mt-3 leading-tight">
                 From video viewer to paying client{' '}
-                <span className="font-serif italic font-normal text-transparent bg-clip-text bg-gradient-to-r from-[#00c6ff] to-[#0072ff]">
+                <span className="font-serif italic font-normal text-transparent bg-clip-text bg-gradient-to-r from-[#FF1F1F] to-[#8B0000]">
                   in seconds.
                 </span>
               </h2>
@@ -995,7 +995,7 @@ export function VartalaapCrmExperience() {
                 onClick={() => setActiveChannel(ch.id)}
                 className={`flex items-center gap-3 px-5 py-3 rounded-2xl text-xs font-mono transition-all border ${
                   activeChannel === ch.id
-                    ? 'bg-gradient-to-r from-[#00c6ff] via-[#0072ff] to-[#38bdf8] text-black font-bold border-cyan-400 shadow-[0_0_30px_rgba(0,242,254,0.4)] scale-105'
+                    ? 'bg-gradient-to-r from-[#FF1F1F] via-[#8B0000] to-[#C9CCD1] text-white font-bold border-red-400 shadow-[0_0_30px_rgba(255,31,31,0.4)] scale-105'
                     : 'bg-white/5 hover:bg-white/10 text-gray-300 border-white/10'
                 }`}
               >
@@ -1009,7 +1009,7 @@ export function VartalaapCrmExperience() {
                   />
                 </div>
                 <span>{ch.name}</span>
-                <span className={`text-[10px] px-2 py-0.5 rounded-full ${activeChannel === ch.id ? 'bg-black text-cyan-300 font-bold' : 'bg-white/10 text-gray-400'}`}>
+                <span className={`text-[10px] px-2 py-0.5 rounded-full ${activeChannel === ch.id ? 'bg-black text-red-300 font-bold' : 'bg-white/10 text-gray-400'}`}>
                   {ch.badge}
                 </span>
               </button>
@@ -1024,7 +1024,7 @@ export function VartalaapCrmExperience() {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -15 }}
               transition={{ duration: 0.3 }}
-              className="rounded-3xl bg-[#0a101f] border border-cyan-500/30 p-6 md:p-10 relative overflow-hidden shadow-[0_20px_80px_rgba(0,0,0,0.7),0_0_40px_rgba(0,242,254,0.15)]"
+              className="rounded-3xl bg-[#0a101f] border border-red-500/30 p-6 md:p-10 relative overflow-hidden shadow-[0_20px_80px_rgba(0,0,0,0.7),0_0_40px_rgba(255,31,31,0.15)]"
             >
               {/* Background ambient lighting */}
               <div 
@@ -1046,7 +1046,7 @@ export function VartalaapCrmExperience() {
                       {currentChannel.name}
                     </h3>
 
-                    <div className="font-serif italic text-cyan-300 text-lg mt-1 font-normal">
+                    <div className="font-serif italic text-red-300 text-lg mt-1 font-normal">
                       {currentChannel.tagline}
                     </div>
 
@@ -1057,15 +1057,15 @@ export function VartalaapCrmExperience() {
 
                   <div className="space-y-3 pt-4 border-t border-white/10">
                     <div className="flex items-center gap-3 text-xs text-gray-200">
-                      <CheckCircle2 className="w-4 h-4 text-cyan-400 shrink-0" />
+                      <CheckCircle2 className="w-4 h-4 text-red-400 shrink-0" />
                       <span>Direct video ad to WhatsApp trigger</span>
                     </div>
                     <div className="flex items-center gap-3 text-xs text-gray-200">
-                      <CheckCircle2 className="w-4 h-4 text-cyan-400 shrink-0" />
+                      <CheckCircle2 className="w-4 h-4 text-red-400 shrink-0" />
                       <span>Bi-directional HubSpot, Shopify &amp; Stripe synchronization</span>
                     </div>
                     <div className="flex items-center gap-3 text-xs text-gray-200">
-                      <CheckCircle2 className="w-4 h-4 text-cyan-400 shrink-0" />
+                      <CheckCircle2 className="w-4 h-4 text-red-400 shrink-0" />
                       <span>Full conversation telemetry logged to customer profile</span>
                     </div>
                   </div>
@@ -1073,7 +1073,7 @@ export function VartalaapCrmExperience() {
                   <div className="pt-2">
                     <Link
                       href="/contact?service=crm-sales-funnel"
-                      className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-cyan-500/15 hover:bg-cyan-500/25 border border-cyan-500/40 text-cyan-300 text-xs font-mono font-bold transition-all hover:scale-105"
+                      className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-red-500/15 hover:bg-red-500/25 border border-red-500/40 text-red-300 text-xs font-mono font-bold transition-all hover:scale-105"
                     >
                       <span>Deploy {currentChannel.name}</span>
                       <ArrowRight className="w-3.5 h-3.5" />
@@ -1091,7 +1091,7 @@ export function VartalaapCrmExperience() {
                         <div className="w-3 h-3 rounded-full bg-red-500/80" />
                         <div className="w-3 h-3 rounded-full bg-yellow-500/80" />
                         <div className="w-3 h-3 rounded-full bg-green-500/80" />
-                        <span className="text-gray-400 ml-2">APERTURE CONVERSATIONAL RUNTIME</span>
+                        <span className="text-gray-400 ml-2">NEXUS CONVERSATIONAL RUNTIME</span>
                       </div>
                       <span className="text-green-400 flex items-center gap-1 font-bold">
                         <span className="w-1.5 h-1.5 rounded-full bg-green-400 animate-pulse" />
@@ -1122,17 +1122,17 @@ export function VartalaapCrmExperience() {
 
                       {/* AI Response Message */}
                       <div className="flex items-start gap-3 justify-end">
-                        <div className="max-w-md rounded-2xl rounded-tr-none bg-gradient-to-r from-blue-900/60 to-cyan-900/60 border border-cyan-500/40 p-4 text-xs text-cyan-100 shadow-[0_0_25px_rgba(0,242,254,0.15)]">
-                          <div className="flex items-center justify-between text-[10px] text-cyan-400 mb-1">
+                        <div className="max-w-md rounded-2xl rounded-tr-none bg-gradient-to-r from-red-900/60 to-red-900/60 border border-red-500/40 p-4 text-xs text-red-100 shadow-[0_0_25px_rgba(255,31,31,0.15)]">
+                          <div className="flex items-center justify-between text-[10px] text-red-400 mb-1">
                             <span className="flex items-center gap-1 font-mono font-bold">
-                              <TrendingUp className="w-3 h-3" /> APERTURE CONVERSION ENGINE
+                              <TrendingUp className="w-3 h-3" /> NEXUS CONVERSION ENGINE
                             </span>
                             <span className="font-mono">Just now (0.32s)</span>
                           </div>
                           <p className="leading-relaxed">{currentChannel.sampleMessage.aiReply}</p>
                         </div>
-                        <div className="w-9 h-9 rounded-full bg-gradient-to-tr from-cyan-500 to-blue-600 flex items-center justify-center text-xs font-bold text-black shrink-0 shadow-[0_0_15px_rgba(0,242,254,0.5)]">
-                          <Bot className="w-4 h-4 text-black" />
+                        <div className="w-9 h-9 rounded-full bg-gradient-to-tr from-red-500 to-red-600 flex items-center justify-center text-xs font-bold text-white shrink-0 shadow-[0_0_15px_rgba(255,31,31,0.5)]">
+                          <Bot className="w-4 h-4 text-white" />
                         </div>
                       </div>
 
@@ -1168,12 +1168,12 @@ export function VartalaapCrmExperience() {
           
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
             <div>
-              <span className="text-xs font-mono tracking-widest text-cyan-400 uppercase bg-cyan-500/10 px-3 py-1 rounded-full border border-cyan-500/20">
+              <span className="text-xs font-mono tracking-widest text-red-400 uppercase bg-red-500/10 px-3 py-1 rounded-full border border-red-500/20">
                 PRODUCTION STUDIO REELS
               </span>
               <h2 className="font-['Syne'] text-3xl sm:text-5xl font-extrabold text-white mt-3 leading-tight">
                 Our creative productions,{' '}
-                <span className="font-serif italic font-normal text-transparent bg-clip-text bg-gradient-to-r from-[#00c6ff] to-[#0072ff]">
+                <span className="font-serif italic font-normal text-transparent bg-clip-text bg-gradient-to-r from-[#FF1F1F] to-[#8B0000]">
                   engineered to sell.
                 </span>
               </h2>
@@ -1191,11 +1191,11 @@ export function VartalaapCrmExperience() {
                 onClick={() => setActiveVideo(v.id)}
                 className={`p-4 rounded-2xl text-left transition-all border ${
                   activeVideo === v.id
-                    ? 'bg-cyan-500/20 border-cyan-400 text-white shadow-[0_0_30px_rgba(0,242,254,0.3)] scale-[1.02]'
+                    ? 'bg-red-500/20 border-red-400 text-white shadow-[0_0_30px_rgba(255,31,31,0.3)] scale-[1.02]'
                     : 'bg-white/5 border-white/10 hover:bg-white/10 text-gray-400'
                 }`}
               >
-                <div className="text-[10px] font-mono text-cyan-400 font-bold mb-1">{v.category}</div>
+                <div className="text-[10px] font-mono text-red-400 font-bold mb-1">{v.category}</div>
                 <div className="text-xs font-bold text-white line-clamp-1">{v.title}</div>
                 <div className="text-[10px] text-gray-400 mt-1 font-mono">{v.duration}</div>
               </button>
@@ -1203,7 +1203,7 @@ export function VartalaapCrmExperience() {
           </div>
 
           {/* Main Video Cinema Theater Card */}
-          <div className="rounded-3xl bg-[#090e1a] border border-cyan-500/30 overflow-hidden shadow-[0_20px_80px_rgba(0,0,0,0.85),0_0_45px_rgba(0,242,254,0.25)]">
+          <div className="rounded-3xl bg-[#090e1a] border border-red-500/30 overflow-hidden shadow-[0_20px_80px_rgba(0,0,0,0.85),0_0_45px_rgba(255,31,31,0.25)]">
             <div className="relative aspect-video w-full bg-black">
               <video
                 ref={videoRef}
@@ -1220,7 +1220,7 @@ export function VartalaapCrmExperience() {
               {/* Top Header Information */}
               <div className="absolute top-4 left-4 right-4 flex items-center justify-between text-xs font-mono text-white pointer-events-auto">
                 <div className="flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-black/70 backdrop-blur-md border border-white/10">
-                  <span className="w-2 h-2 rounded-full bg-cyan-400 animate-pulse" />
+                  <span className="w-2 h-2 rounded-full bg-red-400 animate-pulse" />
                   <span>{currentVideo.category}</span>
                 </div>
 
@@ -1229,7 +1229,7 @@ export function VartalaapCrmExperience() {
                     onClick={toggleMute}
                     className="p-2.5 rounded-full bg-black/70 hover:bg-black/90 backdrop-blur-md border border-white/10 text-white transition-all"
                   >
-                    {isMuted ? <VolumeX className="w-4 h-4 text-gray-300" /> : <Volume2 className="w-4 h-4 text-cyan-400" />}
+                    {isMuted ? <VolumeX className="w-4 h-4 text-gray-300" /> : <Volume2 className="w-4 h-4 text-red-400" />}
                   </button>
                 </div>
               </div>
@@ -1238,7 +1238,7 @@ export function VartalaapCrmExperience() {
               <div className="absolute inset-0 flex items-center justify-center pointer-events-auto">
                 <button
                   onClick={togglePlay}
-                  className="w-16 h-16 rounded-full bg-cyan-400 hover:bg-cyan-300 text-black flex items-center justify-center shadow-[0_0_35px_rgba(0,242,254,0.9)] transition-all hover:scale-110"
+                  className="w-16 h-16 rounded-full bg-red-400 hover:bg-red-300 text-white flex items-center justify-center shadow-[0_0_35px_rgba(255,31,31,0.9)] transition-all hover:scale-110"
                 >
                   {isPlaying ? <Pause className="w-6 h-6" /> : <Play className="w-6 h-6 ml-0.5" />}
                 </button>
@@ -1254,7 +1254,7 @@ export function VartalaapCrmExperience() {
                 <div className="flex items-center gap-3">
                   {currentVideo.metrics.map((m, idx) => (
                     <div key={idx} className="px-3.5 py-1.5 rounded-xl bg-black/80 backdrop-blur-md border border-white/10 text-center">
-                      <div className="text-cyan-400 font-bold text-sm font-mono">{m.stat}</div>
+                      <div className="text-red-400 font-bold text-sm font-mono">{m.stat}</div>
                       <div className="text-[9px] text-gray-400 uppercase font-sans">{m.label}</div>
                     </div>
                   ))}
@@ -1269,7 +1269,7 @@ export function VartalaapCrmExperience() {
               </p>
               <Link
                 href="/contact?service=crm-sales-funnel"
-                className="shrink-0 px-5 py-2.5 rounded-xl bg-cyan-500/15 hover:bg-cyan-500/25 border border-cyan-500/40 text-cyan-300 font-mono font-bold transition-all flex items-center gap-2"
+                className="shrink-0 px-5 py-2.5 rounded-xl bg-red-500/15 hover:bg-red-500/25 border border-red-500/40 text-red-300 font-mono font-bold transition-all flex items-center gap-2"
               >
                 <span>Request Custom Pipeline Demo</span>
                 <ArrowRight className="w-3.5 h-3.5" />
@@ -1287,12 +1287,12 @@ export function VartalaapCrmExperience() {
         <div className="max-w-7xl mx-auto">
           
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <span className="text-xs font-mono tracking-widest text-cyan-400 uppercase bg-cyan-500/10 px-3 py-1 rounded-full border border-cyan-500/20">
+            <span className="text-xs font-mono tracking-widest text-red-400 uppercase bg-red-500/10 px-3 py-1 rounded-full border border-red-500/20">
               CLIENT SECTOR ARCHITECTURES
             </span>
             <h2 className="font-['Syne'] text-3xl sm:text-5xl font-extrabold text-white mt-4 leading-tight">
               Where our creative funnels create{' '}
-              <span className="font-serif italic font-normal text-transparent bg-clip-text bg-gradient-to-r from-[#00c6ff] to-[#0072ff]">
+              <span className="font-serif italic font-normal text-transparent bg-clip-text bg-gradient-to-r from-[#FF1F1F] to-[#8B0000]">
                 outsized ROI.
               </span>
             </h2>
@@ -1308,14 +1308,14 @@ export function VartalaapCrmExperience() {
                 onClick={() => setActiveUseCase(item.id)}
                 className={`p-6 rounded-3xl bg-[#0a101f] border transition-all cursor-pointer flex flex-col justify-between ${
                   activeUseCase === item.id
-                    ? 'border-cyan-400 shadow-[0_0_40px_rgba(0,242,254,0.3)] scale-[1.02]'
+                    ? 'border-red-400 shadow-[0_0_40px_rgba(255,31,31,0.3)] scale-[1.02]'
                     : 'border-white/10 hover:border-white/20'
                 }`}
               >
                 <div>
-                  <div className="flex items-center justify-between text-[10px] font-mono text-cyan-400 mb-3">
+                  <div className="flex items-center justify-between text-[10px] font-mono text-red-400 mb-3">
                     <span>{item.tag}</span>
-                    <span className="px-2 py-0.5 rounded bg-cyan-500/10 border border-cyan-500/20 font-bold">
+                    <span className="px-2 py-0.5 rounded bg-red-500/10 border border-red-500/20 font-bold">
                       {item.badge}
                     </span>
                   </div>
@@ -1333,7 +1333,7 @@ export function VartalaapCrmExperience() {
 
                   <h3 className="font-['Syne'] text-base font-bold text-white mb-1 leading-snug">
                     {item.title}{' '}
-                    <span className="font-serif italic text-cyan-300 font-normal">
+                    <span className="font-serif italic text-red-300 font-normal">
                       {item.cursiveAccent}
                     </span>
                   </h3>
@@ -1344,15 +1344,15 @@ export function VartalaapCrmExperience() {
 
                   <div className="space-y-2 pt-3 border-t border-white/10 text-xs text-gray-300 font-sans">
                     <div className="flex items-start gap-2">
-                      <span className="text-cyan-400 mt-0.5">•</span>
+                      <span className="text-red-400 mt-0.5">•</span>
                       <span>{item.bullet1}</span>
                     </div>
                     <div className="flex items-start gap-2">
-                      <span className="text-cyan-400 mt-0.5">•</span>
+                      <span className="text-red-400 mt-0.5">•</span>
                       <span>{item.bullet2}</span>
                     </div>
                     <div className="flex items-start gap-2">
-                      <span className="text-cyan-400 mt-0.5">•</span>
+                      <span className="text-red-400 mt-0.5">•</span>
                       <span>{item.bullet3}</span>
                     </div>
                   </div>
@@ -1360,7 +1360,7 @@ export function VartalaapCrmExperience() {
 
                 <div className="mt-6 pt-4 border-t border-white/10 flex items-baseline justify-between">
                   <div>
-                    <div className="font-['Syne'] text-xl font-bold text-cyan-300 font-mono">{item.metric}</div>
+                    <div className="font-['Syne'] text-xl font-bold text-red-300 font-mono">{item.metric}</div>
                     <div className="text-[10px] text-gray-400">{item.metricLabel}</div>
                   </div>
                 </div>
@@ -1379,13 +1379,13 @@ export function VartalaapCrmExperience() {
           
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
             <div>
-              <span className="text-xs font-mono tracking-widest text-cyan-400 uppercase bg-cyan-500/10 px-3 py-1 rounded-full border border-cyan-500/20">
+              <span className="text-xs font-mono tracking-widest text-red-400 uppercase bg-red-500/10 px-3 py-1 rounded-full border border-red-500/20">
                 PROVEN AGENCY RESULTS
               </span>
               <h2 className="font-['Syne'] text-3xl sm:text-5xl font-extrabold text-white mt-3 leading-tight">
                 Real outcomes from brands{' '}
-                <span className="font-serif italic font-normal text-transparent bg-clip-text bg-gradient-to-r from-[#00c6ff] to-[#0072ff]">
-                  powered by APERTURE Pipeline.
+                <span className="font-serif italic font-normal text-transparent bg-clip-text bg-gradient-to-r from-[#FF1F1F] to-[#8B0000]">
+                  powered by NEXUS Pipeline.
                 </span>
               </h2>
             </div>
@@ -1397,7 +1397,7 @@ export function VartalaapCrmExperience() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             
             {/* Bento Card 1 */}
-            <div className="p-8 rounded-3xl bg-[#090e1a] border border-cyan-500/30 relative overflow-hidden shadow-[0_0_45px_rgba(0,242,254,0.12)] flex flex-col justify-between">
+            <div className="p-8 rounded-3xl bg-[#090e1a] border border-red-500/30 relative overflow-hidden shadow-[0_0_45px_rgba(255,31,31,0.12)] flex flex-col justify-between">
               <div>
                 <div className="flex items-center justify-between text-xs font-mono text-gray-400 mb-6">
                   <span>BUYER CONVERSATIONS</span>
@@ -1406,7 +1406,7 @@ export function VartalaapCrmExperience() {
                 <div className="font-['Syne'] text-5xl sm:text-6xl font-extrabold text-white tracking-tight">
                   1.28M
                 </div>
-                <div className="text-xs font-mono text-cyan-400 mt-2 uppercase tracking-widest">
+                <div className="text-xs font-mono text-red-400 mt-2 uppercase tracking-widest">
                   Daily Autonomous Messages Processed
                 </div>
               </div>
@@ -1416,16 +1416,16 @@ export function VartalaapCrmExperience() {
             </div>
 
             {/* Bento Card 2 */}
-            <div className="p-8 rounded-3xl bg-[#090e1a] border border-blue-500/30 relative overflow-hidden shadow-[0_0_45px_rgba(59,130,246,0.12)] flex flex-col justify-between">
+            <div className="p-8 rounded-3xl bg-[#090e1a] border border-red-500/30 relative overflow-hidden shadow-[0_0_45px_rgba(255,31,31,0.12)] flex flex-col justify-between">
               <div>
                 <div className="flex items-center justify-between text-xs font-mono text-gray-400 mb-6">
                   <span>COMMERCIAL AD ROAS</span>
-                  <span className="text-cyan-400 font-bold">VERIFIED ATTRIBUTION</span>
+                  <span className="text-red-400 font-bold">VERIFIED ATTRIBUTION</span>
                 </div>
-                <div className="font-['Syne'] text-5xl sm:text-6xl font-extrabold text-cyan-300 tracking-tight">
+                <div className="font-['Syne'] text-5xl sm:text-6xl font-extrabold text-red-300 tracking-tight">
                   +34%
                 </div>
-                <div className="text-xs font-mono text-blue-400 mt-2 uppercase tracking-widest">
+                <div className="text-xs font-mono text-red-400 mt-2 uppercase tracking-widest">
                   Lift Across Omnichannel Funnels
                 </div>
               </div>
@@ -1435,16 +1435,16 @@ export function VartalaapCrmExperience() {
             </div>
 
             {/* Bento Card 3 */}
-            <div className="p-8 rounded-3xl bg-[#090e1a] border border-purple-500/30 relative overflow-hidden shadow-[0_0_45px_rgba(168,85,247,0.12)] flex flex-col justify-between">
+            <div className="p-8 rounded-3xl bg-[#090e1a] border border-stone-500/30 relative overflow-hidden shadow-[0_0_45px_rgba(201,204,209,0.12)] flex flex-col justify-between">
               <div>
                 <div className="flex items-center justify-between text-xs font-mono text-gray-400 mb-6">
                   <span>TIER-1 &amp; TIER-2 RESOLUTION</span>
-                  <span className="text-purple-400 font-bold">&lt; 0.4S RESPONSE</span>
+                  <span className="text-stone-400 font-bold">&lt; 0.4S RESPONSE</span>
                 </div>
-                <div className="font-['Syne'] text-5xl sm:text-6xl font-extrabold text-purple-300 tracking-tight">
+                <div className="font-['Syne'] text-5xl sm:text-6xl font-extrabold text-stone-300 tracking-tight">
                   68%
                 </div>
-                <div className="text-xs font-mono text-purple-400 mt-2 uppercase tracking-widest">
+                <div className="text-xs font-mono text-stone-400 mt-2 uppercase tracking-widest">
                   Resolved Without Human Reps
                 </div>
               </div>
@@ -1465,12 +1465,12 @@ export function VartalaapCrmExperience() {
         <div className="max-w-7xl mx-auto">
           
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <span className="text-xs font-mono tracking-widest text-cyan-400 uppercase bg-cyan-500/10 px-3 py-1 rounded-full border border-cyan-500/20">
+            <span className="text-xs font-mono tracking-widest text-red-400 uppercase bg-red-500/10 px-3 py-1 rounded-full border border-red-500/20">
               DEPLOYMENT SPRINTS
             </span>
             <h2 className="font-['Syne'] text-3xl sm:text-5xl font-extrabold text-white mt-4 leading-tight">
               Clear, transparent{' '}
-              <span className="font-serif italic font-normal text-transparent bg-clip-text bg-gradient-to-r from-[#00c6ff] to-[#0072ff]">
+              <span className="font-serif italic font-normal text-transparent bg-clip-text bg-gradient-to-r from-[#FF1F1F] to-[#8B0000]">
                 sprint plans.
               </span>
             </h2>
@@ -1491,19 +1491,19 @@ export function VartalaapCrmExperience() {
 
                 <div className="space-y-3 mt-8 pt-6 border-t border-white/10 text-xs text-gray-300 font-sans">
                   <div className="flex items-center gap-2">
-                    <CheckCircle2 className="w-4 h-4 text-cyan-400 shrink-0" />
+                    <CheckCircle2 className="w-4 h-4 text-red-400 shrink-0" />
                     <span>WhatsApp Business Cloud API setup</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <CheckCircle2 className="w-4 h-4 text-cyan-400 shrink-0" />
+                    <CheckCircle2 className="w-4 h-4 text-red-400 shrink-0" />
                     <span>HubSpot or Klaviyo lifecycle synchronization</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <CheckCircle2 className="w-4 h-4 text-cyan-400 shrink-0" />
+                    <CheckCircle2 className="w-4 h-4 text-red-400 shrink-0" />
                     <span>3 core conversion flows (Video Ad, Cart, Support)</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <CheckCircle2 className="w-4 h-4 text-cyan-400 shrink-0" />
+                    <CheckCircle2 className="w-4 h-4 text-red-400 shrink-0" />
                     <span>14-day post-launch telemetry monitoring</span>
                   </div>
                 </div>
@@ -1518,36 +1518,36 @@ export function VartalaapCrmExperience() {
             </div>
 
             {/* Plan 2: Omnichannel Growth (Featured) */}
-            <div className="p-8 rounded-3xl bg-gradient-to-b from-[#0e172a] to-[#090e1a] border-2 border-cyan-400 relative flex flex-col justify-between shadow-[0_0_55px_rgba(0,242,254,0.35)]">
-              <div className="absolute -top-3.5 right-6 px-3.5 py-0.5 rounded-full bg-cyan-400 text-black font-mono font-bold text-[10px] tracking-wider uppercase shadow-[0_0_15px_rgba(0,242,254,0.8)]">
+            <div className="p-8 rounded-3xl bg-gradient-to-b from-[#0e172a] to-[#090e1a] border-2 border-red-400 relative flex flex-col justify-between shadow-[0_0_55px_rgba(255,31,31,0.35)]">
+              <div className="absolute -top-3.5 right-6 px-3.5 py-0.5 rounded-full bg-red-400 text-white font-mono font-bold text-[10px] tracking-wider uppercase shadow-[0_0_15px_rgba(255,31,31,0.8)]">
                 MOST POPULAR
               </div>
 
               <div>
-                <div className="text-xs font-mono text-cyan-400 mb-2">TIER 02 // SCALE ENGINE</div>
+                <div className="text-xs font-mono text-red-400 mb-2">TIER 02 // SCALE ENGINE</div>
                 <h3 className="font-['Syne'] text-2xl font-bold text-white">Omnichannel Growth Engine</h3>
-                <div className="font-['Syne'] text-4xl font-extrabold text-cyan-300 mt-4">$6,500 <span className="text-base text-gray-400 font-sans font-normal">/ mo</span></div>
+                <div className="font-['Syne'] text-4xl font-extrabold text-red-300 mt-4">$6,500 <span className="text-base text-gray-400 font-sans font-normal">/ mo</span></div>
                 <div className="text-xs text-gray-400 mt-1 font-mono">Full engineering team + continuous optimization</div>
 
                 <div className="space-y-3 mt-8 pt-6 border-t border-white/10 text-xs text-gray-200 font-sans">
                   <div className="flex items-center gap-2">
-                    <CheckCircle2 className="w-4 h-4 text-cyan-400 shrink-0" />
+                    <CheckCircle2 className="w-4 h-4 text-red-400 shrink-0" />
                     <span>WhatsApp, Instagram DMs, SMS &amp; Webchat</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <CheckCircle2 className="w-4 h-4 text-cyan-400 shrink-0" />
-                    <span>APERTURE Telephony Voice AI Call Intake</span>
+                    <CheckCircle2 className="w-4 h-4 text-red-400 shrink-0" />
+                    <span>NEXUS Telephony Voice AI Call Intake</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <CheckCircle2 className="w-4 h-4 text-cyan-400 shrink-0" />
+                    <CheckCircle2 className="w-4 h-4 text-red-400 shrink-0" />
                     <span>Bi-directional Salesforce / HubSpot / Shopify</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <CheckCircle2 className="w-4 h-4 text-cyan-400 shrink-0" />
+                    <CheckCircle2 className="w-4 h-4 text-red-400 shrink-0" />
                     <span>Dynamic 1-click cart recovery &amp; checkout links</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <CheckCircle2 className="w-4 h-4 text-cyan-400 shrink-0" />
+                    <CheckCircle2 className="w-4 h-4 text-red-400 shrink-0" />
                     <span>Dedicated Slack channel with founding engineering team</span>
                   </div>
                 </div>
@@ -1555,7 +1555,7 @@ export function VartalaapCrmExperience() {
 
               <Link
                 href="/contact?service=crm-sales-funnel&plan=growth"
-                className="mt-8 w-full py-3.5 rounded-xl bg-gradient-to-r from-[#00c6ff] to-[#0072ff] text-black font-mono font-bold text-xs text-center shadow-[0_0_25px_rgba(0,242,254,0.5)] transition-all hover:scale-105"
+                className="mt-8 w-full py-3.5 rounded-xl bg-gradient-to-r from-[#FF1F1F] to-[#8B0000] text-white font-mono font-bold text-xs text-center shadow-[0_0_25px_rgba(255,31,31,0.5)] transition-all hover:scale-105"
               >
                 Launch Growth Engine ➔
               </Link>
@@ -1564,26 +1564,26 @@ export function VartalaapCrmExperience() {
             {/* Plan 3: Enterprise */}
             <div className="p-8 rounded-3xl bg-[#090e1a] border border-white/10 flex flex-col justify-between">
               <div>
-                <div className="text-xs font-mono text-purple-400 mb-2">TIER 03 // ENTERPRISE</div>
+                <div className="text-xs font-mono text-stone-400 mb-2">TIER 03 // ENTERPRISE</div>
                 <h3 className="font-['Syne'] text-2xl font-bold text-white">Enterprise Architecture</h3>
-                <div className="font-['Syne'] text-4xl font-extrabold text-purple-300 mt-4">$12,500</div>
+                <div className="font-['Syne'] text-4xl font-extrabold text-stone-300 mt-4">$12,500</div>
                 <div className="text-xs text-gray-400 mt-1 font-mono">Custom VPC / On-Prem / Unlimited Threads</div>
 
                 <div className="space-y-3 mt-8 pt-6 border-t border-white/10 text-xs text-gray-300 font-sans">
                   <div className="flex items-center gap-2">
-                    <CheckCircle2 className="w-4 h-4 text-purple-400 shrink-0" />
+                    <CheckCircle2 className="w-4 h-4 text-stone-400 shrink-0" />
                     <span>Private isolated vector memory &amp; fine-tuned LLMs</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <CheckCircle2 className="w-4 h-4 text-purple-400 shrink-0" />
+                    <CheckCircle2 className="w-4 h-4 text-stone-400 shrink-0" />
                     <span>SOC2 Type II &amp; HIPAA compliance architecture</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <CheckCircle2 className="w-4 h-4 text-purple-400 shrink-0" />
+                    <CheckCircle2 className="w-4 h-4 text-stone-400 shrink-0" />
                     <span>99.99% uptime guarantee with 15-min SLA response</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <CheckCircle2 className="w-4 h-4 text-purple-400 shrink-0" />
+                    <CheckCircle2 className="w-4 h-4 text-stone-400 shrink-0" />
                     <span>Custom legacy ERP / database integrations</span>
                   </div>
                 </div>
@@ -1609,7 +1609,7 @@ export function VartalaapCrmExperience() {
         <div className="max-w-4xl mx-auto">
           
           <div className="text-center mb-16">
-            <span className="text-xs font-mono tracking-widest text-cyan-400 uppercase bg-cyan-500/10 px-3 py-1 rounded-full border border-cyan-500/20">
+            <span className="text-xs font-mono tracking-widest text-red-400 uppercase bg-red-500/10 px-3 py-1 rounded-full border border-red-500/20">
               FREQUENTLY ASKED QUESTIONS
             </span>
             <h2 className="font-['Syne'] text-3xl sm:text-5xl font-extrabold text-white mt-4 leading-tight">
@@ -1628,7 +1628,7 @@ export function VartalaapCrmExperience() {
                   className="w-full p-6 text-left flex items-center justify-between gap-4"
                 >
                   <span className="text-base font-bold text-white font-['Syne']">{faq.q}</span>
-                  <ChevronDown className={`w-5 h-5 text-cyan-400 transition-transform duration-200 ${activeFaq === idx ? 'rotate-180' : ''}`} />
+                  <ChevronDown className={`w-5 h-5 text-red-400 transition-transform duration-200 ${activeFaq === idx ? 'rotate-180' : ''}`} />
                 </button>
                 <AnimatePresence>
                   {activeFaq === idx && (
@@ -1654,16 +1654,16 @@ export function VartalaapCrmExperience() {
       {/* 11. 24/7 SUPPORT & FAST BOOKING CTA */}
       {/* ========================================================================= */}
       <section className="relative py-24 px-4 md:px-8 border-t border-white/10 z-10 bg-gradient-to-b from-[#060a12] to-[#04060a]">
-        <div className="max-w-5xl mx-auto rounded-3xl bg-gradient-to-r from-cyan-900/30 via-blue-900/20 to-purple-900/30 border border-cyan-500/40 p-8 md:p-14 text-center relative overflow-hidden shadow-[0_0_80px_rgba(0,242,254,0.15)]">
+        <div className="max-w-5xl mx-auto rounded-3xl bg-gradient-to-r from-red-900/30 via-red-900/20 to-stone-900/30 border border-red-500/40 p-8 md:p-14 text-center relative overflow-hidden shadow-[0_0_80px_rgba(255,31,31,0.15)]">
           
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-cyan-300 text-xs font-mono mb-4">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-500/10 border border-red-500/30 text-red-300 text-xs font-mono mb-4">
             <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
             <span>24/7 ARCHITECTURE SUPPORT FROM SENIOR ENGINEERS — 97% SATISFACTION</span>
           </div>
 
           <h2 className="font-['Syne'] text-3xl sm:text-5xl font-extrabold text-white max-w-2xl mx-auto leading-tight">
             Ready to turn your video campaigns into{' '}
-            <span className="font-serif italic font-normal text-transparent bg-clip-text bg-gradient-to-r from-[#00c6ff] to-[#0072ff]">
+            <span className="font-serif italic font-normal text-transparent bg-clip-text bg-gradient-to-r from-[#FF1F1F] to-[#8B0000]">
               cash collected?
             </span>
           </h2>
@@ -1675,7 +1675,7 @@ export function VartalaapCrmExperience() {
           <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
               href="/contact?service=crm-sales-funnel"
-              className="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-[#00c6ff] via-[#0072ff] to-[#38bdf8] text-black font-bold text-sm shadow-[0_0_30px_rgba(0,242,254,0.5)] hover:shadow-[0_0_50px_rgba(0,242,254,0.8)] transition-all flex items-center justify-center gap-2"
+              className="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-[#FF1F1F] via-[#8B0000] to-[#C9CCD1] text-white font-bold text-sm shadow-[0_0_30px_rgba(255,31,31,0.5)] hover:shadow-[0_0_50px_rgba(255,31,31,0.8)] transition-all flex items-center justify-center gap-2"
             >
               <span>Schedule Architecture Call</span>
               <ArrowRight className="w-4 h-4" />
@@ -1709,8 +1709,8 @@ export function VartalaapCrmExperience() {
 
         <div className="max-w-7xl mx-auto relative z-10 flex flex-col sm:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-3">
-            <span className="w-2.5 h-2.5 rounded-full bg-cyan-400 animate-pulse" />
-            <span className="text-white font-bold">APERTURE STUDIOS // PIPELINE CONVERSION SUITE</span>
+            <span className="w-2.5 h-2.5 rounded-full bg-red-400 animate-pulse" />
+            <span className="text-white font-bold">NEXUS Growth // PIPELINE CONVERSION SUITE</span>
             <span className="text-gray-500 hidden md:inline">| Service 11 Platform</span>
           </div>
 
@@ -1727,7 +1727,7 @@ export function VartalaapCrmExperience() {
             <Link href="/services/ai-automation" className="hover:text-white transition-colors">
               AI Automation
             </Link>
-            <Link href="/contact" className="text-cyan-400 hover:underline font-bold">
+            <Link href="/contact" className="text-red-400 hover:underline font-bold">
               Book Project ➔
             </Link>
           </div>

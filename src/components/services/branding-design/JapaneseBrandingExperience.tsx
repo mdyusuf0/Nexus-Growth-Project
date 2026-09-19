@@ -38,7 +38,7 @@ const UNIFIERS: UnifierData[] = [
     line1: 'ODA',
     line2: 'NOBUNAGA',
     kanji: '織田信長',
-    accent: '#e40038',
+    accent: '#FF1F1F',
     secondary: '#fffdde',
     crestSvg: '/unifiers/svg-76.svg',
     crestTitle: 'Crest of the Oda Clan',
@@ -116,7 +116,7 @@ const UNIFIERS: UnifierData[] = [
     line1: 'TOYOTOMI',
     line2: 'HIDEYOSHI',
     kanji: '豊臣秀吉',
-    accent: '#cc8033',
+    accent: '#FF1F1F',
     secondary: '#fffdde',
     crestSvg: '/unifiers/svg-76.svg',
     crestTitle: 'Gosan no Kiri (Paulownia Crest)',
@@ -191,7 +191,7 @@ const UNIFIERS: UnifierData[] = [
     line1: 'TOKUGAWA',
     line2: 'IEYASU',
     kanji: '徳川家康',
-    accent: '#850021',
+    accent: '#8B0000',
     secondary: '#fffdde',
     crestSvg: '/unifiers/svg-76.svg',
     crestTitle: 'Mitsuba Aoi (Triple Hollyhock)',
@@ -287,25 +287,25 @@ export function JapaneseBrandingExperience() {
   }, [dropdownOpen, servicesMenuOpen]);
 
   return (
-    <div className="relative w-full bg-[#FAF3E9] text-[#201408] overflow-hidden selection:bg-[#e40038] selection:text-[#fffdde]">
+    <div className="relative w-full bg-[#0A0A0A] text-[#FFFFFF] overflow-hidden selection:bg-[#FF1F1F] selection:text-[#fffdde]">
       
       {/* 0. FLOATING TOP PILL NAVIGATION */}
       <header className="fixed top-6 left-1/2 -translate-x-1/2 z-50 pointer-events-auto">
-        <div className="flex items-center gap-3 sm:gap-5 bg-[#FAF3E9]/95 backdrop-blur-md border border-[#201408]/15 px-4 sm:px-6 py-2 rounded-full shadow-lg">
+        <div className="flex items-center gap-3 sm:gap-5 bg-[#0A0A0A]/95 backdrop-blur-md border border-white/15 px-4 sm:px-6 py-2 rounded-full shadow-lg">
           
           {/* Menu / Home Icon */}
           <Link 
             href="/"
-            aria-label="Aperture Studios Home"
-            className="flex items-center gap-1.5 font-mono text-xs font-bold text-[#201408] hover:text-[#e40038] transition-colors"
+            aria-label="NEXUS Growth Home"
+            className="flex items-center gap-1.5 font-mono text-xs font-bold text-[#FFFFFF] hover:text-[#FF1F1F] transition-colors"
           >
-            <span className="w-2.5 h-2.5 rounded-full bg-[#e40038]" />
-            <span className="hidden sm:inline">aperture</span>
+            <span className="w-2.5 h-2.5 rounded-full bg-[#FF1F1F]" />
+            <span className="hidden sm:inline">nexus</span>
           </Link>
 
           <Link 
             href="#dossier" 
-            className="font-mono text-xs text-[#201408]/80 hover:text-[#e40038] transition-colors lowercase hidden xs:inline-block"
+            className="font-mono text-xs text-[#FFFFFF]/80 hover:text-[#FF1F1F] transition-colors lowercase hidden xs:inline-block"
           >
             about
           </Link>
@@ -317,21 +317,21 @@ export function JapaneseBrandingExperience() {
                 setServicesMenuOpen(!servicesMenuOpen);
                 setDropdownOpen(false);
               }}
-              className="flex items-center gap-1.5 px-3 py-1 rounded-full border border-[#201408]/20 bg-white/70 hover:bg-white text-xs font-mono lowercase tracking-wider transition-all cursor-pointer"
+              className="flex items-center gap-1.5 px-3 py-1 rounded-full border border-white/20 bg-[#1A1A1A]/70 hover:bg-[#1A1A1A] text-xs font-mono lowercase tracking-wider transition-all cursor-pointer"
             >
               <span className="font-semibold">all services</span>
-              <ChevronDown className={`w-3 h-3 text-[#201408]/60 transition-transform ${servicesMenuOpen ? 'rotate-180' : ''}`} />
+              <ChevronDown className={`w-3 h-3 text-[#FFFFFF]/60 transition-transform ${servicesMenuOpen ? 'rotate-180' : ''}`} />
             </button>
 
             {servicesMenuOpen && (
-              <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-72 max-h-[75vh] overflow-y-auto bg-[#FAF3E9] border border-[#201408]/20 rounded-2xl shadow-2xl p-2 z-50 flex flex-col gap-1">
-                <div className="px-3 py-1.5 border-b border-[#201408]/10 flex items-center justify-between">
-                  <span className="font-mono text-[10px] font-bold uppercase tracking-wider text-[#201408]/60">
+              <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-72 max-h-[75vh] overflow-y-auto bg-[#0A0A0A] border border-white/20 rounded-2xl shadow-2xl p-2 z-50 flex flex-col gap-1">
+                <div className="px-3 py-1.5 border-b border-white/10 flex items-center justify-between">
+                  <span className="font-mono text-[10px] font-bold uppercase tracking-wider text-[#FFFFFF]/60">
                     11 Agency Services
                   </span>
                   <Link
                     href="/services"
-                    className="font-mono text-[10px] text-[#e40038] font-bold hover:underline"
+                    className="font-mono text-[10px] text-[#FF1F1F] font-bold hover:underline"
                   >
                     Directory ➔
                   </Link>
@@ -356,8 +356,8 @@ export function JapaneseBrandingExperience() {
                     onClick={() => setServicesMenuOpen(false)}
                     className={`flex items-center justify-between px-3 py-1.5 rounded-lg text-xs font-mono transition-colors ${
                       s.id === "06"
-                        ? "bg-[#e40038]/10 text-[#e40038] font-bold"
-                        : "text-[#201408]/80 hover:bg-black/[0.04] hover:text-black"
+                        ? "bg-[#FF1F1F]/10 text-[#FF1F1F] font-bold"
+                        : "text-[#FFFFFF]/80 hover:bg-black/[0.04] hover:text-white"
                     }`}
                   >
                     <div className="flex items-center gap-2 truncate">
@@ -369,7 +369,7 @@ export function JapaneseBrandingExperience() {
                         {s.note}
                       </span>
                     ) : (
-                      <span className="text-[9px] px-1 py-0.2 rounded border border-[#201408]/20 bg-white shrink-0">
+                      <span className="text-[9px] px-1 py-0.2 rounded border border-white/20 bg-[#1A1A1A] shrink-0">
                         {s.tag}
                       </span>
                     )}
@@ -386,18 +386,18 @@ export function JapaneseBrandingExperience() {
                 setDropdownOpen(!dropdownOpen);
                 setServicesMenuOpen(false);
               }}
-              className="flex items-center gap-2 px-3 py-1 rounded-full border border-[#201408]/20 bg-white/70 hover:bg-white text-xs font-mono lowercase tracking-wider transition-all cursor-pointer"
+              className="flex items-center gap-2 px-3 py-1 rounded-full border border-white/20 bg-[#1A1A1A]/70 hover:bg-[#1A1A1A] text-xs font-mono lowercase tracking-wider transition-all cursor-pointer"
             >
               <span 
                 className="w-2 h-2 rounded-full" 
                 style={{ backgroundColor: activeUnifier.accent }} 
               />
               <span className="font-semibold">{activeUnifier.name}</span>
-              <ChevronDown className={`w-3.5 h-3.5 text-[#201408]/60 transition-transform ${dropdownOpen ? 'rotate-180' : ''}`} />
+              <ChevronDown className={`w-3.5 h-3.5 text-[#FFFFFF]/60 transition-transform ${dropdownOpen ? 'rotate-180' : ''}`} />
             </button>
 
             {dropdownOpen && (
-              <div className="absolute top-full left-0 mt-2 w-52 bg-[#FAF3E9] border border-[#201408]/20 rounded-xl shadow-2xl p-1.5 z-50 flex flex-col gap-1">
+              <div className="absolute top-full left-0 mt-2 w-52 bg-[#0A0A0A] border border-white/20 rounded-xl shadow-2xl p-1.5 z-50 flex flex-col gap-1">
                 {UNIFIERS.map((u) => (
                   <button
                     key={u.id}
@@ -407,8 +407,8 @@ export function JapaneseBrandingExperience() {
                     }}
                     className={`flex items-center justify-between px-3 py-2 rounded-lg text-left text-xs font-mono transition-colors cursor-pointer ${
                       activeUnifier.id === u.id 
-                        ? 'bg-black/5 font-bold text-black' 
-                        : 'text-[#201408]/80 hover:bg-black/[0.03]'
+                        ? 'bg-black/5 font-bold text-white' 
+                        : 'text-[#FFFFFF]/80 hover:bg-black/[0.03]'
                     }`}
                   >
                     <div className="flex items-center gap-2">
@@ -418,7 +418,7 @@ export function JapaneseBrandingExperience() {
                       />
                       <span>{u.name}</span>
                     </div>
-                    <span className="text-[10px] text-[#201408]/50">{u.num}</span>
+                    <span className="text-[10px] text-[#FFFFFF]/50">{u.num}</span>
                   </button>
                 ))}
               </div>
@@ -427,9 +427,9 @@ export function JapaneseBrandingExperience() {
 
           <Link 
             href="/contact" 
-            className="font-mono text-xs text-[#e40038] font-bold hover:underline ml-1 hidden md:inline-block"
+            className="font-mono text-xs text-[#FF1F1F] font-bold hover:underline ml-1 hidden md:inline-block"
           >
-            aperture studios ➔
+            nexus studios ➔
           </Link>
         </div>
       </header>
@@ -463,7 +463,7 @@ export function JapaneseBrandingExperience() {
             />
             <text className="text-[7.2px] fill-white tracking-[0.24em] uppercase font-bold" style={{ fontFamily: 'Panchang, sans-serif' }}>
               <textPath href="#badge-curve-circle" startOffset="0%">
-                UNIFIERS OF JAPAN ✦ APERTURE ✦
+                UNIFIERS OF JAPAN ✦ NEXUS ✦
               </textPath>
             </text>
           </svg>
@@ -578,7 +578,7 @@ export function JapaneseBrandingExperience() {
         {/* Bottom Rail Details */}
         <div className="w-full border-t border-[#fffdde]/25 px-6 sm:px-12 py-4 flex items-center justify-between text-[#fffdde]/80 font-mono text-xs z-20">
           <span>CHAPTER 01 // OVERVIEW</span>
-          <span className="tracking-widest uppercase">APERTURE STUDIOS // BRAND IDENTITY SHOWCASE</span>
+          <span className="tracking-widest uppercase">NEXUS Growth // BRAND IDENTITY SHOWCASE</span>
         </div>
       </section>
 
@@ -587,19 +587,19 @@ export function JapaneseBrandingExperience() {
       {/* ========================================================================= */}
       <section 
         id="dossier" 
-        className="relative w-full border-t border-[#e40038] py-20 px-6 sm:px-12 lg:px-24 bg-[#FAF3E9]"
+        className="relative w-full border-t border-[#FF1F1F] py-20 px-6 sm:px-12 lg:px-24 bg-[#0A0A0A]"
       >
         {/* Section Number Header */}
-        <div className="flex items-center justify-between pb-8 mb-12 border-b border-[#201408]/15">
+        <div className="flex items-center justify-between pb-8 mb-12 border-b border-white/15">
           <div className="flex items-center gap-4">
-            <span className="font-mono text-sm tracking-widest text-[#e40038] font-bold">
+            <span className="font-mono text-sm tracking-widest text-[#FF1F1F] font-bold">
               02 &nbsp; / &nbsp; 05
             </span>
-            <span className="font-mono text-xs uppercase tracking-widest text-[#201408]/60">
+            <span className="font-mono text-xs uppercase tracking-widest text-[#FFFFFF]/60">
               clan dossier & metadata
             </span>
           </div>
-          <span className="font-mono text-xs text-[#201408]/50 uppercase tracking-widest">
+          <span className="font-mono text-xs text-[#FFFFFF]/50 uppercase tracking-widest">
             {activeUnifier.name}
           </span>
         </div>
@@ -607,7 +607,7 @@ export function JapaneseBrandingExperience() {
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           
           {/* Left Column: Clan Crest Box */}
-          <div className="lg:col-span-5 flex flex-col items-center justify-center p-10 border border-[#201408]/20 bg-[#F4EDE2] rounded-none relative">
+          <div className="lg:col-span-5 flex flex-col items-center justify-center p-10 border border-white/20 bg-[#121212] rounded-none relative">
             <div className="w-48 h-48 sm:w-60 sm:h-60 relative flex items-center justify-center">
               <Image 
                 src={activeUnifier.crestSvg}
@@ -617,24 +617,24 @@ export function JapaneseBrandingExperience() {
                 className="w-full h-full object-contain filter drop-shadow-md"
               />
             </div>
-            <span className="mt-8 font-mono text-xs uppercase tracking-[0.25em] text-[#201408]/80 text-center font-semibold">
+            <span className="mt-8 font-mono text-xs uppercase tracking-[0.25em] text-[#FFFFFF]/80 text-center font-semibold">
               {activeUnifier.crestTitle}
             </span>
           </div>
 
           {/* Right Column: Structured Specification Grid */}
           <div className="lg:col-span-7">
-            <div className="grid grid-cols-1 sm:grid-cols-2 border-t border-l border-[#e40038]">
+            <div className="grid grid-cols-1 sm:grid-cols-2 border-t border-l border-[#FF1F1F]">
               {activeUnifier.specs.map((spec, idx) => (
                 <div 
                   key={idx} 
-                  className="p-6 border-b border-r border-[#e40038] bg-[#FAF3E9] hover:bg-[#F4EDE2] transition-colors"
+                  className="p-6 border-b border-r border-[#FF1F1F] bg-[#0A0A0A] hover:bg-[#121212] transition-colors"
                 >
-                  <span className="block font-mono text-xs uppercase tracking-widest text-[#201408]/60 mb-2">
+                  <span className="block font-mono text-xs uppercase tracking-widest text-[#FFFFFF]/60 mb-2">
                     {spec.label}
                   </span>
                   <span 
-                    className="block font-sans text-xl sm:text-2xl font-bold uppercase tracking-tight text-[#201408]"
+                    className="block font-sans text-xl sm:text-2xl font-bold uppercase tracking-tight text-[#FFFFFF]"
                     style={{ fontFamily: "'Anton', sans-serif" }}
                   >
                     {spec.val}
@@ -644,11 +644,11 @@ export function JapaneseBrandingExperience() {
             </div>
 
             {/* Editorial Bio Quotes */}
-            <div className="mt-10 p-6 border-l-2 border-[#e40038] bg-[#F4EDE2]/50 space-y-4">
-              <p className="font-serif italic text-lg sm:text-xl text-[#201408] leading-relaxed">
+            <div className="mt-10 p-6 border-l-2 border-[#FF1F1F] bg-[#121212]/50 space-y-4">
+              <p className="font-serif italic text-lg sm:text-xl text-[#FFFFFF] leading-relaxed">
                 &ldquo;{activeUnifier.bio1}&rdquo;
               </p>
-              <p className="text-xs sm:text-sm font-sans text-[#201408]/80 leading-relaxed">
+              <p className="text-xs sm:text-sm font-sans text-[#FFFFFF]/80 leading-relaxed">
                 {activeUnifier.bio2}
               </p>
             </div>
@@ -662,19 +662,19 @@ export function JapaneseBrandingExperience() {
       {/* ========================================================================= */}
       <section 
         id="dominion" 
-        className="relative w-full border-t border-[#e40038] py-20 px-6 sm:px-12 lg:px-24 bg-[#FAF3E9]"
+        className="relative w-full border-t border-[#FF1F1F] py-20 px-6 sm:px-12 lg:px-24 bg-[#0A0A0A]"
       >
         {/* Section Header */}
-        <div className="flex items-center justify-between pb-8 mb-12 border-b border-[#201408]/15">
+        <div className="flex items-center justify-between pb-8 mb-12 border-b border-white/15">
           <div className="flex items-center gap-4">
-            <span className="font-mono text-sm tracking-widest text-[#e40038] font-bold">
+            <span className="font-mono text-sm tracking-widest text-[#FF1F1F] font-bold">
               03 &nbsp; / &nbsp; 05
             </span>
-            <span className="font-mono text-xs uppercase tracking-widest text-[#201408]/60">
+            <span className="font-mono text-xs uppercase tracking-widest text-[#FFFFFF]/60">
               territory & dominion map
             </span>
           </div>
-          <span className="font-mono text-xs text-[#201408]/50 uppercase tracking-widest">
+          <span className="font-mono text-xs text-[#FFFFFF]/50 uppercase tracking-widest">
             feudal provinces
           </span>
         </div>
@@ -682,7 +682,7 @@ export function JapaneseBrandingExperience() {
         <div className="max-w-7xl mx-auto space-y-12">
           
           {/* Map Vector Graphic + Province Coordinate Highlights */}
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center bg-[#F4EDE2] border border-[#201408]/20 p-6 sm:p-10">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center bg-[#121212] border border-white/20 p-6 sm:p-10">
             
             {/* Map Graphic (Col 7) */}
             <div className="lg:col-span-7 relative flex items-center justify-center overflow-hidden min-h-[360px] sm:min-h-[460px]">
@@ -699,25 +699,25 @@ export function JapaneseBrandingExperience() {
 
             {/* Strategic Castle Note (Col 5) */}
             <div className="lg:col-span-5 space-y-6">
-              <div className="inline-flex items-center gap-2 px-3 py-1 bg-[#e40038] text-[#fffdde] font-mono text-[11px] uppercase tracking-widest">
+              <div className="inline-flex items-center gap-2 px-3 py-1 bg-[#FF1F1F] text-[#fffdde] font-mono text-[11px] uppercase tracking-widest">
                 <MapPin className="w-3.5 h-3.5" />
                 STRATEGIC STRONGHOLD
               </div>
 
               <h3 
-                className="text-2xl sm:text-4xl font-bold uppercase text-[#201408] leading-tight"
+                className="text-2xl sm:text-4xl font-bold uppercase text-[#FFFFFF] leading-tight"
                 style={{ fontFamily: "'Anton', sans-serif" }}
               >
                 {activeUnifier.baseTitle}
               </h3>
 
-              <p className="text-sm text-[#201408]/80 leading-relaxed">
+              <p className="text-sm text-[#FFFFFF]/80 leading-relaxed">
                 {activeUnifier.baseDesc}
               </p>
 
               {/* Province Pills */}
               <div>
-                <span className="block font-mono text-[11px] uppercase tracking-wider text-[#201408]/60 mb-3">
+                <span className="block font-mono text-[11px] uppercase tracking-wider text-[#FFFFFF]/60 mb-3">
                   CONTROLLED FEUDAL PROVINCES:
                 </span>
                 <div className="flex flex-wrap gap-1.5">
@@ -727,8 +727,8 @@ export function JapaneseBrandingExperience() {
                       onClick={() => setSelectedProvince(prov)}
                       className={`font-mono text-xs px-2.5 py-1 uppercase tracking-wider border transition-all cursor-pointer ${
                         selectedProvince === prov
-                          ? 'bg-[#e40038] text-white border-[#e40038]'
-                          : 'bg-white/60 text-[#201408]/80 border-[#201408]/15 hover:border-[#e40038]'
+                          ? 'bg-[#FF1F1F] text-white border-[#FF1F1F]'
+                          : 'bg-[#1A1A1A]/60 text-[#FFFFFF]/80 border-white/15 hover:border-[#FF1F1F]'
                       }`}
                     >
                       {prov}
@@ -748,19 +748,19 @@ export function JapaneseBrandingExperience() {
       {/* ========================================================================= */}
       <section 
         id="strategy" 
-        className="relative w-full border-t border-[#e40038] py-20 px-6 sm:px-12 lg:px-24 bg-[#FAF3E9]"
+        className="relative w-full border-t border-[#FF1F1F] py-20 px-6 sm:px-12 lg:px-24 bg-[#0A0A0A]"
       >
         {/* Section Header */}
-        <div className="flex items-center justify-between pb-8 mb-12 border-b border-[#201408]/15">
+        <div className="flex items-center justify-between pb-8 mb-12 border-b border-white/15">
           <div className="flex items-center gap-4">
-            <span className="font-mono text-sm tracking-widest text-[#e40038] font-bold">
+            <span className="font-mono text-sm tracking-widest text-[#FF1F1F] font-bold">
               04 &nbsp; / &nbsp; 05
             </span>
-            <span className="font-mono text-xs uppercase tracking-widest text-[#201408]/60">
+            <span className="font-mono text-xs uppercase tracking-widest text-[#FFFFFF]/60">
               battle strategy & tactical doctrine
             </span>
           </div>
-          <span className="font-mono text-xs text-[#201408]/50 uppercase tracking-widest">
+          <span className="font-mono text-xs text-[#FFFFFF]/50 uppercase tracking-widest">
             tactics
           </span>
         </div>
@@ -770,13 +770,13 @@ export function JapaneseBrandingExperience() {
           {/* Colossal Section Title */}
           <div className="space-y-4">
             <h2 
-              className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-black uppercase text-[#201408] tracking-tight leading-[0.88]"
+              className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-black uppercase text-[#FFFFFF] tracking-tight leading-[0.88]"
               style={{ fontFamily: "'Anton', sans-serif" }}
             >
               BATTLE <br />
-              <span className="text-[#e40038]">STRATEGY</span>
+              <span className="text-[#FF1F1F]">STRATEGY</span>
             </h2>
-            <p className="max-w-2xl text-base sm:text-lg font-serif italic text-[#201408]/80 leading-relaxed">
+            <p className="max-w-2xl text-base sm:text-lg font-serif italic text-[#FFFFFF]/80 leading-relaxed">
               &ldquo;Nobunaga&apos;s battle strategy was marked by innovation and aggression. His surprise attacks, use of firearms and willingness to adopt new technologies gave him a significant edge on the battlefield.&rdquo;
             </p>
           </div>
@@ -786,29 +786,29 @@ export function JapaneseBrandingExperience() {
             {activeUnifier.strategies.map((strat, i) => (
               <div 
                 key={i}
-                className="group relative p-8 sm:p-10 border border-[#201408]/20 bg-[#F4EDE2] hover:bg-[#fffdde] transition-all duration-300 shadow-sm hover:shadow-md"
+                className="group relative p-8 sm:p-10 border border-white/20 bg-[#121212] hover:bg-[#fffdde] transition-all duration-300 shadow-sm hover:shadow-md"
               >
                 {/* Traditional Japanese Corner Accents */}
-                <div className="absolute top-2 left-2 font-mono text-xs text-[#e40038]/60 select-none">⌜</div>
-                <div className="absolute top-2 right-2 font-mono text-xs text-[#e40038]/60 select-none">⌝</div>
-                <div className="absolute bottom-2 left-2 font-mono text-xs text-[#e40038]/60 select-none">⌞</div>
-                <div className="absolute bottom-2 right-2 font-mono text-xs text-[#e40038]/60 select-none">⌟</div>
+                <div className="absolute top-2 left-2 font-mono text-xs text-[#FF1F1F]/60 select-none">⌜</div>
+                <div className="absolute top-2 right-2 font-mono text-xs text-[#FF1F1F]/60 select-none">⌝</div>
+                <div className="absolute bottom-2 left-2 font-mono text-xs text-[#FF1F1F]/60 select-none">⌞</div>
+                <div className="absolute bottom-2 right-2 font-mono text-xs text-[#FF1F1F]/60 select-none">⌟</div>
 
                 <div className="flex items-center justify-between mb-6">
-                  <span className="font-mono text-xs text-[#e40038] font-bold tracking-widest">
+                  <span className="font-mono text-xs text-[#FF1F1F] font-bold tracking-widest">
                     DOCTRINE 0{i + 1}
                   </span>
-                  <span className="w-2 h-2 rounded-full bg-[#e40038]" />
+                  <span className="w-2 h-2 rounded-full bg-[#FF1F1F]" />
                 </div>
 
                 <h3 
-                  className="text-2xl sm:text-3xl font-bold uppercase text-[#201408] mb-4 tracking-tight"
+                  className="text-2xl sm:text-3xl font-bold uppercase text-[#FFFFFF] mb-4 tracking-tight"
                   style={{ fontFamily: "'Anton', sans-serif" }}
                 >
                   {strat.title}
                 </h3>
 
-                <p className="text-sm sm:text-base text-[#201408]/80 leading-relaxed">
+                <p className="text-sm sm:text-base text-[#FFFFFF]/80 leading-relaxed">
                   {strat.desc}
                 </p>
               </div>
@@ -823,19 +823,19 @@ export function JapaneseBrandingExperience() {
       {/* ========================================================================= */}
       <section 
         id="moments" 
-        className="relative w-full border-t border-[#e40038] py-20 px-6 sm:px-12 lg:px-24 bg-[#FAF3E9]"
+        className="relative w-full border-t border-[#FF1F1F] py-20 px-6 sm:px-12 lg:px-24 bg-[#0A0A0A]"
       >
         {/* Section Header */}
-        <div className="flex items-center justify-between pb-8 mb-12 border-b border-[#201408]/15">
+        <div className="flex items-center justify-between pb-8 mb-12 border-b border-white/15">
           <div className="flex items-center gap-4">
-            <span className="font-mono text-sm tracking-widest text-[#e40038] font-bold">
+            <span className="font-mono text-sm tracking-widest text-[#FF1F1F] font-bold">
               05 &nbsp; / &nbsp; 05
             </span>
-            <span className="font-mono text-xs uppercase tracking-widest text-[#201408]/60">
+            <span className="font-mono text-xs uppercase tracking-widest text-[#FFFFFF]/60">
               chronological timeline
             </span>
           </div>
-          <span className="font-mono text-xs text-[#201408]/50 uppercase tracking-widest">
+          <span className="font-mono text-xs text-[#FFFFFF]/50 uppercase tracking-widest">
             turning points
           </span>
         </div>
@@ -845,28 +845,28 @@ export function JapaneseBrandingExperience() {
           {/* Colossal Section Title */}
           <div className="space-y-4">
             <h2 
-              className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-black uppercase text-[#201408] tracking-tight leading-[0.88]"
+              className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-black uppercase text-[#FFFFFF] tracking-tight leading-[0.88]"
               style={{ fontFamily: "'Anton', sans-serif" }}
             >
               PIVOTAL <br />
-              <span className="text-[#e40038]">MOMENTS</span>
+              <span className="text-[#FF1F1F]">MOMENTS</span>
             </h2>
-            <p className="max-w-2xl text-base sm:text-lg font-serif italic text-[#201408]/80 leading-relaxed">
+            <p className="max-w-2xl text-base sm:text-lg font-serif italic text-[#FFFFFF]/80 leading-relaxed">
               &ldquo;Nobunaga&apos;s pivotal moments during his reign were marked by strategic victories, ambitious projects, and ruthless suppression of opposition.&rdquo;
             </p>
           </div>
 
           {/* Timeline List Items */}
-          <div className="border-t border-[#e40038]">
+          <div className="border-t border-[#FF1F1F]">
             {activeUnifier.timeline.map((item, idx) => (
               <div 
                 key={idx}
-                className="py-8 sm:py-10 border-b border-[#e40038] grid grid-cols-1 lg:grid-cols-12 gap-6 items-start hover:bg-[#F4EDE2]/60 transition-colors px-2"
+                className="py-8 sm:py-10 border-b border-[#FF1F1F] grid grid-cols-1 lg:grid-cols-12 gap-6 items-start hover:bg-[#121212]/60 transition-colors px-2"
               >
                 {/* Year Col */}
                 <div className="lg:col-span-3">
                   <span 
-                    className="text-4xl sm:text-6xl font-black text-[#e40038] tracking-tight block leading-none"
+                    className="text-4xl sm:text-6xl font-black text-[#FF1F1F] tracking-tight block leading-none"
                     style={{ fontFamily: "'Anton', sans-serif" }}
                   >
                     {item.year}
@@ -876,16 +876,16 @@ export function JapaneseBrandingExperience() {
                 {/* Event Details */}
                 <div className="lg:col-span-9 space-y-2">
                   <h4 
-                    className="text-2xl sm:text-3xl font-bold uppercase text-[#201408] tracking-tight"
+                    className="text-2xl sm:text-3xl font-bold uppercase text-[#FFFFFF] tracking-tight"
                     style={{ fontFamily: "'Anton', sans-serif" }}
                   >
                     {item.title}
                   </h4>
-                  <p className="text-sm sm:text-base text-[#201408]/80 leading-relaxed max-w-3xl">
+                  <p className="text-sm sm:text-base text-[#FFFFFF]/80 leading-relaxed max-w-3xl">
                     {item.desc}
                   </p>
                   {item.sub && (
-                    <span className="inline-block font-mono text-xs text-[#201408]/60 uppercase tracking-widest mt-1">
+                    <span className="inline-block font-mono text-xs text-[#FFFFFF]/60 uppercase tracking-widest mt-1">
                       ✦ {item.sub}
                     </span>
                   )}
@@ -900,14 +900,14 @@ export function JapaneseBrandingExperience() {
       {/* ========================================================================= */}
       {/* FOOTER & BRAND UNIFICATION CTA */}
       {/* ========================================================================= */}
-      <footer className="w-full border-t border-[#e40038] bg-[#FAF3E9] py-16 px-6 sm:px-12 lg:px-24">
+      <footer className="w-full border-t border-[#FF1F1F] bg-[#0A0A0A] py-16 px-6 sm:px-12 lg:px-24">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
           
           <div className="space-y-2 text-center md:text-left">
-            <span className="font-mono text-xs uppercase tracking-[0.3em] text-[#e40038] font-bold block">
-              APERTURE STUDIOS ✦ BRAND IDENTITY & UNIFICATION
+            <span className="font-mono text-xs uppercase tracking-[0.3em] text-[#FF1F1F] font-bold block">
+              NEXUS Growth ✦ BRAND IDENTITY & UNIFICATION
             </span>
-            <p className="text-sm text-[#201408]/70 max-w-md">
+            <p className="text-sm text-[#FFFFFF]/70 max-w-md">
               Bringing centuries of Yamato architectural discipline and visual authority to modern high-growth brands.
             </p>
           </div>
@@ -915,7 +915,7 @@ export function JapaneseBrandingExperience() {
           <div className="flex items-center gap-4">
             <Link 
               href="/contact"
-              className="px-8 py-4 bg-[#e40038] hover:bg-[#c2002f] text-[#fffdde] font-mono text-xs uppercase tracking-[0.2em] font-bold transition-all shadow-md hover:scale-105"
+              className="px-8 py-4 bg-[#FF1F1F] hover:bg-[#c2002f] text-[#fffdde] font-mono text-xs uppercase tracking-[0.2em] font-bold transition-all shadow-md hover:scale-105"
             >
               INITIATE BRAND CODEX ➔
             </Link>
@@ -923,8 +923,8 @@ export function JapaneseBrandingExperience() {
 
         </div>
 
-        <div className="max-w-7xl mx-auto mt-12 pt-6 border-t border-[#201408]/10 flex flex-col sm:flex-row items-center justify-between text-[#201408]/50 font-mono text-[11px] gap-4">
-          <span>&copy; {new Date().getFullYear()} APERTURE STUDIOS. ALL RIGHTS RESERVED.</span>
+        <div className="max-w-7xl mx-auto mt-12 pt-6 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between text-[#FFFFFF]/50 font-mono text-[11px] gap-4">
+          <span>&copy; {new Date().getFullYear()} NEXUS Growth. ALL RIGHTS RESERVED.</span>
           <span>INSPIRATION: UNIFIERS OF JAPAN ✦ TOFU DESIGN</span>
         </div>
       </footer>

@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wdth,wght,XOPQ,XTRA,YOPQ,YTDE,YTFI,YTLC,YTUC@8..144,25..151,100..1000,96,468,79,-203,738,514,712&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Anton&family=Mochiy+Pop+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 @font-face {
   font-family: 'Panchang';
@@ -12,19 +13,23 @@
 @import "tailwindcss";
 
 @theme {
-  --color-canvas: #f4f4f0;
-  --color-paper: #ecebe4;
-  --color-paper-dark: #e2e1d7;
-  --color-ink: #141414;
-  --color-ink-muted: #5c5b5b;
-  --color-ink-light: #8a8a90;
+  /* === NEXUS Growth Design System — Dark Palette === */
+  --color-canvas: #0A0A0A;
+  --color-paper: #121212;
+  --color-paper-dark: #1A1A1A;
+  --color-ink: #FFFFFF;
+  --color-ink-muted: #C9CCD1;
+  --color-ink-light: #6E7177;
   
-  --color-yellow-200: #d7dd44;
-  --color-pink-200: #eaa0cd;
-  --color-green-200: #00966e;
-  --color-orange-200: #f09341;
-  --color-blue-200: #7ca8d2;
-  --color-deep-surface: #121215;
+  /* Signature Red (from NEXUS Growth logo arrow gradient) */
+  --color-accent: #FF1F1F;
+  --color-accent-dark: #8B0000;
+  
+  /* Silver/Steel Gray (from NEXUS Growth "N" letterform) */
+  --color-silver: #C9CCD1;
+  --color-silver-dark: #6E7177;
+  
+  --color-deep-surface: #080808;
 
   --font-sans: var(--font-sans), "Inter", system-ui, sans-serif;
   --font-serif: var(--font-serif), "Instrument Serif", Georgia, serif;
@@ -32,17 +37,17 @@
   --font-grotesk: var(--font-grotesk), "Space Grotesk", sans-serif;
   --font-display: var(--font-display), "Syne", sans-serif;
   --font-compressed: "Roboto Flex", "Arial Narrow", sans-serif;
+  --font-accent: var(--font-accent), "Playfair Display", Georgia, serif;
 }
 
 :root {
   --nav-offset: 88px;
-  --color-canvas: #f4f4f0;
-  --color-ink: #141414;
-  --color-yellow-200: #d7dd44;
-  --color-pink-200: #eaa0cd;
-  --color-green-200: #00966e;
-  --color-orange-200: #f09341;
-  --color-blue-200: #7ca8d2;
+  --color-canvas: #0A0A0A;
+  --color-ink: #FFFFFF;
+  --color-accent: #FF1F1F;
+  --color-accent-dark: #8B0000;
+  --color-silver: #C9CCD1;
+  --color-silver-dark: #6E7177;
 }
 
 html {
@@ -60,10 +65,10 @@ body {
   overflow-x: clip;
 }
 
-/* Base selection */
+/* Base selection — Signature Red */
 ::selection {
-  background-color: var(--color-yellow-200);
-  color: #000;
+  background-color: var(--color-accent);
+  color: #fff;
 }
 
 /* Global scroll margin for anchors */
@@ -113,7 +118,9 @@ body {
   letter-spacing: 0.18em;
 }
 
-/* Tactile Brutalist Buttons from Decathlon Yestalgia */
+/* ============================
+   NEXUS Growth Button System 
+   ============================ */
 .c-button {
   font-family: "Roboto Flex", "Arial Narrow", sans-serif;
   font-variation-settings: "wdth" 33;
@@ -123,12 +130,14 @@ body {
   font-size: 16px;
   letter-spacing: 0.04em;
   padding: 13px 26px;
-  border: 2px solid #000;
+  border: 1px solid rgba(255, 255, 255, 0.15);
   border-radius: 12px;
-  background-color: var(--color-yellow-200);
-  color: #000;
-  box-shadow: -4px 6px #000;
-  transition: transform 0.15s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.15s cubic-bezier(0.16, 1, 0.3, 1);
+  background: linear-gradient(135deg, #FF1F1F, #8B0000);
+  color: #fff;
+  box-shadow: 0 0 20px rgba(255, 31, 31, 0.15);
+  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), 
+              box-shadow 0.2s cubic-bezier(0.16, 1, 0.3, 1),
+              letter-spacing 0.2s ease;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -139,76 +148,140 @@ body {
 }
 
 .c-button:hover {
-  transform: translate(-3px, 4px);
-  box-shadow: -1px 2px #000;
+  transform: scale(1.03);
+  box-shadow: 0 0 30px rgba(255, 31, 31, 0.45);
+  letter-spacing: 0.08em;
 }
 
-.c-button-pink {
-  background-color: var(--color-pink-200);
-}
-
-.c-button-emerald {
-  background-color: var(--color-green-200);
+.c-button-outline {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
   color: #fff;
+}
+
+.c-button-outline:hover {
+  background: linear-gradient(135deg, #FF1F1F, #8B0000);
+  border-color: #FF1F1F;
 }
 
 .c-button-white {
-  background-color: #fff;
+  background: #FFFFFF;
+  color: #0A0A0A;
+  border-color: rgba(255, 255, 255, 0.4);
 }
 
-.c-button-orange {
-  background-color: var(--color-orange-200);
+.c-button-white:hover {
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.2);
 }
 
-.c-button-blue {
-  background-color: var(--color-blue-200);
-}
-
-.c-button-ink {
-  background-color: var(--color-ink);
+.c-button-dark {
+  background: #1A1A1A;
   color: #fff;
+  border-color: rgba(255, 255, 255, 0.1);
 }
 
-/* Tactile Sticker Badges */
+.c-button-dark:hover {
+  background: linear-gradient(135deg, #FF1F1F, #8B0000);
+  border-color: #FF1F1F;
+}
+
+/* ============================
+   NEXUS Growth Badge System 
+   ============================ */
 .sticker-badge {
   display: inline-flex;
   align-items: center;
   gap: 6px;
   padding: 6px 14px;
-  border: 2px solid #000;
+  border: 1px solid rgba(255, 255, 255, 0.15);
   border-radius: 9999px;
   font-family: var(--font-grotesk), monospace;
   font-size: 11px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  box-shadow: -3px 4px #000;
-  background-color: #fff;
-  color: #000;
+  box-shadow: 0 0 12px rgba(255, 31, 31, 0.1);
+  background-color: #1A1A1A;
+  color: #fff;
 }
 
-/* Tactile Card Frame */
+/* ============================
+   NEXUS Growth Card System 
+   ============================ */
 .tactile-card {
-  border: 2px solid #000;
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 18px;
-  box-shadow: -6px 8px #000;
-  background-color: #fff;
-  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 0 0 rgba(255, 31, 31, 0);
+  background-color: #121212;
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), 
+              box-shadow 0.25s cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 0.25s ease;
 }
 
 .tactile-card:hover {
-  transform: translate(-3px, 4px);
-  box-shadow: -3px 4px #000;
+  transform: translateY(-4px);
+  box-shadow: 0 0 30px rgba(255, 31, 31, 0.15);
+  border-color: rgba(255, 31, 31, 0.3);
 }
 
-/* Vintage Paper Dotted Canvas Background */
+/* Dark Canvas with subtle dot grid */
 .paper-canvas {
   background-color: var(--color-canvas);
-  background-image: radial-gradient(#141414 0.75px, transparent 0.75px);
-  background-size: 20px 20px;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-size: 24px 24px;
 }
 
-/* Lenis smooth scrolling rules */
+/* ============================
+   NEXUS Growth Glow Utilities 
+   ============================ */
+.glow-red {
+  box-shadow: 0 0 24px rgba(255, 31, 31, 0.35);
+}
+
+.glow-red-soft {
+  box-shadow: 0 0 16px rgba(255, 31, 31, 0.2);
+}
+
+.gradient-red {
+  background: linear-gradient(135deg, #FF1F1F, #8B0000);
+}
+
+.gradient-red-text {
+  background: linear-gradient(135deg, #FF1F1F, #FF6B6B);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-glow-red {
+  text-shadow: 0 0 20px rgba(255, 31, 31, 0.5);
+}
+
+/* Animated gradient border on hover */
+.border-glow-hover {
+  position: relative;
+}
+.border-glow-hover::before {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(135deg, rgba(255, 31, 31, 0.5), transparent, rgba(255, 31, 31, 0.3));
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+.border-glow-hover:hover::before {
+  opacity: 1;
+}
+
+/* ============================
+   Lenis smooth scrolling 
+   ============================ */
 html.lenis, html.lenis body {
   height: auto;
 }
@@ -222,15 +295,18 @@ html.lenis, html.lenis body {
   overflow: hidden;
 }
 
-/* Custom minimal scrollbar */
+/* Custom dark scrollbar */
 ::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
+  width: 6px;
+  height: 6px;
 }
 ::-webkit-scrollbar-track {
-  background: var(--color-canvas);
+  background: #0A0A0A;
 }
 ::-webkit-scrollbar-thumb {
-  background: #000;
+  background: linear-gradient(180deg, #FF1F1F, #8B0000);
   border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #FF1F1F;
 }

@@ -1,4 +1,4 @@
-import { Inter, Instrument_Serif, JetBrains_Mono, Space_Grotesk, Syne } from "next/font/google";
+import { Inter, Instrument_Serif, JetBrains_Mono, Space_Grotesk, Syne, Playfair_Display } from "next/font/google";
 
 export const fontSans = Inter({
   subsets: ["latin"],
@@ -31,5 +31,13 @@ export const fontGrotesk = Space_Grotesk({
   subsets: ["latin"],
   variable: "--font-grotesk",
   weight: ["500", "600", "700"],
+  display: "swap",
+});
+
+export const fontAccent = Playfair_Display({
+  subsets: ["latin"],
+  variable: "--font-accent",
+  weight: ["400", "700"],
+  style: ["normal", "italic"],
   display: "swap",
 });

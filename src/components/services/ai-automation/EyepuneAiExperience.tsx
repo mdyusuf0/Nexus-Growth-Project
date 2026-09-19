@@ -136,7 +136,7 @@ export function EyepuneAiExperience() {
   }, [cursorVisible]);
 
   return (
-    <div className="relative min-h-screen bg-[#030000] text-white font-['Outfit',sans-serif] selection:bg-[#DC143C] selection:text-white overflow-hidden">
+    <div className="relative min-h-screen bg-[#030000] text-white font-['Outfit',sans-serif] selection:bg-[#FF1F1F] selection:text-white overflow-hidden">
       
       {/* 1. NOISE & FILM GRAIN OVERLAY */}
       <div 
@@ -190,7 +190,7 @@ export function EyepuneAiExperience() {
           }}
         >
           <svg viewBox="0 0 100 100" className="w-full h-full drop-shadow-[0_0_12px_rgba(220,20,60,0.65)]">
-            <g stroke="#DC143C" strokeWidth="6" strokeLinecap="round" opacity="0.75">
+            <g stroke="#FF1F1F" strokeWidth="6" strokeLinecap="round" opacity="0.75">
               <line x1="15" y1="47" x2="5" y2="36" />
               <line x1="27" y1="40" x2="18" y2="28" />
               <line x1="38" y1="36" x2="33" y2="22" />
@@ -201,7 +201,7 @@ export function EyepuneAiExperience() {
             </g>
             <path 
               d="M 5 55 Q 50 15 95 55 Q 50 95 5 55 Z" 
-              stroke="#DC143C" 
+              stroke="#FF1F1F" 
               strokeWidth="6" 
               strokeLinejoin="round" 
               fill="rgba(5, 5, 5, 0.55)" 
@@ -211,7 +211,7 @@ export function EyepuneAiExperience() {
               cx="50" 
               cy="55" 
               r="14" 
-              stroke="#DC143C" 
+              stroke="#FF1F1F" 
               strokeWidth="5" 
               fill="#120003"
               style={{
@@ -225,14 +225,14 @@ export function EyepuneAiExperience() {
               cx={50 + pupilOffset.x} 
               cy={55 + pupilOffset.y} 
               r={isHovering ? 6.5 : 5} 
-              fill="#DC143C" 
+              fill="#FF1F1F" 
             />
           </svg>
         </div>
 
         {/* Crimson Radial Glow Halo behind Eye */}
         <div 
-          className="absolute w-24 h-24 bg-[#DC143C]/20 rounded-full blur-2xl pointer-events-none"
+          className="absolute w-24 h-24 bg-[#FF1F1F]/20 rounded-full blur-2xl pointer-events-none"
           style={{
             transform: `translate3d(${eyePos.x - 48}px, ${eyePos.y - 48}px, 0)`,
             opacity: isHovering ? 0.35 : 0.18,
@@ -251,14 +251,14 @@ export function EyepuneAiExperience() {
           <Link href="/" className="flex items-center gap-3 group">
             <div className="w-10 h-10 flex items-center justify-center transition-all group-hover:rotate-6 duration-500">
               <svg viewBox="0 0 100 100" className="w-8 h-8 drop-shadow-[0_0_8px_rgba(220,20,60,0.8)]">
-                <path d="M 5 55 Q 50 15 95 55 Q 50 95 5 55 Z" stroke="#DC143C" strokeWidth="6" fill="transparent" />
-                <circle cx="50" cy="55" r="14" stroke="#DC143C" strokeWidth="5" />
-                <circle cx="50" cy="55" r="6" fill="#DC143C" />
+                <path d="M 5 55 Q 50 15 95 55 Q 50 95 5 55 Z" stroke="#FF1F1F" strokeWidth="6" fill="transparent" />
+                <circle cx="50" cy="55" r="14" stroke="#FF1F1F" strokeWidth="5" />
+                <circle cx="50" cy="55" r="6" fill="#FF1F1F" />
               </svg>
             </div>
             <div className="flex flex-col">
               <span className="text-xl font-black tracking-tight text-white leading-none">
-                APERTURE<span className="text-[#DC143C]">AI</span>
+                NEXUS<span className="text-[#FF1F1F]">AI</span>
               </span>
               <span className="text-[9px] tracking-[0.25em] uppercase text-red-500 font-bold mt-1">
                 CONNECT · ENGAGE · SCALE
@@ -270,7 +270,7 @@ export function EyepuneAiExperience() {
           <div className="hidden lg:flex items-center gap-2">
             <Link 
               href="#hero" 
-              className="px-4 py-2 text-sm font-medium text-white bg-white/[0.06] rounded-full hover:bg-white/[0.1] transition-colors"
+              className="px-4 py-2 text-sm font-medium text-white bg-[#1A1A1A]/[0.06] rounded-full hover:bg-[#1A1A1A]/[0.1] transition-colors"
             >
               Growth Engine
             </Link>
@@ -283,7 +283,7 @@ export function EyepuneAiExperience() {
                 className={`flex items-center gap-1.5 px-4 py-2 text-sm font-medium rounded-full transition-all cursor-pointer ${
                   isServicesOpen 
                     ? 'text-white bg-red-600/30 border border-red-500 shadow-[0_0_20px_rgba(220,20,60,0.5)]' 
-                    : 'text-gray-300 hover:text-white hover:bg-white/[0.06]'
+                    : 'text-gray-300 hover:text-white hover:bg-[#1A1A1A]/[0.06]'
                 }`}
               >
                 <span>All 11 Services</span>
@@ -294,7 +294,7 @@ export function EyepuneAiExperience() {
                 <div className="absolute top-full left-1/2 -translate-x-1/2 mt-3 w-80 max-h-[75vh] overflow-y-auto bg-[#070102]/95 backdrop-blur-xl border border-red-500/40 rounded-2xl shadow-[0_10px_40px_rgba(0,0,0,0.9),0_0_30px_rgba(220,20,60,0.25)] p-2.5 z-50 flex flex-col gap-1.5">
                   <div className="px-3 py-2 border-b border-white/[0.08] flex items-center justify-between">
                     <span className="text-[10px] font-mono uppercase tracking-widest text-red-400 font-bold">
-                      APERTURE DISCIPLINES (11)
+                      NEXUS DISCIPLINES (11)
                     </span>
                     <Link
                       href="/services"
@@ -325,7 +325,7 @@ export function EyepuneAiExperience() {
                       className={`flex items-center justify-between px-3 py-2 rounded-xl text-xs font-mono transition-all ${
                         s.id === "05"
                           ? "bg-red-950/50 border border-red-500/60 text-red-200 font-bold shadow-[0_0_10px_rgba(220,20,60,0.25)]"
-                          : "text-gray-300 hover:text-white hover:bg-white/[0.06] hover:border hover:border-white/10"
+                          : "text-gray-300 hover:text-white hover:bg-[#1A1A1A]/[0.06] hover:border hover:border-white/10"
                       }`}
                     >
                       <div className="flex items-center gap-2.5 truncate">
@@ -334,7 +334,7 @@ export function EyepuneAiExperience() {
                       </div>
                       {s.note ? (
                         <span className={`text-[9px] px-2 py-0.5 rounded-full font-bold shrink-0 ${
-                          s.id === "05" ? "bg-red-600 text-white" : "bg-white/10 text-red-300 border border-red-500/30"
+                          s.id === "05" ? "bg-red-600 text-white" : "bg-[#1A1A1A]/10 text-red-300 border border-red-500/30"
                         }`}>
                           {s.note}
                         </span>
@@ -360,31 +360,31 @@ export function EyepuneAiExperience() {
 
             <Link 
               href="#services" 
-              className="px-4 py-2 text-sm font-medium text-gray-400 hover:text-white rounded-full hover:bg-white/[0.04] transition-colors"
+              className="px-4 py-2 text-sm font-medium text-gray-400 hover:text-white rounded-full hover:bg-[#1A1A1A]/[0.04] transition-colors"
             >
               Full-Stack
             </Link>
             <Link 
               href="#why-us" 
-              className="px-4 py-2 text-sm font-medium text-gray-400 hover:text-white rounded-full hover:bg-white/[0.04] transition-colors"
+              className="px-4 py-2 text-sm font-medium text-gray-400 hover:text-white rounded-full hover:bg-[#1A1A1A]/[0.04] transition-colors"
             >
               Why Us
             </Link>
             <Link 
               href="#audit" 
-              className="px-4 py-2 text-sm font-medium text-gray-400 hover:text-white rounded-full hover:bg-white/[0.04] transition-colors"
+              className="px-4 py-2 text-sm font-medium text-gray-400 hover:text-white rounded-full hover:bg-[#1A1A1A]/[0.04] transition-colors"
             >
               Audit Calculator
             </Link>
             <Link 
               href="#feed" 
-              className="px-4 py-2 text-sm font-medium text-gray-400 hover:text-white rounded-full hover:bg-white/[0.04] transition-colors"
+              className="px-4 py-2 text-sm font-medium text-gray-400 hover:text-white rounded-full hover:bg-[#1A1A1A]/[0.04] transition-colors"
             >
               Vision Feed
             </Link>
             <Link 
               href="#faq" 
-              className="px-4 py-2 text-sm font-medium text-gray-400 hover:text-white rounded-full hover:bg-white/[0.04] transition-colors"
+              className="px-4 py-2 text-sm font-medium text-gray-400 hover:text-white rounded-full hover:bg-[#1A1A1A]/[0.04] transition-colors"
             >
               FAQ
             </Link>
@@ -417,14 +417,14 @@ export function EyepuneAiExperience() {
           <div className="flex flex-col items-center text-center max-w-5xl mx-auto">
             
             {/* Live Indicator Badge */}
-            <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-rose-950/80 border border-rose-800/60 text-rose-200 text-xs font-bold uppercase tracking-[0.2em] mb-8 backdrop-blur-md shadow-lg shadow-red-950/30">
+            <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-red-950/80 border border-red-800/60 text-red-200 text-xs font-bold uppercase tracking-[0.2em] mb-8 backdrop-blur-md shadow-lg shadow-red-950/30">
               <span className="w-2 h-2 rounded-full bg-red-500 animate-pulse" />
               GLOBAL AI GROWTH ENGINE // ENTERPRISE SCALE
             </div>
 
             {/* Colossal Animated Headline */}
             <h1 className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-black text-white leading-[0.92] mb-8 tracking-tight drop-shadow-2xl">
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-600 via-rose-500 to-orange-400">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF1F1F] to-[#8B0000]">
                 Growth
               </span>
               <br />
@@ -440,7 +440,7 @@ export function EyepuneAiExperience() {
             <div className="w-full max-w-2xl mb-14">
               <div className="relative group">
                 {/* Glowing Aura */}
-                <div className="absolute -inset-1 bg-gradient-to-r from-red-800 via-red-600 to-orange-600 rounded-2xl sm:rounded-full blur opacity-40 group-hover:opacity-75 transition duration-1000 group-hover:duration-200" />
+                <div className="absolute -inset-1 bg-gradient-to-r from-[#8B0000] to-[#FF1F1F] rounded-2xl sm:rounded-full blur opacity-40 group-hover:opacity-75 transition duration-1000 group-hover:duration-200" />
                 
                 <div className="relative flex flex-col sm:flex-row items-stretch sm:items-center bg-[#0a0000] border border-white/10 rounded-2xl sm:rounded-full p-2 gap-2 sm:gap-0 focus-within:border-red-600/70 transition-all shadow-2xl">
                   <div className="flex items-center flex-1 px-4">
@@ -464,7 +464,7 @@ export function EyepuneAiExperience() {
               </div>
 
               <div className="flex flex-wrap items-center justify-center gap-4 mt-4 text-[11px] text-gray-400 uppercase tracking-widest">
-                <span className="flex items-center gap-1.5 text-emerald-400">
+                <span className="flex items-center gap-1.5 text-red-500">
                   <CheckCircle2 className="w-3.5 h-3.5" /> Instant Multi-Model Analysis
                 </span>
                 <span>•</span>
@@ -517,14 +517,14 @@ export function EyepuneAiExperience() {
               </span>
               <h2 className="text-4xl sm:text-6xl font-black text-white leading-tight">
                 Full-Stack <br />
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-orange-400">
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-red-500">
                   Growth Engine
                 </span>
               </h2>
             </div>
 
             <Link href="/contact">
-              <button className="group flex items-center gap-3 px-6 py-3 rounded-full border border-white/10 hover:border-red-500/40 text-gray-400 hover:text-white transition-all text-sm font-medium bg-white/[0.02]">
+              <button className="group flex items-center gap-3 px-6 py-3 rounded-full border border-white/10 hover:border-red-500/40 text-gray-400 hover:text-white transition-all text-sm font-medium bg-[#1A1A1A]/[0.02]">
                 Explore Custom Deployment
                 <ArrowRight className="w-4 h-4 text-red-500 group-hover:translate-x-1 transition-transform" />
               </button>
@@ -579,13 +579,13 @@ export function EyepuneAiExperience() {
             ].map((service, idx) => (
               <div 
                 key={idx}
-                className="group relative flex flex-col md:flex-row md:items-center justify-between gap-6 py-8 border-b border-white/[0.06] hover:border-red-500/30 transition-all cursor-pointer px-4 sm:px-6 hover:bg-white/[0.02]"
+                className="group relative flex flex-col md:flex-row md:items-center justify-between gap-6 py-8 border-b border-white/[0.06] hover:border-red-500/30 transition-all cursor-pointer px-4 sm:px-6 hover:bg-[#1A1A1A]/[0.02]"
               >
                 <div className="flex items-start sm:items-center gap-6">
                   <span className="text-red-400/50 group-hover:text-red-400 font-black text-xl w-10 shrink-0 transition-colors">
                     {service.num}
                   </span>
-                  <div className="w-14 h-14 rounded-2xl flex items-center justify-center shrink-0 bg-white/[0.03] border border-white/[0.08] group-hover:border-red-500/40 group-hover:bg-red-500/10 transition-all">
+                  <div className="w-14 h-14 rounded-2xl flex items-center justify-center shrink-0 bg-[#1A1A1A]/[0.03] border border-white/[0.08] group-hover:border-red-500/40 group-hover:bg-red-500/10 transition-all">
                     {service.icon}
                   </div>
                   <div className="space-y-2">
@@ -599,7 +599,7 @@ export function EyepuneAiExperience() {
                       {service.tags.map((tag, tIdx) => (
                         <span 
                           key={tIdx} 
-                          className="font-mono text-[10px] uppercase tracking-wider px-2 py-0.5 rounded bg-white/[0.04] text-gray-400 border border-white/5"
+                          className="font-mono text-[10px] uppercase tracking-wider px-2 py-0.5 rounded bg-[#1A1A1A]/[0.04] text-gray-400 border border-white/5"
                         >
                           {tag}
                         </span>
@@ -628,12 +628,12 @@ export function EyepuneAiExperience() {
             {/* Left Column: Manifesto */}
             <div className="space-y-8">
               <span className="text-red-500 text-xs font-bold tracking-[0.4em] uppercase block">
-                Why APERTURE STUDIOS
+                Why NEXUS Growth
               </span>
               
               <h2 className="text-4xl sm:text-6xl font-black text-white leading-tight">
                 We&apos;re Not an <br />
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-orange-400">
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-red-500">
                   Agency.
                 </span>
                 <br />
@@ -702,7 +702,7 @@ export function EyepuneAiExperience() {
               ].map((card, idx) => (
                 <div 
                   key={idx}
-                  className="group p-8 rounded-3xl bg-white/[0.02] border border-white/[0.08] hover:border-red-500/40 hover:bg-red-500/[0.03] transition-all duration-500 relative shadow-xl"
+                  className="group p-8 rounded-3xl bg-[#1A1A1A]/[0.02] border border-white/[0.08] hover:border-red-500/40 hover:bg-red-500/[0.03] transition-all duration-500 relative shadow-xl"
                 >
                   <span className="text-4xl font-black text-red-500/20 group-hover:text-red-500/40 block mb-4 transition-colors font-mono">
                     {card.num}
@@ -736,7 +736,7 @@ export function EyepuneAiExperience() {
             </span>
             <h2 className="text-4xl sm:text-6xl font-black text-white leading-tight">
               Real Clients, <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-orange-400">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-red-500">
                 Real Results
               </span>
             </h2>
@@ -819,7 +819,7 @@ export function EyepuneAiExperience() {
                 Research & Engineering
               </span>
               <h2 className="text-4xl sm:text-6xl font-black text-white leading-tight">
-                The <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-orange-400">Vision Feed</span>
+                The <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-red-500">Vision Feed</span>
               </h2>
             </div>
             <span className="text-sm font-mono text-gray-500 uppercase tracking-widest">
@@ -853,7 +853,7 @@ export function EyepuneAiExperience() {
             ].map((art, i) => (
               <div 
                 key={i}
-                className="group p-8 rounded-3xl bg-white/[0.02] border border-white/[0.08] hover:border-red-500/40 hover:bg-white/[0.04] transition-all duration-500 flex flex-col justify-between space-y-6"
+                className="group p-8 rounded-3xl bg-[#1A1A1A]/[0.02] border border-white/[0.08] hover:border-red-500/40 hover:bg-[#1A1A1A]/[0.04] transition-all duration-500 flex flex-col justify-between space-y-6"
               >
                 <div className="space-y-4">
                   <div className="flex items-center justify-between font-mono text-[11px] text-gray-500">
@@ -899,7 +899,7 @@ export function EyepuneAiExperience() {
 
               <h2 className="text-4xl sm:text-6xl font-black text-white leading-tight">
                 Stop Guessing. <br />
-                Start <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-orange-400">Scaling.</span>
+                Start <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-red-500">Scaling.</span>
               </h2>
 
               <p className="text-gray-300 text-base sm:text-lg leading-relaxed max-w-lg">
@@ -908,11 +908,11 @@ export function EyepuneAiExperience() {
 
               <div className="flex flex-col sm:flex-row items-center gap-6 pt-4 text-xs font-mono uppercase tracking-wider text-gray-400">
                 <div className="flex items-center gap-2">
-                  <CheckCircle2 className="w-4 h-4 text-emerald-400" /> No commitment required
+                  <CheckCircle2 className="w-4 h-4 text-red-500" /> No commitment required
                 </div>
                 <div>•</div>
                 <div className="flex items-center gap-2">
-                  <CheckCircle2 className="w-4 h-4 text-emerald-400" /> 100% Custom Blueprint
+                  <CheckCircle2 className="w-4 h-4 text-red-500" /> 100% Custom Blueprint
                 </div>
               </div>
             </div>
@@ -940,7 +940,7 @@ export function EyepuneAiExperience() {
                           className={`p-3 rounded-xl border font-mono text-xs text-center transition-all cursor-pointer ${
                             companyScale === val 
                               ? 'bg-red-600 text-white border-red-500 font-bold shadow-lg shadow-red-900/40' 
-                              : 'bg-white/[0.02] border-white/10 text-gray-400 hover:border-white/20'
+                              : 'bg-[#1A1A1A]/[0.02] border-white/10 text-gray-400 hover:border-white/20'
                           }`}
                         >
                           {val}
@@ -966,7 +966,7 @@ export function EyepuneAiExperience() {
                           className={`p-3 rounded-xl border font-mono text-xs text-left transition-all cursor-pointer ${
                             primaryBottleneck === val 
                               ? 'bg-red-600 text-white border-red-500 font-bold shadow-lg shadow-red-900/40' 
-                              : 'bg-white/[0.02] border-white/10 text-gray-400 hover:border-white/20'
+                              : 'bg-[#1A1A1A]/[0.02] border-white/10 text-gray-400 hover:border-white/20'
                           }`}
                         >
                           {val}
@@ -1048,7 +1048,7 @@ export function EyepuneAiExperience() {
           <div className="space-y-4">
             {[
               {
-                q: 'What services does the APERTURE Global AI Growth Engine provide?',
+                q: 'What services does the NEXUS Global AI Growth Engine provide?',
                 a: 'We engineer end-to-end autonomous business systems: Multi-Model AI Sales Pipelines, Multi-Agent LangGraph Orchestration, Private Enterprise RAG with pgvector, Sub-second Voice Agents (OpenAI Realtime & Cartesia), and Generative Engine Optimization (GEO).'
               },
               {
@@ -1072,7 +1072,7 @@ export function EyepuneAiExperience() {
               return (
                 <div 
                   key={idx}
-                  className="rounded-2xl border transition-all duration-300 overflow-hidden bg-white/[0.015] border-white/5 hover:border-white/15"
+                  className="rounded-2xl border transition-all duration-300 overflow-hidden bg-[#1A1A1A]/[0.015] border-white/5 hover:border-white/15"
                 >
                   <button
                     onClick={() => setOpenFaq(isOpen ? null : idx)}
@@ -1082,7 +1082,7 @@ export function EyepuneAiExperience() {
                       {faq.q}
                     </span>
                     <div className={`w-8 h-8 rounded-full border flex items-center justify-center shrink-0 transition-all duration-300 ${
-                      isOpen ? 'bg-red-600 border-red-500 text-white rotate-180' : 'bg-white/5 border-white/10 text-gray-400'
+                      isOpen ? 'bg-red-600 border-red-500 text-white rotate-180' : 'bg-[#1A1A1A]/5 border-white/10 text-gray-400'
                     }`}>
                       <ChevronDown className="w-4 h-4" />
                     </div>
@@ -1116,7 +1116,7 @@ export function EyepuneAiExperience() {
 
           <h2 className="text-5xl sm:text-7xl md:text-8xl font-black text-white tracking-tight leading-[0.9]">
             Let&apos;s Build <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-rose-500 to-orange-400">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-rose-500 to-red-500">
               Something Big.
             </span>
           </h2>
@@ -1148,14 +1148,14 @@ export function EyepuneAiExperience() {
           <div className="flex items-center gap-3">
             <div className="w-8 h-8 flex items-center justify-center">
               <svg viewBox="0 0 100 100" className="w-7 h-7 drop-shadow-[0_0_6px_rgba(220,20,60,0.8)]">
-                <path d="M 5 55 Q 50 15 95 55 Q 50 95 5 55 Z" stroke="#DC143C" strokeWidth="6" fill="transparent" />
-                <circle cx="50" cy="55" r="14" stroke="#DC143C" strokeWidth="5" />
-                <circle cx="50" cy="55" r="6" fill="#DC143C" />
+                <path d="M 5 55 Q 50 15 95 55 Q 50 95 5 55 Z" stroke="#FF1F1F" strokeWidth="6" fill="transparent" />
+                <circle cx="50" cy="55" r="14" stroke="#FF1F1F" strokeWidth="5" />
+                <circle cx="50" cy="55" r="6" fill="#FF1F1F" />
               </svg>
             </div>
             <div className="flex flex-col">
               <span className="text-lg font-black tracking-tight text-white leading-none">
-                APERTURE<span className="text-[#DC143C]">AI</span>
+                NEXUS<span className="text-[#FF1F1F]">AI</span>
               </span>
               <span className="text-[8px] tracking-[0.2em] uppercase text-red-500 font-bold mt-0.5">
                 Global Growth Engine
@@ -1164,7 +1164,7 @@ export function EyepuneAiExperience() {
           </div>
 
           <div className="flex items-center gap-6 text-xs font-mono text-gray-500">
-            <span className="flex items-center gap-2 text-emerald-400">
+            <span className="flex items-center gap-2 text-red-500">
               <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
               All Autonomous Pipelines Operational
             </span>
@@ -1173,7 +1173,7 @@ export function EyepuneAiExperience() {
           </div>
 
           <div className="text-xs font-mono text-gray-600">
-            &copy; {new Date().getFullYear()} APERTURE STUDIOS. ALL RIGHTS RESERVED.
+            &copy; {new Date().getFullYear()} NEXUS Growth. ALL RIGHTS RESERVED.
           </div>
 
         </div>

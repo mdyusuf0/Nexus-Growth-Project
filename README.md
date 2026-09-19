@@ -1,4 +1,4 @@
-# APERTURE STUDIOS // Full-Service Creative Production & Digital Agency
+# NEXUS Growth // Full-Service Creative Production & Digital Agency
 
 An award-winning, full-service creative engineering agency platform built with **Next.js 16 App Router**, **React 19**, **GSAP**, **Tailwind CSS**, and **Framer Motion**.
 
@@ -74,7 +74,7 @@ npm run start
 ## 📁 Repository Structure
 
 ```
-aperture-studios/
+nexus-growth/
 ├── src/
 │   ├── app/
 │   │   ├── layout.tsx                # Global RootLayout with SmoothScroll, Navbar, Footer
@@ -96,5 +96,5 @@ aperture-studios/
 ---
 
 ## 📄 License
-Private & Proprietary // APERTURE STUDIOS © 2026. All rights reserved.
+Private & Proprietary // NEXUS Growth © 2026. All rights reserved.
 

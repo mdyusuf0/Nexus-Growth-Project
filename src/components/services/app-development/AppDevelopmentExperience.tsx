@@ -42,11 +42,11 @@ interface AppScreen {
 const APPS: AppScreen[] = [
   {
     id: 'pay',
-    name: 'Aperture Pay',
+    name: 'NEXUS Pay',
     category: 'FINTECH // COMMERCE',
     icon: CreditCard,
-    color: '#007AFF',
-    accentBg: 'from-blue-600/30 via-indigo-900/40 to-black',
+    color: '#FF1F1F',
+    accentBg: 'from-red-600/30 via-red-900/40 to-black',
     headerTitle: 'Biometric Smart Wallet',
     metrics: [
       { label: 'CHECKOUT LATENCY', val: '180ms' },
@@ -62,7 +62,7 @@ const APPS: AppScreen[] = [
     category: 'FITNESS // SENSORS',
     icon: Flame,
     color: '#FF9500',
-    accentBg: 'from-orange-600/30 via-amber-900/40 to-black',
+    accentBg: 'from-orange-600/30 via-red-900/40 to-black',
     headerTitle: 'Sensor Telemetry OS',
     metrics: [
       { label: 'RENDER FRAME-RATE', val: '120 FPS' },
@@ -77,8 +77,8 @@ const APPS: AppScreen[] = [
     name: 'AudioVault',
     category: 'MEDIA // OFFLINE FIRST',
     icon: Music,
-    color: '#AF52DE',
-    accentBg: 'from-purple-600/30 via-violet-900/40 to-black',
+    color: '#C9CCD1',
+    accentBg: 'from-stone-600/30 via-violet-900/40 to-black',
     headerTitle: 'Offline Sync Engine',
     metrics: [
       { label: 'LOCAL DB ENGINE', val: 'WatermelonDB SQLite' },
@@ -113,7 +113,7 @@ const DELIVERABLES = [
     title: 'Fluid 120Hz Gesture Physics',
     desc: 'Native iOS & Android interactions engineered with React Native Reanimated and Skia. Smooth 120FPS physics, zero frame drops, and tactile haptic feedback.',
     specs: ['React Native + Expo SDK', 'Skia 2D Canvas Engine', 'Haptic Touch Integration', 'Smooth Gesture Responders'],
-    color: '#7ca8d2',
+    color: '#C9CCD1',
   },
   {
     icon: WifiOff,
@@ -121,7 +121,7 @@ const DELIVERABLES = [
     title: 'Offline-First Local Sync Engine',
     desc: 'Local SQLite and WatermelonDB caching with background synchronization. Your users can browse, save, and create with zero connection latency.',
     specs: ['WatermelonDB / SQLite', 'Conflict Resolution Sync', 'Instant Local Mutation', 'Background Refresh'],
-    color: '#d7dd44',
+    color: '#FF1F1F',
   },
   {
     icon: Fingerprint,
@@ -129,7 +129,7 @@ const DELIVERABLES = [
     title: 'Biometrics & Secure Enclave Keys',
     desc: 'Hardware-backed security using FaceID, TouchID, and Android Biometrics with encrypted token storage in Apple Keychain and Android Keystore.',
     specs: ['FaceID & TouchID Auth', 'Hardware Key Storage', 'Zero Plaintext Tokens', 'OWASP Mobile Compliant'],
-    color: '#eaa0cd',
+    color: '#FF1F1F',
   },
   {
     icon: Zap,
@@ -137,7 +137,7 @@ const DELIVERABLES = [
     title: 'In-App Subscriptions & Payments',
     desc: 'Frictionless Apple App Store and Google Play billing pipelines via RevenueCat with automated entitlement syncing and churn mitigation.',
     specs: ['Apple In-App Purchases', 'Google Play Billing', 'RevenueCat Telemetry', 'Paywall A/B Testing'],
-    color: '#00966e',
+    color: '#FF1F1F',
   },
   {
     icon: Layers,
@@ -145,7 +145,7 @@ const DELIVERABLES = [
     title: 'Smart Push & Retention Sequences',
     desc: 'Contextual, personalized push notifications and in-app messaging via OneSignal that re-engage dormant users and drive repeat session depth.',
     specs: ['Rich Media Push Alerts', 'Deep Link Routing', 'Behavioral Segments', 'Retention Heatmaps'],
-    color: '#f09341',
+    color: '#FF1F1F',
   },
   {
     icon: ShieldCheck,
@@ -153,7 +153,7 @@ const DELIVERABLES = [
     title: 'App Store Optimization & Submissions',
     desc: 'Turnkey App Store & Google Play approval management. We handle metadata, screenshots, review appeals, and fast-track submission cycles.',
     specs: ['App Store Approval SLA', 'Google Play Verification', 'Keyword Optimization (ASO)', 'TestFlight Beta Pipelines'],
-    color: '#7ca8d2',
+    color: '#C9CCD1',
   },
 ];
 
@@ -221,7 +221,7 @@ export default function AppDevelopmentExperience() {
   }, [scrollYProgress, activeAppIndex]);
 
   return (
-    <div className="relative min-h-screen bg-[#0d0f14] text-white selection:bg-[#007AFF] selection:text-white overflow-hidden">
+    <div className="relative min-h-screen bg-[#0d0f14] text-white selection:bg-[#FF1F1F] selection:text-white overflow-hidden">
       {/* 1. Touch-Pulse Custom Cursor */}
       {!isTouch && (
         <motion.div
@@ -235,7 +235,7 @@ export default function AppDevelopmentExperience() {
               backgroundColor: activeApp.color,
             }}
             transition={{ duration: 0.15 }}
-            className="w-3.5 h-3.5 rounded-full shadow-[0_0_12px_rgba(0,122,255,0.8)] border border-white/50"
+            className="w-3.5 h-3.5 rounded-full shadow-[0_0_12px_rgba(255,31,31,0.8)] border border-white/50"
           />
           {/* Expanding Tap Ripple Ring */}
           <motion.div 
@@ -263,7 +263,7 @@ export default function AppDevelopmentExperience() {
             scale: [1, 1.2, 0.9, 1],
           }}
           transition={{ duration: 18, repeat: Infinity, ease: 'linear' }}
-          className="absolute -top-32 left-1/4 w-[600px] h-[600px] rounded-full bg-gradient-to-tr from-blue-600/25 via-indigo-500/20 to-cyan-400/10 blur-[120px] will-change-transform"
+          className="absolute -top-32 left-1/4 w-[600px] h-[600px] rounded-full bg-gradient-to-tr from-red-600/25 via-red-500/20 to-red-400/10 blur-[120px] will-change-transform"
         />
         <motion.div 
           animate={{
@@ -272,7 +272,7 @@ export default function AppDevelopmentExperience() {
             scale: [1, 0.9, 1.15, 1],
           }}
           transition={{ duration: 22, repeat: Infinity, ease: 'linear' }}
-          className="absolute top-1/3 -right-32 w-[550px] h-[550px] rounded-full bg-gradient-to-bl from-purple-600/20 via-pink-500/15 to-amber-500/10 blur-[130px] will-change-transform"
+          className="absolute top-1/3 -right-32 w-[550px] h-[550px] rounded-full bg-gradient-to-bl from-stone-600/20 via-pink-500/15 to-red-500/10 blur-[130px] will-change-transform"
         />
         {/* Subtle grid backdrop */}
         <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff08_1px,transparent_1px),linear-gradient(to_bottom,#ffffff08_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_40%,#000_70%,transparent_100%)]" />
@@ -282,9 +282,9 @@ export default function AppDevelopmentExperience() {
       <div className="relative z-10 max-w-7xl mx-auto px-4 md:px-8 pt-10 pb-4">
         <div className="flex flex-wrap items-center justify-between gap-4 border-b border-white/10 pb-4">
           <div className="flex items-center gap-3">
-            <span className="w-2.5 h-2.5 rounded-full bg-[#007AFF] animate-ping" />
-            <span className="font-mono text-xs uppercase tracking-widest text-blue-400 font-bold">
-              DISCIPLINE 02 // APERTURE NATIVE CORE
+            <span className="w-2.5 h-2.5 rounded-full bg-[#FF1F1F] animate-ping" />
+            <span className="font-mono text-xs uppercase tracking-widest text-red-400 font-bold">
+              DISCIPLINE 02 // NEXUS NATIVE CORE
             </span>
           </div>
           <div className="flex items-center gap-2 font-mono text-[11px] text-gray-400">
@@ -305,14 +305,14 @@ export default function AppDevelopmentExperience() {
       <section ref={heroRef} className="relative z-10 max-w-7xl mx-auto px-4 md:px-8 pt-12 pb-24 lg:min-h-[92vh] flex flex-col lg:flex-row items-center justify-between gap-12">
         {/* Left Column: Hero Narrative & Interactive App Switcher */}
         <div className="w-full lg:w-1/2 space-y-8">
-          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-blue-500/30 bg-blue-500/10 text-blue-400 font-mono text-xs">
+          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-red-500/30 bg-red-500/10 text-red-400 font-mono text-xs">
             <Sparkles className="w-3.5 h-3.5" />
             <span>Hardware-Accelerated Mobile Engineering</span>
           </div>
 
           <h1 className="font-['Roboto_Flex'] [font-variation-settings:'wdth'_33] [font-stretch:33%] text-5xl md:text-7xl xl:text-8xl font-black uppercase tracking-tight leading-[0.88] text-white">
             Native iOS &amp; Android Apps.
-            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-indigo-300 to-purple-400 mt-2">
+            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-red-400 via-red-300 to-stone-400 mt-2">
               Fluid 120Hz Motion.
             </span>
           </h1>
@@ -324,7 +324,7 @@ export default function AppDevelopmentExperience() {
           {/* Interactive Screen Selector Dock */}
           <div className="pt-2">
             <p className="font-mono text-xs uppercase tracking-wider text-gray-400 mb-3 flex items-center gap-2">
-              <Sliders className="w-3.5 h-3.5 text-blue-400" />
+              <Sliders className="w-3.5 h-3.5 text-red-400" />
               <span>Tap to Preview Screen Architectures:</span>
             </p>
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5">
@@ -338,7 +338,7 @@ export default function AppDevelopmentExperience() {
                     className={cn(
                       "flex items-center gap-2.5 p-2.5 rounded-xl border transition-all text-left group relative",
                       isActive 
-                        ? "bg-white/15 border-blue-400 shadow-[0_0_20px_rgba(0,122,255,0.4)]" 
+                        ? "bg-white/15 border-red-400 shadow-[0_0_20px_rgba(255,31,31,0.4)]" 
                         : "bg-white/5 border-white/10 hover:bg-white/10 hover:border-white/20"
                     )}
                   >
@@ -372,7 +372,7 @@ export default function AppDevelopmentExperience() {
           <div className="pt-2 flex items-center gap-4">
             <Link
               href="/contact"
-              className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-[#007AFF] hover:bg-blue-600 text-white font-mono text-xs uppercase tracking-wider font-bold shadow-[0_0_25px_rgba(0,122,255,0.5)] transition-all hover:scale-[1.02] active:scale-[0.98]"
+              className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-[#FF1F1F] hover:bg-red-600 text-white font-mono text-xs uppercase tracking-wider font-bold shadow-[0_0_25px_rgba(255,31,31,0.5)] transition-all hover:scale-[1.02] active:scale-[0.98]"
             >
               <span>Initiate App Sprint</span>
               <ArrowUpRight className="w-4 h-4" />
@@ -393,7 +393,7 @@ export default function AppDevelopmentExperience() {
               y: deviceY,
               transformStyle: 'preserve-3d',
             }}
-            className="relative w-[320px] sm:w-[360px] h-[660px] sm:h-[720px] rounded-[52px] p-3.5 bg-gradient-to-b from-[#2c2e38] via-[#1a1c24] to-[#0c0d12] shadow-[0_25px_60px_-15px_rgba(0,0,0,0.9),0_0_40px_rgba(0,122,255,0.25)] border-[4px] border-[#3f4354] will-change-transform"
+            className="relative w-[320px] sm:w-[360px] h-[660px] sm:h-[720px] rounded-[52px] p-3.5 bg-gradient-to-b from-[#2c2e38] via-[#1a1c24] to-[#0c0d12] shadow-[0_25px_60px_-15px_rgba(0,0,0,0.9),0_0_40px_rgba(255,31,31,0.25)] border-[4px] border-[#3f4354] will-change-transform"
           >
             {/* Outer Glow Ring */}
             <motion.div 
@@ -416,11 +416,11 @@ export default function AppDevelopmentExperience() {
             <div className="absolute -right-[7px] top-36 w-[3px] h-18 bg-[#3a3d4c] rounded-r-sm" />
 
             {/* Inner Screen Bezel */}
-            <div className="relative w-full h-full rounded-[44px] bg-[#090a0f] overflow-hidden flex flex-col border-[2px] border-black">
+            <div className="relative w-full h-full rounded-[44px] bg-[#090a0f] overflow-hidden flex flex-col border-[2px] border-white/10">
               {/* Dynamic Island / Speaker Pill */}
               <div className="absolute top-3 left-1/2 -translate-x-1/2 z-30 w-28 h-7 bg-black rounded-full flex items-center justify-between px-3">
                 <span className="w-2.5 h-2.5 rounded-full bg-[#1c1d24]" />
-                <span className="w-2.5 h-2.5 rounded-full bg-blue-500/70 animate-pulse" />
+                <span className="w-2.5 h-2.5 rounded-full bg-red-500/70 animate-pulse" />
               </div>
 
               {/* Status Bar */}
@@ -512,14 +512,14 @@ export default function AppDevelopmentExperience() {
       {/* Deliverables Grid with Soft Glows */}
       <section className="relative z-10 max-w-7xl mx-auto px-4 md:px-8 py-20 border-t border-white/10">
         <div className="mb-14">
-          <span className="font-mono text-xs uppercase tracking-widest text-[#007AFF] font-bold">
+          <span className="font-mono text-xs uppercase tracking-widest text-[#FF1F1F] font-bold">
             TECHNICAL ARTIFACTS &amp; DELIVERABLES
           </span>
           <h2 className="font-['Roboto_Flex'] [font-variation-settings:'wdth'_33] [font-stretch:33%] text-4xl md:text-6xl font-black uppercase text-white tracking-tight mt-2">
             The 6 Mobile Engineering Pillars
           </h2>
           <p className="font-mono text-sm text-gray-400 mt-2 max-w-2xl">
-            Every application built by APERTURE STUDIOS ships with strict enterprise-grade performance SLAs, security certifications, and monetization flows.
+            Every application built by NEXUS Growth ships with strict enterprise-grade performance SLAs, security certifications, and monetization flows.
           </p>
         </div>
 
@@ -559,7 +559,7 @@ export default function AppDevelopmentExperience() {
                   </span>
                 </div>
 
-                <h3 className="text-xl font-bold text-white tracking-tight group-hover:text-blue-400 transition-colors">
+                <h3 className="text-xl font-bold text-white tracking-tight group-hover:text-red-400 transition-colors">
                   {d.title}
                 </h3>
                 <p className="font-mono text-xs text-gray-400 leading-relaxed mt-2.5 mb-5">
@@ -582,9 +582,9 @@ export default function AppDevelopmentExperience() {
 
       {/* Direct Call to Action Banner */}
       <section className="relative z-10 max-w-7xl mx-auto px-4 md:px-8 pb-24">
-        <div className="rounded-3xl border border-blue-500/40 bg-gradient-to-r from-blue-950/40 via-indigo-950/30 to-black p-8 md:p-14 relative overflow-hidden shadow-[0_0_50px_rgba(0,122,255,0.2)]">
+        <div className="rounded-3xl border border-red-500/40 bg-gradient-to-r from-red-950/40 via-red-950/30 to-black p-8 md:p-14 relative overflow-hidden shadow-[0_0_50px_rgba(255,31,31,0.2)]">
           <div className="relative z-10 max-w-2xl space-y-4">
-            <span className="font-mono text-xs uppercase tracking-widest text-blue-400 font-bold">
+            <span className="font-mono text-xs uppercase tracking-widest text-red-400 font-bold">
               READY TO BUILD FOR 120HZ?
             </span>
             <h3 className="font-['Roboto_Flex'] [font-variation-settings:'wdth'_33] [font-stretch:33%] text-4xl md:text-5xl font-black uppercase text-white leading-none">
@@ -596,7 +596,7 @@ export default function AppDevelopmentExperience() {
             <div className="pt-4 flex flex-wrap items-center gap-4">
               <Link
                 href="/contact"
-                className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-[#007AFF] hover:bg-blue-600 text-white font-mono text-xs uppercase tracking-wider font-bold shadow-[0_0_30px_rgba(0,122,255,0.6)] transition-all"
+                className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-[#FF1F1F] hover:bg-red-600 text-white font-mono text-xs uppercase tracking-wider font-bold shadow-[0_0_30px_rgba(255,31,31,0.6)] transition-all"
               >
                 <span>Schedule Mobile Triage</span>
                 <ArrowUpRight className="w-4 h-4" />

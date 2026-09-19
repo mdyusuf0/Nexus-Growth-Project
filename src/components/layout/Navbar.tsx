@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { ArrowUpRight, ChevronDown, ArrowRight } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -33,7 +34,7 @@ export const NAV_SERVICE_CATEGORIES: {
         name: "Website Development",
         href: "/services/web-development",
         tag: "NEXT.JS",
-        color: "#d7dd44",
+        color: "#FF1F1F",
         desc: "Sub-second Next.js 16 App Router & GSAP spatial architectures.",
         flag: "SPEC PROOF",
       },
@@ -42,7 +43,7 @@ export const NAV_SERVICE_CATEGORIES: {
         name: "App Development",
         href: "/services/app-development",
         tag: "MOBILE",
-        color: "#7ca8d2",
+        color: "#CC1919",
         desc: "Native iOS & Android architectures built on React Native & Expo.",
       },
       {
@@ -50,7 +51,7 @@ export const NAV_SERVICE_CATEGORIES: {
         name: "AI Automation",
         href: "/services/ai-automation",
         tag: "AGENTS",
-        color: "#d7dd44",
+        color: "#FF1F1F",
         desc: "Autonomous LLM workflows, CRM webhooks & custom AI agents.",
         flag: "⚡ CYBER ENGINE",
       },
@@ -65,7 +66,7 @@ export const NAV_SERVICE_CATEGORIES: {
         name: "Branding & Design",
         href: "/services/branding-design",
         tag: "IDENTITY",
-        color: "#eaa0cd",
+        color: "#FF4444",
         desc: "Theatrical brand foundations, bespoke typecraft & visual design systems.",
         flag: "✦ JAPANESE UI",
       },
@@ -74,7 +75,7 @@ export const NAV_SERVICE_CATEGORIES: {
         name: "Graphic Design",
         href: "/services/graphic-design",
         tag: "VISUAL",
-        color: "#f09341",
+        color: "#E60000",
         desc: "Tactile packaging, brutalist typography & high-impact collateral.",
       },
       {
@@ -82,7 +83,7 @@ export const NAV_SERVICE_CATEGORIES: {
         name: "Video Production & Editing",
         href: "/services/video-production-editing",
         tag: "FILM",
-        color: "#f09341",
+        color: "#CC1919",
         desc: "4K cinematic brand films & vertical retention reels engineered for scale.",
         flag: "✦ ENCHANTED CINEMA",
       },
@@ -91,7 +92,7 @@ export const NAV_SERVICE_CATEGORIES: {
         name: "Copywriting & Content Strategy",
         href: "/services/copywriting-content-strategy",
         tag: "WORDS",
-        color: "#7ca8d2",
+        color: "#C9CCD1",
         desc: "High-conversion sales pages, brand manifestos & lifecycle flows.",
       },
     ],
@@ -105,7 +106,7 @@ export const NAV_SERVICE_CATEGORIES: {
         name: "Google & Meta Ads",
         href: "/services/google-meta-ads",
         tag: "PAID",
-        color: "#00966e",
+        color: "#8B0000",
         desc: "High-ROAS paid acquisition campaigns with creative fatigue protection.",
       },
       {
@@ -113,7 +114,7 @@ export const NAV_SERVICE_CATEGORIES: {
         name: "Social Media Management",
         href: "/services/social-media-management",
         tag: "ORGANIC",
-        color: "#eaa0cd",
+        color: "#FF4444",
         desc: "Algorithmic short-form video production & high-retention viral funnels.",
       },
       {
@@ -121,7 +122,7 @@ export const NAV_SERVICE_CATEGORIES: {
         name: "SEO",
         href: "/services/seo",
         tag: "SEARCH",
-        color: "#00966e",
+        color: "#FF1F1F",
         desc: "Technical Core Web Vitals hardening & programmatic search clusters.",
       },
       {
@@ -129,7 +130,7 @@ export const NAV_SERVICE_CATEGORIES: {
         name: "CRM & Sales Funnel Setup",
         href: "/services/crm-sales-funnel",
         tag: "CONVERT",
-        color: "#d7dd44",
+        color: "#E60000",
         desc: "Multi-step automated checkout pipelines & Klaviyo/HubSpot ops.",
         flag: "✦ PIPELINE FUNNEL UI",
       },
@@ -223,31 +224,28 @@ export default function Navbar() {
       >
         <div
           className={cn(
-            "max-w-7xl mx-auto flex items-center justify-between pointer-events-auto rounded-2xl px-5 py-3 transition-all duration-300 border-2 border-black relative",
+            "max-w-7xl mx-auto flex items-center justify-between pointer-events-auto rounded-2xl px-5 py-3 transition-all duration-300 border border-white/10 relative",
             isScrolled
-              ? "bg-[#f4f4f0]/95 backdrop-blur-md shadow-[-4px_6px_0px_#000]"
-              : "bg-[#f4f4f0] shadow-[-3px_4px_0px_#000]"
+              ? "bg-[#0A0A0A]/90 backdrop-blur-xl shadow-[0_0_30px_rgba(255,31,31,0.08)]"
+              : "bg-[#0A0A0A]/80 backdrop-blur-md"
           )}
         >
           {/* Logo Mark */}
           <Link href="/" className="flex items-center gap-3 group shrink-0">
-            <div className="h-10 w-10 rounded-xl border-2 border-black bg-[#d7dd44] flex items-center justify-center font-black text-xl shadow-[-2px_3px_0px_#000] group-hover:rotate-6 transition-transform">
-              A
-            </div>
-            <div className="flex flex-col">
-              <span className="font-['Roboto_Flex'] uppercase font-extrabold text-xl tracking-tight leading-none [font-variation-settings:'wdth'_33] [font-stretch:33%]">
-                APERTURE STUDIOS
-              </span>
-              <span className="font-mono text-[9px] uppercase tracking-widest text-[#5c5b5b]">
-                Creative Production Agency
-              </span>
-            </div>
+            <Image
+              src="/logo-horizontal.png"
+              alt="NEXUS Growth"
+              width={180}
+              height={48}
+              className="h-10 w-auto object-contain group-hover:brightness-110 transition-all"
+              priority
+            />
           </Link>
 
           {/* Right Action Buttons & Nav */}
           <div className="flex items-center gap-3">
             {/* Desktop Nav Links */}
-            <nav className="hidden md:flex items-center gap-6 mr-2 font-mono text-xs font-bold uppercase tracking-wider text-black">
+            <nav className="hidden md:flex items-center gap-6 mr-2 font-mono text-xs font-bold uppercase tracking-wider text-white/80">
               {/* Interactive Services Hover Menu Trigger */}
               <div
                 className="relative"
@@ -257,8 +255,8 @@ export default function Navbar() {
                 <Link
                   href="/services"
                   className={cn(
-                    "flex items-center gap-1.5 py-2 hover:text-[#00966e] transition-colors cursor-pointer select-none",
-                    isServicesOpen && "text-[#00966e]"
+                    "flex items-center gap-1.5 py-2 hover:text-[#FF1F1F] transition-colors cursor-pointer select-none",
+                    isServicesOpen && "text-[#FF1F1F]"
                   )}
                   aria-expanded={isServicesOpen}
                   aria-haspopup="true"
@@ -267,21 +265,21 @@ export default function Navbar() {
                   <ChevronDown
                     className={cn(
                       "h-3.5 w-3.5 transition-transform duration-200",
-                      isServicesOpen && "rotate-180 text-[#00966e]"
+                      isServicesOpen && "rotate-180 text-[#FF1F1F]"
                     )}
                   />
                 </Link>
               </div>
 
-              <Link href="/#work" className="hover:text-[#00966e] transition-colors">
+              <Link href="/#work" className="hover:text-[#FF1F1F] transition-colors">
                 Case Studies
               </Link>
-              <Link href="/#process" className="hover:text-[#00966e] transition-colors">
+              <Link href="/#process" className="hover:text-[#FF1F1F] transition-colors">
                 Method
               </Link>
               <Link
                 href="/services/web-development"
-                className="text-[#00966e] underline underline-offset-4"
+                className="text-[#FF1F1F] underline underline-offset-4 decoration-[#FF1F1F]/50"
               >
                 Spec Proof
               </Link>
@@ -294,16 +292,16 @@ export default function Navbar() {
               Start Project <ArrowUpRight className="h-4 w-4" />
             </Link>
 
-            {/* Tactile Menu Toggle */}
+            {/* Menu Toggle */}
             <button
               onClick={() => setIsNavOpen(!isNavOpen)}
-              className="flex items-center gap-2 rounded-xl border-2 border-black bg-white px-3.5 py-2 text-xs font-['Roboto_Flex'] [font-variation-settings:'wdth'_33] [font-stretch:33%] font-extrabold uppercase tracking-wider shadow-[-3px_3px_0px_#000] hover:translate-x-[-2px] hover:translate-y-[2px] hover:shadow-none transition-all pointer-events-auto"
+              className="flex items-center gap-2 rounded-xl border border-white/15 bg-[#1A1A1A] px-3.5 py-2 text-xs font-['Roboto_Flex'] [font-variation-settings:'wdth'_33] [font-stretch:33%] font-extrabold uppercase tracking-wider text-white shadow-[0_0_12px_rgba(255,31,31,0.1)] hover:shadow-[0_0_20px_rgba(255,31,31,0.25)] hover:border-[#FF1F1F]/30 transition-all pointer-events-auto"
               aria-label="Toggle menu"
             >
               <span className="flex flex-col gap-1 w-4">
-                <span className="h-0.5 w-full bg-black block" />
-                <span className="h-0.5 w-full bg-black block" />
-                <span className="h-0.5 w-full bg-black block" />
+                <span className="h-0.5 w-full bg-white block" />
+                <span className="h-0.5 w-full bg-white block" />
+                <span className="h-0.5 w-full bg-white block" />
               </span>
               <span>{isNavOpen ? "CLOSE" : "MENU"}</span>
             </button>
@@ -321,21 +319,21 @@ export default function Navbar() {
                 onMouseLeave={handleMouseLeave}
                 className="absolute top-full left-0 right-0 pt-3 z-50 pointer-events-auto"
               >
-                <div className="rounded-2xl border-2 border-black bg-[#f4f4f0] shadow-[-8px_10px_0px_#000] p-5 md:p-6 overflow-hidden">
+                <div className="rounded-2xl border border-white/10 bg-[#0A0A0A]/95 backdrop-blur-xl shadow-[0_0_40px_rgba(255,31,31,0.08)] p-5 md:p-6 overflow-hidden">
                   {/* Top Bar inside Dropdown */}
-                  <div className="flex items-center justify-between pb-3 mb-4 border-b-2 border-black">
+                  <div className="flex items-center justify-between pb-3 mb-4 border-b border-white/10">
                     <div className="flex items-center gap-2.5">
-                      <span className="sticker-badge bg-[#d7dd44] text-black text-[10px] py-0.5 px-2">
+                      <span className="sticker-badge bg-[#FF1F1F] text-white text-[10px] py-0.5 px-2 border-[#FF1F1F]/50">
                         11 INTEGRATED DISCIPLINES
                       </span>
-                      <span className="font-mono text-xs font-bold text-black uppercase tracking-wider hidden sm:inline-block">
+                      <span className="font-mono text-xs font-bold text-white/60 uppercase tracking-wider hidden sm:inline-block">
                         Full-Stack Digital Growth Architecture
                       </span>
                     </div>
                     <Link
                       href="/services"
                       onClick={closeDropdown}
-                      className="font-mono text-xs font-bold text-black hover:text-[#00966e] flex items-center gap-1.5 group bg-white border border-black rounded-lg px-2.5 py-1 shadow-[-2px_2px_0px_#000] hover:shadow-none hover:translate-x-[-1px] hover:translate-y-[1px] transition-all"
+                      className="font-mono text-xs font-bold text-white hover:text-[#FF1F1F] flex items-center gap-1.5 group bg-[#1A1A1A] border border-white/10 rounded-lg px-2.5 py-1 shadow-[0_0_12px_rgba(255,31,31,0.1)] hover:shadow-[0_0_20px_rgba(255,31,31,0.2)] transition-all"
                     >
                       <span>Explore Master Hub</span>
                       <ArrowRight className="h-3.5 w-3.5 group-hover:translate-x-0.5 transition-transform" />
@@ -346,11 +344,11 @@ export default function Navbar() {
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                     {NAV_SERVICE_CATEGORIES.map((cat) => (
                       <div key={cat.category} className="flex flex-col">
-                        <div className="flex items-center justify-between pb-1.5 mb-2 border-b border-black/20">
-                          <span className="font-mono text-[11px] font-black uppercase tracking-wider text-black">
+                        <div className="flex items-center justify-between pb-1.5 mb-2 border-b border-white/10">
+                          <span className="font-mono text-[11px] font-black uppercase tracking-wider text-white">
                             {cat.category}
                           </span>
-                          <span className="font-mono text-[9px] text-[#5c5b5b] font-bold">
+                          <span className="font-mono text-[9px] text-[#6E7177] font-bold">
                             {cat.badge}
                           </span>
                         </div>
@@ -361,30 +359,30 @@ export default function Navbar() {
                               key={item.id}
                               href={item.href}
                               onClick={closeDropdown}
-                              className="group rounded-xl border border-black/15 hover:border-black bg-white/70 hover:bg-white p-2.5 shadow-none hover:shadow-[-3px_3px_0px_#000] hover:translate-x-[-1px] hover:translate-y-[-1px] transition-all flex flex-col justify-between"
+                              className="group rounded-xl border border-white/5 hover:border-[#FF1F1F]/30 bg-[#121212] hover:bg-[#1A1A1A] p-2.5 shadow-none hover:shadow-[0_0_20px_rgba(255,31,31,0.12)] transition-all flex flex-col justify-between"
                               style={{ borderLeftWidth: "4px", borderLeftColor: item.color }}
                             >
                               <div className="flex items-center justify-between gap-1 mb-1">
-                                <span className="font-mono text-[10px] font-black text-black">
+                                <span className="font-mono text-[10px] font-black text-white/70">
                                   #{item.id}
                                 </span>
                                 <div className="flex items-center gap-1">
                                   {item.flag && (
-                                    <span className="font-mono text-[8px] font-black uppercase px-1.5 py-0.5 rounded bg-black text-[#d7dd44]">
+                                    <span className="font-mono text-[8px] font-black uppercase px-1.5 py-0.5 rounded bg-[#FF1F1F] text-white">
                                       {item.flag}
                                     </span>
                                   )}
-                                  <span className="font-mono text-[9px] uppercase px-1.5 py-0.2 rounded border border-black/20 bg-[#f4f4f0] font-bold text-black">
+                                  <span className="font-mono text-[9px] uppercase px-1.5 py-0.2 rounded border border-white/10 bg-[#0A0A0A] font-bold text-white/70">
                                     {item.tag}
                                   </span>
                                 </div>
                               </div>
 
-                              <h4 className="font-['Roboto_Flex'] [font-variation-settings:'wdth'_33] [font-stretch:33%] text-base font-extrabold uppercase leading-tight text-black group-hover:text-[#00966e] transition-colors">
+                              <h4 className="font-['Roboto_Flex'] [font-variation-settings:'wdth'_33] [font-stretch:33%] text-base font-extrabold uppercase leading-tight text-white group-hover:text-[#FF1F1F] transition-colors">
                                 {item.name}
                               </h4>
 
-                              <p className="mt-1 font-sans text-[11px] text-[#5c5b5b] leading-tight line-clamp-1">
+                              <p className="mt-1 font-sans text-[11px] text-[#6E7177] leading-tight line-clamp-1">
                                 {item.desc}
                               </p>
                             </Link>
@@ -395,9 +393,9 @@ export default function Navbar() {
                   </div>
 
                   {/* Bottom Bar inside Dropdown */}
-                  <div className="mt-4 pt-3 border-t-2 border-black flex flex-wrap items-center justify-between gap-3 bg-black text-white -mx-5 md:-mx-6 -mb-5 md:-mb-6 px-5 md:px-6 py-3">
-                    <div className="flex items-center gap-2.5 text-xs font-mono text-white/90">
-                      <span className="h-2 w-2 rounded-full bg-[#00966e] animate-pulse shrink-0" />
+                  <div className="mt-4 pt-3 border-t border-white/10 flex flex-wrap items-center justify-between gap-3 bg-[#121212] text-white -mx-5 md:-mx-6 -mb-5 md:-mb-6 px-5 md:px-6 py-3 rounded-b-xl">
+                    <div className="flex items-center gap-2.5 text-xs font-mono text-white/70">
+                      <span className="h-2 w-2 rounded-full bg-[#FF1F1F] animate-pulse shrink-0" />
                       <span className="hidden sm:inline">
                         All 11 sprint capabilities operate under a unified roadmap.
                       </span>
@@ -409,7 +407,7 @@ export default function Navbar() {
                       <Link
                         href="/services"
                         onClick={closeDropdown}
-                        className="font-mono text-xs font-bold text-[#d7dd44] hover:underline flex items-center gap-1"
+                        className="font-mono text-xs font-bold text-[#FF1F1F] hover:underline flex items-center gap-1"
                       >
                         <span>Full Index</span>
                         <ArrowRight className="h-3 w-3" />
@@ -417,7 +415,7 @@ export default function Navbar() {
                       <Link
                         href="/contact"
                         onClick={closeDropdown}
-                        className="c-button-emerald c-button text-[11px] py-1 px-3 shadow-[-2px_2px_0px_#fff]"
+                        className="c-button text-[11px] py-1 px-3"
                       >
                         Book Sprint ➔
                       </Link>

@@ -21,7 +21,7 @@ import CodeEditorTerminal from '@/components/services/CodeEditorTerminal';
 import WebDevelopmentTerminalCursor from '@/components/services/web-development/WebDevelopmentTerminalCursor';
 
 export const metadata: Metadata = {
-  title: '🌐 Website Development | APERTURE STUDIOS',
+  title: '🌐 Website Development | NEXUS Growth',
   description: 'Custom Next.js App Router & GSAP website engineering for high-growth brands. Sub-second performance, award-tier creative direction, and conversion architectures.',
   keywords: ['Next.js development', 'GSAP web animations', 'headless commerce', 'Awwwards portfolio', 'conversion rate optimization'],
 };
@@ -33,7 +33,7 @@ const DELIVERABLES = [
     title: 'Custom Next.js App Router Core',
     desc: 'Zero generic templates or bloated page builders. We engineer custom React 19 server component architectures that eliminate client-side JavaScript overhead and achieve sub-second Time to First Byte (TTFB).',
     specs: ['React Server Components', 'Vercel Edge Network', 'Zero Layout Shift', 'Automated Image Optimization'],
-    color: '#d7dd44',
+    color: '#FF1F1F',
   },
   {
     icon: Sparkles,
@@ -41,7 +41,7 @@ const DELIVERABLES = [
     title: 'Hardware-Accelerated GSAP & WebGL',
     desc: 'Scroll-driven storytelling with custom GSAP timelines, Lenis inertia scrolling, and interactive canvas elements that render at a locked 60FPS across desktop and mobile devices.',
     specs: ['ScrollTrigger Pinning', 'Lenis Smooth Scroll', '3D Model Viewers', 'Micro-Interactions'],
-    color: '#eaa0cd',
+    color: '#CC1919',
   },
   {
     icon: Layers,
@@ -49,7 +49,7 @@ const DELIVERABLES = [
     title: 'Headless CMS & Commerce Pipelines',
     desc: 'Complete editorial independence through modern headless platforms like Sanity, Strapi, or Shopify Storefront API. Lightning-fast visual editing without touching source code.',
     specs: ['Sanity / Strapi CMS', 'Shopify Storefront API', 'Stripe Payments', 'Incremental Static Regeneration'],
-    color: '#7ca8d2',
+    color: '#8B0000',
   },
   {
     icon: Gauge,
@@ -57,7 +57,7 @@ const DELIVERABLES = [
     title: 'Core Web Vitals 99+ Hardening',
     desc: 'We treat page speed as a primary conversion lever. Every millisecond saved directly lifts checkout rates. We guarantee top-tier mobile Lighthouse metrics before going live.',
     specs: ['FCP < 0.5s', 'LCP < 0.8s', 'CLS = 0.000', 'Perfect Mobile Score'],
-    color: '#00966e',
+    color: '#FF4444',
   },
   {
     icon: Zap,
@@ -65,7 +65,7 @@ const DELIVERABLES = [
     title: 'Conversion Tracking & Event Telemetry',
     desc: 'Custom server-side event tracking across GA4, Meta Conversions API (CAPI), and PostHog. Full visibility into user engagement, drop-offs, and micro-conversions.',
     specs: ['Server-Side CAPI', 'Custom DataLayer Events', 'PostHog / Mixpanel', 'Heatmap Ready'],
-    color: '#f09341',
+    color: '#E60000',
   },
   {
     icon: ShieldCheck,
@@ -73,7 +73,7 @@ const DELIVERABLES = [
     title: 'Enterprise Security & CI/CD Pipelines',
     desc: 'Automated GitHub pull request preview deployments, static analysis, DDoS mitigation, and enterprise SSL on globally distributed edge networks.',
     specs: ['Automated CI/CD', 'Edge Middleware', 'DDoS Protection', 'SOC2 Compliant Hosting'],
-    color: '#d7dd44',
+    color: '#FF1F1F',
   },
 ];
 
@@ -84,7 +84,7 @@ const SPRINTS = [
     title: 'Architecture & Technical Wireframing',
     duration: 'Week 1',
     deliverable: 'Technical architecture document, route hierarchy, conversion funnel wireframes, and Core Web Vitals benchmark targets.',
-    color: '#d7dd44',
+    color: '#CC1919',
   },
   {
     num: '02',
@@ -92,7 +92,7 @@ const SPRINTS = [
     title: 'Interactive Design & Motion Choreography',
     duration: 'Week 2–3',
     deliverable: 'Complete Figma design system, kinetic component prototypes, typography scale, and responsive layout blueprints.',
-    color: '#eaa0cd',
+    color: '#8B0000',
   },
   {
     num: '03',
@@ -100,7 +100,7 @@ const SPRINTS = [
     title: 'Full-Stack Next.js Engineering',
     duration: 'Week 4–5',
     deliverable: 'Production codebase setup, custom GSAP ScrollTrigger timelines, responsive layouts, and Lenis inertia scroll integration.',
-    color: '#00966e',
+    color: '#FF4444',
   },
   {
     num: '04',
@@ -108,7 +108,7 @@ const SPRINTS = [
     title: 'Headless CMS & Telemetry Integration',
     duration: 'Week 6',
     deliverable: 'Content model schema in Sanity/Shopify, webhooks, server-side event telemetry, and multi-step inquiry form logic.',
-    color: '#7ca8d2',
+    color: '#E60000',
   },
   {
     num: '05',
@@ -116,26 +116,26 @@ const SPRINTS = [
     title: 'Vitals Hardening, QA & Global Edge Launch',
     duration: 'Week 7',
     deliverable: 'Cross-browser verification, mobile Safari scroll audits, 99+ Lighthouse performance gate, and zero-downtime DNS deployment.',
-    color: '#f09341',
+    color: '#FF1F1F',
   },
 ];
 
 const TECH_STACK = [
-  { name: 'Next.js 16', role: 'Full-Stack Framework', color: '#d7dd44' },
-  { name: 'React 19', role: 'Server Components', color: '#eaa0cd' },
-  { name: 'TypeScript', role: 'Strict Type Safety', color: '#7ca8d2' },
-  { name: 'GSAP 3', role: 'Choreographed Motion', color: '#00966e' },
-  { name: 'Tailwind CSS v4', role: 'Design Tokens', color: '#f09341' },
-  { name: 'Lenis', role: 'Smooth Inertia Scroll', color: '#d7dd44' },
-  { name: 'Three.js / WebGL', role: '3D Spatial Stages', color: '#eaa0cd' },
-  { name: 'Vercel Edge', role: 'Low-Latency CDN', color: '#00966e' },
-  { name: 'Sanity CMS', role: 'Headless Content', color: '#7ca8d2' },
-  { name: 'Shopify Storefront', role: 'Headless Commerce', color: '#f09341' },
+  { name: 'Next.js 16', role: 'Full-Stack Framework', color: '#FF1F1F' },
+  { name: 'React 19', role: 'Server Components', color: '#C9CCD1' },
+  { name: 'TypeScript', role: 'Strict Type Safety', color: '#C9CCD1' },
+  { name: 'GSAP 3', role: 'Choreographed Motion', color: '#FF1F1F' },
+  { name: 'Tailwind CSS v4', role: 'Design Tokens', color: '#FF1F1F' },
+  { name: 'Lenis', role: 'Smooth Inertia Scroll', color: '#FF1F1F' },
+  { name: 'Three.js / WebGL', role: '3D Spatial Stages', color: '#C9CCD1' },
+  { name: 'Vercel Edge', role: 'Low-Latency CDN', color: '#FF1F1F' },
+  { name: 'Sanity CMS', role: 'Headless Content', color: '#C9CCD1' },
+  { name: 'Shopify Storefront', role: 'Headless Commerce', color: '#FF1F1F' },
 ];
 
 export default function WebDevelopmentPage() {
   return (
-    <div className="relative min-h-screen bg-[#f4f4f0] text-[#141414] paper-canvas selection:bg-[#d7dd44] selection:text-black">
+    <div className="relative min-h-screen bg-[#0A0A0A] text-white paper-canvas ">
       {/* Terminal Block Custom Cursor */}
       <WebDevelopmentTerminalCursor />
 
@@ -144,25 +144,25 @@ export default function WebDevelopmentPage() {
         <div className="flex flex-col items-start">
           {/* Sticker Badges */}
           <div className="flex flex-wrap items-center gap-3 mb-6">
-            <span className="sticker-badge bg-[#d7dd44] text-black rotate-[-2deg]">
+            <span className="sticker-badge bg-[#FF1F1F] text-white rotate-[-2deg]">
               ✦ SERVICE 01 / 11
             </span>
-            <span className="sticker-badge bg-white text-black rotate-[1.5deg]">
+            <span className="sticker-badge bg-[#1A1A1A] text-white rotate-[1.5deg]">
               DIGITAL PRODUCT &amp; ENGINEERING
             </span>
-            <span className="sticker-badge bg-[#eaa0cd] text-black">
+            <span className="sticker-badge bg-[#C9CCD1] text-white">
               NEXT.JS 16 // GSAP 3 // TURBOPACK
             </span>
           </div>
 
           <div className="w-full my-4">
-            <h1 className="u-title-100 text-left tracking-tighter text-black">
+            <h1 className="u-title-100 text-left tracking-tighter text-white">
               WEBSITES ENGINEERED TO CONVERT.
             </h1>
           </div>
 
           <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8 w-full my-6">
-            <p className="max-w-2xl font-['Space_Grotesk'] text-lg md:text-2xl font-bold uppercase text-black leading-tight">
+            <p className="max-w-2xl font-['Space_Grotesk'] text-lg md:text-2xl font-bold uppercase text-white leading-tight">
               Most agency websites are heavy templates that look pretty but crawl on mobile. We build custom Next.js web applications with hardware-accelerated GSAP animation, sub-second TTFB, and conversion architectures designed for aggressive revenue growth.
             </p>
 
@@ -177,28 +177,28 @@ export default function WebDevelopmentPage() {
           </div>
 
           {/* Performance Benchmark Tape */}
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 w-full pt-8 border-t-2 border-black mt-6">
-            <div className="rounded-2xl border-2 border-black bg-white p-4 text-center shadow-[-4px_5px_0px_#000]">
-              <span className="font-mono text-xs text-[#5c5b5b] block">Core Web Vitals</span>
-              <span className="font-['Roboto_Flex'] [font-variation-settings:'wdth'_33] [font-stretch:33%] text-4xl sm:text-5xl font-extrabold text-black block mt-1">
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 w-full pt-8 border-t-2 border-white/10 mt-6">
+            <div className="rounded-2xl border border-white/10 bg-[#1A1A1A] p-4 text-center shadow-[0_0_20px_rgba(255,31,31,0.15)]">
+              <span className="font-mono text-xs text-[#C9CCD1] block">Core Web Vitals</span>
+              <span className="font-['Roboto_Flex'] [font-variation-settings:'wdth'_33] [font-stretch:33%] text-4xl sm:text-5xl font-extrabold text-white block mt-1">
                 99+ MOBILE
               </span>
             </div>
-            <div className="rounded-2xl border-2 border-black bg-[#d7dd44] p-4 text-center shadow-[-4px_5px_0px_#000]">
-              <span className="font-mono text-xs text-black font-bold block">First Paint (FCP)</span>
-              <span className="font-['Roboto_Flex'] [font-variation-settings:'wdth'_33] [font-stretch:33%] text-4xl sm:text-5xl font-extrabold text-black block mt-1">
+            <div className="rounded-2xl border border-white/10 bg-[#FF1F1F] p-4 text-center shadow-[0_0_20px_rgba(255,31,31,0.15)]">
+              <span className="font-mono text-xs text-white font-bold block">First Paint (FCP)</span>
+              <span className="font-['Roboto_Flex'] [font-variation-settings:'wdth'_33] [font-stretch:33%] text-4xl sm:text-5xl font-extrabold text-white block mt-1">
                 &lt; 0.40s
               </span>
             </div>
-            <div className="rounded-2xl border-2 border-black bg-[#eaa0cd] p-4 text-center shadow-[-4px_5px_0px_#000]">
-              <span className="font-mono text-xs text-black font-bold block">Motion Engine</span>
-              <span className="font-['Roboto_Flex'] [font-variation-settings:'wdth'_33] [font-stretch:33%] text-4xl sm:text-5xl font-extrabold text-black block mt-1">
+            <div className="rounded-2xl border border-white/10 bg-[#C9CCD1] p-4 text-center shadow-[0_0_20px_rgba(255,31,31,0.15)]">
+              <span className="font-mono text-xs text-white font-bold block">Motion Engine</span>
+              <span className="font-['Roboto_Flex'] [font-variation-settings:'wdth'_33] [font-stretch:33%] text-4xl sm:text-5xl font-extrabold text-white block mt-1">
                 GSAP 3 + LENIS
               </span>
             </div>
-            <div className="rounded-2xl border-2 border-black bg-white p-4 text-center shadow-[-4px_5px_0px_#000]">
-              <span className="font-mono text-xs text-[#5c5b5b] block">Deployment Tier</span>
-              <span className="font-['Roboto_Flex'] [font-variation-settings:'wdth'_33] [font-stretch:33%] text-4xl sm:text-5xl font-extrabold text-[#00966e] block mt-1">
+            <div className="rounded-2xl border border-white/10 bg-[#1A1A1A] p-4 text-center shadow-[0_0_20px_rgba(255,31,31,0.15)]">
+              <span className="font-mono text-xs text-[#C9CCD1] block">Deployment Tier</span>
+              <span className="font-['Roboto_Flex'] [font-variation-settings:'wdth'_33] [font-stretch:33%] text-4xl sm:text-5xl font-extrabold text-[#FF1F1F] block mt-1">
                 VERCEL EDGE
               </span>
             </div>
@@ -207,16 +207,16 @@ export default function WebDevelopmentPage() {
       </section>
 
       {/* SECTION 2: SIGNATURE MOTIF — INTERACTIVE CODE TERMINAL */}
-      <section className="relative px-4 py-16 md:px-8 bg-[#ecebe4] border-y-4 border-black">
+      <section className="relative px-4 py-16 md:px-8 bg-[#121212] border-y border-white/10">
         <div className="max-w-7xl mx-auto">
           <div className="text-center max-w-2xl mx-auto mb-12">
-            <span className="sticker-badge bg-[#00966e] text-white mb-2">
+            <span className="sticker-badge bg-[#FF1F1F] text-white mb-2">
               ENGINEERING MOTIF SPEC
             </span>
-            <h2 className="u-title-200 tracking-tight text-black">
+            <h2 className="u-title-200 tracking-tight text-white">
               Inspect the Production Architecture
             </h2>
-            <p className="mt-2 font-sans text-xs md:text-sm text-[#5c5b5b]">
+            <p className="mt-2 font-sans text-xs md:text-sm text-[#C9CCD1]">
               Switch between source code specifications, animation choreography, and live simulated Google Lighthouse audit scores below.
             </p>
           </div>
@@ -229,14 +229,14 @@ export default function WebDevelopmentPage() {
       <section className="relative px-4 py-24 md:px-8 md:py-36 max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
           <div>
-            <span className="sticker-badge bg-[#d7dd44] text-black mb-3">
+            <span className="sticker-badge bg-[#FF1F1F] text-white mb-3">
               SCOPE OF DELIVERABLES
             </span>
-            <h2 className="u-title-200 tracking-tight text-black">
+            <h2 className="u-title-200 tracking-tight text-white">
               What's Included in Every Build
             </h2>
           </div>
-          <p className="font-sans text-sm text-[#5c5b5b] max-w-md">
+          <p className="font-sans text-sm text-[#C9CCD1] max-w-md">
             No junior outsourced code. Every web application is built ground-up by senior full-stack creative engineers.
           </p>
         </div>
@@ -251,29 +251,29 @@ export default function WebDevelopmentPage() {
                 style={{ borderTopWidth: '8px', borderTopColor: item.color }}
               >
                 <div>
-                  <div className="flex items-center justify-between pb-3 border-b-2 border-black/10 mb-4">
-                    <div className="h-10 w-10 rounded-xl border-2 border-black bg-white flex items-center justify-center text-black shadow-[-2px_2px_0px_#000]">
+                  <div className="flex items-center justify-between pb-3 border-b-2 border-white/10/10 mb-4">
+                    <div className="h-10 w-10 rounded-xl border border-white/10 bg-[#1A1A1A] flex items-center justify-center text-white shadow-[0_0_20px_rgba(255,31,31,0.15)]">
                       <Icon className="h-5 w-5" />
                     </div>
-                    <span className="sticker-badge text-[9px] py-0.5 px-2 bg-white text-black shadow-none">
+                    <span className="sticker-badge text-[9px] py-0.5 px-2 bg-[#1A1A1A] text-white shadow-none">
                       {item.tag}
                     </span>
                   </div>
 
-                  <h3 className="font-['Roboto_Flex'] [font-variation-settings:'wdth'_33] [font-stretch:33%] text-3xl font-extrabold uppercase leading-none text-black mb-3">
+                  <h3 className="font-['Roboto_Flex'] [font-variation-settings:'wdth'_33] [font-stretch:33%] text-3xl font-extrabold uppercase leading-none text-white mb-3">
                     {item.title}
                   </h3>
 
-                  <p className="font-sans text-xs text-[#5c5b5b] leading-relaxed font-medium mb-6">
+                  <p className="font-sans text-xs text-[#C9CCD1] leading-relaxed font-medium mb-6">
                     {item.desc}
                   </p>
                 </div>
 
-                <div className="pt-4 border-t-2 border-black/10">
-                  <ul className="space-y-1.5 font-mono text-xs text-black">
+                <div className="pt-4 border-t-2 border-white/10/10">
+                  <ul className="space-y-1.5 font-mono text-xs text-white">
                     {item.specs.map((s, i) => (
                       <li key={i} className="flex items-center gap-2">
-                        <span className="h-2 w-2 rounded-full border border-black" style={{ backgroundColor: item.color }} />
+                        <span className="h-2 w-2 rounded-full border border-white/10" style={{ backgroundColor: item.color }} />
                         <span className="font-semibold">{s}</span>
                       </li>
                     ))}
@@ -286,16 +286,16 @@ export default function WebDevelopmentPage() {
       </section>
 
       {/* SECTION 4: 5-SPRINT METHODOLOGY */}
-      <section className="relative px-4 py-24 md:px-8 md:py-36 bg-[#ecebe4] border-t-4 border-black">
+      <section className="relative px-4 py-24 md:px-8 md:py-36 bg-[#121212] border-t border-white/10">
         <div className="max-w-7xl mx-auto">
           <div className="max-w-2xl mb-16">
-            <span className="sticker-badge bg-[#eaa0cd] text-black mb-3">
+            <span className="sticker-badge bg-[#C9CCD1] text-white mb-3">
               PRODUCTION TIMELINE
             </span>
-            <h2 className="u-title-200 tracking-tight text-black">
+            <h2 className="u-title-200 tracking-tight text-white">
               5 Sprints to Global Deployment
             </h2>
-            <p className="mt-2 font-sans text-sm text-[#5c5b5b]">
+            <p className="mt-2 font-sans text-sm text-[#C9CCD1]">
               Clear weekly milestones, real-time preview staging URLs, and rigorous Core Web Vitals gates from day one.
             </p>
           </div>
@@ -307,27 +307,27 @@ export default function WebDevelopmentPage() {
                 className="tactile-card p-6 md:p-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-6"
               >
                 <div className="flex items-center gap-6">
-                  <span className="font-['Roboto_Flex'] [font-variation-settings:'wdth'_33] [font-stretch:33%] text-5xl font-black text-black">
+                  <span className="font-['Roboto_Flex'] [font-variation-settings:'wdth'_33] [font-stretch:33%] text-5xl font-black text-white">
                     {sprint.num}.
                   </span>
                   <div>
                     <div className="flex items-center gap-2">
                       <span
                         className="sticker-badge text-[10px] py-0.5 px-2"
-                        style={{ backgroundColor: sprint.color, color: '#000' }}
+                        style={{ backgroundColor: sprint.color, color: '#fff' }}
                       >
                         {sprint.phase}
                       </span>
-                      <span className="font-mono text-xs font-bold text-[#5c5b5b]">{sprint.duration}</span>
+                      <span className="font-mono text-xs font-bold text-[#C9CCD1]">{sprint.duration}</span>
                     </div>
-                    <h3 className="font-['Roboto_Flex'] [font-variation-settings:'wdth'_33] [font-stretch:33%] text-3xl font-extrabold uppercase text-black mt-2">
+                    <h3 className="font-['Roboto_Flex'] [font-variation-settings:'wdth'_33] [font-stretch:33%] text-3xl font-extrabold uppercase text-white mt-2">
                       {sprint.title}
                     </h3>
                   </div>
                 </div>
 
-                <div className="md:max-w-md text-xs font-sans text-[#5c5b5b] font-medium border-l-2 border-black pl-4 md:pl-6">
-                  <span className="font-mono text-[10px] text-black font-bold uppercase block mb-1">Key Deliverable</span>
+                <div className="md:max-w-md text-xs font-sans text-[#C9CCD1] font-medium border-l-2 border-white/10 pl-4 md:pl-6">
+                  <span className="font-mono text-[10px] text-white font-bold uppercase block mb-1">Key Deliverable</span>
                   {sprint.deliverable}
                 </div>
               </div>
@@ -340,55 +340,55 @@ export default function WebDevelopmentPage() {
       <section className="relative px-4 py-24 md:px-8 md:py-36 max-w-7xl mx-auto">
         <div className="flex items-center justify-between mb-12">
           <div>
-            <span className="sticker-badge bg-[#d7dd44] text-black mb-3">
+            <span className="sticker-badge bg-[#FF1F1F] text-white mb-3">
               FEATURED CAPABILITY SHOWCASE
             </span>
-            <h2 className="u-title-200 tracking-tight text-black">
+            <h2 className="u-title-200 tracking-tight text-white">
               Case Study: AURA Wearables
             </h2>
           </div>
-          <span className="hidden md:inline-flex sticker-badge bg-white text-black font-mono">
+          <span className="hidden md:inline-flex sticker-badge bg-[#1A1A1A] text-white font-mono">
             ● CONCEPT LAB SPEC
           </span>
         </div>
 
-        <div className="tactile-card p-6 md:p-12 overflow-hidden grid grid-cols-1 lg:grid-cols-12 gap-8 items-center bg-white">
-          <div className="lg:col-span-7 relative rounded-2xl overflow-hidden aspect-[16/10] border-2 border-black group">
+        <div className="tactile-card p-6 md:p-12 overflow-hidden grid grid-cols-1 lg:grid-cols-12 gap-8 items-center bg-[#1A1A1A]">
+          <div className="lg:col-span-7 relative rounded-2xl overflow-hidden aspect-[16/10] border border-white/10 group">
             <Image
               src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&q=80"
               alt="AURA Wearables Digital Flagship Mockup"
               fill
               className="object-cover group-hover:scale-105 transition-transform duration-700"
             />
-            <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between rounded-xl bg-white/95 backdrop-blur-md p-3 border-2 border-black">
-              <span className="font-mono text-xs font-bold text-black">Spatial Hardware Flagship</span>
-              <span className="sticker-badge text-[10px] bg-[#d7dd44] text-black shadow-none">Next.js + Three.js</span>
+            <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between rounded-xl bg-[#1A1A1A]/95 backdrop-blur-md p-3 border border-white/10">
+              <span className="font-mono text-xs font-bold text-white">Spatial Hardware Flagship</span>
+              <span className="sticker-badge text-[10px] bg-[#FF1F1F] text-white shadow-none">Next.js + Three.js</span>
             </div>
           </div>
 
           <div className="lg:col-span-5 space-y-5">
-            <span className="font-mono text-xs uppercase tracking-widest text-[#00966e] font-bold">
+            <span className="font-mono text-xs uppercase tracking-widest text-[#FF1F1F] font-bold">
               Challenge &amp; Execution
             </span>
-            <h3 className="font-['Roboto_Flex'] [font-variation-settings:'wdth'_33] [font-stretch:33%] text-4xl font-extrabold uppercase text-black leading-none">
+            <h3 className="font-['Roboto_Flex'] [font-variation-settings:'wdth'_33] [font-stretch:33%] text-4xl font-extrabold uppercase text-white leading-none">
               Turning a 4.2-second Shopify store into a 0.38-second sales engine.
             </h3>
-            <p className="font-sans text-xs text-[#5c5b5b] font-medium leading-relaxed">
+            <p className="font-sans text-xs text-[#C9CCD1] font-medium leading-relaxed">
               AURA needed an experience that showcased spatial audio hardware with interactive 3D exploded views without degrading mobile checkout speed. We architected a headless Next.js storefront backed by Shopify Storefront GraphQL, reducing cart abandonment by 42%.
             </p>
 
-            <div className="grid grid-cols-2 gap-4 pt-4 border-t-2 border-black">
-              <div className="rounded-xl border-2 border-black bg-[#d7dd44] p-3 text-center shadow-[-2px_3px_0px_#000]">
-                <span className="font-['Roboto_Flex'] [font-variation-settings:'wdth'_33] [font-stretch:33%] text-3xl font-extrabold text-black block">
+            <div className="grid grid-cols-2 gap-4 pt-4 border-t-2 border-white/10">
+              <div className="rounded-xl border border-white/10 bg-[#FF1F1F] p-3 text-center shadow-[0_0_20px_rgba(255,31,31,0.15)]">
+                <span className="font-['Roboto_Flex'] [font-variation-settings:'wdth'_33] [font-stretch:33%] text-3xl font-extrabold text-white block">
                   +340%
                 </span>
-                <span className="font-mono text-[10px] text-black uppercase font-bold">Conversion Lift</span>
+                <span className="font-mono text-[10px] text-white uppercase font-bold">Conversion Lift</span>
               </div>
-              <div className="rounded-xl border-2 border-black bg-white p-3 text-center shadow-[-2px_3px_0px_#000]">
-                <span className="font-['Roboto_Flex'] [font-variation-settings:'wdth'_33] [font-stretch:33%] text-3xl font-extrabold text-black block">
+              <div className="rounded-xl border border-white/10 bg-[#1A1A1A] p-3 text-center shadow-[0_0_20px_rgba(255,31,31,0.15)]">
+                <span className="font-['Roboto_Flex'] [font-variation-settings:'wdth'_33] [font-stretch:33%] text-3xl font-extrabold text-white block">
                   0.38s
                 </span>
-                <span className="font-mono text-[10px] text-[#5c5b5b] uppercase font-bold">First Contentful Paint</span>
+                <span className="font-mono text-[10px] text-[#C9CCD1] uppercase font-bold">First Contentful Paint</span>
               </div>
             </div>
 
@@ -405,21 +405,21 @@ export default function WebDevelopmentPage() {
       </section>
 
       {/* SECTION 6: TECH STACK MATRIX */}
-      <section className="relative px-4 py-20 md:px-8 border-t-4 border-black bg-[#ecebe4]">
+      <section className="relative px-4 py-20 md:px-8 border-t border-white/10 bg-[#121212]">
         <div className="max-w-7xl mx-auto">
           <div className="text-center max-w-xl mx-auto mb-12">
-            <span className="sticker-badge bg-[#f09341] text-black mb-2">ENGINEERING STACK</span>
-            <h2 className="u-title-200 tracking-tight text-black">Production Technologies</h2>
+            <span className="sticker-badge bg-[#FF1F1F] text-white mb-2">ENGINEERING STACK</span>
+            <h2 className="u-title-200 tracking-tight text-white">Production Technologies</h2>
           </div>
 
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
             {TECH_STACK.map((tech, idx) => (
               <div
                 key={idx}
-                className="rounded-2xl border-2 border-black bg-white p-4 text-center shadow-[-3px_4px_0px_#000] hover:translate-x-[-2px] hover:translate-y-[2px] hover:shadow-none transition-all"
+                className="rounded-2xl border border-white/10 bg-[#1A1A1A] p-4 text-center shadow-[0_0_20px_rgba(255,31,31,0.15)] hover:translate-x-[-2px] hover:translate-y-[2px] hover:shadow-none transition-all"
               >
-                <p className="font-mono text-xs font-black uppercase text-black">{tech.name}</p>
-                <p className="font-mono text-[10px] text-[#5c5b5b] mt-1 uppercase font-medium">{tech.role}</p>
+                <p className="font-mono text-xs font-black uppercase text-white">{tech.name}</p>
+                <p className="font-mono text-[10px] text-[#C9CCD1] mt-1 uppercase font-medium">{tech.role}</p>
               </div>
             ))}
           </div>
@@ -428,22 +428,22 @@ export default function WebDevelopmentPage() {
 
       {/* SECTION 7: CLOSING CALL TO ACTION */}
       <section className="relative px-4 py-24 md:px-8 md:py-32 max-w-6xl mx-auto my-12">
-        <div className="rounded-3xl border-4 border-black bg-[#d7dd44] p-8 md:p-16 shadow-[-10px_14px_0px_#000] text-center flex flex-col items-center">
-          <div className="flex items-center gap-2 rounded-full border-2 border-black bg-white px-4 py-1 font-mono text-xs font-bold uppercase shadow-[-2px_2px_0px_#000] mb-6">
-            <Sparkles className="h-4 w-4 text-[#00966e]" /> READY TO SHIP NEXT-LEVEL TECH
+        <div className="rounded-3xl border border-white/10 bg-[#FF1F1F] p-8 md:p-16 shadow-[0_0_20px_rgba(255,31,31,0.15)] text-center flex flex-col items-center">
+          <div className="flex items-center gap-2 rounded-full border border-white/10 bg-[#1A1A1A] px-4 py-1 font-mono text-xs font-bold uppercase shadow-[0_0_20px_rgba(255,31,31,0.15)] mb-6">
+            <Sparkles className="h-4 w-4 text-[#FF1F1F]" /> READY TO SHIP NEXT-LEVEL TECH
           </div>
 
-          <h2 className="u-title-100 text-black leading-none mb-6">
+          <h2 className="u-title-100 text-white leading-none mb-6">
             HAVE A WEBSITE PROJECT IN MIND?
           </h2>
 
-          <p className="max-w-xl mx-auto font-sans text-base md:text-lg text-black font-medium mb-8">
+          <p className="max-w-xl mx-auto font-sans text-base md:text-lg text-white font-medium mb-8">
             Let's engineer a digital flagship that your competitors can't ignore. We'll reply within 24 hours with an architecture roadmap and sprint estimate.
           </p>
 
           <Link
             href="/contact?service=web-development"
-            className="c-button text-base py-4 px-10 bg-black text-white shadow-[-4px_6px_0px_#fff]"
+            className="c-button text-base py-4 px-10 bg-black text-white shadow-[0_0_20px_rgba(255,255,255,0.1)]"
           >
             Start Web Discussion <ArrowUpRight className="h-5 w-5" />
           </Link>

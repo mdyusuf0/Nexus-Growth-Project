@@ -12,8 +12,8 @@ import {
 } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Selected Work & Concept Showcases // APERTURE STUDIOS',
-  description: 'Explore verified concept capability showcases built by APERTURE STUDIOS across web development, native mobile apps, AI automation, and paid growth engines.',
+  title: 'Selected Work & Concept Showcases // NEXUS Growth',
+  description: 'Explore verified concept capability showcases built by NEXUS Growth across web development, native mobile apps, AI automation, and paid growth engines.',
   keywords: ['agency portfolio', 'case studies', 'creative engineering projects', 'Next.js portfolio', 'high-growth client work'],
 };
 
@@ -30,7 +30,7 @@ const PROJECTS = [
     solution: 'Engineered a headless Next.js 16 storefront utilizing Shopify Storefront GraphQL, 3D WebGL product inspection, and server-side edge rendering.',
     stack: ['Next.js 16', 'GSAP 3', 'Three.js / WebGL', 'Shopify Storefront GraphQL', 'Vercel Edge'],
     image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&q=80',
-    color: '#d7dd44',
+    color: '#FF1F1F',
   },
   {
     id: '02',
@@ -44,7 +44,7 @@ const PROJECTS = [
     solution: 'Deployed a LangGraph multi-agent network with private pgvector memory that automates 85% of exception parsing and syncs directly into ERP databases.',
     stack: ['React 19', 'LangGraph', 'Python FastAPI', 'pgvector', 'Tailwind v4'],
     image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&q=80',
-    color: '#00966e',
+    color: '#CC1919',
   },
   {
     id: '03',
@@ -58,7 +58,7 @@ const PROJECTS = [
     solution: 'Complete brand overhaul featuring bold editorial typography, tactile packaging die-lines, and a daily short-form video batching engine.',
     stack: ['Brand Identity', 'Custom Packaging', 'TikTok Studio Engine', 'Meta CAPI', 'Klaviyo Lifecycle'],
     image: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=1200&q=80',
-    color: '#f09341',
+    color: '#8B0000',
   },
   {
     id: '04',
@@ -72,7 +72,7 @@ const PROJECTS = [
     solution: 'Re-architected from scratch using React Native Reanimated 3 and Skia 2D canvas, hitting a locked 120FPS touch response rate with local offline sync.',
     stack: ['React Native', 'Skia 2D', 'RevenueCat IAP', 'WatermelonDB', 'Expo SDK'],
     image: 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=1200&q=80',
-    color: '#eaa0cd',
+    color: '#FF4444',
   },
   {
     id: '05',
@@ -86,7 +86,7 @@ const PROJECTS = [
     solution: 'Engineered a Web Audio API binaural synthesizer with 3D Three.js acoustic chamber visualization operating at 60FPS.',
     stack: ['Web Audio API', 'Next.js App Router', 'Three.js / GLSL', 'GSAP ScrollTrigger'],
     image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&q=80',
-    color: '#7ca8d2',
+    color: '#E60000',
   },
   {
     id: '06',
@@ -100,36 +100,36 @@ const PROJECTS = [
     solution: 'Designed an interactive multi-step onboarding portal with real-time compliance validation and instant Slack alert routing for sales reps.',
     stack: ['Next.js 16', 'HubSpot CRM Ops', 'Stripe Connect API', 'PostHog Telemetry'],
     image: 'https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=1200&q=80',
-    color: '#d7dd44',
+    color: '#FF1F1F',
   },
 ];
 
 export default function WorkPage() {
   return (
-    <div className="relative min-h-screen bg-[#f4f4f0] text-[#141414] paper-canvas selection:bg-[#d7dd44] selection:text-black">
+    <div className="relative min-h-screen bg-[#0A0A0A] text-white paper-canvas ">
       {/* Header */}
       <section className="relative px-4 pt-16 pb-16 md:px-8 md:pt-20 md:pb-20 max-w-7xl mx-auto">
         <div className="flex flex-wrap items-center gap-3 mb-6">
-          <span className="sticker-badge bg-[#d7dd44] text-black rotate-[-2deg]">
+          <span className="sticker-badge bg-[#FF1F1F] text-white rotate-[-2deg]">
             ✦ SELECTED WORK &amp; CASE STUDIES
           </span>
-          <span className="sticker-badge bg-white text-black rotate-[1.5deg]">
+          <span className="sticker-badge bg-[#1A1A1A] text-white rotate-[1.5deg]">
             VERIFIED CAPABILITY LABS
           </span>
-          <span className="sticker-badge bg-[#eaa0cd] text-black">
+          <span className="sticker-badge bg-[#C9CCD1] text-white">
             TOP 1% EXECUTION
           </span>
         </div>
 
-        <h1 className="u-title-100 tracking-tighter text-black my-2">
+        <h1 className="u-title-100 tracking-tighter text-white my-2">
           SELECTED CASE STUDIES
         </h1>
 
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mt-6 pb-8 border-b-2 border-black">
-          <p className="max-w-2xl font-['Space_Grotesk'] text-lg md:text-xl font-bold uppercase text-black leading-snug">
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mt-6 pb-8 border-b-2 border-white/10">
+          <p className="max-w-2xl font-['Space_Grotesk'] text-lg md:text-xl font-bold uppercase text-white leading-snug">
             A transparent exhibition of high-velocity capability showcases. Every project represents deep technical execution and measurable conversion lift.
           </p>
-          <span className="font-mono text-xs font-bold text-[#5c5b5b]">
+          <span className="font-mono text-xs font-bold text-[#C9CCD1]">
             6 CAPABILITY SHOWCASES
           </span>
         </div>
@@ -140,12 +140,12 @@ export default function WorkPage() {
         {PROJECTS.map((project) => (
           <div
             key={project.id}
-            className="tactile-card p-6 md:p-12 bg-white overflow-hidden"
+            className="tactile-card p-6 md:p-12 bg-[#1A1A1A] overflow-hidden"
             style={{ borderLeftWidth: '10px', borderLeftColor: project.color }}
           >
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
               {/* Media Column */}
-              <div className="lg:col-span-7 relative aspect-[16/10] rounded-2xl overflow-hidden border-2 border-black group">
+              <div className="lg:col-span-7 relative aspect-[16/10] rounded-2xl overflow-hidden border border-white/10 group">
                 <Image
                   src={project.image}
                   alt={project.title}
@@ -160,7 +160,7 @@ export default function WorkPage() {
                 <div className="absolute bottom-4 right-4">
                   <span
                     className="sticker-badge font-mono text-xs font-bold"
-                    style={{ backgroundColor: project.color, color: '#000' }}
+                    style={{ backgroundColor: project.color, color: '#fff' }}
                   >
                     {project.metric}
                   </span>
@@ -170,32 +170,32 @@ export default function WorkPage() {
               {/* Information Column */}
               <div className="lg:col-span-5 space-y-5">
                 <div>
-                  <span className="font-mono text-xs text-[#5c5b5b] font-bold uppercase block mb-1">
+                  <span className="font-mono text-xs text-[#C9CCD1] font-bold uppercase block mb-1">
                     CLIENT ARCHETYPE // {project.clientType}
                   </span>
-                  <h2 className="font-['Roboto_Flex'] [font-variation-settings:'wdth'_33] [font-stretch:33%] text-4xl sm:text-5xl font-extrabold uppercase text-black leading-none">
+                  <h2 className="font-['Roboto_Flex'] [font-variation-settings:'wdth'_33] [font-stretch:33%] text-4xl sm:text-5xl font-extrabold uppercase text-white leading-none">
                     {project.title}
                   </h2>
                 </div>
 
-                <div className="space-y-3 font-sans text-xs text-[#5c5b5b]">
-                  <p className="font-medium text-black text-sm">
+                <div className="space-y-3 font-sans text-xs text-[#C9CCD1]">
+                  <p className="font-medium text-white text-sm">
                     {project.desc}
                   </p>
                   <p>
-                    <strong className="text-black uppercase font-mono">Challenge:</strong> {project.challenge}
+                    <strong className="text-white uppercase font-mono">Challenge:</strong> {project.challenge}
                   </p>
                   <p>
-                    <strong className="text-black uppercase font-mono">APERTURE Solution:</strong> {project.solution}
+                    <strong className="text-white uppercase font-mono">NEXUS Solution:</strong> {project.solution}
                   </p>
                 </div>
 
                 {/* Tech Tags */}
-                <div className="pt-3 border-t-2 border-black/10">
-                  <span className="font-mono text-[10px] text-black font-bold uppercase block mb-2">Technologies Deployed</span>
+                <div className="pt-3 border-t-2 border-white/10/10">
+                  <span className="font-mono text-[10px] text-white font-bold uppercase block mb-2">Technologies Deployed</span>
                   <div className="flex flex-wrap gap-1.5">
                     {project.stack.map((t, i) => (
-                      <span key={i} className="font-mono text-[10px] px-2 py-0.5 rounded border border-black bg-[#f4f4f0] font-bold text-black">
+                      <span key={i} className="font-mono text-[10px] px-2 py-0.5 rounded border border-white/10 bg-[#0A0A0A] font-bold text-white">
                         {t}
                       </span>
                     ))}
@@ -205,8 +205,8 @@ export default function WorkPage() {
                 <div className="pt-2">
                   <Link
                     href="/contact"
-                    className="c-button text-xs py-3 px-6 shadow-[-3px_4px_0px_#000]"
-                    style={{ backgroundColor: project.color, color: '#000' }}
+                    className="c-button text-xs py-3 px-6 shadow-[0_0_20px_rgba(255,31,31,0.15)]"
+                    style={{ backgroundColor: project.color, color: '#fff' }}
                   >
                     Discuss Similar Engagement <ArrowUpRight className="h-4 w-4" />
                   </Link>
@@ -217,17 +217,17 @@ export default function WorkPage() {
         ))}
 
         {/* Bottom Callout */}
-        <div className="rounded-3xl border-4 border-black bg-[#d7dd44] p-8 md:p-14 text-center shadow-[-8px_10px_0px_#000] flex flex-col items-center">
+        <div className="rounded-3xl border border-white/10 bg-[#FF1F1F] p-8 md:p-14 text-center shadow-[0_0_20px_rgba(255,31,31,0.15)] flex flex-col items-center">
           <span className="sticker-badge bg-black text-white text-xs mb-3">CUSTOM ENGAGEMENT</span>
-          <h2 className="u-title-200 uppercase text-black leading-none mb-4">
+          <h2 className="u-title-200 uppercase text-white leading-none mb-4">
             Have a Complex Project Requirement?
           </h2>
-          <p className="max-w-xl mx-auto font-sans text-sm md:text-base text-black font-medium mb-8">
+          <p className="max-w-xl mx-auto font-sans text-sm md:text-base text-white font-medium mb-8">
             Whether you need a 3D WebGL flagship, a cross-platform mobile app, or a multi-agent AI pipeline, we have the senior engineering depth to deliver.
           </p>
           <Link
             href="/contact"
-            className="c-button text-base py-4 px-10 bg-black text-white shadow-[-4px_6px_0px_#fff]"
+            className="c-button text-base py-4 px-10 bg-black text-white shadow-[0_0_20px_rgba(255,255,255,0.1)]"
           >
             Start Project Discussion <ArrowUpRight className="h-5 w-5" />
           </Link>

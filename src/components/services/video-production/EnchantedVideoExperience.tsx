@@ -288,7 +288,7 @@ export function EnchantedVideoExperience() {
   };
 
   return (
-    <div className="relative w-full bg-[#050508] text-white selection:bg-indigo-500 selection:text-white font-sans overflow-x-hidden min-h-screen">
+    <div className="relative w-full bg-[#050508] text-white selection:bg-[#C9CCD1] selection:text-white font-sans overflow-x-hidden min-h-screen">
       
       {/* ========================================================================= */}
       {/* 1. FLOATING ENCHANTED CAPSULE NAVBAR */}
@@ -299,15 +299,15 @@ export function EnchantedVideoExperience() {
           {/* Brand Mark */}
           <Link 
             href="/"
-            className="flex items-center gap-3 group bg-black/70 hover:bg-black/90 backdrop-blur-xl border border-white/15 hover:border-indigo-500/50 px-4 py-2 rounded-full transition-all duration-300 shadow-[0_8px_30px_rgba(0,0,0,0.6)]"
+            className="flex items-center gap-3 group bg-black/70 hover:bg-black/90 backdrop-blur-xl border border-white/15 hover:border-[#C9CCD1]/50 px-4 py-2 rounded-full transition-all duration-300 shadow-[0_8px_30px_rgba(0,0,0,0.6)]"
           >
-            <div className="w-8 h-8 rounded-full bg-gradient-to-tr from-indigo-600 to-purple-500 flex items-center justify-center font-black text-sm text-white shadow-[0_0_15px_rgba(99,102,241,0.5)] group-hover:scale-105 transition-transform">
+            <div className="w-8 h-8 rounded-full bg-gradient-to-tr from-[#C9CCD1] to-[#C9CCD1] flex items-center justify-center font-black text-sm text-white shadow-[0_0_15px_rgba(201,204,209,0.5)] group-hover:scale-105 transition-transform">
               <Film className="w-4 h-4 text-white" />
             </div>
             <div className="flex flex-col">
               <div className="flex items-center gap-1.5">
-                <span className="font-bold text-sm tracking-tight text-white leading-none">APERTURE</span>
-                <span className="text-[10px] font-mono font-black uppercase px-1.5 py-0.2 rounded bg-indigo-500/20 text-indigo-300 border border-indigo-500/30">CINEMA</span>
+                <span className="font-bold text-sm tracking-tight text-white leading-none">NEXUS</span>
+                <span className="text-[10px] font-mono font-black uppercase px-1.5 py-0.2 rounded bg-[#C9CCD1]/20 text-gray-300 border border-[#C9CCD1]/30">CINEMA</span>
               </div>
               <span className="text-[9px] font-mono text-gray-400 tracking-widest uppercase">Video Production</span>
             </div>
@@ -317,31 +317,31 @@ export function EnchantedVideoExperience() {
           <div className="hidden lg:flex items-center gap-1 bg-black/70 backdrop-blur-xl border border-white/15 px-3 py-1.5 rounded-full shadow-[0_8px_30px_rgba(0,0,0,0.6)]">
             <a 
               href="#showcase" 
-              className="px-3.5 py-1.5 text-xs font-medium text-gray-300 hover:text-white rounded-full hover:bg-white/[0.08] transition-colors"
+              className="px-3.5 py-1.5 text-xs font-medium text-gray-300 hover:text-white rounded-full hover:bg-[#1A1A1A]/[0.08] transition-colors"
             >
               Reel Showcase
             </a>
             <a 
               href="#capabilities" 
-              className="px-3.5 py-1.5 text-xs font-medium text-gray-300 hover:text-white rounded-full hover:bg-white/[0.08] transition-colors"
+              className="px-3.5 py-1.5 text-xs font-medium text-gray-300 hover:text-white rounded-full hover:bg-[#1A1A1A]/[0.08] transition-colors"
             >
               Retention Engines
             </a>
             <a 
               href="#pipeline" 
-              className="px-3.5 py-1.5 text-xs font-medium text-gray-300 hover:text-white rounded-full hover:bg-white/[0.08] transition-colors"
+              className="px-3.5 py-1.5 text-xs font-medium text-gray-300 hover:text-white rounded-full hover:bg-[#1A1A1A]/[0.08] transition-colors"
             >
               4-Step Pipeline
             </a>
             <a 
               href="#pricing" 
-              className="px-3.5 py-1.5 text-xs font-medium text-gray-300 hover:text-white rounded-full hover:bg-white/[0.08] transition-colors"
+              className="px-3.5 py-1.5 text-xs font-medium text-gray-300 hover:text-white rounded-full hover:bg-[#1A1A1A]/[0.08] transition-colors"
             >
               Sprints & Pricing
             </a>
             <a 
               href="#faq" 
-              className="px-3.5 py-1.5 text-xs font-medium text-gray-300 hover:text-white rounded-full hover:bg-white/[0.08] transition-colors"
+              className="px-3.5 py-1.5 text-xs font-medium text-gray-300 hover:text-white rounded-full hover:bg-[#1A1A1A]/[0.08] transition-colors"
             >
               FAQ
             </a>
@@ -353,8 +353,8 @@ export function EnchantedVideoExperience() {
                 onClick={() => setIsNavServicesOpen(!isNavServicesOpen)}
                 className={`flex items-center gap-1.5 px-3 py-1.5 text-xs font-medium rounded-full transition-all cursor-pointer ${
                   isNavServicesOpen
-                    ? 'text-white bg-indigo-600/40 border border-indigo-500 shadow-[0_0_15px_rgba(99,102,241,0.5)]'
-                    : 'text-indigo-300 hover:text-white hover:bg-indigo-500/15'
+                    ? 'text-white bg-[#C9CCD1]/40 border border-[#C9CCD1] shadow-[0_0_15px_rgba(201,204,209,0.5)]'
+                    : 'text-gray-300 hover:text-white hover:bg-[#C9CCD1]/15'
                 }`}
               >
                 <span>All 11 Services</span>
@@ -362,15 +362,15 @@ export function EnchantedVideoExperience() {
               </button>
 
               {isNavServicesOpen && (
-                <div className="absolute top-full right-0 mt-3 w-80 max-h-[75vh] overflow-y-auto bg-[#0a0a10]/95 backdrop-blur-2xl border border-indigo-500/30 rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.8),0_0_30px_rgba(99,102,241,0.2)] p-2.5 z-50 flex flex-col gap-1.5">
+                <div className="absolute top-full right-0 mt-3 w-80 max-h-[75vh] overflow-y-auto bg-[#0a0a10]/95 backdrop-blur-2xl border border-[#C9CCD1]/30 rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.8),0_0_30px_rgba(201,204,209,0.2)] p-2.5 z-50 flex flex-col gap-1.5">
                   <div className="px-3 py-2 border-b border-white/10 flex items-center justify-between">
-                    <span className="text-[10px] font-mono uppercase tracking-widest text-indigo-400 font-bold">
-                      APERTURE DISCIPLINES (11)
+                    <span className="text-[10px] font-mono uppercase tracking-widest text-[#C9CCD1] font-bold">
+                      NEXUS DISCIPLINES (11)
                     </span>
                     <Link
                       href="/services"
                       onClick={() => setIsNavServicesOpen(false)}
-                      className="text-[10px] font-mono text-white/70 hover:text-indigo-300 underline transition-colors"
+                      className="text-[10px] font-mono text-white/70 hover:text-gray-300 underline transition-colors"
                     >
                       Master Hub ➔
                     </Link>
@@ -395,17 +395,17 @@ export function EnchantedVideoExperience() {
                       onClick={() => setIsNavServicesOpen(false)}
                       className={`flex items-center justify-between px-3 py-2 rounded-xl text-xs font-mono transition-all ${
                         s.id === '08'
-                          ? 'bg-indigo-950/60 border border-indigo-500/60 text-indigo-200 font-bold shadow-[0_0_12px_rgba(99,102,241,0.3)]'
-                          : 'text-gray-300 hover:text-white hover:bg-white/[0.06] hover:border hover:border-white/10'
+                          ? 'bg-gray-800/60 border border-[#C9CCD1]/60 text-gray-200 font-bold shadow-[0_0_12px_rgba(201,204,209,0.3)]'
+                          : 'text-gray-300 hover:text-white hover:bg-[#1A1A1A]/[0.06] hover:border hover:border-white/10'
                       }`}
                     >
                       <div className="flex items-center gap-2.5 truncate">
-                        <span className="text-[10px] text-indigo-400 font-bold">#{s.id}</span>
+                        <span className="text-[10px] text-[#C9CCD1] font-bold">#{s.id}</span>
                         <span className="truncate">{s.name}</span>
                       </div>
                       {s.note ? (
                         <span className={`text-[9px] px-2 py-0.5 rounded-full font-bold shrink-0 ${
-                          s.id === '08' ? 'bg-indigo-600 text-white' : 'bg-white/10 text-indigo-300 border border-indigo-500/30'
+                          s.id === '08' ? 'bg-[#C9CCD1] text-white' : 'bg-[#1A1A1A]/10 text-gray-300 border border-[#C9CCD1]/30'
                         }`}>
                           {s.note}
                         </span>
@@ -421,7 +421,7 @@ export function EnchantedVideoExperience() {
                     <Link href="/" className="hover:text-white transition-colors">
                       ← Agency Home
                     </Link>
-                    <Link href="/contact" className="text-indigo-400 hover:underline">
+                    <Link href="/contact" className="text-[#C9CCD1] hover:underline">
                       Book Sprint ➔
                     </Link>
                   </div>
@@ -434,7 +434,7 @@ export function EnchantedVideoExperience() {
           <div className="flex items-center gap-3">
             <Link
               href="/contact"
-              className="relative overflow-hidden group bg-gradient-to-r from-indigo-600 via-indigo-500 to-purple-600 text-white font-bold text-xs uppercase tracking-wider px-5 py-2.5 rounded-full shadow-[0_0_25px_rgba(99,102,241,0.4)] hover:shadow-[0_0_35px_rgba(99,102,241,0.7)] transition-all border border-indigo-400/30"
+              className="relative overflow-hidden group bg-gradient-to-r from-[#C9CCD1] via-[#C9CCD1] to-[#C9CCD1] text-white font-bold text-xs uppercase tracking-wider px-5 py-2.5 rounded-full shadow-[0_0_25px_rgba(201,204,209,0.4)] hover:shadow-[0_0_35px_rgba(201,204,209,0.7)] transition-all border border-[#C9CCD1]/30"
             >
               <span className="relative z-10 flex items-center gap-2">
                 Book Video Sprint <ArrowUpRight className="w-3.5 h-3.5" />
@@ -458,7 +458,7 @@ export function EnchantedVideoExperience() {
         }}
       >
         {/* Ambient Top Violet Light */}
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[850px] h-[550px] bg-gradient-to-tr from-indigo-600/30 via-purple-600/20 to-blue-500/10 blur-[140px] rounded-full pointer-events-none opacity-40" />
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[850px] h-[550px] bg-gradient-to-tr from-[#C9CCD1]/30 via-[#C9CCD1]/20 to-[#C9CCD1]/10 blur-[140px] rounded-full pointer-events-none opacity-40" />
 
         {/* Parallax Layer 1: Background Mountain Transition */}
         <motion.div 
@@ -530,10 +530,10 @@ export function EnchantedVideoExperience() {
           className="relative z-40 max-w-5xl mx-auto text-center flex flex-col items-center mt-10"
         >
           {/* Glowing Pill Tag */}
-          <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-white/[0.06] border border-white/15 backdrop-blur-xl shadow-[0_0_20px_rgba(99,102,241,0.25)] mb-6">
-            <span className="w-2 h-2 rounded-full bg-indigo-400 animate-pulse" />
-            <span className="font-mono text-xs uppercase tracking-widest text-indigo-200 font-semibold">
-              ✦ APERTURE CINEMATIC LABS // 4K PRODUCTION & POST
+          <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-[#1A1A1A]/[0.06] border border-white/15 backdrop-blur-xl shadow-[0_0_20px_rgba(201,204,209,0.25)] mb-6">
+            <span className="w-2 h-2 rounded-full bg-[#C9CCD1] animate-pulse" />
+            <span className="font-mono text-xs uppercase tracking-widest text-gray-200 font-semibold">
+              ✦ NEXUS Growth Cinematic Labs // 4K PRODUCTION & POST
             </span>
           </div>
 
@@ -541,7 +541,7 @@ export function EnchantedVideoExperience() {
           <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold uppercase tracking-tight text-white leading-[1.02]">
             NOT JUST VIDEO EDITING.
             <br />
-            <span className="font-serif normal-case italic font-normal tracking-normal bg-gradient-to-r from-blue-300 via-indigo-200 to-purple-300 bg-clip-text text-transparent drop-shadow-[0_0_35px_rgba(165,180,252,0.4)]">
+            <span className="font-serif normal-case italic font-normal tracking-normal bg-gradient-to-r from-gray-300 via-gray-200 to-gray-300 bg-clip-text text-transparent drop-shadow-[0_0_35px_rgba(201,204,209,0.4)]">
               Cinematic Velocity
             </span>
             <br />
@@ -557,18 +557,18 @@ export function EnchantedVideoExperience() {
           <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
             <a
               href="#showcase"
-              className="relative overflow-hidden group bg-white text-black font-extrabold text-sm uppercase tracking-wider px-7 py-3.5 rounded-full shadow-[0_10px_35px_rgba(255,255,255,0.3)] hover:bg-gray-100 hover:scale-105 transition-all flex items-center gap-2 cursor-pointer"
+              className="relative overflow-hidden group bg-[#1A1A1A] text-white font-extrabold text-sm uppercase tracking-wider px-7 py-3.5 rounded-full shadow-[0_10px_35px_rgba(255,255,255,0.3)] hover:bg-gray-100 hover:scale-105 transition-all flex items-center gap-2 cursor-pointer"
             >
               <span>Explore Reel Showcase</span>
-              <Play className="w-4 h-4 fill-black text-black group-hover:translate-x-0.5 transition-transform" />
+              <Play className="w-4 h-4 fill-black text-white group-hover:translate-x-0.5 transition-transform" />
             </a>
 
             <Link
               href="/contact"
-              className="px-7 py-3.5 rounded-full bg-white/[0.08] hover:bg-white/[0.15] border border-white/20 text-white font-bold text-sm uppercase tracking-wider backdrop-blur-xl transition-all flex items-center gap-2 hover:scale-105"
+              className="px-7 py-3.5 rounded-full bg-[#1A1A1A]/[0.08] hover:bg-[#1A1A1A]/[0.15] border border-white/20 text-white font-bold text-sm uppercase tracking-wider backdrop-blur-xl transition-all flex items-center gap-2 hover:scale-105"
             >
               <span>Book 30-Min Sprint Call</span>
-              <ArrowRight className="w-4 h-4 text-indigo-300" />
+              <ArrowRight className="w-4 h-4 text-gray-300" />
             </Link>
           </div>
 
@@ -577,22 +577,22 @@ export function EnchantedVideoExperience() {
             <div>
               <span className="font-mono text-xs uppercase text-gray-400 block">Average Retention</span>
               <span className="text-2xl sm:text-3xl font-black text-white tracking-tight mt-1 block">85.4%</span>
-              <span className="text-[11px] text-indigo-400 font-mono">Top 1% Benchmark</span>
+              <span className="text-[11px] text-[#C9CCD1] font-mono">Top 1% Benchmark</span>
             </div>
             <div>
               <span className="font-mono text-xs uppercase text-gray-400 block">Master Quality</span>
               <span className="text-2xl sm:text-3xl font-black text-white tracking-tight mt-1 block">4K 60FPS</span>
-              <span className="text-[11px] text-indigo-400 font-mono">DCI Color Calibrated</span>
+              <span className="text-[11px] text-[#C9CCD1] font-mono">DCI Color Calibrated</span>
             </div>
             <div>
               <span className="font-mono text-xs uppercase text-gray-400 block">Engagement Lift</span>
               <span className="text-2xl sm:text-3xl font-black text-white tracking-tight mt-1 block">4.2x ROAS</span>
-              <span className="text-[11px] text-indigo-400 font-mono">Paid Media Verified</span>
+              <span className="text-[11px] text-[#C9CCD1] font-mono">Paid Media Verified</span>
             </div>
             <div>
               <span className="font-mono text-xs uppercase text-gray-400 block">Delivery Velocity</span>
               <span className="text-2xl sm:text-3xl font-black text-white tracking-tight mt-1 block">1-WK SPRINTS</span>
-              <span className="text-[11px] text-indigo-400 font-mono">Frame.io Realtime</span>
+              <span className="text-[11px] text-[#C9CCD1] font-mono">Frame.io Realtime</span>
             </div>
           </div>
         </motion.div>
@@ -610,8 +610,8 @@ export function EnchantedVideoExperience() {
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-10 border-b border-white/10">
           <div>
             <div className="flex items-center gap-2 mb-3">
-              <span className="w-2 h-2 rounded-full bg-indigo-500 animate-ping" />
-              <span className="font-mono text-xs uppercase tracking-widest text-indigo-400 font-bold">
+              <span className="w-2 h-2 rounded-full bg-[#C9CCD1] animate-ping" />
+              <span className="font-mono text-xs uppercase tracking-widest text-[#C9CCD1] font-bold">
                 PORTFOLIO SHOWCASE // CLIENT MASTERS
               </span>
             </div>
@@ -641,8 +641,8 @@ export function EnchantedVideoExperience() {
               onClick={() => setSelectedCategory(tab.key)}
               className={`px-4 py-2 rounded-full text-xs font-mono font-bold uppercase tracking-wider transition-all whitespace-nowrap cursor-pointer ${
                 selectedCategory === tab.key
-                  ? 'bg-indigo-600 text-white shadow-[0_0_20px_rgba(99,102,241,0.5)] border border-indigo-400'
-                  : 'bg-white/[0.05] text-gray-400 hover:text-white hover:bg-white/[0.1] border border-white/10'
+                  ? 'bg-[#C9CCD1] text-white shadow-[0_0_20px_rgba(201,204,209,0.5)] border border-[#C9CCD1]'
+                  : 'bg-[#1A1A1A]/[0.05] text-gray-400 hover:text-white hover:bg-[#1A1A1A]/[0.1] border border-white/10'
               }`}
             >
               {tab.label}
@@ -666,7 +666,7 @@ export function EnchantedVideoExperience() {
                 onMouseEnter={() => setHoveredReelId(reel.id)}
                 onMouseLeave={() => setHoveredReelId(null)}
                 onClick={() => setActiveModalReel(reel)}
-                className="group relative rounded-3xl overflow-hidden bg-gradient-to-b from-[#12111d] to-[#0a0a12] border border-white/10 hover:border-indigo-500/50 transition-all duration-500 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:shadow-[0_20px_50px_rgba(99,102,241,0.2)] flex flex-col justify-between cursor-pointer"
+                className="group relative rounded-3xl overflow-hidden bg-gradient-to-b from-[#12111d] to-[#0a0a12] border border-white/10 hover:border-[#C9CCD1]/50 transition-all duration-500 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:shadow-[0_20px_50px_rgba(201,204,209,0.2)] flex flex-col justify-between cursor-pointer"
               >
                 {/* Top Video Player Container */}
                 <div className="relative aspect-[16/10] w-full overflow-hidden bg-black/80">
@@ -693,9 +693,9 @@ export function EnchantedVideoExperience() {
                       <button
                         onClick={(e) => toggleMute(reel.id, e)}
                         title={isMuted ? 'Unmute' : 'Mute'}
-                        className="p-1.5 rounded-full bg-black/70 backdrop-blur-md text-white hover:bg-indigo-600 border border-white/20 transition-colors"
+                        className="p-1.5 rounded-full bg-black/70 backdrop-blur-md text-white hover:bg-[#C9CCD1] border border-white/20 transition-colors"
                       >
-                        {isMuted ? <VolumeX className="w-3.5 h-3.5" /> : <Volume2 className="w-3.5 h-3.5 text-indigo-300" />}
+                        {isMuted ? <VolumeX className="w-3.5 h-3.5" /> : <Volume2 className="w-3.5 h-3.5 text-gray-300" />}
                       </button>
 
                       <span className="px-2 py-1 rounded-full text-[10px] font-mono font-bold bg-black/70 backdrop-blur-md text-gray-300 border border-white/20">
@@ -706,7 +706,7 @@ export function EnchantedVideoExperience() {
 
                   {/* Play Trigger Badge Center */}
                   <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-                    <div className="w-12 h-12 rounded-full bg-white/10 backdrop-blur-md border border-white/30 flex items-center justify-center text-white opacity-0 group-hover:opacity-100 group-hover:scale-110 transition-all duration-300 shadow-[0_0_25px_rgba(99,102,241,0.6)]">
+                    <div className="w-12 h-12 rounded-full bg-[#1A1A1A]/10 backdrop-blur-md border border-white/30 flex items-center justify-center text-white opacity-0 group-hover:opacity-100 group-hover:scale-110 transition-all duration-300 shadow-[0_0_25px_rgba(201,204,209,0.6)]">
                       <Play className="w-5 h-5 fill-white ml-0.5" />
                     </div>
                   </div>
@@ -717,14 +717,14 @@ export function EnchantedVideoExperience() {
                   <div>
                     {/* Performance Metric Pill */}
                     <div className="flex items-center justify-between gap-2 pb-2 mb-3 border-b border-white/10 text-xs font-mono">
-                      <span className="text-indigo-400 font-bold flex items-center gap-1">
-                        <Zap className="w-3 h-3 text-indigo-400" />
+                      <span className="text-[#C9CCD1] font-bold flex items-center gap-1">
+                        <Zap className="w-3 h-3 text-[#C9CCD1]" />
                         {reel.metric}
                       </span>
                       <span className="text-[10px] text-gray-400">#{reel.id}</span>
                     </div>
 
-                    <h3 className="text-xl font-bold uppercase tracking-tight text-white group-hover:text-indigo-300 transition-colors line-clamp-1">
+                    <h3 className="text-xl font-bold uppercase tracking-tight text-white group-hover:text-gray-300 transition-colors line-clamp-1">
                       {reel.title}
                     </h3>
 
@@ -737,13 +737,13 @@ export function EnchantedVideoExperience() {
                   <div className="mt-6 pt-4 border-t border-white/10 flex items-center justify-between">
                     <div className="flex flex-wrap gap-1.5">
                       {reel.specs.slice(0, 2).map((s, idx) => (
-                        <span key={idx} className="text-[10px] font-mono px-2 py-0.5 rounded bg-white/[0.05] text-gray-300 border border-white/10">
+                        <span key={idx} className="text-[10px] font-mono px-2 py-0.5 rounded bg-[#1A1A1A]/[0.05] text-gray-300 border border-white/10">
                           {s}
                         </span>
                       ))}
                     </div>
 
-                    <span className="text-xs font-mono font-bold text-indigo-400 group-hover:translate-x-1 transition-transform flex items-center gap-1 shrink-0">
+                    <span className="text-xs font-mono font-bold text-[#C9CCD1] group-hover:translate-x-1 transition-transform flex items-center gap-1 shrink-0">
                       Theater <Maximize2 className="w-3 h-3" />
                     </span>
                   </div>
@@ -771,12 +771,12 @@ export function EnchantedVideoExperience() {
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.95, opacity: 0 }}
               onClick={(e) => e.stopPropagation()}
-              className="relative w-full max-w-5xl bg-[#0d0c15] border border-indigo-500/40 rounded-3xl overflow-hidden shadow-[0_25px_80px_rgba(0,0,0,0.9),0_0_50px_rgba(99,102,241,0.3)] flex flex-col max-h-[92vh]"
+              className="relative w-full max-w-5xl bg-[#0d0c15] border border-[#C9CCD1]/40 rounded-3xl overflow-hidden shadow-[0_25px_80px_rgba(0,0,0,0.9),0_0_50px_rgba(201,204,209,0.3)] flex flex-col max-h-[92vh]"
             >
               {/* Modal Top Bar */}
               <div className="px-6 py-4 border-b border-white/10 flex items-center justify-between bg-black/40">
                 <div className="flex items-center gap-3">
-                  <span className="px-2.5 py-1 rounded-full text-[10px] font-mono font-bold uppercase bg-indigo-600 text-white">
+                  <span className="px-2.5 py-1 rounded-full text-[10px] font-mono font-bold uppercase bg-[#C9CCD1] text-white">
                     {activeModalReel.categoryLabel}
                   </span>
                   <span className="text-sm font-bold text-white uppercase tracking-tight truncate max-w-md">
@@ -786,7 +786,7 @@ export function EnchantedVideoExperience() {
 
                 <button
                   onClick={() => setActiveModalReel(null)}
-                  className="p-2 rounded-full bg-white/10 hover:bg-white/20 text-white transition-colors cursor-pointer"
+                  className="p-2 rounded-full bg-[#1A1A1A]/10 hover:bg-[#1A1A1A]/20 text-white transition-colors cursor-pointer"
                 >
                   <X className="w-4 h-4" />
                 </button>
@@ -816,7 +816,7 @@ export function EnchantedVideoExperience() {
                   </div>
                   <div>
                     <span className="text-gray-400 block text-[10px] uppercase">Color Grade Stack</span>
-                    <span className="text-indigo-300 font-bold">{activeModalReel.colorGrade}</span>
+                    <span className="text-gray-300 font-bold">{activeModalReel.colorGrade}</span>
                   </div>
                 </div>
 
@@ -827,7 +827,7 @@ export function EnchantedVideoExperience() {
                     </p>
                     <div className="flex flex-wrap gap-2 mt-3">
                       {activeModalReel.specs.map((s, idx) => (
-                        <span key={idx} className="text-[10px] font-mono px-2.5 py-1 rounded-full bg-white/[0.08] text-indigo-200 border border-indigo-500/20">
+                        <span key={idx} className="text-[10px] font-mono px-2.5 py-1 rounded-full bg-[#1A1A1A]/[0.08] text-gray-200 border border-[#C9CCD1]/20">
                           {s}
                         </span>
                       ))}
@@ -837,7 +837,7 @@ export function EnchantedVideoExperience() {
                   <Link
                     href="/contact"
                     onClick={() => setActiveModalReel(null)}
-                    className="shrink-0 px-5 py-2.5 rounded-full bg-indigo-600 hover:bg-indigo-500 text-white font-bold text-xs uppercase tracking-wider shadow-[0_0_20px_rgba(99,102,241,0.5)] transition-all flex items-center gap-1.5"
+                    className="shrink-0 px-5 py-2.5 rounded-full bg-[#C9CCD1] hover:bg-[#C9CCD1] text-white font-bold text-xs uppercase tracking-wider shadow-[0_0_20px_rgba(201,204,209,0.5)] transition-all flex items-center gap-1.5"
                   >
                     <span>Commission This Style ➔</span>
                   </Link>
@@ -854,11 +854,11 @@ export function EnchantedVideoExperience() {
       <section id="capabilities" className="relative px-4 py-20 md:px-8 md:py-28 max-w-7xl mx-auto z-40">
         
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-indigo-500/10 border border-indigo-500/30 text-indigo-300 text-xs font-mono uppercase tracking-widest mb-4">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#C9CCD1]/10 border border-[#C9CCD1]/30 text-gray-300 text-xs font-mono uppercase tracking-widest mb-4">
             ✦ HIGH-VELOCITY PRODUCTION SYSTEMS
           </div>
           <h2 className="text-3xl sm:text-5xl font-black uppercase tracking-tight text-white">
-            The 4 Retention Engines of APERTURE Cinema
+            The 4 Retention Engines of NEXUS Cinema
           </h2>
           <p className="mt-4 text-sm text-gray-400 font-normal leading-relaxed">
             Every frame is deliberately engineered for subconscious engagement. We fuse raw Hollywood optical craft with algorithmic digital distribution.
@@ -868,13 +868,13 @@ export function EnchantedVideoExperience() {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
           
           {/* Bento Card 1: Match-Cut Subconscious Pacing (7 cols) */}
-          <div className="md:col-span-7 rounded-3xl p-8 bg-gradient-to-br from-[#121122] via-[#0d0c18] to-[#07060f] border border-white/10 hover:border-indigo-500/40 transition-all duration-300 shadow-[0_15px_40px_rgba(0,0,0,0.6)] flex flex-col justify-between">
+          <div className="md:col-span-7 rounded-3xl p-8 bg-gradient-to-br from-[#121122] via-[#0d0c18] to-[#07060f] border border-white/10 hover:border-[#C9CCD1]/40 transition-all duration-300 shadow-[0_15px_40px_rgba(0,0,0,0.6)] flex flex-col justify-between">
             <div>
               <div className="flex items-center justify-between pb-4 mb-4 border-b border-white/10">
-                <span className="font-mono text-xs uppercase tracking-wider text-indigo-400 font-bold">
+                <span className="font-mono text-xs uppercase tracking-wider text-[#C9CCD1] font-bold">
                   ENGINE 01 // TEMPORAL DYNAMICS
                 </span>
-                <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-indigo-500/20 text-indigo-300 border border-indigo-500/30 font-bold">
+                <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-[#C9CCD1]/20 text-gray-300 border border-[#C9CCD1]/30 font-bold">
                   85.4% Retention
                 </span>
               </div>
@@ -890,19 +890,19 @@ export function EnchantedVideoExperience() {
             <div className="mt-8 p-4 rounded-2xl bg-black/60 border border-white/10 font-mono text-xs space-y-3">
               <div className="flex items-center justify-between text-[11px] text-gray-400">
                 <span>TIMELINE TRACK: 4K 60FPS SEQUENCE</span>
-                <span className="text-indigo-400 font-bold">LOCKED 23.976 DCI</span>
+                <span className="text-[#C9CCD1] font-bold">LOCKED 23.976 DCI</span>
               </div>
               
               <div className="space-y-1.5">
-                <div className="h-6 w-full rounded bg-indigo-950/80 border border-indigo-500/30 flex items-center px-3 text-[10px] text-indigo-300 justify-between">
+                <div className="h-6 w-full rounded bg-gray-800/80 border border-[#C9CCD1]/30 flex items-center px-3 text-[10px] text-gray-300 justify-between">
                   <span>V1 // A-CAM ANAMORPHIC CUTS</span>
                   <span>1.8s AVG DURATION</span>
                 </div>
-                <div className="h-6 w-full rounded bg-purple-950/80 border border-purple-500/30 flex items-center px-3 text-[10px] text-purple-300 justify-between">
+                <div className="h-6 w-full rounded bg-purple-950/80 border border-[#C9CCD1]/30 flex items-center px-3 text-[10px] text-gray-300 justify-between">
                   <span>V2 // 3D HUD & MOTION OVERLAYS</span>
                   <span>DYNAMIC BLEND</span>
                 </div>
-                <div className="h-6 w-full rounded bg-blue-950/80 border border-blue-500/30 flex items-center px-3 text-[10px] text-blue-300 justify-between">
+                <div className="h-6 w-full rounded bg-blue-950/80 border border-[#C9CCD1]/30 flex items-center px-3 text-[10px] text-gray-300 justify-between">
                   <span>A1 // FOLEY RISERS & SUB-BASS TRANSIENTS</span>
                   <span>-14 LUFS CALIBRATED</span>
                 </div>
@@ -911,13 +911,13 @@ export function EnchantedVideoExperience() {
           </div>
 
           {/* Bento Card 2: Interactive Color Grade Scrubber (5 cols) */}
-          <div className="md:col-span-5 rounded-3xl p-8 bg-gradient-to-br from-[#121122] via-[#0d0c18] to-[#07060f] border border-white/10 hover:border-indigo-500/40 transition-all duration-300 shadow-[0_15px_40px_rgba(0,0,0,0.6)] flex flex-col justify-between">
+          <div className="md:col-span-5 rounded-3xl p-8 bg-gradient-to-br from-[#121122] via-[#0d0c18] to-[#07060f] border border-white/10 hover:border-[#C9CCD1]/40 transition-all duration-300 shadow-[0_15px_40px_rgba(0,0,0,0.6)] flex flex-col justify-between">
             <div>
               <div className="flex items-center justify-between pb-4 mb-4 border-b border-white/10">
                 <span className="font-mono text-xs uppercase tracking-wider text-purple-400 font-bold">
                   ENGINE 02 // COLOR SCIENCE
                 </span>
-                <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-purple-500/20 text-purple-300 border border-purple-500/30 font-bold">
+                <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-[#C9CCD1]/20 text-gray-300 border border-[#C9CCD1]/30 font-bold">
                   DaVinci ACEScc
                 </span>
               </div>
@@ -937,7 +937,7 @@ export function EnchantedVideoExperience() {
                     <span className="font-mono text-xs uppercase font-bold text-white tracking-widest block">
                       GRADED: KODAK 2383 PRINT
                     </span>
-                    <span className="text-[10px] text-indigo-300 font-mono mt-1 block">
+                    <span className="text-[10px] text-gray-300 font-mono mt-1 block">
                       Rich Shadows · Halation Glow · Organic Saturation
                     </span>
                   </div>
@@ -967,21 +967,21 @@ export function EnchantedVideoExperience() {
                   max="90"
                   value={colorGradeSplit}
                   onChange={(e) => setColorGradeSplit(Number(e.target.value))}
-                  className="w-44 accent-indigo-500 cursor-ew-resize"
+                  className="w-44 accent-[#C9CCD1] cursor-ew-resize"
                 />
-                <span className="text-indigo-400 font-bold">Film Print Grade</span>
+                <span className="text-[#C9CCD1] font-bold">Film Print Grade</span>
               </div>
             </div>
           </div>
 
           {/* Bento Card 3: 3D Motion Graphics & Product CGI (5 cols) */}
-          <div className="md:col-span-5 rounded-3xl p-8 bg-gradient-to-br from-[#121122] via-[#0d0c18] to-[#07060f] border border-white/10 hover:border-indigo-500/40 transition-all duration-300 shadow-[0_15px_40px_rgba(0,0,0,0.6)] flex flex-col justify-between">
+          <div className="md:col-span-5 rounded-3xl p-8 bg-gradient-to-br from-[#121122] via-[#0d0c18] to-[#07060f] border border-white/10 hover:border-[#C9CCD1]/40 transition-all duration-300 shadow-[0_15px_40px_rgba(0,0,0,0.6)] flex flex-col justify-between">
             <div>
               <div className="flex items-center justify-between pb-4 mb-4 border-b border-white/10">
                 <span className="font-mono text-xs uppercase tracking-wider text-blue-400 font-bold">
                   ENGINE 03 // SPATIAL CGI
                 </span>
-                <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-blue-500/20 text-blue-300 border border-blue-500/30 font-bold">
+                <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-[#C9CCD1]/20 text-gray-300 border border-[#C9CCD1]/30 font-bold">
                   Cinema 4D + Octane
                 </span>
               </div>
@@ -994,8 +994,8 @@ export function EnchantedVideoExperience() {
             </div>
 
             <div className="mt-6 p-4 rounded-2xl bg-black/60 border border-white/10 flex items-center gap-4">
-              <div className="w-12 h-12 rounded-xl bg-indigo-500/20 border border-indigo-500/30 flex items-center justify-center shrink-0">
-                <Cpu className="w-6 h-6 text-indigo-400" />
+              <div className="w-12 h-12 rounded-xl bg-[#C9CCD1]/20 border border-[#C9CCD1]/30 flex items-center justify-center shrink-0">
+                <Cpu className="w-6 h-6 text-[#C9CCD1]" />
               </div>
               <div>
                 <span className="text-xs font-mono font-bold text-white block">OCTANE PHOTOREALISM</span>
@@ -1005,13 +1005,13 @@ export function EnchantedVideoExperience() {
           </div>
 
           {/* Bento Card 4: Algorithmic Short-Form Packaging (7 cols) */}
-          <div className="md:col-span-7 rounded-3xl p-8 bg-gradient-to-br from-[#121122] via-[#0d0c18] to-[#07060f] border border-white/10 hover:border-indigo-500/40 transition-all duration-300 shadow-[0_15px_40px_rgba(0,0,0,0.6)] flex flex-col justify-between">
+          <div className="md:col-span-7 rounded-3xl p-8 bg-gradient-to-br from-[#121122] via-[#0d0c18] to-[#07060f] border border-white/10 hover:border-[#C9CCD1]/40 transition-all duration-300 shadow-[0_15px_40px_rgba(0,0,0,0.6)] flex flex-col justify-between">
             <div>
               <div className="flex items-center justify-between pb-4 mb-4 border-b border-white/10">
-                <span className="font-mono text-xs uppercase tracking-wider text-indigo-400 font-bold">
+                <span className="font-mono text-xs uppercase tracking-wider text-[#C9CCD1] font-bold">
                   ENGINE 04 // VIRAL PACKAGING
                 </span>
-                <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-indigo-500/20 text-indigo-300 border border-indigo-500/30 font-bold">
+                <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-[#C9CCD1]/20 text-gray-300 border border-[#C9CCD1]/30 font-bold">
                   9:16 Social Engine
                 </span>
               </div>
@@ -1025,7 +1025,7 @@ export function EnchantedVideoExperience() {
 
             <div className="mt-6 grid grid-cols-3 gap-3">
               <div className="p-3 rounded-xl bg-black/60 border border-white/10 text-center">
-                <span className="text-lg font-black text-indigo-400 block">0.8s</span>
+                <span className="text-lg font-black text-[#C9CCD1] block">0.8s</span>
                 <span className="text-[10px] font-mono text-gray-400 uppercase">Hook Window</span>
               </div>
               <div className="p-3 rounded-xl bg-black/60 border border-white/10 text-center">
@@ -1049,7 +1049,7 @@ export function EnchantedVideoExperience() {
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-10">
             <div>
-              <span className="font-mono text-xs uppercase tracking-widest text-indigo-400 font-bold">
+              <span className="font-mono text-xs uppercase tracking-widest text-[#C9CCD1] font-bold">
                 POST-PRODUCTION ARSENAL
               </span>
               <h3 className="text-2xl sm:text-3xl font-extrabold uppercase text-white mt-1">
@@ -1065,11 +1065,11 @@ export function EnchantedVideoExperience() {
             {SOFTWARE_STACK.map((soft, idx) => (
               <div
                 key={idx}
-                className="p-4 rounded-2xl bg-white/[0.03] border border-white/10 hover:border-indigo-500/50 hover:bg-white/[0.06] transition-all flex flex-col justify-between group"
+                className="p-4 rounded-2xl bg-[#1A1A1A]/[0.03] border border-white/10 hover:border-[#C9CCD1]/50 hover:bg-[#1A1A1A]/[0.06] transition-all flex flex-col justify-between group"
               >
                 <div>
                   <span className="text-2xl mb-2 block">{soft.icon}</span>
-                  <h4 className="font-bold text-xs uppercase text-white group-hover:text-indigo-300 transition-colors">
+                  <h4 className="font-bold text-xs uppercase text-white group-hover:text-gray-300 transition-colors">
                     {soft.name}
                   </h4>
                   <p className="text-[10px] text-gray-400 mt-1 font-mono leading-tight">
@@ -1077,7 +1077,7 @@ export function EnchantedVideoExperience() {
                   </p>
                 </div>
                 <div className="mt-4 pt-2 border-t border-white/10">
-                  <span className="text-[9px] font-mono text-indigo-400 font-bold">
+                  <span className="text-[9px] font-mono text-[#C9CCD1] font-bold">
                     {soft.tag}
                   </span>
                 </div>
@@ -1093,7 +1093,7 @@ export function EnchantedVideoExperience() {
       <section id="pipeline" className="relative px-4 py-24 md:px-8 md:py-32 max-w-7xl mx-auto z-40">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
           <div>
-            <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/30 text-indigo-300 text-xs font-mono uppercase tracking-widest mb-3">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#C9CCD1]/10 border border-[#C9CCD1]/30 text-gray-300 text-xs font-mono uppercase tracking-widest mb-3">
               ✦ SPRINT METHODOLOGY
             </div>
             <h2 className="text-3xl sm:text-5xl font-black uppercase tracking-tight text-white">
@@ -1134,19 +1134,19 @@ export function EnchantedVideoExperience() {
           ].map((pipe, idx) => (
             <div
               key={idx}
-              className="rounded-3xl p-6 bg-gradient-to-b from-[#11101d] to-[#090812] border border-white/10 hover:border-indigo-500/50 transition-all flex flex-col justify-between group shadow-[0_10px_30px_rgba(0,0,0,0.4)]"
+              className="rounded-3xl p-6 bg-gradient-to-b from-[#11101d] to-[#090812] border border-white/10 hover:border-[#C9CCD1]/50 transition-all flex flex-col justify-between group shadow-[0_10px_30px_rgba(0,0,0,0.4)]"
             >
               <div>
                 <div className="flex items-center justify-between pb-3 border-b border-white/10">
-                  <span className="font-mono text-2xl font-black text-indigo-400">
+                  <span className="font-mono text-2xl font-black text-[#C9CCD1]">
                     #{pipe.step}
                   </span>
-                  <span className="font-mono text-[9px] uppercase px-2 py-0.5 rounded bg-white/[0.08] text-gray-300">
+                  <span className="font-mono text-[9px] uppercase px-2 py-0.5 rounded bg-[#1A1A1A]/[0.08] text-gray-300">
                     {pipe.tag}
                   </span>
                 </div>
 
-                <h4 className="mt-4 font-extrabold text-lg uppercase text-white group-hover:text-indigo-300 transition-colors">
+                <h4 className="mt-4 font-extrabold text-lg uppercase text-white group-hover:text-gray-300 transition-colors">
                   {pipe.title}
                 </h4>
 
@@ -1157,7 +1157,7 @@ export function EnchantedVideoExperience() {
 
               <div className="mt-6 pt-4 border-t border-white/10 flex items-center justify-between text-xs font-mono text-gray-400">
                 <span>Phase SLA</span>
-                <span className="text-indigo-300 font-bold">Verified Sprint Gate</span>
+                <span className="text-gray-300 font-bold">Verified Sprint Gate</span>
               </div>
             </div>
           ))}
@@ -1169,7 +1169,7 @@ export function EnchantedVideoExperience() {
       {/* ========================================================================= */}
       <section id="pricing" className="relative px-4 py-24 md:px-8 md:py-32 max-w-7xl mx-auto z-40">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="font-mono text-xs uppercase tracking-widest text-indigo-400 font-bold block mb-2">
+          <span className="font-mono text-xs uppercase tracking-widest text-[#C9CCD1] font-bold block mb-2">
             PREDICTABLE INVESTMENT // ZERO AGENCY HIDDEN FEES
           </span>
           <h2 className="text-3xl sm:text-5xl font-black uppercase tracking-tight text-white">
@@ -1186,12 +1186,12 @@ export function EnchantedVideoExperience() {
               key={idx}
               className={`rounded-3xl p-8 flex flex-col justify-between transition-all duration-300 relative ${
                 plan.highlighted
-                  ? 'bg-gradient-to-b from-[#181630] via-[#100e24] to-[#0a0918] border-2 border-indigo-500 shadow-[0_0_50px_rgba(99,102,241,0.35)] scale-105 z-10'
+                  ? 'bg-gradient-to-b from-[#181630] via-[#100e24] to-[#0a0918] border-2 border-[#C9CCD1] shadow-[0_0_50px_rgba(201,204,209,0.35)] scale-105 z-10'
                   : 'bg-gradient-to-b from-[#100f1c] to-[#080712] border border-white/10 hover:border-white/25 shadow-[0_15px_40px_rgba(0,0,0,0.5)]'
               }`}
             >
               {plan.badge && (
-                <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full bg-gradient-to-r from-indigo-500 to-purple-600 text-white font-mono text-[10px] font-black uppercase tracking-wider shadow-lg">
+                <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full bg-gradient-to-r from-[#C9CCD1] to-[#C9CCD1] text-white font-mono text-[10px] font-black uppercase tracking-wider shadow-lg">
                   {plan.badge}
                 </div>
               )}
@@ -1218,7 +1218,7 @@ export function EnchantedVideoExperience() {
                   </span>
                   {plan.features.map((feat, fIdx) => (
                     <div key={fIdx} className="flex items-start gap-2.5 text-xs text-gray-300">
-                      <div className="w-4 h-4 rounded-full bg-indigo-500/20 text-indigo-400 flex items-center justify-center shrink-0 mt-0.5 border border-indigo-500/30">
+                      <div className="w-4 h-4 rounded-full bg-[#C9CCD1]/20 text-[#C9CCD1] flex items-center justify-center shrink-0 mt-0.5 border border-[#C9CCD1]/30">
                         <Check className="w-2.5 h-2.5" />
                       </div>
                       <span>{feat}</span>
@@ -1232,8 +1232,8 @@ export function EnchantedVideoExperience() {
                   href="/contact"
                   className={`w-full py-3.5 px-6 rounded-full font-bold text-xs uppercase tracking-wider transition-all flex items-center justify-center gap-2 ${
                     plan.highlighted
-                      ? 'bg-indigo-600 hover:bg-indigo-500 text-white shadow-[0_0_25px_rgba(99,102,241,0.6)]'
-                      : 'bg-white/10 hover:bg-white/20 text-white border border-white/20'
+                      ? 'bg-[#C9CCD1] hover:bg-[#C9CCD1] text-white shadow-[0_0_25px_rgba(201,204,209,0.6)]'
+                      : 'bg-[#1A1A1A]/10 hover:bg-[#1A1A1A]/20 text-white border border-white/20'
                   }`}
                 >
                   <span>{plan.cta}</span>
@@ -1250,7 +1250,7 @@ export function EnchantedVideoExperience() {
       {/* ========================================================================= */}
       <section id="faq" className="relative px-4 py-20 md:px-8 md:py-28 max-w-4xl mx-auto z-40">
         <div className="text-center mb-14">
-          <span className="font-mono text-xs uppercase tracking-widest text-indigo-400 font-bold block mb-2">
+          <span className="font-mono text-xs uppercase tracking-widest text-[#C9CCD1] font-bold block mb-2">
             ANSWERS & SPECIFICATIONS
           </span>
           <h2 className="text-3xl sm:text-5xl font-black uppercase tracking-tight text-white">
@@ -1273,7 +1273,7 @@ export function EnchantedVideoExperience() {
                   <span className="font-bold text-base sm:text-lg text-white pr-4">
                     {faq.q}
                   </span>
-                  <span className={`w-8 h-8 rounded-full bg-white/[0.05] border border-white/10 flex items-center justify-center shrink-0 transition-transform ${isOpen ? 'rotate-180 bg-indigo-600 text-white' : 'text-gray-400'}`}>
+                  <span className={`w-8 h-8 rounded-full bg-[#1A1A1A]/[0.05] border border-white/10 flex items-center justify-center shrink-0 transition-transform ${isOpen ? 'rotate-180 bg-[#C9CCD1] text-white' : 'text-gray-400'}`}>
                     <ChevronDown className="w-4 h-4" />
                   </span>
                 </button>
@@ -1302,16 +1302,16 @@ export function EnchantedVideoExperience() {
       {/* 10. CLOSING CINEMATIC ENCHANTED CTA */}
       {/* ========================================================================= */}
       <section className="relative px-4 py-28 md:px-8 md:py-36 overflow-hidden z-40 border-t border-white/10 bg-gradient-to-b from-[#050508] via-[#0d0a20] to-[#050508]">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[400px] bg-indigo-600/30 blur-[130px] rounded-full pointer-events-none opacity-30" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[400px] bg-[#C9CCD1]/30 blur-[130px] rounded-full pointer-events-none opacity-30" />
 
         <div className="relative max-w-4xl mx-auto text-center flex flex-col items-center">
-          <div className="w-16 h-16 rounded-3xl bg-gradient-to-tr from-indigo-600 to-purple-600 p-0.5 shadow-[0_0_35px_rgba(99,102,241,0.6)] mb-8 flex items-center justify-center">
+          <div className="w-16 h-16 rounded-3xl bg-gradient-to-tr from-[#C9CCD1] to-[#C9CCD1] p-0.5 shadow-[0_0_35px_rgba(201,204,209,0.6)] mb-8 flex items-center justify-center">
             <div className="w-full h-full bg-[#0d0c15] rounded-[22px] flex items-center justify-center">
-              <Film className="w-8 h-8 text-indigo-400" />
+              <Film className="w-8 h-8 text-[#C9CCD1]" />
             </div>
           </div>
 
-          <span className="font-mono text-xs uppercase tracking-widest text-indigo-300 font-bold block mb-3">
+          <span className="font-mono text-xs uppercase tracking-widest text-gray-300 font-bold block mb-3">
             ELEVATE YOUR VISUAL STANDARD // 2026 ROADMAP
           </span>
 
@@ -1326,7 +1326,7 @@ export function EnchantedVideoExperience() {
           <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
             <Link
               href="/contact"
-              className="relative overflow-hidden group bg-gradient-to-r from-indigo-500 via-indigo-600 to-purple-600 text-white font-black text-sm uppercase tracking-wider px-9 py-4 rounded-full shadow-[0_10px_40px_rgba(99,102,241,0.6)] hover:shadow-[0_15px_50px_rgba(99,102,241,0.9)] hover:scale-105 transition-all flex items-center gap-2"
+              className="relative overflow-hidden group bg-gradient-to-r from-[#C9CCD1] via-[#C9CCD1] to-[#C9CCD1] text-white font-black text-sm uppercase tracking-wider px-9 py-4 rounded-full shadow-[0_10px_40px_rgba(201,204,209,0.6)] hover:shadow-[0_15px_50px_rgba(201,204,209,0.9)] hover:scale-105 transition-all flex items-center gap-2"
             >
               <span className="relative z-10 flex items-center gap-2">
                 Initiate Video Sprint <ArrowRight className="w-4 h-4" />
@@ -1336,7 +1336,7 @@ export function EnchantedVideoExperience() {
 
             <Link
               href="/services"
-              className="px-8 py-4 rounded-full bg-white/[0.08] hover:bg-white/[0.15] border border-white/20 text-white font-bold text-sm uppercase tracking-wider backdrop-blur-xl transition-all"
+              className="px-8 py-4 rounded-full bg-[#1A1A1A]/[0.08] hover:bg-[#1A1A1A]/[0.15] border border-white/20 text-white font-bold text-sm uppercase tracking-wider backdrop-blur-xl transition-all"
             >
               Explore All 11 Services
             </Link>
@@ -1350,8 +1350,8 @@ export function EnchantedVideoExperience() {
       <footer className="relative bg-[#020204] border-t border-white/10 px-4 py-12 md:px-8 z-40 text-xs font-mono text-gray-400">
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-3">
-            <span className="w-2.5 h-2.5 rounded-full bg-indigo-500 animate-pulse" />
-            <span className="text-white font-bold">APERTURE STUDIOS // ENCHANTED VIDEO LABS</span>
+            <span className="w-2.5 h-2.5 rounded-full bg-[#C9CCD1] animate-pulse" />
+            <span className="text-white font-bold">NEXUS Growth // ENCHANTED VIDEO LABS</span>
             <span className="text-gray-500 hidden md:inline">| 4K Cinema Production Suite</span>
           </div>
 
@@ -1368,7 +1368,7 @@ export function EnchantedVideoExperience() {
             <Link href="/services/branding-design" className="hover:text-white transition-colors">
               Branding & Design
             </Link>
-            <Link href="/contact" className="text-indigo-400 hover:underline font-bold">
+            <Link href="/contact" className="text-[#C9CCD1] hover:underline font-bold">
               Book Project ➔
             </Link>
           </div>
