@@ -253,7 +253,7 @@ export default function AppDevelopmentExperience() {
   }, [scrollYProgress, activeAppIndex]);
 
   return (
-    <div className="relative min-h-screen bg-[#0d0f14] text-white selection:bg-[#FF1F1F] selection:text-white overflow-hidden">
+    <div className="relative min-h-screen bg-transparent text-white selection:bg-[#FF1F1F] selection:text-white overflow-hidden">
       {/* 1. Touch-Pulse Custom Cursor */}
       {!isTouch && (
         <motion.div

@@ -118,7 +118,7 @@ export function EyepuneAiExperience() {
   }, [cursorVisible]);
 
   return (
-    <div className="relative min-h-screen bg-[#030000] text-white font-['Outfit',sans-serif] selection:bg-[#FF1F1F] selection:text-white overflow-hidden">
+    <div className="relative min-h-screen bg-transparent text-white font-['Outfit',sans-serif] selection:bg-[#FF1F1F] selection:text-white overflow-hidden">
       
       {/* 1. NOISE & FILM GRAIN OVERLAY */}
       <div 

@@ -287,7 +287,7 @@ export function EnchantedVideoExperience() {
   };
 
   return (
-    <div className="relative w-full bg-[#050508] text-white selection:bg-[#C9CCD1] selection:text-white font-sans overflow-x-hidden min-h-screen">
+    <div className="relative w-full bg-transparent text-white selection:bg-[#C9CCD1] selection:text-white font-sans overflow-x-hidden min-h-screen">
       
 
       {/* ========================================================================= */}

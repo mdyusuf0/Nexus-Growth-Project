@@ -274,7 +274,7 @@ export function JapaneseBrandingExperience() {
   const [selectedProvince, setSelectedProvince] = useState<string>('kyoto');
 
   return (
-    <div className="relative w-full bg-[#0A0A0A] text-[#FFFFFF] overflow-hidden selection:bg-[#FF1F1F] selection:text-[#fffdde]">
+    <div className="relative w-full bg-transparent text-[#FFFFFF] overflow-hidden selection:bg-[#FF1F1F] selection:text-[#fffdde]">
       
 
       {/* 0. FIXED ROTATING CIRCULAR BADGE (Bottom-Left) */}

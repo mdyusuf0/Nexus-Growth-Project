@@ -134,10 +134,9 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="relative w-full bg-[#0A0A0A] text-white overflow-hidden paper-canvas">
+    <div className="relative w-full bg-transparent text-white overflow-hidden paper-canvas">
       {/* SECTION 1: EDITORIAL HERO */}
       <section className="relative px-4 pt-12 pb-20 md:px-8 md:pt-16 md:pb-28 max-w-7xl mx-auto flex flex-col items-center text-center">
-        <GridPulse cell={28} reach={2.4} ambient={2} className="opacity-35" />
         {/* Angled Retro Sticker Badges */}
         <div className="flex flex-wrap items-center justify-center gap-3 mb-8">
           <span className="sticker-badge bg-[#FF1F1F] rotate-[-2deg] text-white">
@@ -289,7 +288,7 @@ export default function Home() {
       </section>
 
       {/* SECTION 5: MANIFESTO & PHILOSOPHY */}
-      <section id="about" className="relative w-full bg-[#0A0A0A] text-white py-24 md:py-36 px-4 md:px-8 border-y border-white/10">
+      <section id="about" className="relative w-full bg-transparent text-white py-24 md:py-36 px-4 md:px-8 border-y border-white/10">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           <div className="lg:col-span-7 space-y-6">
             <span className="sticker-badge bg-[#FF1F1F] text-white">

@@ -4,6 +4,7 @@ import "./globals.css";
 import SmoothScroll from "@/components/layout/SmoothScroll";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import ScrollingTileGridUnderlay from "@/components/ui/ScrollingTileGridUnderlay";
 
 export const metadata: Metadata = {
   title: "NEXUS Growth | Full-Service Creative Production Agency",
@@ -20,10 +21,11 @@ export default function RootLayout({
       lang="en" 
       className={`${fontSans.variable} ${fontSerif.variable} ${fontMono.variable} ${fontDisplay.variable} ${fontGrotesk.variable} ${fontAccent.variable}`}
     >
-      <body className="antialiased bg-[#0A0A0A] text-white min-h-screen flex flex-col selection:bg-[#FF1F1F] selection:text-white">
+      <body className="antialiased bg-[#0A0A0A] text-white min-h-screen flex flex-col selection:bg-[#FF1F1F] selection:text-white relative">
+        <ScrollingTileGridUnderlay />
         <SmoothScroll>
           <Navbar />
-          <main className="flex-grow pt-[var(--nav-offset)]">
+          <main className="relative z-10 flex-grow pt-[var(--nav-offset)]">
             {children}
           </main>
           <Footer />

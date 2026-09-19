@@ -92,7 +92,7 @@ const TECH_STACK = [
 
 export default function WebDevelopmentPage() {
   return (
-    <div className="relative min-h-screen bg-[#0A0A0A] text-white paper-canvas ">
+    <div className="relative min-h-screen bg-transparent text-white paper-canvas ">
       {/* Terminal Block Custom Cursor */}
       <WebDevelopmentTerminalCursor />
 

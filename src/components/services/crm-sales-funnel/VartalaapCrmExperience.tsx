@@ -379,7 +379,7 @@ export function VartalaapCrmExperience() {
   const currentVideo = VIDEO_SHOWCASES.find(v => v.id === activeVideo) || VIDEO_SHOWCASES[0];
 
   return (
-    <div className="relative min-h-screen bg-[#080c14] text-[#f8fafc] selection:bg-[#FF1F1F] selection:text-white overflow-x-hidden">
+    <div className="relative min-h-screen bg-transparent text-[#f8fafc] selection:bg-[#FF1F1F] selection:text-white overflow-x-hidden">
       
       {/* ========================================================================= */}
       {/* 1. ATMOSPHERIC NEON EDGE GLOW & AMBIENT RADIAL LIGHTING */}

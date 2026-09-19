@@ -132,7 +132,7 @@ export default function GoogleMetaAdsExperience() {
   }, [mouseX, mouseY]);
 
   return (
-    <div className="relative min-h-screen bg-[#0A0A0A] text-white selection:bg-[#FF1F1F] selection:text-white overflow-hidden">
+    <div className="relative min-h-screen bg-transparent text-white selection:bg-[#FF1F1F] selection:text-white overflow-hidden">
       {/* 1. Tactical Crosshair / Reticle Custom Cursor */}
       {!isTouch && (
         <motion.div

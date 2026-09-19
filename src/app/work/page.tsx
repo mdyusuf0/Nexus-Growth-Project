@@ -106,7 +106,7 @@ const PROJECTS = [
 
 export default function WorkPage() {
   return (
-    <div className="relative min-h-screen bg-[#0A0A0A] text-white paper-canvas ">
+    <div className="relative min-h-screen bg-transparent text-white paper-canvas ">
       {/* Header */}
       <section className="relative px-4 pt-16 pb-16 md:px-8 md:pt-20 md:pb-20 max-w-7xl mx-auto">
         <div className="flex flex-wrap items-center gap-3 mb-6">
