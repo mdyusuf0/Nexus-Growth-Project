@@ -4,7 +4,7 @@ import "./globals.css";
 import SmoothScroll from "@/components/layout/SmoothScroll";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
-import ScrollingTileGridUnderlay from "@/components/ui/ScrollingTileGridUnderlay";
+import { GridPulse } from "@/components/ui/grid-pulse";
 
 export const metadata: Metadata = {
   title: "NEXUS Growth | Full-Service Creative Production Agency",
@@ -22,7 +22,13 @@ export default function RootLayout({
       className={`${fontSans.variable} ${fontSerif.variable} ${fontMono.variable} ${fontDisplay.variable} ${fontGrotesk.variable} ${fontAccent.variable}`}
     >
       <body className="antialiased bg-[#0A0A0A] text-white min-h-screen flex flex-col selection:bg-[#FF1F1F] selection:text-white relative">
-        <ScrollingTileGridUnderlay />
+        <GridPulse
+          className="fixed inset-0 pointer-events-none -z-10 h-screen w-screen"
+          cell={28}
+          reach={2.5}
+          ambient={2}
+          mask={false}
+        />
         <SmoothScroll>
           <Navbar />
           <main className="relative z-10 flex-grow pt-[var(--nav-offset)]">

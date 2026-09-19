@@ -31,6 +31,7 @@ export interface GridPulseProps extends React.HTMLAttributes<HTMLDivElement> {
   ambient?: number;
   maxLit?: number;
   avoid?: string;
+  mask?: boolean;
 }
 
 export function GridPulse({
@@ -39,6 +40,7 @@ export function GridPulse({
   ambient = 2,
   maxLit = 180,
   avoid = '[data-grid-avoid]',
+  mask = true,
   className,
   style,
   ...props
@@ -217,6 +219,46 @@ export function GridPulse({
       }
     };
 
+    let lastScrollY = typeof window !== 'undefined' ? window.scrollY : 0;
+    const onScroll = () => {
+      const currentScrollY = window.scrollY;
+      const deltaY = currentScrollY - lastScrollY;
+      lastScrollY = currentScrollY;
+
+      if (!isVisible) return;
+      const rect = container.getBoundingClientRect();
+      if (rect.bottom < 0 || rect.top > window.innerHeight) return;
+
+      let px: number;
+      let py: number;
+
+      if (pointerPos) {
+        px = pointerPos.x;
+        py = pointerPos.y;
+      } else {
+        px = rect.width / 2;
+        py = Math.max(0, Math.min(rect.height, window.innerHeight / 2 - rect.top));
+      }
+
+      if (px < 0 || px > rect.width || py < 0 || py > rect.height) return;
+
+      const col = Math.floor(px / cell);
+      const row = Math.floor(py / cell);
+      const steps = Math.min(Math.ceil(Math.abs(deltaY) / (cell * 0.75)), 6);
+      const dir = deltaY > 0 ? 1 : -1;
+
+      for (let s = 0; s <= steps; s++) {
+        const targetRow = row + s * dir;
+        const radius = Math.ceil(reach * 0.85);
+        for (let dx = -radius; dx <= radius; dx++) {
+          if (Math.random() > 0.35) {
+            light(col + dx, targetRow, 280 + Math.random() * 700);
+          }
+        }
+      }
+      wake();
+    };
+
     let isVisible = true;
     let driftTimer = 0;
 
@@ -270,6 +312,8 @@ export function GridPulse({
     document.fonts?.ready?.then(measureText).catch(() => {});
 
     window.addEventListener('pointermove', onMove, { passive: true });
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', measure, { passive: true });
 
     return () => {
       observer.disconnect();
@@ -282,6 +326,8 @@ export function GridPulse({
       cancelAnimationFrame(moveFrame);
       clearTimeout(driftTimer);
       window.removeEventListener('pointermove', onMove);
+      window.removeEventListener('scroll', onScroll);
+      window.removeEventListener('resize', measure);
     };
   }, [cell, reach, ambient, maxLit, avoid]);
 
@@ -293,7 +339,7 @@ export function GridPulse({
       className={cn(
         'pointer-events-none absolute inset-0 overflow-hidden',
         '[--grid-pulse-line:rgba(255,255,255,0.08)]',
-        '[mask-image:linear-gradient(to_bottom,#000_92%,transparent)]',
+        mask && '[mask-image:linear-gradient(to_bottom,#000_92%,transparent)]',
         className
       )}
       style={{
