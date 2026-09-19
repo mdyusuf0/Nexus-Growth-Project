@@ -14,7 +14,7 @@ export function PrintFinishSplitSlider() {
         <div className="flex items-center gap-3">
           <div className="h-3 w-3 rounded-full bg-[#FF1F1F]" />
           <span className="font-mono text-xs font-bold text-white tracking-widest uppercase">
-            TACTILE PRINT SPECIMEN // BEFORE &amp; AFTER FINISH
+            TACTILE PRINT SPECIMEN • BEFORE &amp; AFTER FINISH
           </span>
           <span className="px-2 py-0.5 rounded bg-[#1A1A1A] border border-white/10 text-[10px] font-mono text-[#C9CCD1]">
             FEDRIGONI 380GSM + RED HOT FOIL

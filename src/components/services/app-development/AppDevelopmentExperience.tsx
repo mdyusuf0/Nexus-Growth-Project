@@ -43,7 +43,7 @@ const APPS: AppScreen[] = [
   {
     id: 'pay',
     name: 'NEXUS Pay',
-    category: 'FINTECH // COMMERCE',
+    category: 'FINTECH • COMMERCE',
     icon: CreditCard,
     color: '#FF1F1F',
     accentBg: 'from-red-600/30 via-red-900/40 to-black',
@@ -59,7 +59,7 @@ const APPS: AppScreen[] = [
   {
     id: 'kinetic',
     name: 'Pulse 120Hz',
-    category: 'FITNESS // SENSORS',
+    category: 'FITNESS • SENSORS',
     icon: Flame,
     color: '#FF9500',
     accentBg: 'from-orange-600/30 via-red-900/40 to-black',
@@ -75,7 +75,7 @@ const APPS: AppScreen[] = [
   {
     id: 'audio',
     name: 'AudioVault',
-    category: 'MEDIA // OFFLINE FIRST',
+    category: 'MEDIA • OFFLINE FIRST',
     icon: Music,
     color: '#C9CCD1',
     accentBg: 'from-stone-600/30 via-violet-900/40 to-black',
@@ -91,7 +91,7 @@ const APPS: AppScreen[] = [
   {
     id: 'commerce',
     name: 'Atelier Luxe',
-    category: 'COMMERCE // AR PREVIEW',
+    category: 'COMMERCE • AR PREVIEW',
     icon: ShoppingBag,
     color: '#FF4444',
     accentBg: 'from-red-600/30 via-red-900/40 to-black',
@@ -107,7 +107,7 @@ const APPS: AppScreen[] = [
   {
     id: 'camera',
     name: 'RAW Studio',
-    category: 'VISION // COMPUTE',
+    category: 'VISION • COMPUTE',
     icon: Sparkles,
     color: '#FF1F1F',
     accentBg: 'from-red-600/30 via-red-900/40 to-black',
@@ -123,7 +123,7 @@ const APPS: AppScreen[] = [
   {
     id: 'sync',
     name: 'SyncMesh',
-    category: 'REALTIME // CLOUD',
+    category: 'REALTIME • CLOUD',
     icon: Zap,
     color: '#C9CCD1',
     accentBg: 'from-zinc-600/30 via-neutral-900/40 to-black',
@@ -316,7 +316,7 @@ export default function AppDevelopmentExperience() {
           <div className="flex items-center gap-3">
             <span className="w-2.5 h-2.5 rounded-full bg-[#FF1F1F] animate-ping" />
             <span className="font-mono text-xs uppercase tracking-widest text-red-400 font-bold">
-              DISCIPLINE 02 // NEXUS NATIVE CORE
+              DISCIPLINE 02 • NEXUS NATIVE CORE
             </span>
           </div>
           <div className="flex items-center gap-2 font-mono text-[11px] text-gray-400">
@@ -382,7 +382,7 @@ export default function AppDevelopmentExperience() {
                     </div>
                     <div className="min-w-0">
                       <p className="font-bold text-xs text-white truncate">{app.name}</p>
-                      <p className="text-[10px] font-mono text-gray-400 truncate">{app.category.split('//')[0].trim()}</p>
+                      <p className="text-[10px] font-mono text-gray-400 truncate">{app.category.split('•')[0].trim()}</p>
                     </div>
                   </button>
                 );

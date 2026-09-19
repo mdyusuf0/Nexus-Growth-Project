@@ -351,7 +351,7 @@ export function JapaneseBrandingExperience() {
           {/* Service Hero Headline & Subline */}
           <div className="mb-6 text-center max-w-2xl mx-auto">
             <span className="font-mono text-xs text-[#FF1F1F] tracking-[0.3em] uppercase block mb-2 font-bold">
-              SERVICE 06 // BRAND ARCHITECTURE
+              SERVICE 06 • BRAND ARCHITECTURE
             </span>
             <h1 className="text-3xl sm:text-5xl md:text-6xl font-black text-white uppercase tracking-tight font-['Roboto_Flex'] [font-variation-settings:'wdth'_33] [font-stretch:33%] leading-none">
               Enduring Identity &amp; Spatial Monograms.
@@ -433,8 +433,8 @@ export function JapaneseBrandingExperience() {
 
         {/* Bottom Rail Details */}
         <div className="w-full border-t border-[#fffdde]/25 px-6 sm:px-12 py-4 flex items-center justify-between text-[#fffdde]/80 font-mono text-xs z-20">
-          <span>CHAPTER 01 // OVERVIEW</span>
-          <span className="tracking-widest uppercase">NEXUS Growth // BRAND IDENTITY SHOWCASE</span>
+          <span>CHAPTER 01 • OVERVIEW</span>
+          <span className="tracking-widest uppercase">NEXUS Growth • BRAND IDENTITY SHOWCASE</span>
         </div>
       </section>
 

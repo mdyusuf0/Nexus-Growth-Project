@@ -236,7 +236,7 @@ export function EyepuneAiExperience() {
             {/* Live Indicator Badge */}
             <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-red-950/80 border border-red-800/60 text-red-200 text-xs font-bold uppercase tracking-[0.2em] mb-8 backdrop-blur-md shadow-lg shadow-red-950/30">
               <span className="w-2 h-2 rounded-full bg-red-500 animate-pulse" />
-              GLOBAL AI GROWTH ENGINE // ENTERPRISE SCALE
+              GLOBAL AI GROWTH ENGINE • ENTERPRISE SCALE
             </div>
 
             {/* Colossal Animated Headline */}
@@ -608,7 +608,7 @@ export function EyepuneAiExperience() {
                     {proof.stat}
                   </div>
                   <div className="text-xs font-mono uppercase tracking-wider text-red-400 font-bold">
-                    {proof.label} // {proof.sub}
+                    {proof.label} • {proof.sub}
                   </div>
                 </div>
 
@@ -642,7 +642,7 @@ export function EyepuneAiExperience() {
               </h2>
             </div>
             <span className="text-sm font-mono text-gray-500 uppercase tracking-widest">
-              Updated Weekly // 2026 Editions
+              Updated Weekly • 2026 Editions
             </span>
           </div>
 
@@ -740,7 +740,7 @@ export function EyepuneAiExperience() {
             <div className="lg:col-span-6 bg-[#080103] border border-white/10 rounded-2xl p-6 sm:p-8 space-y-6 shadow-2xl">
               <div className="flex items-center justify-between border-b border-white/10 pb-4">
                 <span className="font-mono text-xs text-red-400 uppercase tracking-widest font-bold">
-                  STEP {auditStep} OF 2 // ARCHITECTURE BENCHMARK
+                  STEP {auditStep} OF 2 • ARCHITECTURE BENCHMARK
                 </span>
                 <span className="text-xs text-gray-500 font-mono">LIVE PREDICTOR</span>
               </div>

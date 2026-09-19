@@ -52,7 +52,7 @@ const FEED_ITEMS: FeedItem[] = [
     likes: '342K',
     shares: '48.2K',
     comments: '1,829',
-    audio: 'NEXUS Sound Design // Original Mix 44.1kHz',
+    audio: 'NEXUS Sound Design • Original Mix 44.1kHz',
     aspect: 'aspect-[9/16]',
     color: '#00f2fe'
   },
@@ -62,12 +62,12 @@ const FEED_ITEMS: FeedItem[] = [
     creator: '@nexus.growth',
     avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&q=80',
     caption: 'Inside our 120Hz mobile app deployment sprint. Seamless offline caching and biometric FaceID auth.',
-    hookType: 'BEHIND-THE-SCENES // SPEC TEARDOWN',
+    hookType: 'BEHIND-THE-SCENES • SPEC TEARDOWN',
     views: '890K',
     likes: '94K',
     shares: '12.4K',
     comments: '642',
-    audio: 'Lo-Fi Tokyo Beats // Tape Cassette #04',
+    audio: 'Lo-Fi Tokyo Beats • Tape Cassette #04',
     aspect: 'aspect-[9/16]',
     color: '#e1306c'
   },
@@ -97,7 +97,7 @@ const FEED_ITEMS: FeedItem[] = [
     likes: '412K',
     shares: '67.4K',
     comments: '2,490',
-    audio: 'Trending Synths // Club Edit',
+    audio: 'Trending Synths • Club Edit',
     aspect: 'aspect-[9/16]',
     color: '#FF1F1F'
   }
@@ -194,7 +194,7 @@ export default function SocialMediaExperience() {
           <div className="flex items-center gap-3">
             <span className="w-2.5 h-2.5 rounded-full bg-[#FF1F1F] animate-ping" />
             <span className="font-mono text-xs uppercase tracking-widest text-[#FF1F1F] font-bold">
-              DISCIPLINE 03 // ALGORITHMIC VIRAL RETENTION
+              DISCIPLINE 03 • ALGORITHMIC VIRAL RETENTION
             </span>
           </div>
           <div className="flex items-center gap-2 font-mono text-[11px] text-[#6E7177]">

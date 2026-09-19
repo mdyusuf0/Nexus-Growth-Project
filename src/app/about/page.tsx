@@ -15,7 +15,7 @@ import {
 } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'About & Manifesto // NEXUS Growth',
+  title: 'About & Manifesto | NEXUS Growth',
   description: 'The anti-agency built for founders who refuse slow corporate bureaucracy. Learn our operating philosophy, sprint methodology, and high-velocity ethos.',
   keywords: ['about NEXUS Growth', 'anti-agency manifesto', 'creative engineering team', 'digital growth agency team'],
 };
@@ -82,7 +82,7 @@ export default function AboutPage() {
               ✦ AGENCY MANIFESTO
             </span>
             <span className="sticker-badge bg-[#1A1A1A] text-white rotate-[1.5deg]">
-              EST. 2026 // GLOBAL CREATIVE LABS
+              EST. 2026 • GLOBAL CREATIVE LABS
             </span>
             <span className="sticker-badge bg-[#C9CCD1] text-white">
               ZERO CORPORATE BUREAUCRACY
@@ -164,7 +164,7 @@ export default function AboutPage() {
               >
                 <div>
                   <span className="font-['Roboto_Flex'] [font-variation-settings:'wdth'_33] [font-stretch:33%] text-4xl font-black text-white block pb-2 border-b-2 border-white/10/10">
-                    LAW // {law.num}
+                    LAW • {law.num}
                   </span>
                   <h3 className="font-['Roboto_Flex'] [font-variation-settings:'wdth'_33] [font-stretch:33%] text-3xl font-extrabold uppercase text-white mt-4 leading-none">
                     {law.title}

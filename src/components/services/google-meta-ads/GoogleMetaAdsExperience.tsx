@@ -41,7 +41,7 @@ const CAMPAIGNS: AdCampaign[] = [
   {
     id: 'c1',
     name: 'Q4 Global Video Prospecting',
-    platform: 'Meta Advantage+ // Instagram & TikTok',
+    platform: 'Meta Advantage+ • Instagram & TikTok',
     budget: '$85,000 / mo',
     spend: '$62,400',
     revenue: '$318,240',
@@ -82,7 +82,7 @@ const CAMPAIGNS: AdCampaign[] = [
 // Funnel Stages
 const FUNNEL_STAGES = [
   {
-    stage: 'STAGE 01 // TOFU',
+    stage: 'STAGE 01 • TOFU',
     name: 'Algorithmic Video Prospecting',
     volume: '2,420,000 Impressions',
     rate: '5.9% High CTR',
@@ -90,7 +90,7 @@ const FUNNEL_STAGES = [
     color: '#C9CCD1'
   },
   {
-    stage: 'STAGE 02 // MOFU',
+    stage: 'STAGE 02 • MOFU',
     name: 'Objection Teardown Retargeting',
     volume: '142,800 Engaged Clicks',
     rate: '68% Hook Retention',
@@ -98,7 +98,7 @@ const FUNNEL_STAGES = [
     color: '#FF1F1F'
   },
   {
-    stage: 'STAGE 03 // BOFU',
+    stage: 'STAGE 03 • BOFU',
     name: 'Instant Checkout & CAPI Sync',
     volume: '12,480 Closed Purchases',
     rate: '4.62x Blended ROAS',
@@ -178,7 +178,7 @@ export default function GoogleMetaAdsExperience() {
           <div className="flex items-center gap-3">
             <span className="w-2.5 h-2.5 rounded-full bg-[#FF1F1F] animate-pulse" />
             <span className="font-mono text-xs uppercase tracking-widest text-[#FF1F1F] font-bold">
-              DISCIPLINE 07 // NEXUS MEDIA OS // PERFORMANCE ACQUISITION
+              DISCIPLINE 07 • NEXUS MEDIA OS • PERFORMANCE ACQUISITION
             </span>
           </div>
           <div className="flex items-center gap-3 font-mono text-[11px] text-[#6E7177]">

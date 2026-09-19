@@ -12,7 +12,7 @@ import {
 } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Selected Work & Concept Showcases // NEXUS Growth',
+  title: 'Selected Work & Concept Showcases | NEXUS Growth',
   description: 'Explore verified concept capability showcases built by NEXUS Growth across web development, native mobile apps, AI automation, and paid growth engines.',
   keywords: ['agency portfolio', 'case studies', 'creative engineering projects', 'Next.js portfolio', 'high-growth client work'],
 };
@@ -22,7 +22,7 @@ const PROJECTS = [
     id: '01',
     title: 'AURA WEARABLES',
     clientType: 'SPATIAL HARDWARE DTC',
-    discipline: 'E-COMMERCE // NEXT.JS',
+    discipline: 'E-COMMERCE • NEXT.JS',
     metric: '+340% CONVERSION LIFT',
     submetric: '0.38s FCP ✦ 100/100 LIGHTHOUSE',
     desc: 'Replacing a 4.2-second legacy Shopify theme with a custom headless Next.js flagship featuring 3D product exploration and instant edge checkout.',
@@ -36,7 +36,7 @@ const PROJECTS = [
     id: '02',
     title: 'KINETIC OS PLATFORM',
     clientType: 'ENTERPRISE SUPPLY TECH',
-    discipline: 'SAAS // AI AUTOMATION',
+    discipline: 'SAAS • AI AUTOMATION',
     metric: '2.1s → 0.4s SPEEDUP',
     submetric: '85% MANUAL FRICTION ELIMINATED',
     desc: 'Ground-up redesign and autonomous workflow orchestration for an enterprise logistics platform processing $40M annually.',
@@ -50,7 +50,7 @@ const PROJECTS = [
     id: '03',
     title: 'SOLSTICE COFFEE ROASTERS',
     clientType: 'SPECIALTY COFFEE DTC',
-    discipline: 'BRANDING // SOCIAL VIRALITY',
+    discipline: 'BRANDING • SOCIAL VIRALITY',
     metric: '+890% ENGAGEMENT',
     submetric: '14.2M VIEWS ✦ 4.2X AD ROAS',
     desc: 'Editorial packaging, brutalist social campaigns, and TikTok growth systems that drove a DTC subscription brand to national retail distribution.',
@@ -64,7 +64,7 @@ const PROJECTS = [
     id: '04',
     title: 'VERVE CREATIVE SUITE',
     clientType: 'CREATOR ECONOMY APP',
-    discipline: 'MOBILE APP // CRM FUNNEL',
+    discipline: 'MOBILE APP • CRM FUNNEL',
     metric: '42K MAU IN 90 DAYS',
     submetric: '4.9 ★ STORE RATING (3K REVIEWS)',
     desc: 'Cross-platform mobile application and automated onboarding funnel designed for high retention and seamless organic invites.',
@@ -78,7 +78,7 @@ const PROJECTS = [
     id: '05',
     title: 'LUMEN SPATIAL AUDIO',
     clientType: 'AUDIO TECH HARDWARE',
-    discipline: 'WEB AUDIO // 3D STAGE',
+    discipline: 'WEB AUDIO • 3D STAGE',
     metric: '100/100 VITALS',
     submetric: 'SUB-10MS WEB AUDIO LATENCY',
     desc: 'Interactive browser audio equalizer and 3D acoustics simulator demonstrating spatial hardware sound profiles prior to purchase.',
@@ -171,7 +171,7 @@ export default function WorkPage() {
               <div className="lg:col-span-5 space-y-5">
                 <div>
                   <span className="font-mono text-xs text-[#C9CCD1] font-bold uppercase block mb-1">
-                    CLIENT ARCHETYPE // {project.clientType}
+                    CLIENT ARCHETYPE • {project.clientType}
                   </span>
                   <h2 className="font-['Roboto_Flex'] [font-variation-settings:'wdth'_33] [font-stretch:33%] text-4xl sm:text-5xl font-extrabold uppercase text-white leading-none">
                     {project.title}

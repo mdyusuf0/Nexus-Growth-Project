@@ -108,7 +108,7 @@ export default function WebDevelopmentPage() {
               DIGITAL PRODUCT &amp; ENGINEERING
             </span>
             <span className="sticker-badge bg-[#C9CCD1] text-white">
-              NEXT.JS 16 // GSAP 3 // TURBOPACK
+              NEXT.JS 16 • GSAP 3 • TURBOPACK
             </span>
           </div>
 

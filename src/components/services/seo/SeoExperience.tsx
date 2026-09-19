@@ -41,7 +41,7 @@ const QUERIES: SerpQuery[] = [
     volume: '14,800/mo',
     kd: '78 (Hard)',
     url: 'https://nexusgrowth.co/services/web-development',
-    title: 'NEXUS Growth™ // Next.js 16 & React 19 Enterprise Architecture',
+    title: 'NEXUS Growth™ | Next.js 16 & React 19 Enterprise Architecture',
     snippet: 'Custom Next.js App Router engineering with sub-second TTFB, 99+ mobile Core Web Vitals, and hardware-accelerated GSAP motion for high-growth brands.',
     sitelinks: ['Core Web Vitals Spec', 'Architecture Roadmap', 'Client Case Studies', 'Book Sprint'],
     initialRank: 48,
@@ -53,7 +53,7 @@ const QUERIES: SerpQuery[] = [
     volume: '22,400/mo',
     kd: '84 (Hard)',
     url: 'https://nexusgrowth.co/services/app-development',
-    title: 'NEXUS Growth™ // Native iOS & Android 120Hz Mobile Engineering',
+    title: 'NEXUS Growth™ | Native iOS & Android 120Hz Mobile Engineering',
     snippet: 'Turnkey React Native & Expo mobile architectures. Fluid 120Hz gesture physics, offline SQLite sync, and biometric auth that turn users into daily active buyers.',
     sitelinks: ['120Hz Skia Demo', 'Offline-First DB', 'RevenueCat IAP', 'Schedule Triage'],
     initialRank: 36,
@@ -65,7 +65,7 @@ const QUERIES: SerpQuery[] = [
     volume: '9,200/mo',
     kd: '65 (Medium)',
     url: 'https://nexusgrowth.co/services/crm-sales-funnel',
-    title: 'NEXUS Pipeline OS // 1-Click WhatsApp Video Checkout Funnels',
+    title: 'NEXUS Pipeline OS | 1-Click WhatsApp Video Checkout Funnels',
     snippet: 'Convert commercial film viewers directly into closed revenue. Sub-20 second WhatsApp conversational checkout powered by multi-agent AI inventory sync.',
     sitelinks: ['WhatsApp Simulator', 'Apple Pay 1-Click', 'HubSpot Webhooks', 'Agency Rates'],
     initialRank: 29,
@@ -174,7 +174,7 @@ export default function SeoExperience() {
           <div className="flex items-center gap-3">
             <span className="w-2.5 h-2.5 rounded-full bg-[#FF1F1F] animate-ping" />
             <span className="font-mono text-xs uppercase tracking-widest text-[#FF1F1F] font-bold">
-              DISCIPLINE 10 // ALGORITHMIC SEARCH DOMINANCE
+              DISCIPLINE 10 • ALGORITHMIC SEARCH DOMINANCE
             </span>
           </div>
           <div className="flex items-center gap-2 font-mono text-[11px] text-[#6E7177]">

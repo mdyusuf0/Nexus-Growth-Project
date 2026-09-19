@@ -113,7 +113,7 @@ export function WireframeLiveToggle() {
                 <div className="md:col-span-5 h-56 border-2 border-dashed border-[#FF1F1F]/40 rounded-xl bg-white/[0.02] flex flex-col items-center justify-center p-4 text-center">
                   <Cpu className="w-10 h-10 text-[#FF1F1F]/60 mb-2 animate-pulse" />
                   <span className="text-[11px] text-white/70">REACT_19_CANVAS_SLOT</span>
-                  <span className="text-[9px] text-[#6E7177] mt-1">GSAP ScrollTrigger // 60FPS Pin</span>
+                  <span className="text-[9px] text-[#6E7177] mt-1">GSAP ScrollTrigger • 60FPS Pin</span>
                 </div>
               </div>
 
@@ -331,7 +331,7 @@ export function HorizontalSprintPipeline() {
         <div className="space-y-2 max-w-xl">
           <div className="flex items-center gap-3">
             <span className="px-2.5 py-1 rounded bg-[#FF1F1F]/20 border border-[#FF1F1F]/40 text-[#FF1F1F] font-mono text-xs font-bold">
-              PHASE {sprints[activeSprint].num} // {sprints[activeSprint].tag}
+              PHASE {sprints[activeSprint].num} • {sprints[activeSprint].tag}
             </span>
             <span className="font-mono text-xs text-[#C9CCD1]">{sprints[activeSprint].time}</span>
           </div>

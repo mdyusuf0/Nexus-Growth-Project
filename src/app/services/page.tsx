@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { ArrowUpRight, ArrowRight, Sparkles, Filter } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'All Capabilities & Services // NEXUS Growth',
+  title: 'All Capabilities & Services | NEXUS Growth',
   description: 'Explore the 11 integrated creative production capabilities of NEXUS Growth. Web development, mobile apps, AI automation, branding, paid media, and conversion funnels.',
   keywords: ['agency services', 'digital growth capabilities', 'full service agency', 'web development', 'paid ads', 'branding'],
 };
@@ -161,7 +161,7 @@ export default function ServicesHubPage() {
               <div>
                 <div className="flex items-center justify-between pb-3 border-b-2 border-white/10/10">
                   <span className="font-mono text-xs font-black text-white">
-                    SPEC // #{srv.id}
+                    SPEC • #{srv.id}
                   </span>
                   <div className="flex items-center gap-1.5">
                     {srv.flag && (

@@ -39,7 +39,7 @@ export default function WebDevelopmentTerminalCursor() {
         _
       </motion.div>
       <span className="font-mono text-[9px] font-bold text-white bg-[#1A1A1A] px-1.5 py-0.5 rounded border border-white/20 shadow-[0_0_8px_rgba(255,31,31,0.3)]">
-        DEV // 100
+        DEV • 100
       </span>
     </motion.div>
   );

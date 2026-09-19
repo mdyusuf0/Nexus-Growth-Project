@@ -41,7 +41,7 @@ const PROJECTS: DesignProject[] = [
   {
     id: '01',
     title: 'Kurogane Botanical Packaging',
-    category: 'PHYSICAL PRODUCT // LUXURY PACKAGING',
+    category: 'PHYSICAL PRODUCT • LUXURY PACKAGING',
     year: '2026',
     color: '#FF1F1F',
     aspect: 'aspect-[4/5]',
@@ -53,7 +53,7 @@ const PROJECTS: DesignProject[] = [
   {
     id: '02',
     title: 'Tokyo Cyberpunk OOH Takeover',
-    category: 'LARGE FORMAT // BILLBOARD CAMPAIGN',
+    category: 'LARGE FORMAT • BILLBOARD CAMPAIGN',
     year: '2026',
     color: '#FF1F1F',
     aspect: 'aspect-[16/9]',
@@ -65,7 +65,7 @@ const PROJECTS: DesignProject[] = [
   {
     id: '03',
     title: 'Venture Keynote & Editorial Deck',
-    category: 'DIGITAL ASSETS // PITCH ARCHITECTURE',
+    category: 'DIGITAL ASSETS • PITCH ARCHITECTURE',
     year: '2026',
     color: '#C9CCD1',
     aspect: 'aspect-[16/10]',
@@ -77,7 +77,7 @@ const PROJECTS: DesignProject[] = [
   {
     id: '04',
     title: 'Bespoke Variable Type Specimen',
-    category: 'TYPOGRAPHY // CUSTOM LETTERING',
+    category: 'TYPOGRAPHY • CUSTOM LETTERING',
     year: '2026',
     color: '#FF1F1F',
     aspect: 'aspect-square',
@@ -89,7 +89,7 @@ const PROJECTS: DesignProject[] = [
   {
     id: '05',
     title: 'Heavyweight Studio Capsule Merch',
-    category: 'MERCHANDISE // APPAREL CURATION',
+    category: 'MERCHANDISE • APPAREL CURATION',
     year: '2026',
     color: '#FF1F1F',
     aspect: 'aspect-[3/4]',
@@ -101,7 +101,7 @@ const PROJECTS: DesignProject[] = [
   {
     id: '06',
     title: 'NEXUS Spatial Identity Manual',
-    category: 'BRAND IDENTITY // SYSTEM RULES',
+    category: 'BRAND IDENTITY • SYSTEM RULES',
     year: '2026',
     color: '#FF1F1F',
     aspect: 'aspect-[4/3]',
@@ -260,7 +260,7 @@ export default function GraphicDesignExperience() {
           <div className="flex items-center gap-3">
             <span className="w-2.5 h-2.5 rounded-full bg-[#FF1F1F] animate-pulse" />
             <span className="font-mono text-xs uppercase tracking-widest text-red-400 font-bold">
-              DISCIPLINE 05 // TACTILE EDITORIAL GRAPHICS
+              DISCIPLINE 05 • TACTILE EDITORIAL GRAPHICS
             </span>
           </div>
           <div className="flex items-center gap-3 font-mono text-[11px] text-gray-400">
@@ -302,7 +302,7 @@ export default function GraphicDesignExperience() {
             <div className="flex items-center gap-2">
               <SlidersHorizontal className="w-4 h-4 text-red-400" />
               <span className="font-mono text-xs uppercase tracking-wider text-white font-bold">
-                Studio Ink Library // Click Swatch to Sample
+                Studio Ink Library • Click Swatch to Sample
               </span>
             </div>
             {copiedHex && (
@@ -390,7 +390,7 @@ export default function GraphicDesignExperience() {
                   className="object-cover transition-transform duration-700 group-hover:scale-105"
                 />
                 <div className="absolute top-3 left-3 px-2.5 py-1 rounded-full text-[10px] font-mono font-bold uppercase tracking-wider bg-black/80 text-white backdrop-blur-md border border-white/20">
-                  {proj.id} // {proj.year}
+                  {proj.id} • {proj.year}
                 </div>
               </div>
 

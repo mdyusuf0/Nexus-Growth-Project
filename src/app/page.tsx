@@ -28,7 +28,7 @@ const CASE_STUDIES = [
   {
     id: '01',
     title: 'AURA WEARABLES',
-    category: 'E-COMMERCE // NEXT.JS',
+    category: 'E-COMMERCE • NEXT.JS',
     metric: '+340% CONVERSION LIFT',
     submetric: '0.38s FCP ✦ 100/100 LIGHTHOUSE',
     desc: 'Replacing a 4.2-second legacy Shopify theme with a custom headless Next.js flagship featuring 3D product exploration and instant edge checkout.',
@@ -38,7 +38,7 @@ const CASE_STUDIES = [
   {
     id: '02',
     title: 'KINETIC OS PLATFORM',
-    category: 'SAAS // AI AUTOMATION',
+    category: 'SAAS • AI AUTOMATION',
     metric: '2.1s → 0.4s SPEEDUP',
     submetric: '85% AUTOMATED WORKFLOWS',
     desc: 'Ground-up redesign and autonomous workflow orchestration for an enterprise logistics platform processing $40M annually.',
@@ -48,7 +48,7 @@ const CASE_STUDIES = [
   {
     id: '03',
     title: 'SOLSTICE ROASTERS',
-    category: 'BRANDING // SOCIAL VIRALITY',
+    category: 'BRANDING • SOCIAL VIRALITY',
     metric: '+890% ENGAGEMENT',
     submetric: '4.2X PAID AD ROAS',
     desc: 'Editorial packaging, brutalist social campaigns, and TikTok growth systems that drove a DTC subscription brand to national retail distribution.',
@@ -58,7 +58,7 @@ const CASE_STUDIES = [
   {
     id: '04',
     title: 'VERVE CREATIVE SUITE',
-    category: 'MOBILE APP // CRM FUNNEL',
+    category: 'MOBILE APP • CRM FUNNEL',
     metric: '42K MAU IN 90 DAYS',
     submetric: '$180K MRR LAUNCH RUNWAY',
     desc: 'Cross-platform mobile application and automated onboarding funnel designed for high retention and seamless organic invites.',
@@ -145,7 +145,7 @@ export default function Home() {
             TOP 1% CREATIVE DIRECTION
           </span>
           <span className="sticker-badge bg-[#1A1A1A] rotate-[-1deg] text-white">
-            EST. 2026 // AWWWARDS SOTD LEVEL
+            EST. 2026 • AWWWARDS SOTD LEVEL
           </span>
         </div>
 
@@ -268,7 +268,7 @@ export default function Home() {
       <section id="services" className="relative px-4 py-20 md:px-8 md:py-28 max-w-7xl mx-auto">
         <div className="text-center max-w-3xl mx-auto mb-12">
           <div className="inline-flex items-center gap-2 rounded-full border-2 border-white/10 bg-[#1A1A1A] px-4 py-1 font-mono text-xs font-bold uppercase shadow-[0_0_20px_rgba(255,31,31,0.15)] mb-4">
-            <Sparkles className="h-3.5 w-3.5 text-[#FF1F1F]" /> 21ST.DEV // STACK SPREAD
+            <Sparkles className="h-3.5 w-3.5 text-[#FF1F1F]" /> 21ST.DEV • STACK SPREAD
           </div>
           <h2 className="u-title-200 tracking-tight text-white">
             The Growth Capability Deck
@@ -331,7 +331,7 @@ export default function Home() {
                 />
               </div>
               <div className="mt-4 flex items-center justify-between font-mono text-xs text-white">
-                <span className="font-bold">SYSTEM METRICS // Q3 AUDIT</span>
+                <span className="font-bold">SYSTEM METRICS • Q3 AUDIT</span>
                 <span className="text-[#FF1F1F] font-bold">+340% VERIFIED</span>
               </div>
             </div>
@@ -366,7 +366,7 @@ export default function Home() {
               <div>
                 <div className="flex items-center justify-between pb-3 border-b-2 border-white/10">
                   <span className="font-mono text-xs font-black text-white">
-                    #{srv.id} // SPEC
+                    #{srv.id} • SPEC
                   </span>
                   <span className="sticker-badge text-[9px] py-0.5 px-2 bg-[#121212] text-white shadow-none">
                     {srv.tag}

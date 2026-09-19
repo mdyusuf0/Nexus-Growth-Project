@@ -17,7 +17,7 @@ import {
 import { ContactForm } from '@/components/contact/ContactForm';
 
 export const metadata: Metadata = {
-  title: 'Initiate Transmission // Contact NEXUS Growth',
+  title: 'Initiate Transmission | Contact NEXUS Growth',
   description: 'Initiate a sprint inquiry with NEXUS Growth. No 3-week discovery delays or junior account reps. Direct senior practitioner access with a guaranteed 24-hour strategic review.',
   keywords: ['hire digital agency', 'Next.js agency inquiry', 'branding sprint contact', 'creative engineering sprint', 'growth agency contact'],
 };
@@ -58,7 +58,7 @@ export default function ContactPage() {
           <div className="flex flex-wrap items-center gap-3 mb-5">
             <div className="sticker-badge bg-[#FF1F1F] text-white">
               <Sparkles className="h-3.5 w-3.5" />
-              <span>TRANSMISSION FREQUENCY // DIRECT SPRINT DISPATCH</span>
+              <span>TRANSMISSION FREQUENCY • DIRECT SPRINT DISPATCH</span>
             </div>
             <div className="sticker-badge bg-[#1A1A1A] text-white font-mono">
               <span className="h-2 w-2 rounded-full bg-[#FF1F1F] animate-pulse mr-1" />
@@ -255,7 +255,7 @@ export default function ContactPage() {
                 className="tactile-card p-6 bg-[#1A1A1A] border-2 border-white/10 shadow-[0_0_20px_rgba(255,31,31,0.15)]"
               >
                 <div className="font-mono text-xs font-bold text-[#C9CCD1] mb-2 uppercase">
-                  QUESTION // 0{idx + 1}
+                  QUESTION • 0{idx + 1}
                 </div>
                 <h3 className="font-['Roboto_Flex'] text-lg font-bold uppercase [font-variation-settings:'wdth'_33] [font-stretch:33%] text-white mb-2">
                   {faq.q}
@@ -283,7 +283,7 @@ export default function ContactPage() {
           </div>
 
           <a 
-            href="mailto:founders@nexusgrowth.co?subject=Urgent%20Sprint%20Inquiry%20//%20NEXUS%20Growth%20STUDIOS"
+            href="mailto:founders@nexusgrowth.co?subject=Urgent%20Sprint%20Inquiry%20-%20NEXUS%20Growth%20STUDIOS"
             className="c-button c-button-ink text-sm sm:text-base whitespace-nowrap"
           >
             Open Mail Client <ArrowUpRight className="h-4 w-4 text-[#FF1F1F]" />

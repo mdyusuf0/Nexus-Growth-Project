@@ -376,17 +376,6 @@ export default function Navbar() {
                           11 INTEGRATED DISCIPLINES
                         </span>
                       </div>
-
-                      {/* Architecture Subtitle & Telemetry */}
-                      <div className="hidden lg:flex items-center gap-2 text-xs font-mono text-[#8E929A] uppercase tracking-wider">
-                        <span className="text-white/20">//</span>
-                        <span>Full-Stack Digital Growth Architecture</span>
-                        <span className="text-white/20">//</span>
-                        <span className="inline-flex items-center gap-1.5 text-white/80">
-                          <span className="h-1.5 w-1.5 rounded-full bg-[#FF1F1F]" />
-                          LATENCY &lt; 0.2s
-                        </span>
-                      </div>
                     </div>
 
                     {/* Quick Action Link */}

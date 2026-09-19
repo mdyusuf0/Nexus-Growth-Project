@@ -192,7 +192,7 @@ const VIDEO_SHOWCASES: VideoReel[] = [
   },
   {
     id: 'ai-core',
-    title: 'NEXUS Neural Core // 3D Product & Data Sync',
+    title: 'NEXUS Neural Core • 3D Product & Data Sync',
     subtitle: 'Real-time classification, inventory verification, and CRM webhook routing across 100k+ concurrent buyer threads',
     category: '3D KINETIC AI DEMO',
     src: '/videos/vartalaap/ai-core-motion.mp4',
@@ -206,7 +206,7 @@ const VIDEO_SHOWCASES: VideoReel[] = [
   },
   {
     id: 'voice-agent',
-    title: 'Voice Telephony AI // Studio Audio Cadence',
+    title: 'Voice Telephony AI • Studio Audio Cadence',
     subtitle: 'Human-grade phone dialogue engineered with sub-500ms voice synthesis and intelligent interruptibility',
     category: 'VOICE AGENT REEL',
     src: '/videos/vartalaap/conversational-voice-demo.mp4',
@@ -220,7 +220,7 @@ const VIDEO_SHOWCASES: VideoReel[] = [
   },
   {
     id: 'enterprise-suite',
-    title: 'Enterprise Brand Overhaul // Global Scale Operations',
+    title: 'Enterprise Brand Overhaul • Global Scale Operations',
     subtitle: 'Flagship brand film demonstrating multi-brand customer engagement and CRM governance',
     category: 'ENTERPRISE PRODUCTION SUITE',
     src: '/videos/vartalaap/enterprise-omnichannel.mp4',
@@ -430,7 +430,7 @@ export function VartalaapCrmExperience() {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-red-500"></span>
             </span>
-            <span className="tracking-widest uppercase">NEXUS PIPELINE OS // SERVICE 11: AUTOMATED CONVERSION ARCHITECTURE</span>
+            <span className="tracking-widest uppercase">NEXUS PIPELINE OS • SERVICE 11: AUTOMATED CONVERSION ARCHITECTURE</span>
           </motion.div>
 
           {/* Central Interactive Holographic Orb with Floating Dialogue Avatars */}
@@ -658,7 +658,7 @@ export function VartalaapCrmExperience() {
                 <div className="flex items-center justify-between text-xs font-mono mb-4 text-gray-400">
                   <span className="flex items-center gap-1.5 text-red-400 font-bold">
                     <span className="w-2 h-2 rounded-full bg-red-400 animate-pulse" />
-                    TRACK 01 // D2C VIDEO DROP
+                    TRACK 01 • D2C VIDEO DROP
                   </span>
                   <span>Click-to-WhatsApp Ad</span>
                 </div>
@@ -711,7 +711,7 @@ export function VartalaapCrmExperience() {
                 <div className="flex items-center justify-between text-xs font-mono mb-4 text-gray-400">
                   <span className="flex items-center gap-1.5 text-red-400 font-bold">
                     <span className="w-2 h-2 rounded-full bg-red-400 animate-pulse" />
-                    TRACK 02 // AGENCY PIPELINE
+                    TRACK 02 • AGENCY PIPELINE
                   </span>
                   <span>HubSpot / Close Sync</span>
                 </div>
@@ -764,7 +764,7 @@ export function VartalaapCrmExperience() {
                 <div className="flex items-center justify-between text-xs font-mono mb-4 text-gray-400">
                   <span className="flex items-center gap-1.5 text-stone-400 font-bold">
                     <span className="w-2 h-2 rounded-full bg-stone-400 animate-pulse" />
-                    TRACK 03 // 24/7 CLIENT OPS
+                    TRACK 03 • 24/7 CLIENT OPS
                   </span>
                   <span>Automated Asset Delivery</span>
                 </div>
@@ -1334,7 +1334,7 @@ export function VartalaapCrmExperience() {
             {/* Plan 1: Launchpad */}
             <div className="p-8 rounded-3xl bg-[#090e1a] border border-white/10 flex flex-col justify-between">
               <div>
-                <div className="text-xs font-mono text-gray-400 mb-2">TIER 01 // FOUNDATION</div>
+                <div className="text-xs font-mono text-gray-400 mb-2">TIER 01 • FOUNDATION</div>
                 <h3 className="font-['Syne'] text-2xl font-bold text-white">Starter Funnel Launchpad</h3>
                 <div className="font-['Syne'] text-4xl font-extrabold text-white mt-4">$3,800</div>
                 <div className="text-xs text-gray-400 mt-1 font-mono">One-time sprint delivery (10 business days)</div>
@@ -1374,7 +1374,7 @@ export function VartalaapCrmExperience() {
               </div>
 
               <div>
-                <div className="text-xs font-mono text-red-400 mb-2">TIER 02 // SCALE ENGINE</div>
+                <div className="text-xs font-mono text-red-400 mb-2">TIER 02 • SCALE ENGINE</div>
                 <h3 className="font-['Syne'] text-2xl font-bold text-white">Omnichannel Growth Engine</h3>
                 <div className="font-['Syne'] text-4xl font-extrabold text-red-300 mt-4">$6,500 <span className="text-base text-gray-400 font-sans font-normal">/ mo</span></div>
                 <div className="text-xs text-gray-400 mt-1 font-mono">Full engineering team + continuous optimization</div>
@@ -1414,7 +1414,7 @@ export function VartalaapCrmExperience() {
             {/* Plan 3: Enterprise */}
             <div className="p-8 rounded-3xl bg-[#090e1a] border border-white/10 flex flex-col justify-between">
               <div>
-                <div className="text-xs font-mono text-stone-400 mb-2">TIER 03 // ENTERPRISE</div>
+                <div className="text-xs font-mono text-stone-400 mb-2">TIER 03 • ENTERPRISE</div>
                 <h3 className="font-['Syne'] text-2xl font-bold text-white">Enterprise Architecture</h3>
                 <div className="font-['Syne'] text-4xl font-extrabold text-stone-300 mt-4">$12,500</div>
                 <div className="text-xs text-gray-400 mt-1 font-mono">Custom VPC / On-Prem / Unlimited Threads</div>
@@ -1560,7 +1560,7 @@ export function VartalaapCrmExperience() {
         <div className="max-w-7xl mx-auto relative z-10 flex flex-col sm:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-3">
             <span className="w-2.5 h-2.5 rounded-full bg-red-400 animate-pulse" />
-            <span className="text-white font-bold">NEXUS Growth // PIPELINE CONVERSION SUITE</span>
+            <span className="text-white font-bold">NEXUS Growth • PIPELINE CONVERSION SUITE</span>
             <span className="text-gray-500 hidden md:inline">| Service 11 Platform</span>
           </div>
 

@@ -377,7 +377,7 @@ export function EnchantedVideoExperience() {
           <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-[#1A1A1A]/[0.06] border border-white/15 backdrop-blur-xl shadow-[0_0_20px_rgba(201,204,209,0.25)] mb-6">
             <span className="w-2 h-2 rounded-full bg-[#C9CCD1] animate-pulse" />
             <span className="font-mono text-xs uppercase tracking-widest text-gray-200 font-semibold">
-              ✦ NEXUS Growth Cinematic Labs // 4K PRODUCTION & POST
+              ✦ NEXUS Growth Cinematic Labs • 4K PRODUCTION & POST
             </span>
           </div>
 
@@ -456,7 +456,7 @@ export function EnchantedVideoExperience() {
             <div className="flex items-center gap-2 mb-3">
               <span className="w-2 h-2 rounded-full bg-[#C9CCD1] animate-ping" />
               <span className="font-mono text-xs uppercase tracking-widest text-[#C9CCD1] font-bold">
-                PORTFOLIO SHOWCASE // CLIENT MASTERS
+                PORTFOLIO SHOWCASE • CLIENT MASTERS
               </span>
             </div>
             <h2 className="text-3xl sm:text-5xl font-black uppercase tracking-tight text-white">
@@ -716,7 +716,7 @@ export function EnchantedVideoExperience() {
             <div>
               <div className="flex items-center justify-between pb-4 mb-4 border-b border-white/10">
                 <span className="font-mono text-xs uppercase tracking-wider text-[#C9CCD1] font-bold">
-                  ENGINE 01 // TEMPORAL DYNAMICS
+                  ENGINE 01 • TEMPORAL DYNAMICS
                 </span>
                 <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-[#C9CCD1]/20 text-gray-300 border border-[#C9CCD1]/30 font-bold">
                   85.4% Retention
@@ -739,15 +739,15 @@ export function EnchantedVideoExperience() {
               
               <div className="space-y-1.5">
                 <div className="h-6 w-full rounded bg-gray-800/80 border border-[#C9CCD1]/30 flex items-center px-3 text-[10px] text-gray-300 justify-between">
-                  <span>V1 // A-CAM ANAMORPHIC CUTS</span>
+                  <span>V1 • A-CAM ANAMORPHIC CUTS</span>
                   <span>1.8s AVG DURATION</span>
                 </div>
                 <div className="h-6 w-full rounded bg-purple-950/80 border border-[#C9CCD1]/30 flex items-center px-3 text-[10px] text-gray-300 justify-between">
-                  <span>V2 // 3D HUD & MOTION OVERLAYS</span>
+                  <span>V2 • 3D HUD & MOTION OVERLAYS</span>
                   <span>DYNAMIC BLEND</span>
                 </div>
                 <div className="h-6 w-full rounded bg-blue-950/80 border border-[#C9CCD1]/30 flex items-center px-3 text-[10px] text-gray-300 justify-between">
-                  <span>A1 // FOLEY RISERS & SUB-BASS TRANSIENTS</span>
+                  <span>A1 • FOLEY RISERS & SUB-BASS TRANSIENTS</span>
                   <span>-14 LUFS CALIBRATED</span>
                 </div>
               </div>
@@ -759,7 +759,7 @@ export function EnchantedVideoExperience() {
             <div>
               <div className="flex items-center justify-between pb-4 mb-4 border-b border-white/10">
                 <span className="font-mono text-xs uppercase tracking-wider text-purple-400 font-bold">
-                  ENGINE 02 // COLOR SCIENCE
+                  ENGINE 02 • COLOR SCIENCE
                 </span>
                 <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-[#C9CCD1]/20 text-gray-300 border border-[#C9CCD1]/30 font-bold">
                   DaVinci ACEScc
@@ -823,7 +823,7 @@ export function EnchantedVideoExperience() {
             <div>
               <div className="flex items-center justify-between pb-4 mb-4 border-b border-white/10">
                 <span className="font-mono text-xs uppercase tracking-wider text-blue-400 font-bold">
-                  ENGINE 03 // SPATIAL CGI
+                  ENGINE 03 • SPATIAL CGI
                 </span>
                 <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-[#C9CCD1]/20 text-gray-300 border border-[#C9CCD1]/30 font-bold">
                   Cinema 4D + Octane
@@ -853,7 +853,7 @@ export function EnchantedVideoExperience() {
             <div>
               <div className="flex items-center justify-between pb-4 mb-4 border-b border-white/10">
                 <span className="font-mono text-xs uppercase tracking-wider text-[#C9CCD1] font-bold">
-                  ENGINE 04 // VIRAL PACKAGING
+                  ENGINE 04 • VIRAL PACKAGING
                 </span>
                 <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-[#C9CCD1]/20 text-gray-300 border border-[#C9CCD1]/30 font-bold">
                   9:16 Social Engine
@@ -1014,7 +1014,7 @@ export function EnchantedVideoExperience() {
       <section id="pricing" className="relative px-4 py-24 md:px-8 md:py-32 max-w-7xl mx-auto z-40">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="font-mono text-xs uppercase tracking-widest text-[#C9CCD1] font-bold block mb-2">
-            PREDICTABLE INVESTMENT // ZERO AGENCY HIDDEN FEES
+            PREDICTABLE INVESTMENT • ZERO AGENCY HIDDEN FEES
           </span>
           <h2 className="text-3xl sm:text-5xl font-black uppercase tracking-tight text-white">
             Sprint Engagement Tiers
@@ -1156,7 +1156,7 @@ export function EnchantedVideoExperience() {
           </div>
 
           <span className="font-mono text-xs uppercase tracking-widest text-gray-300 font-bold block mb-3">
-            ELEVATE YOUR VISUAL STANDARD // 2026 ROADMAP
+            ELEVATE YOUR VISUAL STANDARD • 2026 ROADMAP
           </span>
 
           <h2 className="text-4xl sm:text-6xl md:text-7xl font-extrabold uppercase tracking-tight text-white leading-tight">
@@ -1195,7 +1195,7 @@ export function EnchantedVideoExperience() {
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-3">
             <span className="w-2.5 h-2.5 rounded-full bg-[#C9CCD1] animate-pulse" />
-            <span className="text-white font-bold">NEXUS Growth // ENCHANTED VIDEO LABS</span>
+            <span className="text-white font-bold">NEXUS Growth • ENCHANTED VIDEO LABS</span>
             <span className="text-gray-500 hidden md:inline">| 4K Cinema Production Suite</span>
           </div>
 

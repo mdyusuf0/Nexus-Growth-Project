@@ -70,7 +70,7 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6 pb-16 border-b-2 border-white/20">
           <div>
             <span className="font-mono text-xs uppercase tracking-widest text-[#FF1F1F]">
-              NEXUS GROWTH // EST. 2026
+              NEXUS GROWTH • EST. 2026
             </span>
             <h3 className="font-['Roboto_Flex'] [font-variation-settings:'wdth'_33] [font-stretch:33%] text-4xl md:text-6xl font-extrabold uppercase leading-none mt-2">
               Ready to break typical industry metrics?
@@ -93,11 +93,11 @@ export default function Footer() {
               Navigation
             </h4>
             <ul className="flex flex-col gap-3 font-mono text-sm text-[#6E7177]">
-              <li><Link href="/" className="hover:text-[#FF1F1F] transition-colors">01 // Home</Link></li>
-              <li><Link href="/#about" className="hover:text-[#FF1F1F] transition-colors">02 // Manifesto</Link></li>
-              <li><Link href="/#services" className="hover:text-[#FF1F1F] transition-colors">03 // Capabilities</Link></li>
-              <li><Link href="/#work" className="hover:text-[#FF1F1F] transition-colors">04 // Case Studies</Link></li>
-              <li><Link href="/contact" className="hover:text-[#FF1F1F] transition-colors">05 // Contact</Link></li>
+              <li><Link href="/" className="hover:text-[#FF1F1F] transition-colors">01. Home</Link></li>
+              <li><Link href="/#about" className="hover:text-[#FF1F1F] transition-colors">02. Manifesto</Link></li>
+              <li><Link href="/#services" className="hover:text-[#FF1F1F] transition-colors">03. Capabilities</Link></li>
+              <li><Link href="/#work" className="hover:text-[#FF1F1F] transition-colors">04. Case Studies</Link></li>
+              <li><Link href="/contact" className="hover:text-[#FF1F1F] transition-colors">05. Contact</Link></li>
             </ul>
           </div>
 

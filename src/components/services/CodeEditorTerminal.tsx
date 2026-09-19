@@ -160,7 +160,7 @@ export default function CodeEditorTerminal() {
               <span className="h-3.5 w-3.5 rounded-full bg-[#27c93f] border border-white/10" />
             </div>
             <span className="ml-3 font-mono text-xs font-bold text-white hidden sm:inline-flex items-center gap-1.5">
-              <Terminal className="h-3.5 w-3.5 text-white" /> NEXUS-RUNTIME // V4.2.EDGE
+              <Terminal className="h-3.5 w-3.5 text-white" /> NEXUS-RUNTIME • V4.2.EDGE
             </span>
           </div>
 

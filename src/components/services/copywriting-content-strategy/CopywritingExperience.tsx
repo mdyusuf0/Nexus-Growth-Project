@@ -35,7 +35,7 @@ interface CopyCase {
 const COPY_CASES: CopyCase[] = [
   {
     id: 'hero',
-    category: 'LANDING PAGE // HERO HEADLINE',
+    category: 'LANDING PAGE • HERO HEADLINE',
     context: 'B2B Enterprise Software Landing Page Above-The-Fold',
     genericCopy: 'We empower innovative enterprises to unlock seamless digital transformation and synergize cross-functional workflows.',
     genericCritique: 'Zero concrete pain points. Vague corporate buzzwords that leave the prospect wondering what the product actually does.',
@@ -45,7 +45,7 @@ const COPY_CASES: CopyCase[] = [
   },
   {
     id: 'guarantee',
-    category: 'COMMERCE // RISK REVERSAL GUARANTEE',
+    category: 'COMMERCE • RISK REVERSAL GUARANTEE',
     context: 'Direct-to-Consumer High-Ticket Product Page Checkout',
     genericCopy: 'Satisfaction guaranteed. If you are not completely satisfied with your purchase, please reach out to customer service.',
     genericCritique: 'Timid and bureaucratic. Shifts the burden of proof to the buyer and implies a tedious email runaround.',
@@ -55,7 +55,7 @@ const COPY_CASES: CopyCase[] = [
   },
   {
     id: 'cold_email',
-    category: 'OUTBOUND // B2B COLD TRANSMISSION',
+    category: 'OUTBOUND • B2B COLD TRANSMISSION',
     context: 'Series A Founder Cold Email to Enterprise VPs',
     genericCopy: 'I hope this email finds you well! I would love to grab 15 minutes of your precious time next Tuesday to demo our groundbreaking platform.',
     genericCritique: 'Instant spam folder trigger. Asks for a 15-minute time donation without establishing any economic relevance.',
@@ -182,7 +182,7 @@ export default function CopywritingExperience() {
           <div className="flex items-center gap-3">
             <span className="w-2.5 h-2.5 rounded-full bg-[#FF1F1F] animate-pulse" />
             <span className="font-mono text-xs uppercase tracking-widest text-[#FF1F1F] font-bold">
-              DISCIPLINE 09 // HIGH-CONVERSION PERSUASION ARCHITECTURE
+              DISCIPLINE 09 • HIGH-CONVERSION PERSUASION ARCHITECTURE
             </span>
           </div>
           <div className="flex items-center gap-3 font-mono text-[11px] text-[#6E7177]">

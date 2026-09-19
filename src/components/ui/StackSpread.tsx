@@ -144,7 +144,7 @@ export default function StackSpread() {
               <div>
                 <div className="flex items-center justify-between pb-3 border-b border-current/20">
                   <span className="font-mono text-xs font-black uppercase tracking-wider">
-                    DECK SPEC // #{card.id}
+                    DECK SPEC • #{card.id}
                   </span>
                   <span className="font-mono text-[10px] px-2 py-0.5 rounded-full border border-current/30 font-bold uppercase">
                     {card.category}

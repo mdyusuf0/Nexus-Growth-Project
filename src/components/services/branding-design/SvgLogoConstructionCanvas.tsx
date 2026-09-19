@@ -84,7 +84,7 @@ export function SvgLogoConstructionCanvas() {
 
           {/* Golden Angle Marker */}
           <div className="absolute bottom-3 left-4 font-mono text-[10px] text-[#6E7177]">
-            R = 1.618033 // ∠ 51.8°
+            R = 1.618033 • ∠ 51.8°
           </div>
           <div className="absolute top-3 right-4 font-mono text-[10px] text-[#FF1F1F]">
             VECTOR PASS: VERIFIED
